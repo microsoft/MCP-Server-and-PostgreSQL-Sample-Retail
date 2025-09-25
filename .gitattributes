@@ -1,0 +1,5 @@
+# Shell scripts should always use LF line endings
+*.sh text eol=lf
+
+# Docker init scripts should use LF
+docker-init/*.sh text eol=lf

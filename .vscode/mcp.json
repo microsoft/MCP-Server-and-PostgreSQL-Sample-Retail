@@ -1,0 +1,25 @@
+{
+	"servers": {
+		"zava-sales-analysis-headoffice": {
+			"url": "http://127.0.0.1:8000/mcp",
+			"type": "http",
+			"headers": {"x-rls-user-id": "00000000-0000-0000-0000-000000000000"}
+		},
+		"zava-sales-analysis-seattle": {
+			"url": "http://127.0.0.1:8000/mcp",
+			"type": "http",
+			"headers": {"x-rls-user-id": "f47ac10b-58cc-4372-a567-0e02b2c3d479"}
+		},
+		"zava-sales-analysis-redmond": {
+			"url": "http://127.0.0.1:8000/mcp",
+			"type": "http",
+			"headers": {"x-rls-user-id": "e7f8a9b0-c1d2-3e4f-5678-90abcdef1234"}
+		},
+		"zava-sales-analysis-online": {
+			"url": "http://127.0.0.1:8000/mcp",
+			"type": "http",
+			"headers": {"x-rls-user-id": "2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2"}
+		}
+	},
+	"inputs": []
+}

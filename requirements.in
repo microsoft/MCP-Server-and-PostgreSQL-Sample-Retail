@@ -1,0 +1,27 @@
+# Build requirements process
+
+# 1. Update the `requirements.in` file with libraries and specify version ranges.
+# 2. Install pip tools `pip install pip-tools`.
+# 3. Compile the requirements by running `pip-compile -r requirements.in -o requirements.lock.txt`.
+
+
+
+# Core MCP framework
+mcp>=1.10.0,<2.0.0
+
+# Database adapters
+asyncpg>=0.30.0,<0.31.0
+
+# Azure AI and authentication
+azure-identity>=1.23.0,<2.0.0
+azure-monitor-opentelemetry>=1.6.10,<2.0.0
+openai>=1.98.0,<2.0.0
+
+# Data processing and utilities
+pydantic>=2.0.0,<3.0.0
+python-dotenv>=1.1.1,<2.0.0
+PyYAML>=6.0,<7.0.0
+
+# OpenTelemetry for observability
+opentelemetry-instrumentation-starlette>=0.57b0, <1.0.0
+opentelemetry-instrumentation-asyncpg>=0.57b0, <1.0.0

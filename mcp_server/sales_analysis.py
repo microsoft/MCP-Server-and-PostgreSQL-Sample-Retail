@@ -1,0 +1,290 @@
+#!/usr/bin/env python3
+"""
+Provides comprehensive customer sales database access with individual table schema tools for Zava Retail DIY Business.
+"""
+
+import asyncio
+import logging
+from datetime import datetime, timezone
+from typing import Annotated, Optional
+
+from azure.monitor.opentelemetry import configure_azure_monitor
+from mcp.server.fastmcp import Context, FastMCP
+from opentelemetry.instrumentation.starlette import StarletteInstrumentor
+from pydantic import Field
+
+from .config import Config
+from .sales_analysis_postgres import PostgreSQLSchemaProvider
+from .sales_analysis_text_embeddings import SemanticSearchTextEmbedding
+
+config = Config()
+
+logger = logging.getLogger(__name__)
+
+for name in [
+    "azure.core.pipeline.policies.http_logging_policy",
+    "azure.ai.agents",
+    "azure.ai.projects",
+    "azure.core",
+    "azure.identity",
+    "uvicorn.access",
+    "azure.monitor.opentelemetry.exporter.export._base",
+]:
+    logging.getLogger(name).setLevel(logging.WARNING)
+
+
+db_provider = PostgreSQLSchemaProvider()
+semantic_search_provider = SemanticSearchTextEmbedding()
+
+
+# Create MCP server with lifespan support
+mcp = FastMCP("mcp-zava-sales", stateless_http=True)
+
+
+def get_header(ctx: Context, header_name: str) -> Optional[str]:
+    """Extract a specific header from the request context."""
+
+    request = ctx.request_context.request
+    if request is not None and hasattr(request, "headers"):
+        headers = request.headers
+        if headers:
+            header_value = headers.get(header_name)
+            if header_value is not None:
+                if isinstance(header_value, bytes):
+                    return header_value.decode("utf-8")
+                return str(header_value)
+
+    return None
+
+
+def get_rls_user_id(ctx: Context) -> str:
+    """Get the Row Level Security User ID from the request context."""
+
+    rls_user_id = get_header(ctx, "x-rls-user-id")
+    if rls_user_id is None:
+        # Default to a placeholder if not provided
+        rls_user_id = "00000000-0000-0000-0000-000000000000"
+    return rls_user_id
+
+
+@mcp.tool()
+async def semantic_search_products(
+    ctx: Context,
+    query_description: Annotated[
+        str,
+        Field(
+            description="Describe the Zava product you're looking for using natural language. Include purpose, features, or use case. For example: 'waterproof electrical box for outdoor use', '15 amp circuit breaker', or 'LED light bulbs for kitchen ceiling'."
+        ),
+    ],
+    max_rows: Annotated[
+        int,
+        Field(description="The maximum number of products to return. Defaults to 20."),
+    ] = 20,
+    similarity_threshold: Annotated[
+        float,
+        Field(
+            description="A value between 20 and 80 that sets the minimum similarity threshold. Products below this value are excluded. Defaults to 30.0."
+        ),
+    ] = 30.0,
+) -> str:
+    """
+    Search for Zava products using natural language descriptions to find matches based on semantic similarity—considering functionality, form, use, and other attributes.
+
+    Returns:
+        Compact success shape:
+          {"c":["col1","col2"],"r":[[v11,v12],[v21,v22]],"n":2}
+        Empty result adds 'msg':
+          {"c":[],"r":[],"n":0,"msg":"No rows"}
+        Error shape:
+          {"err":"...","q":"SELECT ...","c":[],"r":[],"n":0}
+    """
+
+    rls_user_id = get_rls_user_id(ctx)
+
+    logger.info("Semantic search query: %s", query_description)
+    logger.info("Manager ID: %s", rls_user_id)
+    logger.info("Max Rows: %d", max_rows)
+
+    try:
+        # Check if semantic search is available
+        if not semantic_search_provider.is_available():
+            return "Error: Semantic search is not available. Azure OpenAI endpoint not configured."
+
+        # Generate embedding for the query
+        query_embedding = semantic_search_provider.generate_query_embedding(
+            query_description
+        )
+        if not query_embedding:
+            return (
+                "Error: Failed to generate embedding for the query. Please try again."
+            )
+
+        # Search for similar products using the embedding
+        return await db_provider.search_products_by_similarity(
+            query_embedding,
+            rls_user_id=rls_user_id,
+            max_rows=max_rows,
+            similarity_threshold=similarity_threshold,
+        )
+
+    except Exception as e:
+        logger.error("Error executing semantic search: %s", e)
+        return "Error executing semantic search"
+
+
+@mcp.tool()
+async def get_multiple_table_schemas(
+    ctx: Context,
+    table_names: Annotated[
+        list[str],
+        Field(
+            description="List of table names. Valid table names include 'retail.customers', 'retail.stores', 'retail.categories', 'retail.product_types', 'retail.products', 'retail.orders', 'retail.order_items', 'retail.inventory'."
+        ),
+    ],
+) -> str:
+    """
+    Retrieve schemas for multiple tables. Use this tool only for schemas you have not already fetched during the conversation.
+
+    Args:
+        table_names: List of table names. Valid table names include 'retail.customers', 'retail.stores', 'retail.categories', 'retail.product_types', 'retail.products', 'retail.orders', 'retail.order_items', 'retail.inventory'.
+
+    Returns:
+        Concatenated schema strings for the requested tables.
+    """
+
+    rls_user_id = get_rls_user_id(ctx)
+
+    if not table_names:
+        logger.error("Error: table_names parameter is required and cannot be empty")
+        return "Error: table_names parameter is required and cannot be empty"
+
+    valid_tables = {
+        "retail.customers",
+        "retail.stores",
+        "retail.categories",
+        "retail.product_types",
+        "retail.products",
+        "retail.orders",
+        "retail.order_items",
+        "retail.inventory",
+    }
+
+    # Validate table names
+    invalid_tables = [name for name in table_names if name not in valid_tables]
+    if invalid_tables:
+        logger.error(
+            "Error: Invalid table names: %s. Valid tables are: %s",
+            invalid_tables,
+            sorted(valid_tables),
+        )
+        return f"Error: Invalid table names: {invalid_tables}. Valid tables are: {sorted(valid_tables)}"
+
+    logger.info("Manager ID: %s", rls_user_id)
+    logger.info("Retrieving schemas for tables: %s", ", ".join(table_names))
+
+    try:
+        return await db_provider.get_table_metadata_from_list(
+            table_names, rls_user_id=rls_user_id
+        )
+    except Exception as e:
+        logger.error("Error retrieving table schemas: %s", e)
+        return f"Error retrieving table schemas: {e!s}"
+
+
+@mcp.tool()
+async def execute_sales_query(
+    ctx: Context,
+    postgresql_query: Annotated[
+        str, Field(description="A well-formed PostgreSQL query.")
+    ],
+) -> str:
+    """Always fetch and inspect the database schema before generating any SQL using the get_multiple_table_schemas tool; use only exact table and column names, and never invent or infer data, columns, tables, or values—if the information isn't present in the schema or database, clearly state that it cannot be answered. Join related tables for clarity, aggregate results where appropriate, and limit output to 20 rows with a note that the limit is for readability. To identify store types, use the retail.store.is_online boolean: true indicates an online store, false indicates a physical store. **NEVER** return entity IDs or UUIDs in the response, as they are not meaningful to the user. Instead, use descriptive names or values.
+
+    Args:
+        postgresql_query: A well-formed PostgreSQL query.
+
+    Returns:
+        Query results as a string.
+    """
+
+    rls_user_id = get_rls_user_id(ctx)
+
+    logger.info("Manager ID: %s", rls_user_id)
+    logger.info("Executing PostgreSQL query: %s", postgresql_query)
+
+    try:
+        if not postgresql_query:
+            return "Error: postgresql_query parameter is required"
+
+        return await db_provider.execute_query(
+            postgresql_query, rls_user_id=rls_user_id
+        )
+
+    except Exception as e:
+        logger.error("Error executing database query: %s", e)
+        return f"Error executing database query: {e!s}"
+
+
+@mcp.tool()
+async def get_current_utc_date() -> str:
+    """Get the current UTC date and time in ISO format. Useful for date time relative queries or understanding the current date for time-sensitive analysis.
+
+    Returns:
+        Current UTC date and time in ISO format (YYYY-MM-DDTHH:MM:SS.fffffZ)
+    """
+    logger.info("Retrieving current UTC date and time")
+    try:
+        current_utc = datetime.now(timezone.utc)
+        return f"Current UTC Date/Time: {current_utc.isoformat()}"
+    except Exception as e:
+        logger.error("Error retrieving current UTC date: %s", e)
+        return f"Error retrieving current UTC date: {e!s}"
+
+
+async def run_http_server() -> None:
+    """Run the MCP server in HTTP mode."""
+
+    # Only configure azure monitor if a valid connection string is provided.
+    appinsights_connection_string = config.applicationinsights_connection_string
+    if (
+        appinsights_connection_string
+        and "InstrumentationKey=" in appinsights_connection_string
+    ):
+        configure_azure_monitor(connection_string=appinsights_connection_string)
+        logger.info("Azure Application Insights configured.")
+    else:
+        logger.info("Azure Application Insights not configured.")
+
+    # Ensure a single connection pool is created once for the process.
+    try:
+        await db_provider.create_pool()
+
+        mcp.settings.port = 8000
+        mcp.settings.host = "0.0.0.0"
+        StarletteInstrumentor().instrument_app(mcp.sse_app())
+        StarletteInstrumentor().instrument_app(mcp.streamable_http_app())
+        logger.info(
+            "❤️ 📡 MCP endpoint available at: http://%s:%d/mcp",
+            mcp.settings.host,
+            mcp.settings.port,
+        )
+
+        # Run the FastMCP server as HTTP endpoint
+        await mcp.run_streamable_http_async()
+    finally:
+        # Close the pool on shutdown
+        try:
+            await db_provider.close_pool()
+        except Exception as e:
+            logger.error("⚠️  Error closing database pool: %s", e)
+
+
+def main() -> None:
+    """Main entry point for the MCP server."""
+
+    # Run the HTTP server
+    asyncio.run(run_http_server())
+
+
+if __name__ == "__main__":
+    main()

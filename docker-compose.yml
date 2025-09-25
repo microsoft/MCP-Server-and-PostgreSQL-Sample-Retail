@@ -1,0 +1,47 @@
+name: zava_mcp_server
+
+services:
+  postgres:
+    image: docker.io/pgvector/pgvector:pg17
+    container_name: pg17
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256 --auth-local=scram-sha-256
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./data:/backup_data:ro
+      - ./docker-init:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "PGPASSWORD=${POSTGRES_PASSWORD} pg_isready -U postgres -d zava && PGPASSWORD=${POSTGRES_PASSWORD} psql -U postgres -d zava -c 'SELECT 1 FROM retail.stores LIMIT 1;' > /dev/null 2>&1"]
+      interval: 15s
+      timeout: 3s
+      retries: 5
+      start_period: 45s
+
+  mcp_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zava_mcp_server:latest
+    container_name: mcp_server
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD-SHELL", "python -m mcp_server.health_check"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  postgres_data:
