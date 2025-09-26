@@ -1,3 +1,21 @@
+# MCP Server and PostgreSQL Sample - Retail Sales Analysis
+
+## Introduction
+
+This sample demonstrates how to build and deploy a comprehensive **Model Context Protocol (MCP) server** that provides AI assistants with secure, intelligent access to retail sales data through PostgreSQL. The project showcases enterprise-grade features including **Row Level Security (RLS)**, **semantic search capabilities**, and **Azure AI integration** for real-world retail analytics scenarios.
+
+**Key Use Cases:**
+- **AI-Powered Sales Analytics**: Enable AI assistants to query and analyze retail sales data through natural language
+- **Secure Multi-Tenant Access**: Demonstrate Row Level Security implementation where different store managers can only access their store's data
+- **Semantic Product Search**: Showcase AI-enhanced product discovery using text embeddings
+- **Enterprise Integration**: Illustrate how to integrate MCP servers with Azure services and PostgreSQL databases
+
+**Perfect for:**
+- Developers learning to build MCP servers with database integration
+- Data engineers implementing secure multi-tenant analytics solutions
+- AI application developers working with retail or e-commerce data
+- Anyone interested in combining AI assistants with enterprise databases
+
 ## Join the Azure AI Foundry Discord Community
 Share your experiences of MCP and meet the experts and product groups 
 
