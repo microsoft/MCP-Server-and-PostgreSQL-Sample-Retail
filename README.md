@@ -1,3 +1,7 @@
+## Join the Azure AI Foundry Discord Community
+Share your experiences of MCP and meet the experts and product groups 
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+
 # Sales Analysis MCP Server
 
 A Model Context Protocol (MCP) server that provides comprehensive customer sales database access for Zava Retail DIY Business. This server enables AI assistants to query and analyze retail sales data through a secure, schema-aware interface.
@@ -318,9 +322,7 @@ When contributing to this server:
 4. Test the HTTP server mode
 5. Validate input parameters and provide clear error messages
 
-## License
-
-[Include appropriate license information]
+## [License](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/blob/main/LICENSE)
 
 ---
 
