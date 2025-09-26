@@ -25,6 +25,44 @@ Share your experiences of MCP and meet the experts and product groups
 
 A Model Context Protocol (MCP) server that provides comprehensive customer sales database access for Zava Retail DIY Business. This server enables AI assistants to query and analyze retail sales data through a secure, schema-aware interface.
 
+## 📚 Complete Implementation Guide
+
+For a detailed breakdown of how this solution is built and how to implement similar MCP servers, see our comprehensive **[Sample Walkthrough](Sample_Walkthrough.md)**. This guide provides:
+
+- **Architecture Deep Dive**: Component analysis and design patterns
+- **Step-by-Step Building**: From project setup to deployment
+- **Code Breakdown**: Detailed explanation of MCP server implementation
+- **Advanced Features**: Row Level Security, semantic search, and monitoring
+- **Best Practices**: Security, performance, and development guidelines
+- **Troubleshooting**: Common issues and solutions
+
+Perfect for developers who want to understand the implementation details and build similar solutions.
+
+## 🤖 What is MCP (Model Context Protocol)?
+
+**Model Context Protocol (MCP)** is an open standard that enables AI assistants to securely access external data sources and tools in real-time. Think of it as a bridge that allows AI models to connect with databases, APIs, file systems, and other resources while maintaining security and control.
+
+### Key Benefits:
+- **Real-time Data Access**: AI assistants can query live databases and APIs
+- **Secure Integration**: Controlled access with authentication and permissions  
+- **Tool Extensibility**: Add custom capabilities to AI assistants
+- **Standardized Protocol**: Works across different AI platforms and tools
+
+### New to MCP?
+
+If you're new to Model Context Protocol, we recommend starting with Microsoft's comprehensive beginner resources:
+
+**📖 [MCP for Beginners Guide](https://aka.ms/mcp-for-beginners)**
+
+This resource provides:
+- Introduction to MCP concepts and architecture
+- Step-by-step tutorials for building your first MCP server
+- Best practices for MCP development
+- Integration examples with popular AI platforms
+- Community resources and support
+
+Once you understand the basics, return here to explore this advanced retail analytics implementation!
+
 ## Prerequisites
 
 1. Docker Desktop installed
