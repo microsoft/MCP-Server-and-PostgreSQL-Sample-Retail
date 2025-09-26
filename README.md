@@ -1,5 +1,6 @@
 ## Join the Azure AI Foundry Discord Community
 Share your experiences of MCP and meet the experts and product groups 
+
 [![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
 
 # Sales Analysis MCP Server
