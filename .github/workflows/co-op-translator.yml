@@ -65,8 +65,8 @@ jobs:
           # translate -l "bn mr ne" -y
           # translate -l "pa br it tr" -y
           # translate -l "el th sv" -y 
-          translate -l "da no fi" -y
-          # translate -l "nl he vi"
+          # translate -l "da no fi" -y
+          translate -l "nl he vi"
           # translate -l "id ms tl" -y
           # translate -l "sw hu cs"
           # translate -l "sk ro" -y
