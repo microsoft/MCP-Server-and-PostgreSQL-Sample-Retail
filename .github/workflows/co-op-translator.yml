@@ -57,8 +57,8 @@ jobs:
           # translate -l "all" -y  # <--- MODIFY THIS LINE with your desired languages
           # Recommendation for large batches over 29 files run them in batches maximum github runner time is 6 hours
           # translate -l "zh tw hk" -y 
-          translate -l "fr ja ko" -y
-          # translate -l "pt es de" -y
+          # translate -l "fr ja ko" -y
+          translate -l "pt es de" -y
           # translate -l  "fa pl hi" -y
           # translate -l "ru ar ur" -y
           # translate -l "mo ja" -y
