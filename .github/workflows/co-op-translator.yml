@@ -59,8 +59,8 @@ jobs:
           # translate -l "zh tw hk" -y 
           # translate -l "fr ja ko" -y
           # translate -l "pt es de" -y
-          translate -l  "fa pl hi" -y
-          # translate -l "ru ar ur" -y
+          # translate -l  "fa pl hi" -y
+          translate -l "ru ar ur" -y
           # translate -l "mo ja" -y
           # translate -l "bn mr ne" -y
           # translate -l "pa br it tr" -y
