@@ -32,6 +32,38 @@ This walkthrough deconstructs how to build and utilize a production-ready **Mode
 - **Bicep**: Infrastructure as Code for Azure resources
 - **VS Code**: Development environment with MCP integration
 
+## 📚 Structured Learning Guide: /walkthrough
+
+In addition to this technical walkthrough, this repository includes a comprehensive **12-module learning guide** located in the `/walkthrough` directory. This structured approach breaks down the complex implementation into digestible learning modules, perfect for developers who want to understand each component step-by-step.
+
+### Learning Modules Overview
+
+| Module | Topic | Focus | Duration |
+|--------|-------|-------|----------|
+| **[00-Introduction](walkthrough/00-Introduction/README.md)** | MCP Fundamentals | Core concepts, Zava Retail case study, architecture overview | 30 min |
+| **[01-Architecture](walkthrough/01-Architecture/README.md)** | System Design | Technical architecture, design patterns, component relationships | 45 min |
+| **[02-Security](walkthrough/02-Security/README.md)** | Enterprise Security | Azure authentication, Row Level Security, multi-tenant isolation | 60 min |
+| **[03-Setup](walkthrough/03-Setup/README.md)** | Environment Setup | Docker configuration, Azure CLI, project initialization | 45 min |
+| **[04-Database](walkthrough/04-Database/README.md)** | Data Layer | PostgreSQL schema, pgvector setup, RLS policies, sample data | 60 min |
+| **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Core Implementation | FastMCP framework, database integration, tool development | 90 min |
+| **[06-Tools](walkthrough/06-Tools/README.md)** | Tool Development | MCP tool creation, query validation, business intelligence | 75 min |
+| **[07-Semantic-Search](walkthrough/07-Semantic-Search/README.md)** | AI Integration | Azure OpenAI embeddings, vector search, hybrid queries | 60 min |
+| **[08-Testing](walkthrough/08-Testing/README.md)** | Quality Assurance | Testing strategies, debugging techniques, performance testing | 75 min |
+| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Development Experience | VS Code configuration, AI Chat integration, debugging workflows | 45 min |
+| **[10-Deployment](walkthrough/10-Deployment/README.md)** | Production Deployment | Containerization, Azure Container Apps, CI/CD pipelines | 90 min |
+| **[11-Monitoring](walkthrough/11-Monitoring/README.md)** | Observability | Application Insights, structured logging, performance metrics | 60 min |
+| **[12-Best-Practices](walkthrough/12-Best-Practices/README.md)** | Production Excellence | Security hardening, optimization, enterprise patterns | 45 min |
+
+### How to Use the Learning Guide
+
+**📖 For Learning**: The `/walkthrough` modules provide step-by-step instructions with explanations of why each component is designed the way it is. Start with Module 00 and progress sequentially.
+
+**🔧 For Implementation**: This Sample_Walkthrough.md provides the technical deep-dive and code breakdown for developers who want to understand the complete implementation quickly.
+
+**🚀 For Production**: Modules 02, 10, 11, and 12 focus specifically on production-ready deployment, security, and monitoring considerations.
+
+**📚 Complete Learning Path**: Visit **[/walkthrough/README.md](walkthrough/README.md)** for the full learning guide overview with detailed learning objectives and prerequisites.
+
 ---
 
 ## Architecture Deep Dive

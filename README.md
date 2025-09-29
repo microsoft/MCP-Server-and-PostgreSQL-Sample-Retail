@@ -1,5 +1,21 @@
 # MCP Server and PostgreSQL Sample - Retail Sales Analysis
 
+
+## Learn MCP with Database Integration through Hands-on Examples
+
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![Join Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+
+Follow these steps to get started using these resources:
+
+1. **Fork the Repository**: Click [here to fork](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
+2. **Clone the Repository**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
+3. **Join The Azure AI Foundry Discord**: [Meet experts and fellow developers](https://discord.com/invite/ByRwuEEgH4)
+
 ## Introduction
 
 This sample demonstrates how to build and deploy a comprehensive **Model Context Protocol (MCP) server** that provides AI assistants with secure, intelligent access to retail sales data through PostgreSQL. The project showcases enterprise-grade features including **Row Level Security (RLS)**, **semantic search capabilities**, and **Azure AI integration** for real-world retail analytics scenarios.
@@ -62,6 +78,116 @@ This resource provides:
 - Community resources and support
 
 Once you understand the basics, return here to explore this advanced retail analytics implementation!
+
+## 📚 Comprehensive Learning Guide: /walkthrough
+
+This repository includes a complete **12-module learning walkthrough** that deconstructs this MCP retail server sample into digestible, step-by-step lessons. The walkthrough transforms this working example into a comprehensive educational resource perfect for developers who want to understand how to build production-ready MCP servers with database integration.
+
+### What You'll Learn
+
+The walkthrough covers everything from basic MCP concepts to advanced production deployment, including:
+
+- **MCP Fundamentals**: Understanding the Model Context Protocol and its real-world applications
+- **Database Integration**: Implementing secure PostgreSQL connectivity with Row Level Security
+- **AI-Enhanced Features**: Adding semantic search capabilities with Azure OpenAI embeddings
+- **Security Implementation**: Enterprise-grade authentication, authorization, and data isolation
+- **Tool Development**: Building sophisticated MCP tools for data analysis and business intelligence
+- **Testing & Debugging**: Comprehensive testing strategies and debugging techniques
+- **VS Code Integration**: Configuring AI Chat for natural language database queries
+- **Production Deployment**: Containerization, scaling, and cloud deployment strategies
+- **Monitoring & Observability**: Application Insights, logging, and performance monitoring
+
+### Learning Path Overview
+
+The walkthrough follows a progressive learning structure designed for developers of all skill levels:
+
+| Module | Focus Area | Description | Time Estimate |
+|--------|------------|-------------|---------------|
+| **[00-Introduction](walkthrough/00-Introduction/README.md)** | Foundation | MCP concepts, Zava Retail case study, architecture overview | 30 minutes |
+| **[01-Architecture](walkthrough/01-Architecture/README.md)** | Design Patterns | Technical architecture, layered design, system components | 45 minutes |
+| **[02-Security](walkthrough/02-Security/README.md)** | Enterprise Security | Azure authentication, Row Level Security, multi-tenant isolation | 60 minutes |
+| **[03-Setup](walkthrough/03-Setup/README.md)** | Environment | Docker setup, Azure CLI, project configuration, validation | 45 minutes |
+| **[04-Database](walkthrough/04-Database/README.md)** | Data Layer | PostgreSQL schema, pgvector, RLS policies, sample data | 60 minutes |
+| **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Core Implementation | FastMCP framework, database integration, connection management | 90 minutes |
+| **[06-Tools](walkthrough/06-Tools/README.md)** | Tool Development | MCP tool creation, query validation, business intelligence features | 75 minutes |
+| **[07-Semantic-Search](walkthrough/07-Semantic-Search/README.md)** | AI Integration | Azure OpenAI embeddings, vector search, hybrid search strategies | 60 minutes |
+| **[08-Testing](walkthrough/08-Testing/README.md)** | Quality Assurance | Unit testing, integration testing, performance testing, debugging | 75 minutes |
+| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Development Experience | VS Code configuration, AI Chat integration, debugging workflows | 45 minutes |
+| **[10-Deployment](walkthrough/10-Deployment/README.md)** | Production Ready | Containerization, Azure Container Apps, CI/CD pipelines, scaling | 90 minutes |
+| **[11-Monitoring](walkthrough/11-Monitoring/README.md)** | Observability | Application Insights, structured logging, performance metrics | 60 minutes |
+| **[12-Best-Practices](walkthrough/12-Best-Practices/README.md)** | Production Excellence | Security hardening, performance optimization, enterprise patterns | 45 minutes |
+
+**Total Learning Time**: ~12-15 hours of comprehensive hands-on learning
+
+### 🎯 How to Use the Walkthrough
+
+**For Beginners**:
+1. Start with [Module 00: Introduction](walkthrough/00-Introduction/README.md) to understand MCP fundamentals
+2. Follow the modules sequentially for a complete learning experience
+3. Each module builds on previous concepts and includes practical exercises
+
+**For Experienced Developers**:
+1. Review the [Main Walkthrough Overview](walkthrough/README.md) for a complete module summary
+2. Jump to specific modules that interest you (e.g., Module 07 for AI integration)
+3. Use individual modules as reference material for your own projects
+
+**For Production Implementation**:
+1. Focus on Modules 02 (Security), 10 (Deployment), and 11 (Monitoring)
+2. Review Module 12 (Best Practices) for enterprise guidelines
+3. Use the code examples as production-ready templates
+
+### 🚀 Quick Start Options
+
+**Option 1: Complete Learning Path** (Recommended for newcomers)
+```bash
+# Clone and start with the introduction
+git clone https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.git
+cd MCP-Server-and-PostgreSQL-Sample-Retail/walkthrough
+# Follow along starting with 00-Introduction/README.md
+```
+
+**Option 2: Hands-On Implementation** (Jump right into building)
+```bash
+# Start with setup and build as you learn
+cd walkthrough/03-Setup
+# Follow the setup guide and continue through implementation modules
+```
+
+**Option 3: Production Focus** (Enterprise deployment)
+```bash
+# Focus on production-ready aspects
+# Review modules: 02-Security, 10-Deployment, 11-Monitoring, 12-Best-Practices
+```
+
+### 📋 Learning Prerequisites
+
+**Recommended Background**:
+- Basic Python programming experience
+- Familiarity with REST APIs and databases
+- General understanding of AI/ML concepts
+- Basic command-line and Docker knowledge
+
+**Not Required (but helpful)**:
+- Prior MCP experience (we cover this from scratch)
+- Azure cloud experience (we provide step-by-step guidance)
+- Advanced PostgreSQL knowledge (we explain concepts as needed)
+
+### 💡 Learning Tips
+
+1. **Hands-On Approach**: Each module includes working code examples you can run and modify
+2. **Progressive Complexity**: Concepts build gradually from simple to advanced
+3. **Real-World Context**: All examples use realistic retail business scenarios
+4. **Production Ready**: Code examples are designed for actual production use
+5. **Community Support**: Join our [Discord community](https://discord.com/invite/ByRwuEEgH4) for help and discussions
+
+### 🔗 Related Resources
+
+- **[MCP for Beginners](https://aka.ms/mcp-for-beginners)**: Essential background reading
+- **[Sample Walkthrough](Sample_Walkthrough.md)**: High-level technical overview
+- **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Cloud platform used in examples
+- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Python MCP implementation framework
+
+**Ready to start learning?** Begin with **[Module 00: Introduction](walkthrough/00-Introduction/README.md)** or explore the **[complete walkthrough overview](walkthrough/README.md)**.
 
 ## Prerequisites
 
