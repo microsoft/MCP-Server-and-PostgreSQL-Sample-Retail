@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: mcp-retail-analytics
+metadata:
+  template: mcp-retail-analytics@0.0.1-beta
+
+# Infrastructure configuration
+infra:
+  provider: bicep
+  path: infra
+
+# Service definitions
+services:
+  mcp-server:
+    project: ../
+    language: python
+    host: containerapp
+    docker:
+      path: ../Dockerfile
+      context: ../
+    env:
+      # Database connection (for future PostgreSQL integration)
+      POSTGRES_HOST: ${POSTGRES_HOST=""}
+      POSTGRES_PORT: ${POSTGRES_PORT="5432"}
+      POSTGRES_DB: ${POSTGRES_DB=""}
+      POSTGRES_USER: ${POSTGRES_USER=""}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD=""}
+      
+      # Azure AI Services
+      AZURE_OPENAI_ENDPOINT: ${AZURE_OPENAI_ENDPOINT}
+      AZURE_OPENAI_API_KEY: ${AZURE_OPENAI_API_KEY}
+      AZURE_OPENAI_DEPLOYMENT_NAME: ${AZURE_OPENAI_DEPLOYMENT_NAME}
+      AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME: ${AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME}
+      
+      # Application Insights
+      APPLICATIONINSIGHTS_CONNECTION_STRING: ${APPLICATIONINSIGHTS_CONNECTION_STRING}
+      
+      # Container Apps specific
+      PORT: "8000"
+      AZURE_EXTENSION_USE_DYNAMIC_INSTALL: "yes_without_prompt"
+
+# Hooks for deployment lifecycle
+hooks:
+  preinfra:
+    shell: pwsh
+    run: |
+      Write-Host "🚀 Starting MCP Retail Analytics deployment..."
+      Write-Host "Environment: $env:AZURE_ENV_NAME"
+      Write-Host "Location: $env:AZURE_LOCATION"
+  
+  postinfra:
+    shell: pwsh
+    run: |
+      Write-Host "✅ Infrastructure deployment completed"
+      Write-Host "Setting up database..."
+      # Database initialization will be handled by the container
+  
+  predeploy:
+    shell: pwsh
+    run: |
+      Write-Host "📦 Preparing MCP server for deployment..."
+  
+  postdeploy:
+    shell: pwsh
+    run: |
+      Write-Host "🎉 MCP Retail Analytics deployment completed successfully!"
+      Write-Host "MCP Server URL: $env:SERVICE_MCP_SERVER_ENDPOINT_URL"
+      Write-Host "Check Application Insights for monitoring: https://portal.azure.com"

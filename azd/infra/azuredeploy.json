@@ -1,0 +1,284 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "description": "Complete ARM template for MCP Retail Analytics infrastructure including Azure AI Foundry, OpenAI models, and Application Insights"
+  },
+  "parameters": {
+    "resourcePrefix": {
+      "type": "string",
+      "defaultValue": "mcpretail",
+      "metadata": {
+        "description": "Prefix for the resource group and resources"
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "westus2",
+      "allowedValues": ["eastus", "eastus2", "westus", "westus2", "centralus", "northcentralus", "southcentralus", "westcentralus"],
+      "metadata": {
+        "description": "Location of the resource group to create or use for the deployment"
+      }
+    },
+    "aiProjectFriendlyName": {
+      "type": "string",
+      "defaultValue": "MCP Retail Analytics Project",
+      "metadata": {
+        "description": "Friendly name for your Azure AI resource"
+      }
+    },
+    "aiProjectDescription": {
+      "type": "string",
+      "defaultValue": "MCP Server for Retail Sales Analysis with PostgreSQL integration",
+      "metadata": {
+        "description": "Description of your Azure AI resource displayed in Azure AI Foundry"
+      }
+    },
+    "uniqueSuffix": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 4,
+      "defaultValue": "[substring(uniqueString(subscription().subscriptionId), 0, 4)]",
+      "metadata": {
+        "description": "Unique suffix for the resources. Must be 4 characters long."
+      }
+    },
+    "gptModelCapacity": {
+      "type": "int",
+      "defaultValue": 120,
+      "metadata": {
+        "description": "Capacity for the GPT-4o-mini model deployment"
+      }
+    },
+    "embeddingModelCapacity": {
+      "type": "int",
+      "defaultValue": 50,
+      "metadata": {
+        "description": "Capacity for the text-embedding-3-small model deployment"
+      }
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {
+        "source": "Azure Developer CLI - MCP Retail Sample",
+        "environment": "development",
+        "project": "mcp-retail-analytics"
+      },
+      "metadata": {
+        "description": "Set of tags to apply to all resources"
+      }
+    }
+  },
+  "variables": {
+    "resourceGroupName": "[toLower(concat('rg-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]",
+    "aiProjectName": "[toLower(concat('prj-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]",
+    "foundryResourceName": "[toLower(concat('fdy-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]",
+    "applicationInsightsName": "[toLower(concat('appi-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]",
+    "logAnalyticsWorkspaceName": "[toLower(concat('law-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2018-05-01",
+      "name": "[variables('resourceGroupName')]",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {}
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2018-05-01",
+      "name": "infrastructure-deployment",
+      "resourceGroup": "[variables('resourceGroupName')]",
+      "dependsOn": [
+        "[variables('resourceGroupName')]"
+      ],
+      "properties": {
+        "mode": "Incremental",
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "resources": [
+            {
+              "type": "Microsoft.OperationalInsights/workspaces",
+              "apiVersion": "2023-09-01",
+              "name": "[variables('logAnalyticsWorkspaceName')]",
+              "location": "[parameters('location')]",
+              "properties": {
+                "sku": {
+                  "name": "PerGB2018"
+                },
+                "retentionInDays": 30,
+                "features": {
+                  "searchVersion": 1,
+                  "legacy": 0,
+                  "enableLogAccessUsingOnlyResourcePermissions": true
+                }
+              },
+              "tags": "[parameters('tags')]"
+            },
+            {
+              "type": "Microsoft.Insights/components",
+              "apiVersion": "2020-02-02",
+              "name": "[variables('applicationInsightsName')]",
+              "location": "[parameters('location')]",
+              "kind": "web",
+              "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/workspaces', variables('logAnalyticsWorkspaceName'))]"
+              ],
+              "properties": {
+                "Application_Type": "web",
+                "WorkspaceResourceId": "[resourceId('Microsoft.OperationalInsights/workspaces', variables('logAnalyticsWorkspaceName'))]",
+                "IngestionMode": "LogAnalytics",
+                "publicNetworkAccessForIngestion": "Enabled",
+                "publicNetworkAccessForQuery": "Enabled"
+              },
+              "tags": "[parameters('tags')]"
+            },
+            {
+              "type": "Microsoft.CognitiveServices/accounts",
+              "apiVersion": "2023-05-01",
+              "name": "[variables('foundryResourceName')]",
+              "location": "[parameters('location')]",
+              "sku": {
+                "name": "S0"
+              },
+              "kind": "AIServices",
+              "identity": {
+                "type": "SystemAssigned"
+              },
+              "properties": {
+                "customSubDomainName": "[variables('foundryResourceName')]",
+                "networkAcls": {
+                  "defaultAction": "Allow",
+                  "virtualNetworkRules": [],
+                  "ipRules": []
+                },
+                "publicNetworkAccess": "Enabled",
+                "disableLocalAuth": false
+              },
+              "tags": "[parameters('tags')]"
+            },
+            {
+              "type": "Microsoft.CognitiveServices/accounts/deployments",
+              "apiVersion": "2023-05-01",
+              "name": "[concat(variables('foundryResourceName'), '/gpt-4o-mini')]",
+              "dependsOn": [
+                "[resourceId('Microsoft.CognitiveServices/accounts', variables('foundryResourceName'))]"
+              ],
+              "sku": {
+                "capacity": "[parameters('gptModelCapacity')]",
+                "name": "Standard"
+              },
+              "properties": {
+                "model": {
+                  "name": "gpt-4o-mini",
+                  "format": "OpenAI",
+                  "version": "2024-07-18"
+                },
+                "versionUpgradeOption": "OnceNewDefaultVersionAvailable"
+              }
+            },
+            {
+              "type": "Microsoft.CognitiveServices/accounts/deployments",
+              "apiVersion": "2023-05-01",
+              "name": "[concat(variables('foundryResourceName'), '/text-embedding-3-small')]",
+              "dependsOn": [
+                "[resourceId('Microsoft.CognitiveServices/accounts/deployments', variables('foundryResourceName'), 'gpt-4o-mini')]"
+              ],
+              "sku": {
+                "capacity": "[parameters('embeddingModelCapacity')]",
+                "name": "Standard"
+              },
+              "properties": {
+                "model": {
+                  "name": "text-embedding-3-small",
+                  "format": "OpenAI",
+                  "version": "1"
+                },
+                "versionUpgradeOption": "OnceNewDefaultVersionAvailable"
+              }
+            }
+          ],
+          "outputs": {
+            "foundryAccountName": {
+              "type": "string",
+              "value": "[variables('foundryResourceName')]"
+            },
+            "foundryAccountKey": {
+              "type": "string",
+              "value": "[listKeys(resourceId('Microsoft.CognitiveServices/accounts', variables('foundryResourceName')), '2023-05-01').key1]"
+            },
+            "foundryEndpoint": {
+              "type": "string",
+              "value": "[reference(resourceId('Microsoft.CognitiveServices/accounts', variables('foundryResourceName'))).endpoint]"
+            },
+            "applicationInsightsConnectionString": {
+              "type": "string",
+              "value": "[reference(resourceId('Microsoft.Insights/components', variables('applicationInsightsName'))).ConnectionString]"
+            },
+            "applicationInsightsInstrumentationKey": {
+              "type": "string",
+              "value": "[reference(resourceId('Microsoft.Insights/components', variables('applicationInsightsName'))).InstrumentationKey]"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "subscriptionId": {
+      "type": "string",
+      "value": "[subscription().subscriptionId]"
+    },
+    "resourceGroupName": {
+      "type": "string",
+      "value": "[variables('resourceGroupName')]"
+    },
+    "aiFoundryName": {
+      "type": "string",
+      "value": "[variables('foundryResourceName')]"
+    },
+    "aiProjectName": {
+      "type": "string",
+      "value": "[variables('aiProjectName')]"
+    },
+    "foundryEndpoint": {
+      "type": "string",
+      "value": "[reference('infrastructure-deployment').outputs.foundryEndpoint.value]"
+    },
+    "foundryAccountKey": {
+      "type": "string",
+      "value": "[reference('infrastructure-deployment').outputs.foundryAccountKey.value]"
+    },
+    "deployedModels": {
+      "type": "array",
+      "value": [
+        {
+          "name": "gpt-4o-mini",
+          "deploymentName": "gpt-4o-mini"
+        },
+        {
+          "name": "text-embedding-3-small",
+          "deploymentName": "text-embedding-3-small"
+        }
+      ]
+    },
+    "applicationInsightsName": {
+      "type": "string",
+      "value": "[variables('applicationInsightsName')]"
+    },
+    "applicationInsightsConnectionString": {
+      "type": "string",
+      "value": "[reference('infrastructure-deployment').outputs.applicationInsightsConnectionString.value]"
+    },
+    "applicationInsightsInstrumentationKey": {
+      "type": "string",
+      "value": "[reference('infrastructure-deployment').outputs.applicationInsightsInstrumentationKey.value]"
+    },
+    "logAnalyticsWorkspaceName": {
+      "type": "string",
+      "value": "[variables('logAnalyticsWorkspaceName')]"
+    }
+  }
+}
