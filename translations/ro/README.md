@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-30T06:36:18+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T10:15:31+00:00",
   "source_file": "README.md",
   "language_code": "ro"
 }
@@ -21,45 +21,45 @@ CO_OP_TRANSLATOR_METADATA:
 Urmează acești pași pentru a începe să folosești aceste resurse:
 
 1. **Fork Repository-ul**: Click [aici pentru fork](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
-2. **Clonează Repository-ul**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
+2. **Clone Repository-ul**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
 3. **Alătură-te Discordului Azure AI Foundry**: [Cunoaște experți și alți dezvoltatori](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Suport Multi-Limbă
 
 #### Suportat prin GitHub Action (Automat & Mereu Actualizat)
 
-[Franceză](../fr/README.md) | [Spaniolă](../es/README.md) | [Germană](../de/README.md) | [Rusă](../ru/README.md) | [Arabă](../ar/README.md) | [Persană (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chineză (Simplificată)](../zh/README.md) | [Chineză (Tradițională, Macau)](../mo/README.md) | [Chineză (Tradițională, Hong Kong)](../hk/README.md) | [Chineză (Tradițională, Taiwan)](../tw/README.md) | [Japoneză](../ja/README.md) | [Coreeană](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepaleză](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portugheză (Portugalia)](../pt/README.md) | [Portugheză (Brazilia)](../br/README.md) | [Italiană](../it/README.md) | [Poloneză](../pl/README.md) | [Turcă](../tr/README.md) | [Greacă](../el/README.md) | [Thailandeză](../th/README.md) | [Suedeză](../sv/README.md) | [Daneză](../da/README.md) | [Norvegiană](../no/README.md) | [Finlandeză](../fi/README.md) | [Olandeză](../nl/README.md) | [Ebraică](../he/README.md) | [Vietnameză](../vi/README.md) | [Indoneziană](../id/README.md) | [Malayeză](../ms/README.md) | [Tagalog (Filipineză)](../tl/README.md) | [Swahili](../sw/README.md) | [Maghiară](../hu/README.md) | [Cehă](../cs/README.md) | [Slovacă](../sk/README.md) | [Română](./README.md) | [Bulgară](../bg/README.md) | [Sârbă (Chirilică)](../sr/README.md) | [Croată](../hr/README.md) | [Slovenă](../sl/README.md) | [Ucraineană](../uk/README.md) | [Birmaneză (Myanmar)](../my/README.md)
+[Franceză](../fr/README.md) | [Spaniolă](../es/README.md) | [Germană](../de/README.md) | [Rusă](../ru/README.md) | [Arabă](../ar/README.md) | [Persană (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chineză (Simplificată)](../zh/README.md) | [Chineză (Tradițională, Macau)](../mo/README.md) | [Chineză (Tradițională, Hong Kong)](../hk/README.md) | [Chineză (Tradițională, Taiwan)](../tw/README.md) | [Japoneză](../ja/README.md) | [Coreeană](../ko/README.md) | [Hindi](../hi/README.md) | [Bengaleză](../bn/README.md) | [Marathi](../mr/README.md) | [Nepaleză](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portugheză (Portugalia)](../pt/README.md) | [Portugheză (Brazilia)](../br/README.md) | [Italiană](../it/README.md) | [Poloneză](../pl/README.md) | [Turcă](../tr/README.md) | [Greacă](../el/README.md) | [Thailandeză](../th/README.md) | [Suedeză](../sv/README.md) | [Daneză](../da/README.md) | [Norvegiană](../no/README.md) | [Finlandeză](../fi/README.md) | [Olandeză](../nl/README.md) | [Ebraică](../he/README.md) | [Vietnameză](../vi/README.md) | [Indoneziană](../id/README.md) | [Malayeză](../ms/README.md) | [Tagalog (Filipineză)](../tl/README.md) | [Swahili](../sw/README.md) | [Maghiară](../hu/README.md) | [Cehă](../cs/README.md) | [Slovacă](../sk/README.md) | [Română](./README.md) | [Bulgară](../bg/README.md) | [Sârbă (Chirilică)](../sr/README.md) | [Croată](../hr/README.md) | [Slovenă](../sl/README.md) | [Ucraineană](../uk/README.md) | [Birmaneză (Myanmar)](../my/README.md)
 
 **Dacă dorești să fie suportate alte limbi, lista completă este disponibilă [aici](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Introducere
 
-Acest exemplu demonstrează cum să construiești și să implementezi un **server Model Context Protocol (MCP)** care oferă asistenților AI acces inteligent și securizat la datele de vânzări retail prin PostgreSQL. Proiectul evidențiază funcționalități de nivel enterprise, inclusiv **Row Level Security (RLS)**, **căutare semantică**, și **integrare Azure AI** pentru scenarii reale de analiză retail.
+Acest exemplu demonstrează cum să construiești și să implementezi un **server Model Context Protocol (MCP)** care oferă asistenților AI acces inteligent și securizat la datele de vânzări retail prin PostgreSQL. Proiectul evidențiază caracteristici de nivel enterprise, inclusiv **Row Level Security (RLS)**, **căutare semantică**, și **integrare Azure AI** pentru scenarii reale de analiză retail.
 
-**Utilizări Cheie:**
-- **Analiză de Vânzări Alimentată de AI**: Permite asistenților AI să interogheze și să analizeze datele de vânzări retail prin limbaj natural
-- **Acces Securizat Multi-Tenant**: Demonstrează implementarea Row Level Security unde managerii de magazin pot accesa doar datele magazinului lor
-- **Căutare Semantică de Produse**: Prezintă descoperirea produselor îmbunătățită cu AI folosind text embeddings
-- **Integrare Enterprise**: Ilustrează cum să integrezi servere MCP cu servicii Azure și baze de date PostgreSQL
+**Cazuri de utilizare cheie:**
+- **Analiză de vânzări bazată pe AI**: Permite asistenților AI să interogheze și să analizeze datele de vânzări retail prin limbaj natural
+- **Acces securizat multi-tenant**: Demonstrează implementarea Row Level Security unde managerii de magazin pot accesa doar datele magazinului lor
+- **Căutare semantică de produse**: Prezintă descoperirea produselor îmbunătățită cu AI folosind text embeddings
+- **Integrare enterprise**: Ilustrează cum să integrezi serverele MCP cu serviciile Azure și bazele de date PostgreSQL
 
 **Perfect pentru:**
 - Dezvoltatori care învață să construiască servere MCP cu integrare de baze de date
-- Ingineri de date care implementează soluții analitice securizate multi-tenant
+- Ingineri de date care implementează soluții de analiză securizată multi-tenant
 - Dezvoltatori de aplicații AI care lucrează cu date retail sau e-commerce
-- Oricine este interesat să combine asistenți AI cu baze de date enterprise
+- Oricine este interesat de combinarea asistenților AI cu baze de date enterprise
 
 ## Alătură-te Comunității Discord Azure AI Foundry
 Împărtășește experiențele tale despre MCP și cunoaște experții și grupurile de produse
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # Server MCP pentru Analiza Vânzărilor
 
-Un server Model Context Protocol (MCP) care oferă acces cuprinzător la baza de date de vânzări pentru afacerea Zava Retail DIY. Acest server permite asistenților AI să interogheze și să analizeze datele de vânzări retail printr-o interfață securizată și conștientă de schemă.
+Un server Model Context Protocol (MCP) care oferă acces complet la baza de date a vânzărilor pentru afacerea Zava Retail DIY. Acest server permite asistenților AI să interogheze și să analizeze datele de vânzări retail printr-o interfață securizată și conștientă de schemă.
 
 ## 📚 Ghid Complet de Implementare
 
-Pentru o analiză detaliată a modului în care această soluție este construită și cum să implementezi servere MCP similare, consultă **[Parcurgerea Exemplului](Sample_Walkthrough.md)**. Acest ghid oferă:
+Pentru o analiză detaliată a modului în care această soluție este construită și cum să implementezi servere MCP similare, vezi **[Parcurgerea Exemplului](Sample_Walkthrough.md)**. Acest ghid oferă:
 
 - **Analiză Arhitecturală**: Analiza componentelor și modele de design
 - **Construcție Pas cu Pas**: De la configurarea proiectului la implementare
@@ -68,7 +68,7 @@ Pentru o analiză detaliată a modului în care această soluție este construit
 - **Cele Mai Bune Practici**: Securitate, performanță și ghiduri de dezvoltare
 - **Depanare**: Probleme comune și soluții
 
-Perfect pentru dezvoltatori care doresc să înțeleagă detaliile implementării și să construiască soluții similare.
+Perfect pentru dezvoltatori care vor să înțeleagă detaliile implementării și să construiască soluții similare.
 
 ## 🤖 Ce este MCP (Model Context Protocol)?
 
@@ -78,7 +78,7 @@ Perfect pentru dezvoltatori care doresc să înțeleagă detaliile implementări
 - **Acces la Date în Timp Real**: Asistenții AI pot interoga baze de date și API-uri live
 - **Integrare Securizată**: Acces controlat cu autentificare și permisiuni  
 - **Extensibilitate Instrumente**: Adaugă capabilități personalizate asistenților AI
-- **Protocol Standardizat**: Funcționează pe diverse platforme și instrumente AI
+- **Protocol Standardizat**: Funcționează pe diferite platforme și instrumente AI
 
 ### Nou în MCP?
 
@@ -97,7 +97,7 @@ După ce înțelegi bazele, revino aici pentru a explora această implementare a
 
 ## 📚 Ghid Complet de Învățare: /walkthrough
 
-Acest repository include o **parcurgere completă în 12 module** care deconstruiește acest exemplu de server MCP retail în lecții pas cu pas. Parcurgerea transformă acest exemplu funcțional într-o resursă educațională cuprinzătoare, perfectă pentru dezvoltatori care doresc să înțeleagă cum să construiască servere MCP gata de producție cu integrare de baze de date.
+Acest repository include o **parcurgere completă în 12 module** care deconstruiește acest exemplu de server MCP retail în lecții pas cu pas. Parcurgerea transformă acest exemplu funcțional într-o resursă educațională perfectă pentru dezvoltatori care vor să înțeleagă cum să construiască servere MCP gata de producție cu integrare de baze de date.
 
 ### Ce Vei Învăța
 
@@ -117,21 +117,21 @@ Parcurgerea acoperă totul, de la concepte de bază MCP la implementare avansat�
 
 Parcurgerea urmează o structură progresivă de învățare, concepută pentru dezvoltatori de toate nivelurile:
 
-| Modul | Zonă de Focus | Descriere | Estimare Timp |
-|-------|---------------|-----------|---------------|
+| Modul | Domeniu de Focalizare | Descriere | Estimare Timp |
+|-------|-----------------------|-----------|---------------|
 | **[00-Introducere](walkthrough/00-Introduction/README.md)** | Fundament | Concepte MCP, studiu de caz Zava Retail, prezentare arhitectură | 30 minute |
 | **[01-Arhitectură](walkthrough/01-Architecture/README.md)** | Modele de Design | Arhitectură tehnică, design stratificat, componente sistem | 45 minute |
 | **[02-Securitate](walkthrough/02-Security/README.md)** | Securitate Enterprise | Autentificare Azure, Row Level Security, izolare multi-tenant | 60 minute |
-| **[03-Setup](walkthrough/03-Setup/README.md)** | Mediu | Configurare Docker, Azure CLI, configurare proiect, validare | 45 minute |
-| **[04-Bază de Date](walkthrough/04-Database/README.md)** | Strat de Date | Schema PostgreSQL, pgvector, politici RLS, date exemplu | 60 minute |
-| **[05-Server MCP](walkthrough/05-MCP-Server/README.md)** | Implementare de Bază | Framework FastMCP, integrare bază de date, management conexiuni | 90 minute |
+| **[03-Configurare](walkthrough/03-Setup/README.md)** | Mediu | Configurare Docker, Azure CLI, configurare proiect, validare | 45 minute |
+| **[04-Bază de Date](walkthrough/04-Database/README.md)** | Strat de Date | Schema PostgreSQL, pgvector, politici RLS, date de exemplu | 60 minute |
+| **[05-Server MCP](walkthrough/05-MCP-Server/README.md)** | Implementare de Bază | Framework FastMCP, integrare bază de date, gestionare conexiuni | 90 minute |
 | **[06-Instrumente](walkthrough/06-Tools/README.md)** | Dezvoltare Instrumente | Crearea de instrumente MCP, validare interogări, funcționalități business intelligence | 75 minute |
 | **[07-Căutare Semantică](walkthrough/07-Semantic-Search/README.md)** | Integrare AI | Embeddings Azure OpenAI, căutare vectorială, strategii de căutare hibridă | 60 minute |
 | **[08-Testare](walkthrough/08-Testing/README.md)** | Asigurarea Calității | Testare unitară, testare de integrare, testare performanță, depanare | 75 minute |
-| **[09-VS Code](walkthrough/09-VS-Code/README.md)** | Experiență Dezvoltare | Configurare VS Code, integrare AI Chat, fluxuri de lucru depanare | 45 minute |
+| **[09-VS Code](walkthrough/09-VS-Code/README.md)** | Experiență de Dezvoltare | Configurare VS Code, integrare AI Chat, fluxuri de lucru de depanare | 45 minute |
 | **[10-Implementare](walkthrough/10-Deployment/README.md)** | Gata de Producție | Containerizare, Azure Container Apps, pipeline-uri CI/CD, scalare | 90 minute |
-| **[11-Monitorizare](walkthrough/11-Monitoring/README.md)** | Observabilitate | Application Insights, logare structurată, metrici performanță | 60 minute |
-| **[12-Cele Mai Bune Practici](walkthrough/12-Best-Practices/README.md)** | Excelență în Producție | Întărirea securității, optimizare performanță, modele enterprise | 45 minute |
+| **[11-Monitorizare](walkthrough/11-Monitoring/README.md)** | Observabilitate | Application Insights, logare structurată, metrici de performanță | 60 minute |
+| **[12-Cele Mai Bune Practici](walkthrough/12-Best-Practices/README.md)** | Excelență în Producție | Întărirea securității, optimizarea performanței, modele enterprise | 45 minute |
 
 **Timp Total de Învățare**: ~12-15 ore de învățare practică cuprinzătoare
 
@@ -143,13 +143,13 @@ Parcurgerea urmează o structură progresivă de învățare, concepută pentru 
 3. Fiecare modul construiește pe conceptele anterioare și include exerciții practice
 
 **Pentru Dezvoltatori Experimentați**:
-1. Consultă [Prezentarea Generală a Parcurgerii](walkthrough/README.md) pentru un rezumat al modulelor
+1. Revizuiește [Prezentarea Generală a Parcurgerii](walkthrough/README.md) pentru un rezumat al modulelor
 2. Sari la modulele care te interesează (ex. Modulul 07 pentru integrarea AI)
 3. Folosește modulele individuale ca material de referință pentru propriile proiecte
 
 **Pentru Implementare în Producție**:
 1. Concentrează-te pe Modulele 02 (Securitate), 10 (Implementare) și 11 (Monitorizare)
-2. Consultă Modulul 12 (Cele Mai Bune Practici) pentru ghiduri enterprise
+2. Revizuiește Modulul 12 (Cele Mai Bune Practici) pentru ghiduri enterprise
 3. Folosește exemplele de cod ca șabloane gata de producție
 
 ### 🚀 Opțiuni de Start Rapid
@@ -169,7 +169,7 @@ cd walkthrough/03-Setup
 # Follow the setup guide and continue through implementation modules
 ```
 
-**Opțiunea 3: Focus pe Producție** (Implementare enterprise)
+**Opțiunea 3: Focalizare pe Producție** (Implementare enterprise)
 ```bash
 # Focus on production-ready aspects
 # Review modules: 02-Security, 10-Deployment, 11-Monitoring, 12-Best-Practices
@@ -177,13 +177,13 @@ cd walkthrough/03-Setup
 
 ### 📋 Cerințe preliminare pentru învățare
 
-**Fundament necesar recomandat**:
+**Fundamente recomandate**:
 - Experiență de bază în programarea Python
 - Familiaritate cu REST APIs și baze de date
 - Înțelegere generală a conceptelor AI/ML
 - Cunoștințe de bază despre linia de comandă și Docker
 
-**Nu este necesar (dar util)**:
+**Nu sunt necesare (dar utile)**:
 - Experiență anterioară cu MCP (acoperim acest aspect de la zero)
 - Experiență cu cloud-ul Azure (oferim ghidare pas cu pas)
 - Cunoștințe avansate de PostgreSQL (explicăm conceptele pe măsură ce sunt necesare)
@@ -201,7 +201,7 @@ cd walkthrough/03-Setup
 - **[MCP pentru începători](https://aka.ms/mcp-for-beginners)**: Lectură esențială de fundamente
 - **[Exemplu de prezentare](Sample_Walkthrough.md)**: Prezentare tehnică la nivel înalt
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Platforma cloud utilizată în exemple
-- **[Framework FastMCP](https://github.com/jlowin/fastmcp)**: Framework Python pentru implementarea MCP
+- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Framework Python pentru implementarea MCP
 
 **Ești gata să începi?** Începe cu **[Modulul 00: Introducere](walkthrough/00-Introduction/README.md)** sau explorează **[prezentarea completă](walkthrough/README.md)**.
 
@@ -210,7 +210,7 @@ cd walkthrough/03-Setup
 1. Docker Desktop instalat
 2. Git instalat
 3. **Azure CLI**: Instalează și autentifică-te cu Azure CLI
-4. Acces la modelul OpenAI `text-embedding-3-small` și opțional la modelul `gpt-4o-mini`.
+4. Acces la modelul OpenAI `text-embedding-3-small` și, opțional, modelul `gpt-4o-mini`.
 
 ## Începe
 
@@ -292,9 +292,9 @@ Următoarele presupun că vei folosi suportul integrat pentru server MCP din VS 
 2. Pornește unul sau mai multe servere MCP utilizând configurațiile din `.vscode/mcp.json`. Fișierul conține patru configurații diferite de server, fiecare reprezentând un rol diferit de manager de magazin:
 
    - Fiecare configurație folosește un ID unic de utilizator RLS (Row Level Security)
-   - Aceste ID-uri de utilizator simulează identități diferite de manageri de magazin care accesează baza de date
+   - Aceste ID-uri de utilizator simulează identități diferite ale managerilor de magazin care accesează baza de date
    - Sistemul RLS restricționează accesul la date pe baza magazinului atribuit managerului
-   - Acest lucru imită scenarii reale în care managerii de magazin se autentifică cu conturi Entra ID diferite
+   - Acest lucru imită scenarii reale în care managerii de magazin se autentifică cu conturi diferite Entra ID
 
     ```json
     {
@@ -342,7 +342,7 @@ Următoarele presupun că vei folosi suportul integrat pentru server MCP din VS 
 - **Acces la schema multi-tabel**: Recuperează schemele pentru mai multe tabele din baza de date într-o singură cerere
 - **Executare sigură a interogărilor**: Rulează interogări PostgreSQL cu suport pentru Row Level Security (RLS)
 - **Date în timp real**: Accesează date actuale despre vânzări, inventar și clienți
-- **Utilități de dată/oră**: Obține timestamp-uri UTC curente pentru analize sensibile la timp
+- **Utilități de dată/oră**: Obține timestamp-uri UTC actuale pentru analize sensibile la timp
 - **Implementare flexibilă**: Suportă modul server HTTP
 
 ## Tabele suportate
@@ -380,9 +380,9 @@ Rulează interogări PostgreSQL pe baza de date de vânzări cu suport pentru Ro
 
 **Returnează:** Rezultatele interogării formatate ca șir (limitate la 20 de rânduri pentru lizibilitate)
 
-**Cele mai bune practici**:
+**Cele mai bune practici:**
 
-- Recuperează mai întâi schemele tabelelor
+- Recuperează întotdeauna mai întâi schemele tabelelor
 - Folosește nume exacte de coloane din scheme
 - Alătură tabelele relevante pentru analize cuprinzătoare
 - Agregă rezultatele când este cazul
@@ -390,9 +390,9 @@ Rulează interogări PostgreSQL pe baza de date de vânzări cu suport pentru Ro
 
 ### `get_current_utc_date`
 
-Obține data și ora curentă UTC în format ISO.
+Obține data și ora UTC curentă în format ISO.
 
-**Returnează:** Data/ora curentă UTC în format ISO (YYYY-MM-DDTHH:MM:SS.fffffZ)
+**Returnează:** Data/ora UTC curentă în format ISO (YYYY-MM-DDTHH:MM:SS.fffffZ)
 
 ### `semantic_search_products`
 
@@ -410,7 +410,7 @@ Efectuează o căutare semantică pentru produse pe baza interogărilor utilizat
 
 ### Row Level Security (RLS)
 
-Serverul implementează Row Level Security pentru a asigura că utilizatorii accesează doar datele pe care sunt autorizați să le vadă:
+Serverul implementează Row Level Security pentru a se asigura că utilizatorii accesează doar datele pe care sunt autorizați să le vadă:
 
 - **Mod HTTP**: Folosește header-ul `x-rls-user-id` pentru identificarea utilizatorului care face cererea
 
@@ -434,11 +434,11 @@ Fiecare locație Zava Retail are un ID unic de utilizator RLS care determină ce
 
 #### Implementarea RLS
 
-Când un utilizator se conectează cu ID-ul de utilizator RLS al unui magazin specific, va vedea doar:
+Când un utilizator se conectează cu ID-ul de utilizator RLS al unui magazin specific, acesta va vedea doar:
 
-- Clienți asociați cu acel magazin
-- Comenzi plasate la locația acelui magazin
-- Date de inventar pentru acel magazin specific
+- Clienții asociați acelui magazin
+- Comenzile plasate la locația acelui magazin
+- Datele de inventar pentru acel magazin specific
 - Metrici de vânzări și performanță specifice magazinului
 
 Acest lucru asigură izolarea datelor între locațiile diferite ale magazinelor, menținând în același timp o schemă unificată a bazei de date.
@@ -451,7 +451,7 @@ Serverul folosește un context de aplicație gestionat cu:
 
 - **Pool de conexiuni la baza de date**: Gestionare eficientă a conexiunilor pentru modul HTTP
 - **Managementul ciclului de viață**: Curățare adecvată a resurselor la închidere
-- **Siguranță tipologică**: Context puternic tipizat cu dataclass-ul `AppContext`
+- **Siguranța tipurilor**: Context puternic tipizat cu dataclass-ul `AppContext`
 
 ### Contextul cererii
 
@@ -470,9 +470,9 @@ Serverul se integrează cu o bază de date PostgreSQL prin clasa `PostgreSQLSche
 
 ## Gestionarea erorilor
 
-Serverul implementează gestionarea robustă a erorilor:
+Serverul implementează o gestionare robustă a erorilor:
 
-- **Validarea tabelelor**: Asigură accesul doar la nume valide de tabele
+- **Validarea tabelelor**: Se asigură că sunt accesate doar nume valide de tabele
 - **Validarea interogărilor**: Validează interogările PostgreSQL înainte de execuție
 - **Managementul resurselor**: Curățare adecvată chiar și în timpul erorilor
 - **Mesaje prietenoase pentru utilizator**: Mesaje clare de eroare pentru depanare
@@ -480,10 +480,10 @@ Serverul implementează gestionarea robustă a erorilor:
 ## Considerații de securitate
 
 1. **Row Level Security**: Toate interogările respectă politicile RLS bazate pe identitatea utilizatorului
-2. **Izolarea datelor magazinului**: ID-ul de utilizator RLS al fiecărui magazin asigură acces doar la datele acelui magazin
+2. **Izolarea datelor magazinelor**: ID-ul de utilizator RLS al fiecărui magazin asigură acces doar la datele acelui magazin
 3. **Validarea input-ului**: Numele tabelelor și interogările sunt validate înainte de execuție
 4. **Limitarea resurselor**: Rezultatele interogărilor sunt limitate pentru a preveni utilizarea excesivă a resurselor
-5. **Securitatea conexiunilor**: Folosește practici sigure de conexiune la baza de date
+5. **Securitatea conexiunilor**: Folosește practici sigure de conectare la baza de date
 6. **Verificarea identității utilizatorului**: Asigură întotdeauna utilizarea corectă a ID-ului de utilizator RLS pentru locația magazinului dorit
 
 ### Note importante de securitate
@@ -530,4 +530,4 @@ Când contribui la acest server:
 ---
 
 **Declinare de responsabilitate**:  
-Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa natală ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa maternă ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T16:52:27+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T09:08:47+00:00",
   "source_file": "README.md",
   "language_code": "fr"
 }
@@ -34,101 +34,101 @@ Suivez ces étapes pour commencer à utiliser ces ressources :
 
 ## Introduction
 
-Cet exemple montre comment construire et déployer un serveur **Model Context Protocol (MCP)** complet qui offre aux assistants IA un accès intelligent et sécurisé aux données de ventes au détail via PostgreSQL. Le projet met en avant des fonctionnalités de niveau entreprise telles que la **sécurité au niveau des lignes (RLS)**, les **capacités de recherche sémantique**, et l'**intégration Azure AI** pour des scénarios d'analyse des ventes au détail.
+Cet exemple montre comment construire et déployer un **serveur Model Context Protocol (MCP)** complet qui fournit aux assistants IA un accès sécurisé et intelligent aux données de ventes au détail via PostgreSQL. Le projet met en avant des fonctionnalités de niveau entreprise, notamment la **sécurité au niveau des lignes (Row Level Security - RLS)**, des **capacités de recherche sémantique**, et l'**intégration avec Azure AI** pour des scénarios d'analyse des ventes au détail.
 
 **Cas d'utilisation clés :**
 - **Analyse des ventes alimentée par l'IA** : Permettre aux assistants IA de requêter et analyser les données de ventes au détail en langage naturel
 - **Accès sécurisé multi-locataires** : Démonstration de la mise en œuvre de la sécurité au niveau des lignes où différents responsables de magasin ne peuvent accéder qu'aux données de leur magasin
-- **Recherche sémantique de produits** : Présentation de la découverte de produits améliorée par l'IA grâce aux embeddings textuels
+- **Recherche sémantique de produits** : Présentation de la découverte de produits améliorée par l'IA à l'aide d'embeddings textuels
 - **Intégration d'entreprise** : Illustration de l'intégration des serveurs MCP avec les services Azure et les bases de données PostgreSQL
 
 **Idéal pour :**
 - Les développeurs apprenant à construire des serveurs MCP avec intégration de bases de données
-- Les ingénieurs en données mettant en œuvre des solutions d'analyse sécurisées multi-locataires
+- Les ingénieurs de données mettant en œuvre des solutions d'analyse sécurisées multi-locataires
 - Les développeurs d'applications IA travaillant avec des données de vente au détail ou de commerce électronique
 - Toute personne intéressée par la combinaison d'assistants IA avec des bases de données d'entreprise
 
 ## Rejoignez la communauté Discord Azure AI Foundry
 Partagez vos expériences avec MCP et rencontrez des experts et des groupes de produits
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-# Serveur MCP d'analyse des ventes
+# Serveur MCP pour l'analyse des ventes
 
-Un serveur Model Context Protocol (MCP) qui offre un accès complet à une base de données de ventes clients pour l'entreprise Zava Retail DIY. Ce serveur permet aux assistants IA de requêter et analyser les données de ventes au détail via une interface sécurisée et consciente du schéma.
+Un serveur Model Context Protocol (MCP) qui fournit un accès complet à une base de données de ventes clients pour l'activité Zava Retail DIY. Ce serveur permet aux assistants IA de requêter et analyser les données de ventes au détail via une interface sécurisée et consciente du schéma.
 
-## 📚 Guide de mise en œuvre complet
+## 📚 Guide d'implémentation complet
 
-Pour une analyse détaillée de la construction de cette solution et de la mise en œuvre de serveurs MCP similaires, consultez notre **[Guide de l'exemple](Sample_Walkthrough.md)**. Ce guide fournit :
+Pour une explication détaillée de la construction de cette solution et de la mise en œuvre de serveurs MCP similaires, consultez notre **[Guide détaillé de l'exemple](Sample_Walkthrough.md)**. Ce guide propose :
 
 - **Analyse de l'architecture** : Analyse des composants et des modèles de conception
 - **Construction étape par étape** : De la configuration du projet au déploiement
-- **Explication du code** : Détails sur la mise en œuvre du serveur MCP
+- **Explication du code** : Détails sur l'implémentation du serveur MCP
 - **Fonctionnalités avancées** : Sécurité au niveau des lignes, recherche sémantique et surveillance
-- **Bonnes pratiques** : Sécurité, performance et directives de développement
+- **Bonnes pratiques** : Conseils sur la sécurité, les performances et le développement
 - **Dépannage** : Problèmes courants et solutions
 
-Idéal pour les développeurs souhaitant comprendre les détails de la mise en œuvre et construire des solutions similaires.
+Idéal pour les développeurs souhaitant comprendre les détails de l'implémentation et construire des solutions similaires.
 
 ## 🤖 Qu'est-ce que MCP (Model Context Protocol) ?
 
-Le **Model Context Protocol (MCP)** est une norme ouverte qui permet aux assistants IA d'accéder en toute sécurité à des sources de données externes et des outils en temps réel. Pensez-y comme un pont permettant aux modèles IA de se connecter à des bases de données, des API, des systèmes de fichiers et d'autres ressources tout en maintenant la sécurité et le contrôle.
+Le **Model Context Protocol (MCP)** est une norme ouverte qui permet aux assistants IA d'accéder en toute sécurité à des sources de données et outils externes en temps réel. Pensez-y comme un pont permettant aux modèles IA de se connecter à des bases de données, des API, des systèmes de fichiers et d'autres ressources tout en maintenant la sécurité et le contrôle.
 
-### Avantages clés :
-- **Accès aux données en temps réel** : Les assistants IA peuvent interroger des bases de données et des API en direct
+### Principaux avantages :
+- **Accès aux données en temps réel** : Les assistants IA peuvent interroger des bases de données et API en direct
 - **Intégration sécurisée** : Accès contrôlé avec authentification et permissions  
 - **Extensibilité des outils** : Ajout de capacités personnalisées aux assistants IA
-- **Protocole standardisé** : Fonctionne avec différentes plateformes et outils IA
+- **Protocole standardisé** : Fonctionne sur différentes plateformes et outils IA
 
 ### Nouveau sur MCP ?
 
-Si vous découvrez le Model Context Protocol, nous vous recommandons de commencer par les ressources pour débutants de Microsoft :
+Si vous débutez avec le Model Context Protocol, nous vous recommandons de commencer par les ressources complètes pour débutants de Microsoft :
 
 **📖 [Guide MCP pour débutants](https://aka.ms/mcp-for-beginners)**
 
-Cette ressource fournit :
-- Introduction aux concepts et à l'architecture MCP
-- Tutoriels étape par étape pour construire votre premier serveur MCP
+Cette ressource propose :
+- Introduction aux concepts et à l'architecture de MCP
+- Tutoriels pas à pas pour construire votre premier serveur MCP
 - Bonnes pratiques pour le développement MCP
 - Exemples d'intégration avec des plateformes IA populaires
 - Ressources communautaires et support
 
-Une fois que vous maîtrisez les bases, revenez ici pour explorer cette mise en œuvre avancée d'analyse des ventes au détail !
+Une fois que vous maîtrisez les bases, revenez ici pour explorer cette implémentation avancée d'analyse des ventes au détail !
 
 ## 📚 Guide d'apprentissage complet : /walkthrough
 
-Ce dépôt inclut un **parcours d'apprentissage en 12 modules** qui décompose cet exemple de serveur MCP pour le commerce de détail en leçons digestes et étape par étape. Le parcours transforme cet exemple fonctionnel en une ressource éducative complète, idéale pour les développeurs souhaitant comprendre comment construire des serveurs MCP prêts pour la production avec intégration de bases de données.
+Ce dépôt inclut un **parcours d'apprentissage en 12 modules** qui décompose cet exemple de serveur MCP pour le commerce de détail en leçons digestes et progressives. Ce parcours transforme cet exemple fonctionnel en une ressource éducative complète, idéale pour les développeurs souhaitant comprendre comment construire des serveurs MCP prêts pour la production avec intégration de bases de données.
 
 ### Ce que vous apprendrez
 
-Le parcours couvre tout, des concepts de base MCP au déploiement avancé en production, y compris :
+Le parcours couvre tout, des concepts de base de MCP au déploiement avancé en production, notamment :
 
-- **Fondamentaux MCP** : Comprendre le Model Context Protocol et ses applications réelles
-- **Intégration de bases de données** : Mise en œuvre d'une connectivité PostgreSQL sécurisée avec sécurité au niveau des lignes
+- **Fondamentaux de MCP** : Comprendre le Model Context Protocol et ses applications concrètes
+- **Intégration de bases de données** : Mise en œuvre d'une connectivité PostgreSQL sécurisée avec Row Level Security
 - **Fonctionnalités améliorées par l'IA** : Ajout de capacités de recherche sémantique avec les embeddings Azure OpenAI
 - **Mise en œuvre de la sécurité** : Authentification, autorisation et isolation des données de niveau entreprise
-- **Développement d'outils** : Construction d'outils MCP sophistiqués pour l'analyse des données et l'intelligence d'affaires
+- **Développement d'outils** : Création d'outils MCP sophistiqués pour l'analyse des données et l'intelligence d'affaires
 - **Tests et débogage** : Stratégies de test complètes et techniques de débogage
-- **Intégration VS Code** : Configuration de l'IA Chat pour des requêtes de bases de données en langage naturel
-- **Déploiement en production** : Conteneurisation, mise à l'échelle et stratégies de déploiement cloud
+- **Intégration avec VS Code** : Configuration d'AI Chat pour des requêtes de bases de données en langage naturel
+- **Déploiement en production** : Conteneurisation, mise à l'échelle et stratégies de déploiement dans le cloud
 - **Surveillance et observabilité** : Application Insights, journalisation et surveillance des performances
 
 ### Aperçu du parcours d'apprentissage
 
-Le parcours suit une structure progressive conçue pour les développeurs de tous niveaux :
+Le parcours suit une structure d'apprentissage progressive conçue pour les développeurs de tous niveaux :
 
-| Module | Domaine d'intérêt | Description | Estimation de temps |
-|--------|-------------------|-------------|---------------------|
+| Module | Domaine d'intérêt | Description | Temps estimé |
+|--------|--------------------|-------------|--------------|
 | **[00-Introduction](walkthrough/00-Introduction/README.md)** | Fondations | Concepts MCP, étude de cas Zava Retail, aperçu de l'architecture | 30 minutes |
 | **[01-Architecture](walkthrough/01-Architecture/README.md)** | Modèles de conception | Architecture technique, conception en couches, composants système | 45 minutes |
-| **[02-Sécurité](walkthrough/02-Security/README.md)** | Sécurité d'entreprise | Authentification Azure, sécurité au niveau des lignes, isolation multi-locataires | 60 minutes |
+| **[02-Sécurité](walkthrough/02-Security/README.md)** | Sécurité d'entreprise | Authentification Azure, Row Level Security, isolation multi-locataires | 60 minutes |
 | **[03-Configuration](walkthrough/03-Setup/README.md)** | Environnement | Configuration Docker, CLI Azure, configuration du projet, validation | 45 minutes |
 | **[04-Base de données](walkthrough/04-Database/README.md)** | Couche de données | Schéma PostgreSQL, pgvector, politiques RLS, données d'exemple | 60 minutes |
-| **[05-Serveur MCP](walkthrough/05-MCP-Server/README.md)** | Mise en œuvre principale | Framework FastMCP, intégration de bases de données, gestion des connexions | 90 minutes |
+| **[05-Serveur MCP](walkthrough/05-MCP-Server/README.md)** | Implémentation principale | Framework FastMCP, intégration de bases de données, gestion des connexions | 90 minutes |
 | **[06-Outils](walkthrough/06-Tools/README.md)** | Développement d'outils | Création d'outils MCP, validation des requêtes, fonctionnalités d'intelligence d'affaires | 75 minutes |
 | **[07-Recherche sémantique](walkthrough/07-Semantic-Search/README.md)** | Intégration IA | Embeddings Azure OpenAI, recherche vectorielle, stratégies de recherche hybride | 60 minutes |
 | **[08-Tests](walkthrough/08-Testing/README.md)** | Assurance qualité | Tests unitaires, tests d'intégration, tests de performance, débogage | 75 minutes |
-| **[09-VS Code](walkthrough/09-VS-Code/README.md)** | Expérience de développement | Configuration VS Code, intégration IA Chat, workflows de débogage | 45 minutes |
+| **[09-VS Code](walkthrough/09-VS-Code/README.md)** | Expérience de développement | Configuration de VS Code, intégration AI Chat, workflows de débogage | 45 minutes |
 | **[10-Déploiement](walkthrough/10-Deployment/README.md)** | Prêt pour la production | Conteneurisation, Azure Container Apps, pipelines CI/CD, mise à l'échelle | 90 minutes |
 | **[11-Surveillance](walkthrough/11-Monitoring/README.md)** | Observabilité | Application Insights, journalisation structurée, métriques de performance | 60 minutes |
 | **[12-Bonnes pratiques](walkthrough/12-Best-Practices/README.md)** | Excellence en production | Renforcement de la sécurité, optimisation des performances, modèles d'entreprise | 45 minutes |
@@ -138,13 +138,13 @@ Le parcours suit une structure progressive conçue pour les développeurs de tou
 ### 🎯 Comment utiliser le parcours
 
 **Pour les débutants** :
-1. Commencez par [Module 00 : Introduction](walkthrough/00-Introduction/README.md) pour comprendre les fondamentaux MCP
+1. Commencez par le [Module 00 : Introduction](walkthrough/00-Introduction/README.md) pour comprendre les bases de MCP
 2. Suivez les modules dans l'ordre pour une expérience d'apprentissage complète
 3. Chaque module s'appuie sur les concepts précédents et inclut des exercices pratiques
 
 **Pour les développeurs expérimentés** :
-1. Consultez le [Résumé principal du parcours](walkthrough/README.md) pour un aperçu des modules
-2. Passez directement aux modules qui vous intéressent (par exemple, Module 07 pour l'intégration IA)
+1. Consultez l'[Aperçu principal du parcours](walkthrough/README.md) pour un résumé complet des modules
+2. Passez directement aux modules qui vous intéressent (par ex., Module 07 pour l'intégration IA)
 3. Utilisez les modules individuels comme matériel de référence pour vos propres projets
 
 **Pour une mise en œuvre en production** :
@@ -154,27 +154,27 @@ Le parcours suit une structure progressive conçue pour les développeurs de tou
 
 ### 🚀 Options de démarrage rapide
 
-**Option 1 : Parcours complet** (Recommandé pour les nouveaux)
+**Option 1 : Parcours complet d'apprentissage** (Recommandé pour les nouveaux venus)  
 ```bash
 # Clone and start with the introduction
 git clone https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.git
 cd MCP-Server-and-PostgreSQL-Sample-Retail/walkthrough
 # Follow along starting with 00-Introduction/README.md
 ```
-
-**Option 2 : Mise en œuvre pratique** (Commencez directement à construire)
+  
+**Option 2 : Implémentation pratique** (Passez directement à la construction)  
 ```bash
 # Start with setup and build as you learn
 cd walkthrough/03-Setup
 # Follow the setup guide and continue through implementation modules
 ```
-
-**Option 3 : Focus sur la production** (Déploiement d'entreprise)
+  
+**Option 3 : Focalisation sur la production** (Déploiement d'entreprise)  
 ```bash
 # Focus on production-ready aspects
 # Review modules: 02-Security, 10-Deployment, 11-Monitoring, 12-Best-Practices
 ```
-
+  
 ### 📋 Prérequis pour l'apprentissage
 
 **Connaissances recommandées** :
@@ -199,11 +199,11 @@ cd walkthrough/03-Setup
 ### 🔗 Ressources associées
 
 - **[MCP pour débutants](https://aka.ms/mcp-for-beginners)** : Lecture essentielle pour les bases
-- **[Exemple de présentation](Sample_Walkthrough.md)** : Aperçu technique de haut niveau
+- **[Exemple de parcours](Sample_Walkthrough.md)** : Aperçu technique de haut niveau
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)** : Plateforme cloud utilisée dans les exemples
 - **[Framework FastMCP](https://github.com/jlowin/fastmcp)** : Framework Python pour l'implémentation MCP
 
-**Prêt à commencer ?** Débutez avec **[Module 00 : Introduction](walkthrough/00-Introduction/README.md)** ou explorez **[l'aperçu complet du guide](walkthrough/README.md)**.
+**Prêt à commencer ?** Débutez avec **[Module 00 : Introduction](walkthrough/00-Introduction/README.md)** ou explorez **[l'aperçu complet du parcours](walkthrough/README.md)**.
 
 ## Prérequis
 
@@ -258,7 +258,7 @@ cd infra && ./deploy.sh
 
 ## Exécution du serveur MCP
 
-La manière la plus simple d'exécuter l'ensemble complet (PostgreSQL + serveur MCP) est d'utiliser Docker Compose :
+La manière la plus simple d'exécuter l'ensemble de la pile (PostgreSQL + serveur MCP) est d'utiliser Docker Compose :
 
 ### Démarrer la pile
 
@@ -294,7 +294,7 @@ Les étapes suivantes supposent que vous utiliserez le support intégré du serv
    - Chaque configuration utilise un ID utilisateur RLS (Row Level Security) unique
    - Ces ID utilisateurs simulent différentes identités de gestionnaires de magasin accédant à la base de données
    - Le système RLS limite l'accès aux données en fonction du magasin assigné au gestionnaire
-   - Cela imite des scénarios réels où les gestionnaires de magasin se connectent avec différents comptes Entra ID
+   - Cela reflète des scénarios réels où les gestionnaires de magasin se connectent avec différents comptes Entra ID
 
     ```json
     {
@@ -328,13 +328,13 @@ Les étapes suivantes supposent que vous utiliserez le support intégré du serv
 
 1. Activez le mode Chat AI dans VS Code
 2. Tapez **#zava** et sélectionnez l'un des serveurs MCP que vous avez démarrés
-3. Posez des questions sur les données de ventes - Voir les exemples de requêtes ci-dessous
+3. Posez des questions sur les données de vente - Voir les exemples de requêtes ci-dessous
 
 ### Exemples de requêtes
 
 1. Affichez les 20 produits les plus vendus par chiffre d'affaires
 1. Affichez les ventes par magasin
-1. Quelles ont été les ventes du dernier trimestre par catégorie ?
+1. Quels ont été les ventes du dernier trimestre par catégorie ?
 1. Quels produits vendons-nous qui sont similaires à "conteneurs pour peinture" ?
 
 ## Fonctionnalités
@@ -364,23 +364,23 @@ Le serveur fournit un accès aux tables de base de données suivantes du commerc
 
 Récupérez les schémas de base de données pour plusieurs tables en une seule requête.
 
-**Paramètres :**
+**Paramètres** :
 
 - `table_names` (list[str]) : Liste des noms de tables valides parmi les tables prises en charge ci-dessus
 
-**Retourne :** Chaînes de schéma concaténées pour les tables demandées
+**Retourne** : Chaînes de schéma concaténées pour les tables demandées
 
 ### `execute_sales_query`
 
 Exécutez des requêtes PostgreSQL sur la base de données de ventes avec prise en charge de la sécurité au niveau des lignes.
 
-**Paramètres :**
+**Paramètres** :
 
 - `postgresql_query` (str) : Une requête PostgreSQL bien formée
 
-**Retourne :** Résultats de la requête formatés en chaîne (limités à 20 lignes pour une meilleure lisibilité)
+**Retourne** : Résultats de la requête formatés en chaîne (limités à 20 lignes pour une meilleure lisibilité)
 
-**Bonnes pratiques :**
+**Bonnes pratiques** :
 
 - Récupérez toujours les schémas de table en premier
 - Utilisez les noms de colonnes exacts des schémas
@@ -392,19 +392,19 @@ Exécutez des requêtes PostgreSQL sur la base de données de ventes avec prise 
 
 Obtenez la date et l'heure UTC actuelles au format ISO.
 
-**Retourne :** Date/heure UTC actuelle au format ISO (AAAA-MM-JJTHH:MM:SS.fffffZ)
+**Retourne** : Date/heure UTC actuelle au format ISO (YYYY-MM-DDTHH:MM:SS.fffffZ)
 
 ### `semantic_search_products`
 
 Effectuez une recherche sémantique de produits basée sur les requêtes des utilisateurs.
 
-**Retourne :** Une liste de produits correspondant aux critères de recherche
+**Retourne** : Une liste de produits correspondant aux critères de recherche
 
-**Paramètres :**
+**Paramètres** :
 
 - `query` (str) : La chaîne de requête de recherche
 
-**Retourne :** Une liste de produits correspondant aux critères de recherche
+**Retourne** : Une liste de produits correspondant aux critères de recherche
 
 ## Fonctionnalités de sécurité
 
@@ -418,7 +418,7 @@ Le serveur implémente la sécurité au niveau des lignes pour garantir que les 
 
 #### ID utilisateur RLS spécifiques aux magasins
 
-Chaque emplacement de magasin Zava Retail possède un ID utilisateur RLS unique qui détermine les données auxquelles l'utilisateur peut accéder :
+Chaque emplacement de magasin Zava Retail possède un ID utilisateur RLS unique qui détermine les données accessibles par l'utilisateur :
 
 | Emplacement du magasin | ID utilisateur RLS | Description |
 |------------------------|--------------------|-------------|
@@ -437,7 +437,7 @@ Chaque emplacement de magasin Zava Retail possède un ID utilisateur RLS unique 
 Lorsqu'un utilisateur se connecte avec l'ID utilisateur RLS d'un magasin spécifique, il ne verra que :
 
 - Les clients associés à ce magasin
-- Les commandes passées à cet emplacement de magasin
+- Les commandes passées dans ce magasin
 - Les données d'inventaire pour ce magasin spécifique
 - Les métriques de ventes et de performance spécifiques au magasin
 

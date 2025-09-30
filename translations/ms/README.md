@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T22:40:49+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T10:05:12+00:00",
   "source_file": "README.md",
   "language_code": "ms"
 }
@@ -30,20 +30,20 @@ Ikuti langkah-langkah ini untuk mula menggunakan sumber ini:
 
 [Perancis](../fr/README.md) | [Sepanyol](../es/README.md) | [Jerman](../de/README.md) | [Rusia](../ru/README.md) | [Arab](../ar/README.md) | [Parsi (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Cina (Ringkas)](../zh/README.md) | [Cina (Tradisional, Macau)](../mo/README.md) | [Cina (Tradisional, Hong Kong)](../hk/README.md) | [Cina (Tradisional, Taiwan)](../tw/README.md) | [Jepun](../ja/README.md) | [Korea](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portugis (Portugal)](../pt/README.md) | [Portugis (Brazil)](../br/README.md) | [Itali](../it/README.md) | [Poland](../pl/README.md) | [Turki](../tr/README.md) | [Yunani](../el/README.md) | [Thai](../th/README.md) | [Sweden](../sv/README.md) | [Denmark](../da/README.md) | [Norway](../no/README.md) | [Finland](../fi/README.md) | [Belanda](../nl/README.md) | [Ibrani](../he/README.md) | [Vietnam](../vi/README.md) | [Indonesia](../id/README.md) | [Melayu](./README.md) | [Tagalog (Filipina)](../tl/README.md) | [Swahili](../sw/README.md) | [Hungary](../hu/README.md) | [Czech](../cs/README.md) | [Slovak](../sk/README.md) | [Romania](../ro/README.md) | [Bulgaria](../bg/README.md) | [Serbia (Cyrillic)](../sr/README.md) | [Croatia](../hr/README.md) | [Slovenia](../sl/README.md) | [Ukraine](../uk/README.md) | [Burma (Myanmar)](../my/README.md)
 
-**Jika anda ingin menambah sokongan bahasa lain, senarai bahasa yang disokong boleh didapati [di sini](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Jika anda ingin menambah sokongan bahasa tambahan, senarai bahasa yang disokong boleh didapati [di sini](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Pengenalan
 
-Contoh ini menunjukkan cara membina dan melancarkan **pelayan Model Context Protocol (MCP)** yang menyediakan pembantu AI akses pintar dan selamat kepada data jualan runcit melalui PostgreSQL. Projek ini mempamerkan ciri-ciri peringkat perusahaan termasuk **Row Level Security (RLS)**, **keupayaan carian semantik**, dan **integrasi Azure AI** untuk senario analitik runcit dunia sebenar.
+Contoh ini menunjukkan cara membina dan melancarkan **pelayan Model Context Protocol (MCP)** yang menyediakan pembantu AI dengan akses pintar dan selamat kepada data jualan runcit melalui PostgreSQL. Projek ini mempamerkan ciri-ciri peringkat perusahaan termasuk **Row Level Security (RLS)**, **keupayaan carian semantik**, dan **integrasi Azure AI** untuk senario analitik runcit dunia sebenar.
 
 **Kes Penggunaan Utama:**
 - **Analitik Jualan Berkuasa AI**: Membolehkan pembantu AI membuat pertanyaan dan menganalisis data jualan runcit melalui bahasa semula jadi
-- **Akses Multi-Tenant Selamat**: Menunjukkan pelaksanaan Row Level Security di mana pengurus kedai yang berbeza hanya boleh mengakses data kedai mereka
+- **Akses Multi-Tenant yang Selamat**: Menunjukkan pelaksanaan Row Level Security di mana pengurus kedai yang berbeza hanya boleh mengakses data kedai mereka
 - **Carian Produk Semantik**: Memperlihatkan penemuan produk yang dipertingkatkan AI menggunakan teks embedding
 - **Integrasi Perusahaan**: Menunjukkan cara mengintegrasikan pelayan MCP dengan perkhidmatan Azure dan pangkalan data PostgreSQL
 
 **Sesuai untuk:**
-- Pembangun yang ingin belajar membina pelayan MCP dengan integrasi pangkalan data
+- Pembangun yang belajar membina pelayan MCP dengan integrasi pangkalan data
 - Jurutera data yang melaksanakan penyelesaian analitik multi-tenant yang selamat
 - Pembangun aplikasi AI yang bekerja dengan data runcit atau e-dagang
 - Sesiapa yang berminat menggabungkan pembantu AI dengan pangkalan data perusahaan
@@ -51,7 +51,7 @@ Contoh ini menunjukkan cara membina dan melancarkan **pelayan Model Context Prot
 ## Sertai Komuniti Discord Azure AI Foundry
 Kongsi pengalaman anda tentang MCP dan berhubung dengan pakar serta kumpulan produk
 
-[![Discord Azure AI](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # Pelayan MCP Analisis Jualan
 
@@ -72,9 +72,9 @@ Sesuai untuk pembangun yang ingin memahami butiran pelaksanaan dan membina penye
 
 ## 🤖 Apa itu MCP (Model Context Protocol)?
 
-**Model Context Protocol (MCP)** adalah standard terbuka yang membolehkan pembantu AI mengakses sumber data dan alat luaran dengan selamat dalam masa nyata. Ia berfungsi sebagai jambatan yang membolehkan model AI berhubung dengan pangkalan data, API, sistem fail, dan sumber lain sambil mengekalkan keselamatan dan kawalan.
+**Model Context Protocol (MCP)** adalah standard terbuka yang membolehkan pembantu AI mengakses sumber data luaran dan alat dengan selamat dalam masa nyata. Ia berfungsi sebagai jambatan yang membolehkan model AI berhubung dengan pangkalan data, API, sistem fail, dan sumber lain sambil mengekalkan keselamatan dan kawalan.
 
-### Manfaat Utama:
+### Faedah Utama:
 - **Akses Data Masa Nyata**: Pembantu AI boleh membuat pertanyaan kepada pangkalan data dan API secara langsung
 - **Integrasi Selamat**: Akses terkawal dengan pengesahan dan kebenaran  
 - **Kebolehlanjutan Alat**: Tambah keupayaan tersuai kepada pembantu AI
@@ -82,7 +82,7 @@ Sesuai untuk pembangun yang ingin memahami butiran pelaksanaan dan membina penye
 
 ### Baru dengan MCP?
 
-Jika anda baru dengan Model Context Protocol, kami mengesyorkan bermula dengan sumber pemula Microsoft yang komprehensif:
+Jika anda baru dengan Model Context Protocol, kami mengesyorkan bermula dengan sumber pemula komprehensif Microsoft:
 
 **📖 [Panduan MCP untuk Pemula](https://aka.ms/mcp-for-beginners)**
 
@@ -101,7 +101,7 @@ Repositori ini termasuk **panduan pembelajaran 12 modul lengkap** yang memecahka
 
 ### Apa yang Akan Anda Pelajari
 
-Panduan ini merangkumi segalanya dari konsep asas MCP hingga pelancaran pengeluaran lanjutan, termasuk:
+Panduan ini merangkumi segala-galanya daripada konsep asas MCP hingga pelancaran pengeluaran lanjutan, termasuk:
 
 - **Asas MCP**: Memahami Model Context Protocol dan aplikasinya dalam dunia sebenar
 - **Integrasi Pangkalan Data**: Melaksanakan sambungan PostgreSQL yang selamat dengan Row Level Security
@@ -115,7 +115,7 @@ Panduan ini merangkumi segalanya dari konsep asas MCP hingga pelancaran pengelua
 
 ### Gambaran Keseluruhan Laluan Pembelajaran
 
-Panduan ini mengikuti struktur pembelajaran progresif yang direka untuk pembangun dari semua tahap kemahiran:
+Panduan ini mengikuti struktur pembelajaran progresif yang direka untuk pembangun dari semua peringkat kemahiran:
 
 | Modul | Kawasan Fokus | Penerangan | Anggaran Masa |
 |-------|---------------|------------|---------------|
@@ -177,18 +177,18 @@ cd walkthrough/03-Setup
 
 ### 📋 Prasyarat Pembelajaran
 
-**Latar Belakang Disyorkan**:
+**Latar Belakang Disarankan**:
 - Pengalaman asas dalam pengaturcaraan Python
 - Kefahaman tentang REST API dan pangkalan data
 - Pemahaman umum tentang konsep AI/ML
 - Pengetahuan asas tentang baris perintah dan Docker
 
 **Tidak Diperlukan (tetapi berguna)**:
-- Pengalaman MCP sebelumnya (kami akan menerangkan dari awal)
+- Pengalaman MCP sebelumnya (kami akan mengajar dari awal)
 - Pengalaman dengan Azure cloud (kami menyediakan panduan langkah demi langkah)
 - Pengetahuan lanjutan tentang PostgreSQL (kami akan menerangkan konsep yang diperlukan)
 
-### 💡 Petua Pembelajaran
+### 💡 Tip Pembelajaran
 
 1. **Pendekatan Praktikal**: Setiap modul mengandungi contoh kod yang boleh dijalankan dan diubah suai
 2. **Kerumitan Secara Berperingkat**: Konsep dibina secara beransur-ansur daripada mudah kepada kompleks
@@ -201,7 +201,7 @@ cd walkthrough/03-Setup
 - **[MCP untuk Pemula](https://aka.ms/mcp-for-beginners)**: Bacaan latar belakang penting
 - **[Panduan Contoh](Sample_Walkthrough.md)**: Gambaran teknikal peringkat tinggi
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Platform cloud yang digunakan dalam contoh
-- **[Kerangka FastMCP](https://github.com/jlowin/fastmcp)**: Kerangka pelaksanaan MCP Python
+- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Kerangka pelaksanaan MCP Python
 
 **Sedia untuk mula belajar?** Mulakan dengan **[Modul 00: Pengenalan](walkthrough/00-Introduction/README.md)** atau terokai **[gambaran keseluruhan panduan lengkap](walkthrough/README.md)**.
 
@@ -289,7 +289,7 @@ Berikut mengandaikan anda akan menggunakan sokongan pelayan MCP terbina dalam VS
     code .
     ```
 
-2. Mulakan satu atau lebih pelayan MCP menggunakan konfigurasi dalam `.vscode/mcp.json`. Fail ini mengandungi empat konfigurasi pelayan yang berbeza, masing-masing mewakili peranan pengurus kedai yang berbeza:
+2. Mulakan satu atau lebih pelayan MCP menggunakan konfigurasi dalam `.vscode/mcp.json`. Fail ini mengandungi empat konfigurasi pelayan yang berbeza, setiap satu mewakili peranan pengurus kedai yang berbeza:
 
    - Setiap konfigurasi menggunakan ID pengguna RLS (Row Level Security) yang unik
    - ID pengguna ini mensimulasikan identiti pengurus kedai yang berbeza mengakses pangkalan data
@@ -328,13 +328,13 @@ Berikut mengandaikan anda akan menggunakan sokongan pelayan MCP terbina dalam VS
 
 1. Buka mod AI Chat dalam VS Code
 2. Taip **#zava** dan pilih salah satu pelayan MCP yang anda mulakan
-3. Ajukan soalan tentang data jualan - Lihat contoh pertanyaan di bawah
+3. Tanyakan soalan tentang data jualan - Lihat contoh pertanyaan di bawah
 
 ### Contoh Pertanyaan
 
-1. Tunjukkan 20 produk teratas berdasarkan hasil jualan
+1. Tunjukkan 20 produk teratas mengikut hasil jualan
 1. Tunjukkan jualan mengikut kedai
-1. Apakah jualan suku tahun lepas mengikut kategori?
+1. Apakah jualan suku terakhir mengikut kategori?
 1. Apakah produk yang kami jual yang serupa dengan "bekas untuk cat"
 
 ## Ciri-ciri
@@ -352,7 +352,7 @@ Pelayan menyediakan akses kepada jadual pangkalan data runcit berikut:
 - `retail.customers` - Maklumat dan profil pelanggan
 - `retail.stores` - Lokasi dan butiran kedai
 - `retail.categories` - Kategori produk dan hierarki
-- `retail.product_types` - Pengelasan jenis produk
+- `retail.product_types` - Klasifikasi jenis produk
 - `retail.products` - Katalog produk dan spesifikasi
 - `retail.orders` - Pesanan pelanggan dan transaksi
 - `retail.order_items` - Item individu dalam pesanan
@@ -378,7 +378,7 @@ Jalankan pertanyaan PostgreSQL terhadap pangkalan data jualan dengan Row Level S
 
 - `postgresql_query` (str): Pertanyaan PostgreSQL yang dibentuk dengan baik
 
-**Pulangan:** Hasil pertanyaan yang diformatkan sebagai rentetan (dihadkan kepada 20 baris untuk kemudahan pembacaan)
+**Pulangan:** Hasil pertanyaan yang diformatkan sebagai rentetan (dihadkan kepada 20 baris untuk kebolehbacaan)
 
 **Amalan Terbaik:**
 
@@ -386,7 +386,7 @@ Jalankan pertanyaan PostgreSQL terhadap pangkalan data jualan dengan Row Level S
 - Gunakan nama lajur yang tepat daripada skema
 - Gabungkan jadual berkaitan untuk analisis yang komprehensif
 - Agregatkan hasil apabila sesuai
-- Hadkan output untuk kemudahan pembacaan
+- Hadkan output untuk kebolehbacaan
 
 ### `get_current_utc_date`
 
@@ -434,7 +434,7 @@ Setiap lokasi kedai Zava Retail mempunyai ID pengguna RLS yang unik yang menentu
 
 #### Pelaksanaan RLS
 
-Apabila pengguna menyambung dengan ID Pengguna RLS kedai tertentu, mereka hanya akan melihat:
+Apabila pengguna berhubung dengan ID Pengguna RLS kedai tertentu, mereka hanya akan melihat:
 
 - Pelanggan yang dikaitkan dengan kedai tersebut
 - Pesanan yang dibuat di lokasi kedai tersebut
@@ -489,9 +489,9 @@ Pelayan melaksanakan pengendalian ralat yang kukuh:
 ### Nota Keselamatan Penting
 
 - **Jangan gunakan ID Pengguna RLS pengeluaran dalam persekitaran pembangunan**
-- **Sentiasa pastikan ID Pengguna RLS sepadan dengan kedai yang dimaksudkan sebelum menjalankan pertanyaan**
+- **Sentiasa sahkan ID Pengguna RLS sepadan dengan kedai yang dimaksudkan sebelum menjalankan pertanyaan**
 - **UUID lalai (`00000000-0000-0000-0000-000000000000`) menyediakan akses terhad**
-- **Setiap pengurus kedai hanya boleh mengakses ID Pengguna RLS kedai mereka**
+- **Setiap pengurus kedai hanya harus mempunyai akses kepada ID Pengguna RLS kedai mereka**
 
 ## Pembangunan
 

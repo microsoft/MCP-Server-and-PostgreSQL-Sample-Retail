@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T22:10:08+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T09:58:59+00:00",
   "source_file": "README.md",
   "language_code": "nl"
 }
@@ -22,13 +22,13 @@ Volg deze stappen om aan de slag te gaan met deze bronnen:
 
 1. **Fork de Repository**: Klik [hier om te forken](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
 2. **Clone de Repository**: `git clone https://github.com/JOUW-GEBRUIKERSNAAM/MCP-Server-and-PostgreSQL-Sample-Retail.git`
-3. **Word lid van de Azure AI Foundry Discord**: [Ontmoet experts en mede-ontwikkelaars](https://discord.com/invite/ByRwuEEgH4)
+3. **Word lid van de Azure AI Foundry Discord**: [Ontmoet experts en medeontwikkelaars](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Meertalige Ondersteuning
 
 #### Ondersteund via GitHub Action (Automatisch & Altijd Actueel)
 
-[Frans](../fr/README.md) | [Spaans](../es/README.md) | [Duits](../de/README.md) | [Russisch](../ru/README.md) | [Arabisch](../ar/README.md) | [Perzisch (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinees (Vereenvoudigd)](../zh/README.md) | [Chinees (Traditioneel, Macau)](../mo/README.md) | [Chinees (Traditioneel, Hong Kong)](../hk/README.md) | [Chinees (Traditioneel, Taiwan)](../tw/README.md) | [Japans](../ja/README.md) | [Koreaans](../ko/README.md) | [Hindi](../hi/README.md) | [Bengaals](../bn/README.md) | [Marathi](../mr/README.md) | [Nepalees](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portugees (Portugal)](../pt/README.md) | [Portugees (Brazilië)](../br/README.md) | [Italiaans](../it/README.md) | [Pools](../pl/README.md) | [Turks](../tr/README.md) | [Grieks](../el/README.md) | [Thais](../th/README.md) | [Zweeds](../sv/README.md) | [Deens](../da/README.md) | [Noors](../no/README.md) | [Fins](../fi/README.md) | [Nederlands](./README.md) | [Hebreeuws](../he/README.md) | [Vietnamees](../vi/README.md) | [Indonesisch](../id/README.md) | [Maleis](../ms/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Swahili](../sw/README.md) | [Hongaars](../hu/README.md) | [Tsjechisch](../cs/README.md) | [Slowaaks](../sk/README.md) | [Roemeens](../ro/README.md) | [Bulgaars](../bg/README.md) | [Servisch (Cyrillisch)](../sr/README.md) | [Kroatisch](../hr/README.md) | [Sloveens](../sl/README.md) | [Oekraïens](../uk/README.md) | [Birmaans (Myanmar)](../my/README.md)
+[Frans](../fr/README.md) | [Spaans](../es/README.md) | [Duits](../de/README.md) | [Russisch](../ru/README.md) | [Arabisch](../ar/README.md) | [Perzisch (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinees (Vereenvoudigd)](../zh/README.md) | [Chinees (Traditioneel, Macau)](../mo/README.md) | [Chinees (Traditioneel, Hong Kong)](../hk/README.md) | [Chinees (Traditioneel, Taiwan)](../tw/README.md) | [Japans](../ja/README.md) | [Koreaans](../ko/README.md) | [Hindi](../hi/README.md) | [Bengaals](../bn/README.md) | [Marathi](../mr/README.md) | [Nepalees](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portugees (Portugal)](../pt/README.md) | [Portugees (Brazilië)](../br/README.md) | [Italiaans](../it/README.md) | [Pools](../pl/README.md) | [Turks](../tr/README.md) | [Grieks](../el/README.md) | [Thais](../th/README.md) | [Zweeds](../sv/README.md) | [Deens](../da/README.md) | [Noors](../no/README.md) | [Fins](../fi/README.md) | [Nederlands](./README.md) | [Hebreeuws](../he/README.md) | [Vietnamees](../vi/README.md) | [Indonesisch](../id/README.md) | [Maleis](../ms/README.md) | [Tagalog (Filipijns)](../tl/README.md) | [Swahili](../sw/README.md) | [Hongaars](../hu/README.md) | [Tsjechisch](../cs/README.md) | [Slowaaks](../sk/README.md) | [Roemeens](../ro/README.md) | [Bulgaars](../bg/README.md) | [Servisch (Cyrillisch)](../sr/README.md) | [Kroatisch](../hr/README.md) | [Sloveens](../sl/README.md) | [Oekraïens](../uk/README.md) | [Birmaans (Myanmar)](../my/README.md)
 
 **Als je extra vertalingen wilt, kun je de ondersteunde talen vinden [hier](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
@@ -36,22 +36,22 @@ Volg deze stappen om aan de slag te gaan met deze bronnen:
 
 Dit voorbeeld laat zien hoe je een uitgebreide **Model Context Protocol (MCP) server** kunt bouwen en implementeren die AI-assistenten veilige, intelligente toegang biedt tot retailverkoopdata via PostgreSQL. Het project toont functies van ondernemingsniveau, zoals **Row Level Security (RLS)**, **semantische zoekmogelijkheden**, en **Azure AI-integratie** voor real-world retailanalyses.
 
-**Belangrijke Toepassingen:**
+**Belangrijke Gebruiksscenario's:**
 - **AI-gestuurde Verkoopanalyse**: AI-assistenten in staat stellen om retailverkoopdata te analyseren via natuurlijke taal
 - **Veilige Multi-Tenant Toegang**: Implementatie van Row Level Security waarbij verschillende winkelmanagers alleen toegang hebben tot hun eigen winkeldata
-- **Semantische Productzoektocht**: AI-gestuurde productontdekking met behulp van tekstembeddings
+- **Semantische Productzoekfunctie**: AI-gestuurde productontdekking met behulp van tekstembeddings
 - **Integratie op Ondernemingsniveau**: Illustratie van hoe MCP-servers kunnen worden geïntegreerd met Azure-services en PostgreSQL-databases
 
 **Perfect voor:**
 - Ontwikkelaars die MCP-servers willen bouwen met database-integratie
-- Data-engineers die veilige multi-tenant analysemogelijkheden willen implementeren
+- Data engineers die veilige multi-tenant analysemogelijkheden implementeren
 - AI-applicatieontwikkelaars die werken met retail- of e-commercedata
 - Iedereen die geïnteresseerd is in het combineren van AI-assistenten met ondernemingsdatabases
 
 ## Word lid van de Azure AI Foundry Discord Community
 Deel je ervaringen met MCP en ontmoet experts en productgroepen 
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # Verkoopanalyse MCP Server
 
@@ -59,12 +59,12 @@ Een Model Context Protocol (MCP) server die uitgebreide toegang biedt tot klantv
 
 ## 📚 Complete Implementatiehandleiding
 
-Voor een gedetailleerde uitleg over hoe deze oplossing is gebouwd en hoe je soortgelijke MCP-servers kunt implementeren, bekijk onze uitgebreide **[Voorbeeld Walkthrough](Sample_Walkthrough.md)**. Deze handleiding biedt:
+Voor een gedetailleerde uitleg over hoe deze oplossing is gebouwd en hoe je soortgelijke MCP-servers kunt implementeren, zie onze uitgebreide **[Voorbeeld Walkthrough](Sample_Walkthrough.md)**. Deze handleiding biedt:
 
 - **Architectuur Uitleg**: Analyse van componenten en ontwerpprincipes
-- **Stap-voor-Stap Bouwen**: Van projectopzet tot implementatie
+- **Stap-voor-Stap Bouwproces**: Van projectopzet tot implementatie
 - **Code Uitleg**: Gedetailleerde uitleg van MCP-serverimplementatie
-- **Geavanceerde Functies**: Row Level Security, semantische zoekopdrachten en monitoring
+- **Geavanceerde Functies**: Row Level Security, semantische zoekfunctie en monitoring
 - **Best Practices**: Richtlijnen voor beveiliging, prestaties en ontwikkeling
 - **Probleemoplossing**: Veelvoorkomende problemen en oplossingen
 
@@ -72,7 +72,7 @@ Perfect voor ontwikkelaars die de implementatiedetails willen begrijpen en soort
 
 ## 🤖 Wat is MCP (Model Context Protocol)?
 
-**Model Context Protocol (MCP)** is een open standaard die AI-assistenten in staat stelt om externe databronnen en tools veilig in real-time te benaderen. Zie het als een brug die AI-modellen verbindt met databases, API's, bestandssystemen en andere bronnen, terwijl beveiliging en controle behouden blijven.
+**Model Context Protocol (MCP)** is een open standaard die AI-assistenten in staat stelt om veilig toegang te krijgen tot externe databronnen en tools in real-time. Zie het als een brug die AI-modellen verbindt met databases, API's, bestandssystemen en andere bronnen, terwijl beveiliging en controle behouden blijven.
 
 ### Belangrijke Voordelen:
 - **Real-time Data Toegang**: AI-assistenten kunnen live databases en API's raadplegen
@@ -99,21 +99,21 @@ Zodra je de basis begrijpt, kom dan hier terug om deze geavanceerde retailanalys
 
 Deze repository bevat een complete **12-module leerwalkthrough** die dit MCP-retailservervoorbeeld opsplitst in behapbare, stap-voor-stap lessen. De walkthrough transformeert dit werkende voorbeeld in een uitgebreide educatieve bron, perfect voor ontwikkelaars die willen begrijpen hoe ze productieklare MCP-servers met database-integratie kunnen bouwen.
 
-### Wat Je Zult Leren
+### Wat Je Leert
 
 De walkthrough behandelt alles, van basis MCP-concepten tot geavanceerde productie-implementatie, inclusief:
 
-- **MCP Grondbeginselen**: Begrip van het Model Context Protocol en de toepassingen ervan in de praktijk
+- **MCP Basisprincipes**: Begrip van het Model Context Protocol en de toepassingen in de praktijk
 - **Database-integratie**: Implementatie van veilige PostgreSQL-connectiviteit met Row Level Security
-- **AI-verrijkte Functies**: Toevoegen van semantische zoekmogelijkheden met Azure OpenAI embeddings
+- **AI-Verbeterde Functies**: Toevoegen van semantische zoekmogelijkheden met Azure OpenAI embeddings
 - **Beveiligingsimplementatie**: Authenticatie, autorisatie en data-isolatie op ondernemingsniveau
 - **Toolontwikkeling**: Het bouwen van geavanceerde MCP-tools voor data-analyse en bedrijfsinformatie
 - **Testen & Debuggen**: Uitgebreide teststrategieën en debuggingtechnieken
-- **VS Code-integratie**: Configuratie van AI Chat voor natuurlijke taal database-query's
+- **VS Code Integratie**: Configuratie van AI Chat voor natuurlijke taal database queries
 - **Productie-implementatie**: Containerisatie, schaalbaarheid en cloud-implementatiestrategieën
 - **Monitoring & Observatie**: Application Insights, logging en prestatiemonitoring
 
-### Overzicht van het Leerpad
+### Overzicht Leerpad
 
 De walkthrough volgt een progressieve leerstructuur, ontworpen voor ontwikkelaars van alle niveaus:
 
@@ -122,14 +122,14 @@ De walkthrough volgt een progressieve leerstructuur, ontworpen voor ontwikkelaar
 | **[00-Introductie](walkthrough/00-Introduction/README.md)** | Basis | MCP-concepten, Zava Retail casestudy, architectuuroverzicht | 30 minuten |
 | **[01-Architectuur](walkthrough/01-Architecture/README.md)** | Ontwerpprincipes | Technische architectuur, gelaagd ontwerp, systeemcomponenten | 45 minuten |
 | **[02-Beveiliging](walkthrough/02-Security/README.md)** | Ondernemingsbeveiliging | Azure-authenticatie, Row Level Security, multi-tenant isolatie | 60 minuten |
-| **[03-Setup](walkthrough/03-Setup/README.md)** | Omgeving | Docker-setup, Azure CLI, projectconfiguratie, validatie | 45 minuten |
+| **[03-Setup](walkthrough/03-Setup/README.md)** | Omgeving | Docker setup, Azure CLI, projectconfiguratie, validatie | 45 minuten |
 | **[04-Database](walkthrough/04-Database/README.md)** | Datalaag | PostgreSQL-schema, pgvector, RLS-beleid, voorbeelddata | 60 minuten |
 | **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Kernimplementatie | FastMCP-framework, database-integratie, connectiebeheer | 90 minuten |
 | **[06-Tools](walkthrough/06-Tools/README.md)** | Toolontwikkeling | MCP-toolcreatie, queryvalidatie, bedrijfsinformatie functies | 75 minuten |
-| **[07-Semantische Zoekopdracht](walkthrough/07-Semantic-Search/README.md)** | AI-integratie | Azure OpenAI embeddings, vectorzoekopdracht, hybride zoekstrategieën | 60 minuten |
+| **[07-Semantische Zoekfunctie](walkthrough/07-Semantic-Search/README.md)** | AI-integratie | Azure OpenAI embeddings, vectorzoekfunctie, hybride zoekstrategieën | 60 minuten |
 | **[08-Testen](walkthrough/08-Testing/README.md)** | Kwaliteitsborging | Unit testing, integratietesten, prestatietesten, debugging | 75 minuten |
-| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Ontwikkelaarservaring | VS Code-configuratie, AI Chat-integratie, debugging workflows | 45 minuten |
-| **[10-Implementatie](walkthrough/10-Deployment/README.md)** | Productieklaar | Containerisatie, Azure Container Apps, CI/CD-pijplijnen, schaalbaarheid | 90 minuten |
+| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Ontwikkelaarservaring | VS Code configuratie, AI Chat integratie, debugging workflows | 45 minuten |
+| **[10-Implementatie](walkthrough/10-Deployment/README.md)** | Productieklaar | Containerisatie, Azure Container Apps, CI/CD-pipelines, schaalbaarheid | 90 minuten |
 | **[11-Monitoring](walkthrough/11-Monitoring/README.md)** | Observatie | Application Insights, gestructureerde logging, prestatiemetrics | 60 minuten |
 | **[12-Best Practices](walkthrough/12-Best-Practices/README.md)** | Productie-excellentie | Beveiligingsversterking, prestatieoptimalisatie, ondernemingspatronen | 45 minuten |
 
@@ -138,7 +138,7 @@ De walkthrough volgt een progressieve leerstructuur, ontworpen voor ontwikkelaar
 ### 🎯 Hoe de Walkthrough te Gebruiken
 
 **Voor Beginners**:
-1. Begin met [Module 00: Introductie](walkthrough/00-Introduction/README.md) om MCP-grondbeginselen te begrijpen
+1. Begin met [Module 00: Introductie](walkthrough/00-Introduction/README.md) om MCP-basisprincipes te begrijpen
 2. Volg de modules in volgorde voor een complete leerervaring
 3. Elke module bouwt voort op eerdere concepten en bevat praktische oefeningen
 
@@ -148,9 +148,9 @@ De walkthrough volgt een progressieve leerstructuur, ontworpen voor ontwikkelaar
 3. Gebruik individuele modules als referentiemateriaal voor je eigen projecten
 
 **Voor Productie-implementatie**:
-1. Focus op Modules 02 (Beveiliging), 10 (Implementatie) en 11 (Monitoring)
+1. Focus op Modules 02 (Beveiliging), 10 (Implementatie), en 11 (Monitoring)
 2. Bekijk Module 12 (Best Practices) voor richtlijnen op ondernemingsniveau
-3. Gebruik de codevoorbeelden als productieklare sjablonen
+3. Gebruik de codevoorbeelden als productieklare templates
 
 ### 🚀 Snelle Startopties
 
@@ -169,7 +169,7 @@ cd walkthrough/03-Setup
 # Follow the setup guide and continue through implementation modules
 ```
 
-**Optie 3: Focus op Productie** (Ondernemingsimplementatie)
+**Optie 3: Productiefocus** (Ondernemingsimplementatie)
 ```bash
 # Focus on production-ready aspects
 # Review modules: 02-Security, 10-Deployment, 11-Monitoring, 12-Best-Practices
@@ -191,7 +191,7 @@ cd walkthrough/03-Setup
 ### 💡 Leertips
 
 1. **Praktische aanpak**: Elk module bevat werkende codevoorbeelden die je kunt uitvoeren en aanpassen
-2. **Geleidelijke complexiteit**: Concepten bouwen stapsgewijs op van eenvoudig naar geavanceerd
+2. **Geleidelijke complexiteit**: Concepten bouwen geleidelijk op van eenvoudig naar geavanceerd
 3. **Reële context**: Alle voorbeelden gebruiken realistische scenario's uit de retailsector
 4. **Productieklaar**: Codevoorbeelden zijn ontworpen voor daadwerkelijk gebruik in productie
 5. **Communityondersteuning**: Word lid van onze [Discord-community](https://discord.com/invite/ByRwuEEgH4) voor hulp en discussies
@@ -236,7 +236,7 @@ Open een terminalvenster en voer de volgende opdrachten uit:
 
 ### Azure-resources implementeren
 
-Voer de volgende scripts uit om de implementatie van de benodigde Azure-resources voor de MCP-server te automatiseren.
+Voer de volgende scripts uit om de implementatie van Azure-resources die nodig zijn voor de MCP-server te automatiseren.
 
 De implementatiescripts zullen automatisch het model `text-embedding-3-small` implementeren. Tijdens de implementatie heb je de optie om ook het model `gpt-4o-mini` op te nemen. Let op: `gpt-4o-mini` is **niet vereist** voor dit project en is alleen opgenomen voor mogelijke toekomstige uitbreidingen.
 
@@ -283,7 +283,7 @@ docker compose down -v
 
 De volgende stappen gaan ervan uit dat je de ingebouwde ondersteuning voor MCP-servers in VS Code gebruikt.
 
-1. Open het project in VS Code. Voer vanuit de terminal het volgende uit:
+1. Open het project in VS Code. Voer vanuit de terminal uit:
 
     ```bash
     code .
@@ -354,11 +354,11 @@ De server biedt toegang tot de volgende retail-databasetabellen:
 - `retail.categories` - Productcategorieën en hiërarchieën
 - `retail.product_types` - Classificaties van producttypen
 - `retail.products` - Productcatalogus en specificaties
-- `retail.orders` - Klantorders en transacties
-- `retail.order_items` - Individuele items binnen orders
+- `retail.orders` - Klantbestellingen en transacties
+- `retail.order_items` - Individuele items binnen bestellingen
 - `retail.inventory` - Huidige voorraadniveaus en voorraadgegevens
 
-## Beschikbare hulpmiddelen
+## Beschikbare tools
 
 ### `get_multiple_table_schemas`
 
@@ -366,7 +366,7 @@ Haal databasetabellen op voor meerdere tabellen in één verzoek.
 
 **Parameters:**
 
-- `table_names` (list[str]): Lijst met geldige tabelnamen uit de bovenstaande ondersteunde tabellen
+- `table_names` (list[str]): Lijst met geldige tabelnamen van de bovenstaande ondersteunde tabellen
 
 **Retourneert:** Gecombineerde schema-strings voor de gevraagde tabellen
 
@@ -376,7 +376,7 @@ Voer PostgreSQL-query's uit op de verkoopdatabase met Row Level Security.
 
 **Parameters:**
 
-- `postgresql_query` (str): Een goed geformuleerde PostgreSQL-query
+- `postgresql_query` (str): Een goed gevormde PostgreSQL-query
 
 **Retourneert:** Queryresultaten geformatteerd als een string (beperkt tot 20 rijen voor leesbaarheid)
 
@@ -385,7 +385,7 @@ Voer PostgreSQL-query's uit op de verkoopdatabase met Row Level Security.
 - Haal altijd eerst tabelschema's op
 - Gebruik exacte kolomnamen uit schema's
 - Combineer gerelateerde tabellen voor uitgebreide analyses
-- Aggregeer resultaten indien nodig
+- Aggregeer resultaten waar nodig
 - Beperk de uitvoer voor leesbaarheid
 
 ### `get_current_utc_date`
@@ -412,7 +412,7 @@ Voer een semantische zoekopdracht uit naar producten op basis van gebruikersvrag
 
 De server implementeert Row Level Security om ervoor te zorgen dat gebruikers alleen toegang hebben tot gegevens waarvoor ze geautoriseerd zijn:
 
-- **HTTP-modus**: Gebruikt de header `x-rls-user-id` om de verzoekende gebruiker te identificeren
+- **HTTP-modus**: Gebruikt de `x-rls-user-id`-header om de verzoekende gebruiker te identificeren
 
 - **Standaard fallback**: Gebruikt een placeholder UUID wanneer geen gebruikers-ID wordt verstrekt
 
@@ -423,25 +423,25 @@ Elke Zava Retail-winkellocatie heeft een unieke RLS-gebruikers-ID die bepaalt we
 | Winkellocatie | RLS-gebruikers-ID | Beschrijving |
 |---------------|-------------------|--------------|
 | **Globale toegang** | `00000000-0000-0000-0000-000000000000` | Standaard fallback - toegang tot alle winkels |
-| **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Gegevens van Zava Retail Seattle |
-| **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Gegevens van Zava Retail Bellevue |
-| **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Gegevens van Zava Retail Tacoma |
-| **Spokane** | `d8e9f0a1-b2c3-4567-8901-234567890abc` | Gegevens van Zava Retail Spokane |
-| **Everett** | `3b9ac9fa-cd5e-4b92-a7f2-b8c1d0e9f2a3` | Gegevens van Zava Retail Everett |
-| **Redmond** | `e7f8a9b0-c1d2-3e4f-5678-90abcdef1234` | Gegevens van Zava Retail Redmond |
-| **Kirkland** | `9c8b7a65-4321-fed0-9876-543210fedcba` | Gegevens van Zava Retail Kirkland |
-| **Online** | `2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2` | Gegevens van Zava Retail Online |
+| **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Zava Retail Seattle winkelgegevens |
+| **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Zava Retail Bellevue winkelgegevens |
+| **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Zava Retail Tacoma winkelgegevens |
+| **Spokane** | `d8e9f0a1-b2c3-4567-8901-234567890abc` | Zava Retail Spokane winkelgegevens |
+| **Everett** | `3b9ac9fa-cd5e-4b92-a7f2-b8c1d0e9f2a3` | Zava Retail Everett winkelgegevens |
+| **Redmond** | `e7f8a9b0-c1d2-3e4f-5678-90abcdef1234` | Zava Retail Redmond winkelgegevens |
+| **Kirkland** | `9c8b7a65-4321-fed0-9876-543210fedcba` | Zava Retail Kirkland winkelgegevens |
+| **Online** | `2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2` | Zava Retail Online winkelgegevens |
 
 #### RLS-implementatie
 
 Wanneer een gebruiker verbinding maakt met een specifieke winkel-RLS-gebruikers-ID, ziet hij alleen:
 
 - Klanten die aan die winkel zijn gekoppeld
-- Orders die bij die winkellocatie zijn geplaatst
+- Bestellingen geplaatst bij die winkellocatie
 - Voorraadgegevens voor die specifieke winkel
 - Winkel-specifieke verkoop- en prestatiestatistieken
 
-Dit zorgt voor gegevensisolatie tussen verschillende winkellocaties terwijl een uniforme databaseschema behouden blijft.
+Dit zorgt voor gegevensisolatie tussen verschillende winkellocaties terwijl een uniforme databasestructuur behouden blijft.
 
 ## Architectuur
 
@@ -450,8 +450,8 @@ Dit zorgt voor gegevensisolatie tussen verschillende winkellocaties terwijl een 
 De server gebruikt een beheerde applicatiecontext met:
 
 - **Databaseverbindingpool**: Efficiënt beheer van verbindingen voor HTTP-modus
-- **Levenscyclusbeheer**: Correct opruimen van resources bij afsluiten
-- **Typeveiligheid**: Sterk getypeerde context met de `AppContext` dataclass
+- **Levenscyclusbeheer**: Correcte opruiming van resources bij afsluiten
+- **Typeveiligheid**: Sterk getypeerde context met `AppContext` dataclass
 
 ### Verzoekcontext
 
@@ -483,7 +483,7 @@ De server implementeert robuuste foutafhandeling:
 2. **Gegevensisolatie per winkel**: Elke winkel-RLS-gebruikers-ID zorgt ervoor dat alleen gegevens van die winkel toegankelijk zijn
 3. **Invoervalidatie**: Tabelnamen en query's worden gevalideerd voordat ze worden uitgevoerd
 4. **Resourcebeperkingen**: Queryresultaten zijn beperkt om overmatig gebruik van resources te voorkomen
-5. **Beveiliging van verbindingen**: Gebruikt veilige databaseverbindingen
+5. **Veilige verbindingen**: Gebruikt veilige databaseverbindingen
 6. **Verificatie van gebruikersidentiteit**: Zorg altijd dat de juiste RLS-gebruikers-ID wordt gebruikt voor de beoogde winkellocatie
 
 ### Belangrijke beveiligingsnotities
@@ -506,8 +506,8 @@ mcp_server/
 
 ### Belangrijke componenten
 
-- **FastMCP Server**: Moderne MCP-serverimplementatie met ondersteuning voor async
-- **PostgreSQL Provider**: Database-abstractielaag met RLS-ondersteuning
+- **FastMCP-server**: Moderne MCP-serverimplementatie met ondersteuning voor async
+- **PostgreSQL-provider**: Database-abstractielaag met RLS-ondersteuning
 - **Contextbeheer**: Typeveilig applicatie- en verzoekcontextbeheer
 - **Toolregistratie**: Declaratieve toolregistratie met Pydantic-validatie
 

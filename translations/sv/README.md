@@ -1,13 +1,13 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T21:13:50+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T09:53:10+00:00",
   "source_file": "README.md",
   "language_code": "sv"
 }
 -->
-# MCP Server och PostgreSQL Exempel - Analys av detaljhandelns försäljning
+# MCP Server och PostgreSQL-exempel - Analys av detaljhandelsförsäljning
 
 ## Lär dig MCP med databasintegration genom praktiska exempel
 
@@ -20,8 +20,8 @@ CO_OP_TRANSLATOR_METADATA:
 
 Följ dessa steg för att komma igång med dessa resurser:
 
-1. **Forka Repositoriet**: Klicka [här för att forka](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
-2. **Klona Repositoriet**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
+1. **Forka repot**: Klicka [här för att forka](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
+2. **Klona repot**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
 3. **Gå med i Azure AI Foundry Discord**: [Träffa experter och andra utvecklare](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Stöd för flera språk
@@ -34,35 +34,35 @@ Följ dessa steg för att komma igång med dessa resurser:
 
 ## Introduktion
 
-Detta exempel visar hur man bygger och distribuerar en omfattande **Model Context Protocol (MCP)-server** som ger AI-assistenter säker och intelligent åtkomst till detaljhandelns försäljningsdata via PostgreSQL. Projektet demonstrerar företagsfunktioner som **Row Level Security (RLS)**, **semantisk sökning** och **Azure AI-integration** för verkliga analysfall inom detaljhandeln.
+Det här exemplet visar hur man bygger och distribuerar en omfattande **Model Context Protocol (MCP)-server** som ger AI-assistenter säker och intelligent åtkomst till detaljhandelsförsäljningsdata via PostgreSQL. Projektet demonstrerar funktioner i företagsklass, inklusive **Row Level Security (RLS)**, **semantiska sökfunktioner** och **Azure AI-integration** för verkliga analysfall inom detaljhandeln.
 
 **Viktiga användningsområden:**
-- **AI-drivna försäljningsanalyser**: Möjliggör för AI-assistenter att fråga och analysera försäljningsdata med naturligt språk
-- **Säker multi-tenant åtkomst**: Demonstrera Row Level Security där olika butikschefer endast kan komma åt sin egen butiks data
-- **Semantisk produktsökning**: Visa AI-förbättrad produktupptäckt med textembedding
+- **AI-drivna försäljningsanalyser**: Möjliggör för AI-assistenter att fråga och analysera detaljhandelsförsäljningsdata med naturligt språk
+- **Säker multi-tenant-åtkomst**: Demonstrera implementering av Row Level Security där olika butikschefer endast kan komma åt sin egen butiks data
+- **Semantisk produktsökning**: Visa AI-förbättrad produktupptäckt med textinbäddningar
 - **Företagsintegration**: Illustrera hur MCP-servrar integreras med Azure-tjänster och PostgreSQL-databaser
 
 **Perfekt för:**
-- Utvecklare som vill lära sig att bygga MCP-servrar med databasintegration
-- Dataingenjörer som implementerar säkra multi-tenant analyslösningar
-- AI-applikationsutvecklare som arbetar med data från detaljhandel eller e-handel
+- Utvecklare som lär sig bygga MCP-servrar med databasintegration
+- Dataingenjörer som implementerar säkra multi-tenant-analyslösningar
+- AI-applikationsutvecklare som arbetar med detaljhandels- eller e-handelsdata
 - Alla som är intresserade av att kombinera AI-assistenter med företagsdatabaser
 
-## Gå med i Azure AI Foundry Discord Community
-Dela dina erfarenheter av MCP och träffa experter och produktgrupper 
+## Gå med i Azure AI Foundry Discord-communityn
+Dela dina erfarenheter av MCP och träffa experter och produktgrupper
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # Försäljningsanalys MCP-server
 
-En Model Context Protocol (MCP)-server som ger omfattande åtkomst till kundförsäljningsdatabasen för Zava Retail DIY Business. Denna server möjliggör för AI-assistenter att fråga och analysera försäljningsdata via ett säkert, schema-medvetet gränssnitt.
+En Model Context Protocol (MCP)-server som ger omfattande åtkomst till kundförsäljningsdatabasen för Zava Retail DIY Business. Denna server gör det möjligt för AI-assistenter att fråga och analysera detaljhandelsförsäljningsdata via ett säkert, schema-medvetet gränssnitt.
 
 ## 📚 Komplett implementeringsguide
 
 För en detaljerad genomgång av hur denna lösning byggs och hur man implementerar liknande MCP-servrar, se vår omfattande **[Exempelgenomgång](Sample_Walkthrough.md)**. Denna guide erbjuder:
 
 - **Arkitekturgenomgång**: Komponentanalys och designmönster
-- **Steg-för-steg byggande**: Från projektuppsättning till distribution
+- **Steg-för-steg-byggande**: Från projektuppsättning till distribution
 - **Kodgenomgång**: Detaljerad förklaring av MCP-serverimplementering
 - **Avancerade funktioner**: Row Level Security, semantisk sökning och övervakning
 - **Bästa praxis**: Säkerhet, prestanda och utvecklingsriktlinjer
@@ -75,7 +75,7 @@ Perfekt för utvecklare som vill förstå implementeringsdetaljer och bygga likn
 **Model Context Protocol (MCP)** är en öppen standard som gör det möjligt för AI-assistenter att säkert få åtkomst till externa datakällor och verktyg i realtid. Tänk på det som en bro som låter AI-modeller ansluta till databaser, API:er, filsystem och andra resurser samtidigt som säkerhet och kontroll bibehålls.
 
 ### Viktiga fördelar:
-- **Dataåtkomst i realtid**: AI-assistenter kan fråga live-databaser och API:er
+- **Åtkomst till data i realtid**: AI-assistenter kan fråga live-databaser och API:er
 - **Säker integration**: Kontrollerad åtkomst med autentisering och behörigheter  
 - **Verktygsutbyggnad**: Lägg till anpassade funktioner till AI-assistenter
 - **Standardiserat protokoll**: Fungerar över olika AI-plattformar och verktyg
@@ -84,20 +84,20 @@ Perfekt för utvecklare som vill förstå implementeringsdetaljer och bygga likn
 
 Om du är ny på Model Context Protocol rekommenderar vi att du börjar med Microsofts omfattande nybörjarresurser:
 
-**📖 [MCP för nybörjare](https://aka.ms/mcp-for-beginners)**
+**📖 [MCP för nybörjare-guide](https://aka.ms/mcp-for-beginners)**
 
 Denna resurs erbjuder:
 - Introduktion till MCP-koncept och arkitektur
-- Steg-för-steg handledningar för att bygga din första MCP-server
+- Steg-för-steg-handledning för att bygga din första MCP-server
 - Bästa praxis för MCP-utveckling
 - Integreringsexempel med populära AI-plattformar
 - Community-resurser och support
 
 När du har förstått grunderna, återvänd hit för att utforska denna avancerade implementering för detaljhandelsanalys!
 
-## 📚 Omfattande lärande guide: /walkthrough
+## 📚 Omfattande lärandeguide: /walkthrough
 
-Detta repository innehåller en komplett **12-modulers genomgång** som bryter ner detta MCP-detaljhandelsserverexempel i hanterbara, steg-för-steg-lektioner. Genomgången förvandlar detta fungerande exempel till en omfattande utbildningsresurs perfekt för utvecklare som vill förstå hur man bygger produktionsklara MCP-servrar med databasintegration.
+Detta repo innehåller en komplett **12-modulers lärande genomgång** som bryter ner detta MCP-detaljhandelsserverexempel i hanterbara, steg-för-steg-lektioner. Genomgången förvandlar detta fungerande exempel till en omfattande utbildningsresurs perfekt för utvecklare som vill förstå hur man bygger produktionsklara MCP-servrar med databasintegration.
 
 ### Vad du kommer att lära dig
 
@@ -105,12 +105,12 @@ Genomgången täcker allt från grundläggande MCP-koncept till avancerad produk
 
 - **MCP-grunder**: Förstå Model Context Protocol och dess verkliga tillämpningar
 - **Databasintegration**: Implementera säker PostgreSQL-anslutning med Row Level Security
-- **AI-förbättrade funktioner**: Lägg till semantisk sökning med Azure OpenAI-embedding
-- **Säkerhetsimplementering**: Företagsklassad autentisering, auktorisering och dataisolering
+- **AI-förbättrade funktioner**: Lägga till semantiska sökfunktioner med Azure OpenAI-inbäddningar
+- **Säkerhetsimplementering**: Autentisering, auktorisering och dataisolering i företagsklass
 - **Verktygsutveckling**: Bygga sofistikerade MCP-verktyg för dataanalys och affärsintelligens
 - **Testning och felsökning**: Omfattande teststrategier och felsökningstekniker
 - **VS Code-integration**: Konfigurera AI Chat för naturliga språkfrågor mot databaser
-- **Produktionsdistribution**: Containerisering, skalning och molndistribution
+- **Produktionsdistribution**: Containerisering, skalning och molndistributionsstrategier
 - **Övervakning och observabilitet**: Application Insights, loggning och prestandaövervakning
 
 ### Översikt över lärandebanan
@@ -121,12 +121,12 @@ Genomgången följer en progressiv lärandestruktur designad för utvecklare på
 |-------|-------------|-------------|------------------|
 | **[00-Introduktion](walkthrough/00-Introduction/README.md)** | Grundläggande | MCP-koncept, Zava Retail-fallstudie, arkitekturöversikt | 30 minuter |
 | **[01-Arkitektur](walkthrough/01-Architecture/README.md)** | Designmönster | Teknisk arkitektur, lagerdesign, systemkomponenter | 45 minuter |
-| **[02-Säkerhet](walkthrough/02-Security/README.md)** | Företagssäkerhet | Azure-autentisering, Row Level Security, multi-tenant isolering | 60 minuter |
-| **[03-Setup](walkthrough/03-Setup/README.md)** | Miljö | Docker-setup, Azure CLI, projektkonfiguration, validering | 45 minuter |
-| **[04-Databas](walkthrough/04-Database/README.md)** | Datalager | PostgreSQL-schema, pgvector, RLS-policyer, exempeldata | 60 minuter |
-| **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Kärnimplementering | FastMCP-ramverk, databasintegration, anslutningshantering | 90 minuter |
+| **[02-Säkerhet](walkthrough/02-Security/README.md)** | Företagssäkerhet | Azure-autentisering, Row Level Security, multi-tenant-isolering | 60 minuter |
+| **[03-Uppsättning](walkthrough/03-Setup/README.md)** | Miljö | Docker-uppsättning, Azure CLI, projektkonfiguration, validering | 45 minuter |
+| **[04-Databas](walkthrough/04-Database/README.md)** | Dataskikt | PostgreSQL-schema, pgvector, RLS-policyer, exempeldata | 60 minuter |
+| **[05-MCP-server](walkthrough/05-MCP-Server/README.md)** | Kärnimplementering | FastMCP-ramverk, databasintegration, anslutningshantering | 90 minuter |
 | **[06-Verktyg](walkthrough/06-Tools/README.md)** | Verktygsutveckling | Skapande av MCP-verktyg, frågevalidering, affärsintelligensfunktioner | 75 minuter |
-| **[07-Semantisk sökning](walkthrough/07-Semantic-Search/README.md)** | AI-integration | Azure OpenAI-embedding, vektorsökning, hybrid sökstrategier | 60 minuter |
+| **[07-Semantisk sökning](walkthrough/07-Semantic-Search/README.md)** | AI-integration | Azure OpenAI-inbäddningar, vektorsökning, hybrid sökstrategier | 60 minuter |
 | **[08-Testning](walkthrough/08-Testing/README.md)** | Kvalitetssäkring | Enhetstestning, integrationstestning, prestandatestning, felsökning | 75 minuter |
 | **[09-VS Code](walkthrough/09-VS-Code/README.md)** | Utvecklingsupplevelse | VS Code-konfiguration, AI Chat-integration, felsökningsarbetsflöden | 45 minuter |
 | **[10-Distribution](walkthrough/10-Deployment/README.md)** | Produktionsklar | Containerisering, Azure Container Apps, CI/CD-pipelines, skalning | 90 minuter |
@@ -183,7 +183,7 @@ cd walkthrough/03-Setup
 - Allmän förståelse för AI/ML-koncept
 - Grundläggande kunskaper om kommandoraden och Docker
 
-**Ej nödvändigt (men användbart)**:
+**Inte nödvändigt (men användbart)**:
 - Tidigare erfarenhet av MCP (vi går igenom detta från grunden)
 - Erfarenhet av Azure-molnet (vi ger steg-för-steg-instruktioner)
 - Avancerade kunskaper i PostgreSQL (vi förklarar koncept vid behov)
@@ -191,9 +191,9 @@ cd walkthrough/03-Setup
 ### 💡 Lärandestrategier
 
 1. **Praktisk metod**: Varje modul innehåller fungerande kodexempel som du kan köra och modifiera
-2. **Gradvis komplexitet**: Koncepten byggs upp successivt från enkla till avancerade
+2. **Gradvis komplexitet**: Koncept byggs upp successivt från enkla till avancerade
 3. **Verklighetsnära sammanhang**: Alla exempel använder realistiska scenarier från detaljhandeln
-4. **Redo för produktion**: Kodexemplen är utformade för faktisk användning i produktion
+4. **Redo för produktion**: Kodexempel är utformade för faktisk användning i produktion
 5. **Gemenskapsstöd**: Gå med i vår [Discord-gemenskap](https://discord.com/invite/ByRwuEEgH4) för hjälp och diskussioner
 
 ### 🔗 Relaterade resurser
@@ -210,7 +210,7 @@ cd walkthrough/03-Setup
 1. Docker Desktop installerat
 2. Git installerat
 3. **Azure CLI**: Installera och autentisera med Azure CLI
-4. Tillgång till OpenAI-modellen `text-embedding-3-small` och eventuellt `gpt-4o-mini`.
+4. Tillgång till OpenAI-modellen `text-embedding-3-small` och eventuellt modellen `gpt-4o-mini`.
 
 ## Kom igång
 
@@ -236,7 +236,7 @@ cd walkthrough/03-Setup
 
 ### Distribuera Azure-resurser
 
-Kör följande skript för att automatisera distributionen av Azure-resurser som behövs för MCP-servern.
+Kör följande skript för att automatisera distributionen av de Azure-resurser som behövs för MCP-servern.
 
 Distributionsskripten kommer automatiskt att distribuera modellen `text-embedding-3-small`. Under distributionen har du möjlighet att även inkludera modellen `gpt-4o-mini`. Observera att `gpt-4o-mini` **inte är nödvändig** för detta projekt och endast inkluderas för potentiella framtida förbättringar.
 
@@ -341,7 +341,7 @@ Följande förutsätter att du använder den inbyggda MCP-serverstödet i VS Cod
 
 - **Åtkomst till flera tabeller**: Hämta scheman för flera databastabeller i en enda begäran
 - **Säker frågeexekvering**: Kör PostgreSQL-frågor med stöd för Row Level Security (RLS)
-- **Data i realtid**: Få åtkomst till aktuell försäljning, lager och kunddata
+- **Data i realtid**: Få åtkomst till aktuella försäljnings-, lager- och kunddata
 - **Datum/tid-verktyg**: Hämta aktuella UTC-tidsstämplar för tidskänslig analys
 - **Flexibel distribution**: Stödjer HTTP-serverläge
 
@@ -350,7 +350,7 @@ Följande förutsätter att du använder den inbyggda MCP-serverstödet i VS Cod
 Servern ger åtkomst till följande databastabeller för detaljhandeln:
 
 - `retail.customers` - Kundinformation och profiler
-- `retail.stores` - Butikslokaler och detaljer
+- `retail.stores` - Butiksplatser och detaljer
 - `retail.categories` - Produktkategorier och hierarkier
 - `retail.product_types` - Klassificering av produkttyper
 - `retail.products` - Produktkatalog och specifikationer
@@ -418,10 +418,10 @@ Servern implementerar Row Level Security för att säkerställa att användare e
 
 #### Butiksspecifika RLS-användar-ID:n
 
-Varje Zava Retail-butiksläge har ett unikt RLS-användar-ID som avgör vilken data användaren kan komma åt:
+Varje Zava Retail-butik har ett unikt RLS-användar-ID som avgör vilken data användaren kan komma åt:
 
-| Butiksläge | RLS-användar-ID | Beskrivning |
-|------------|-----------------|-------------|
+| Butiksplats | RLS-användar-ID | Beskrivning |
+|-------------|-----------------|-------------|
 | **Global åtkomst** | `00000000-0000-0000-0000-000000000000` | Standardfall - åtkomst till alla butiker |
 | **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Zava Retail Seattle-butikens data |
 | **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Zava Retail Bellevue-butikens data |
@@ -437,7 +437,7 @@ Varje Zava Retail-butiksläge har ett unikt RLS-användar-ID som avgör vilken d
 När en användare ansluter med ett specifikt butiks RLS-användar-ID kommer de endast att se:
 
 - Kunder associerade med den butiken
-- Beställningar gjorda vid den butikens läge
+- Beställningar gjorda på den butikens plats
 - Lagerdata för den specifika butiken
 - Butiksspecifika försäljnings- och prestationsmått
 
@@ -450,7 +450,7 @@ Detta säkerställer dataisolering mellan olika butiksplatser samtidigt som en e
 Servern använder en hanterad applikationskontext med:
 
 - **Databasanslutningspool**: Effektiv anslutningshantering för HTTP-läge
-- **Livscykelhantering**: Rätt resursrensning vid avstängning
+- **Livscykelhantering**: Korrekt resursrensning vid avstängning
 - **Typ-säkerhet**: Starkt typad kontext med `AppContext` dataklass
 
 ### Begärandekontext
@@ -474,8 +474,8 @@ Servern implementerar robust felhantering:
 
 - **Tabellvalidering**: Säkerställer att endast giltiga tabellnamn används
 - **Frågevalidering**: Validerar PostgreSQL-frågor innan exekvering
-- **Resurshantering**: Rätt rensning även vid fel
-- **Användarvänliga meddelanden**: Klara felmeddelanden för felsökning
+- **Resurshantering**: Korrekt rensning även vid fel
+- **Användarvänliga meddelanden**: Tydliga felmeddelanden för felsökning
 
 ## Säkerhetsöverväganden
 
@@ -483,13 +483,13 @@ Servern implementerar robust felhantering:
 2. **Dataisolering för butiker**: Varje butiks RLS-användar-ID säkerställer åtkomst endast till den butikens data
 3. **Inmatningsvalidering**: Tabellnamn och frågor valideras innan exekvering
 4. **Resursbegränsningar**: Frågeresultat begränsas för att förhindra överdriven resursanvändning
-5. **Anslutningssäkerhet**: Använder säkra databasanslutningsmetoder
+5. **Anslutningssäkerhet**: Använder säkra anslutningsmetoder för databasen
 6. **Verifiering av användaridentitet**: Säkerställ alltid att rätt RLS-användar-ID används för den avsedda butiken
 
 ### Viktiga säkerhetsnoteringar
 
 - **Använd aldrig produktions-RLS-användar-ID:n i utvecklingsmiljöer**
-- **Verifiera alltid att RLS-användar-ID:n matchar den avsedda butiken innan du kör frågor**
+- **Verifiera alltid att RLS-användar-ID matchar den avsedda butiken innan du kör frågor**
 - **Standard-UUID (`00000000-0000-0000-0000-000000000000`) ger begränsad åtkomst**
 - **Varje butikschef bör endast ha åtkomst till sitt butiks RLS-användar-ID**
 
@@ -530,4 +530,4 @@ När du bidrar till denna server:
 ---
 
 **Ansvarsfriskrivning**:  
-Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiska översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.
+Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, vänligen notera att automatiska översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-30T05:45:37+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T10:07:45+00:00",
   "source_file": "README.md",
   "language_code": "sw"
 }
@@ -14,71 +14,71 @@ CO_OP_TRANSLATOR_METADATA:
 [![Wachangiaji wa GitHub](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
 [![Masuala ya GitHub](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
 [![Maombi ya Kuvuta GitHub](https://img.shields.io/github/issues-pr/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/pulls)
-[![PRs Karibu](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![Jiunge na Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+[![Jiunge na Discord ya Azure AI Foundry](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 Fuata hatua hizi kuanza kutumia rasilimali hizi:
 
 1. **Fork Hifadhi**: Bonyeza [hapa kufork](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
 2. **Clone Hifadhi**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
-3. **Jiunge na Azure AI Foundry Discord**: [Kutana na wataalamu na waendelezaji wenzako](https://discord.com/invite/ByRwuEEgH4)
+3. **Jiunge na Discord ya Azure AI Foundry**: [Kutana na wataalamu na waendelezaji wenzako](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Msaada wa Lugha Nyingi
 
-#### Inasaidiwa kupitia GitHub Action (Imefanywa Kiotomatiki & Daima Imeboreshwa)
+#### Inasaidiwa kupitia GitHub Action (Imefanywa Kiotomatiki & Daima Inasasishwa)
 
 [French](../fr/README.md) | [Spanish](../es/README.md) | [German](../de/README.md) | [Russian](../ru/README.md) | [Arabic](../ar/README.md) | [Persian (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Portuguese (Brazil)](../br/README.md) | [Italian](../it/README.md) | [Polish](../pl/README.md) | [Turkish](../tr/README.md) | [Greek](../el/README.md) | [Thai](../th/README.md) | [Swedish](../sv/README.md) | [Danish](../da/README.md) | [Norwegian](../no/README.md) | [Finnish](../fi/README.md) | [Dutch](../nl/README.md) | [Hebrew](../he/README.md) | [Vietnamese](../vi/README.md) | [Indonesian](../id/README.md) | [Malay](../ms/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Swahili](./README.md) | [Hungarian](../hu/README.md) | [Czech](../cs/README.md) | [Slovak](../sk/README.md) | [Romanian](../ro/README.md) | [Bulgarian](../bg/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Croatian](../hr/README.md) | [Slovenian](../sl/README.md) | [Ukrainian](../uk/README.md) | [Burmese (Myanmar)](../my/README.md)
 
-**Ikiwa unataka msaada wa lugha za ziada, lugha zinazosaidiwa zimeorodheshwa [hapa](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Ikiwa ungependa lugha za ziada zisaidiwe, orodha ya lugha zinazopatikana inapatikana [hapa](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Utangulizi
 
-Mfano huu unaonyesha jinsi ya kujenga na kupeleka **Model Context Protocol (MCP) server** kamili inayowapa wasaidizi wa AI ufikiaji salama na wenye akili wa data za mauzo ya rejareja kupitia PostgreSQL. Mradi huu unaonyesha vipengele vya daraja la biashara ikiwa ni pamoja na **Usalama wa Kiwango cha Safu (RLS)**, **uwezo wa utafutaji wa semantiki**, na **muunganisho wa Azure AI** kwa hali halisi za uchambuzi wa rejareja.
+Mfano huu unaonyesha jinsi ya kujenga na kupeleka **Model Context Protocol (MCP) server** kamili inayowapa wasaidizi wa AI ufikiaji salama na wenye akili wa data ya mauzo ya rejareja kupitia PostgreSQL. Mradi huu unaonyesha vipengele vya daraja la biashara ikiwa ni pamoja na **Usalama wa Kiwango cha Safu (RLS)**, **uwezo wa utafutaji wa semantiki**, na **muunganisho wa Azure AI** kwa hali halisi za uchambuzi wa rejareja.
 
 **Matumizi Muhimu:**
-- **Uchambuzi wa Mauzo Unaotumia AI**: Ruhusu wasaidizi wa AI kuuliza na kuchambua data za mauzo ya rejareja kupitia lugha ya asili
-- **Ufikiaji Salama wa Wapangaji Wengi**: Onyesha utekelezaji wa Usalama wa Kiwango cha Safu ambapo mameneja wa maduka tofauti wanaweza kufikia data ya maduka yao pekee
-- **Utafutaji wa Bidhaa wa Semantiki**: Onyesha ugunduzi wa bidhaa unaotumia AI kwa kutumia maandishi ya embeddings
-- **Muunganisho wa Biashara**: Eleza jinsi ya kuunganisha MCP servers na huduma za Azure na hifadhidata za PostgreSQL
+- **Uchambuzi wa Mauzo Unaotumia AI**: Ruhusu wasaidizi wa AI kuuliza na kuchambua data ya mauzo ya rejareja kwa kutumia lugha ya kawaida
+- **Ufikiaji Salama wa Wateja Wengi**: Onyesha utekelezaji wa Usalama wa Kiwango cha Safu ambapo mameneja wa maduka tofauti wanaweza kufikia data ya maduka yao pekee
+- **Utafutaji wa Bidhaa wa Semantiki**: Onyesha ugunduzi wa bidhaa unaotumia AI kwa kutumia embeddings za maandishi
+- **Muunganisho wa Biashara**: Eleza jinsi ya kuunganisha MCP server na huduma za Azure na hifadhidata za PostgreSQL
 
 **Inafaa kwa:**
-- Waendelezaji wanaojifunza kujenga MCP servers na muunganisho wa hifadhidata
-- Wahandisi wa data wanaotekeleza suluhisho salama za uchambuzi wa wapangaji wengi
-- Waendelezaji wa programu za AI wanaofanya kazi na data za rejareja au e-commerce
+- Waendelezaji wanaojifunza kujenga MCP server na muunganisho wa hifadhidata
+- Wahandisi wa data wanaotekeleza suluhisho salama za uchambuzi wa wateja wengi
+- Waendelezaji wa programu za AI wanaofanya kazi na data ya rejareja au e-commerce
 - Yeyote anayevutiwa na kuunganisha wasaidizi wa AI na hifadhidata za biashara
 
-## Jiunge na Jumuiya ya Azure AI Foundry Discord
+## Jiunge na Jamii ya Discord ya Azure AI Foundry
 Shiriki uzoefu wako wa MCP na kutana na wataalamu na vikundi vya bidhaa
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-# Server ya MCP ya Uchambuzi wa Mauzo
+# MCP Server ya Uchambuzi wa Mauzo
 
-Server ya Model Context Protocol (MCP) inayotoa ufikiaji wa kina wa hifadhidata ya mauzo ya wateja kwa Biashara ya Zava Retail DIY. Server hii inawawezesha wasaidizi wa AI kuuliza na kuchambua data za mauzo ya rejareja kupitia kiolesura salama na kinachojua schema.
+Model Context Protocol (MCP) server inayotoa ufikiaji kamili wa hifadhidata ya mauzo ya wateja kwa Biashara ya Zava Retail DIY. Server hii inawawezesha wasaidizi wa AI kuuliza na kuchambua data ya mauzo ya rejareja kupitia interface salama na inayojua schema.
 
 ## 📚 Mwongozo Kamili wa Utekelezaji
 
-Kwa maelezo ya kina ya jinsi suluhisho hili linajengwa na jinsi ya kutekeleza MCP servers zinazofanana, angalia **[Mwongozo wa Mfano](Sample_Walkthrough.md)**. Mwongozo huu unatoa:
+Kwa maelezo ya kina ya jinsi suluhisho hili linajengwa na jinsi ya kutekeleza MCP server zinazofanana, angalia **[Mwongozo wa Mfano](Sample_Walkthrough.md)**. Mwongozo huu unatoa:
 
-- **Uchambuzi wa Muundo wa Usanifu**: Uchambuzi wa vipengele na mifumo ya muundo
-- **Ujenzi Hatua kwa Hatua**: Kuanzia usanidi wa mradi hadi upelekaji
-- **Ufafanuzi wa Msimbo**: Maelezo ya kina ya utekelezaji wa server ya MCP
+- **Uchambuzi wa Muundo wa Kifaa**: Uchambuzi wa vipengele na mifumo ya muundo
+- **Hatua kwa Hatua ya Ujenzi**: Kuanzia usanidi wa mradi hadi upelekaji
+- **Ufafanuzi wa Msimbo**: Maelezo ya kina ya utekelezaji wa MCP server
 - **Vipengele vya Juu**: Usalama wa Kiwango cha Safu, utafutaji wa semantiki, na ufuatiliaji
 - **Mbinu Bora**: Miongozo ya usalama, utendaji, na maendeleo
 - **Utatuzi wa Matatizo**: Masuala ya kawaida na suluhisho
 
 Inafaa kwa waendelezaji wanaotaka kuelewa maelezo ya utekelezaji na kujenga suluhisho zinazofanana.
 
-## 🤖 MCP ni Nini (Model Context Protocol)?
+## 🤖 MCP (Model Context Protocol) ni Nini?
 
-**Model Context Protocol (MCP)** ni kiwango cha wazi kinachowezesha wasaidizi wa AI kufikia vyanzo vya data vya nje na zana kwa usalama na kwa wakati halisi. Fikiria kama daraja linaloruhusu mifano ya AI kuunganishwa na hifadhidata, APIs, mifumo ya faili, na rasilimali nyingine huku ikidumisha usalama na udhibiti.
+**Model Context Protocol (MCP)** ni kiwango cha wazi kinachowezesha wasaidizi wa AI kufikia vyanzo vya data vya nje na zana kwa usalama na kwa wakati halisi. Fikiria kama daraja linaloruhusu mifano ya AI kuunganishwa na hifadhidata, API, mifumo ya faili, na rasilimali nyingine huku ikidumisha usalama na udhibiti.
 
 ### Faida Muhimu:
-- **Ufikiaji wa Data kwa Wakati Halisi**: Wasaidizi wa AI wanaweza kuuliza hifadhidata na APIs moja kwa moja
+- **Ufikiaji wa Data kwa Wakati Halisi**: Wasaidizi wa AI wanaweza kuuliza hifadhidata na API za moja kwa moja
 - **Muunganisho Salama**: Ufikiaji unaodhibitiwa na uthibitishaji na ruhusa  
 - **Uongezaji wa Zana**: Ongeza uwezo maalum kwa wasaidizi wa AI
-- **Kiwango Kilichowekwa**: Hufanya kazi kwenye majukwaa na zana tofauti za AI
+- **Kiwango Kilichowekwa**: Hufanya kazi katika majukwaa na zana tofauti za AI
 
 ### Mpya kwa MCP?
 
@@ -87,17 +87,17 @@ Ikiwa wewe ni mpya kwa Model Context Protocol, tunapendekeza kuanza na rasilimal
 **📖 [Mwongozo wa MCP kwa Wanaoanza](https://aka.ms/mcp-for-beginners)**
 
 Rasilimali hii inatoa:
-- Utangulizi wa dhana za MCP na usanifu
-- Mafunzo ya hatua kwa hatua ya kujenga server yako ya kwanza ya MCP
+- Utangulizi wa dhana za MCP na muundo wake
+- Mafunzo ya hatua kwa hatua ya kujenga MCP server yako ya kwanza
 - Mbinu bora za maendeleo ya MCP
 - Mifano ya muunganisho na majukwaa maarufu ya AI
-- Rasilimali za jumuiya na msaada
+- Rasilimali za jamii na msaada
 
 Mara tu unapopata uelewa wa msingi, rudi hapa kuchunguza utekelezaji huu wa hali ya juu wa uchambuzi wa rejareja!
 
 ## 📚 Mwongozo Kamili wa Kujifunza: /walkthrough
 
-Hifadhi hii inajumuisha **mwongozo wa kujifunza wa moduli 12** unaovunja mfano huu wa server ya MCP ya rejareja katika masomo yanayoweza kueleweka, hatua kwa hatua. Mwongozo huu unabadilisha mfano huu wa kazi kuwa rasilimali ya elimu kamili inayofaa kwa waendelezaji wanaotaka kuelewa jinsi ya kujenga server za MCP zinazofaa kwa uzalishaji na muunganisho wa hifadhidata.
+Hifadhi hii inajumuisha **mwongozo wa mafunzo wa moduli 12** unaovunja mfano huu wa MCP server ya rejareja katika masomo yanayoweza kueleweka, hatua kwa hatua. Mwongozo huu hubadilisha mfano huu wa kazi kuwa rasilimali ya kina ya elimu inayofaa kwa waendelezaji wanaotaka kuelewa jinsi ya kujenga MCP server zinazofaa kwa uzalishaji na muunganisho wa hifadhidata.
 
 ### Kile Utakachojifunza
 
@@ -105,32 +105,32 @@ Mwongozo unashughulikia kila kitu kuanzia dhana za msingi za MCP hadi upelekaji 
 
 - **Misingi ya MCP**: Kuelewa Model Context Protocol na matumizi yake halisi
 - **Muunganisho wa Hifadhidata**: Kutekeleza muunganisho salama wa PostgreSQL na Usalama wa Kiwango cha Safu
-- **Vipengele Vilivyoboreshwa na AI**: Kuongeza uwezo wa utafutaji wa semantiki kwa embeddings za Azure OpenAI
+- **Vipengele Vinavyotumia AI**: Kuongeza uwezo wa utafutaji wa semantiki kwa embeddings za Azure OpenAI
 - **Utekelezaji wa Usalama**: Uthibitishaji wa daraja la biashara, ruhusa, na kutenganisha data
 - **Maendeleo ya Zana**: Kujenga zana za MCP za uchambuzi wa data na akili ya biashara
-- **Upimaji na Utatuzi wa Matatizo**: Mikakati ya upimaji wa kina na mbinu za utatuzi wa matatizo
-- **Muunganisho wa VS Code**: Kuseti AI Chat kwa maswali ya hifadhidata kwa lugha ya asili
+- **Upimaji na Utatuzi wa Hitilafu**: Mikakati ya upimaji wa kina na mbinu za utatuzi wa hitilafu
+- **Muunganisho wa VS Code**: Kuseti AI Chat kwa maswali ya hifadhidata kwa lugha ya kawaida
 - **Upelekaji wa Uzalishaji**: Uwekaji wa kontena, upanuzi, na mikakati ya upelekaji wa wingu
-- **Ufuatiliaji na Uangalizi**: Ufuatiliaji wa Programu, ukataji wa kumbukumbu, na ufuatiliaji wa utendaji
+- **Ufuatiliaji na Uangalizi**: Ufuatiliaji wa programu, kumbukumbu, na ufuatiliaji wa utendaji
 
 ### Muhtasari wa Njia ya Kujifunza
 
-Mwongozo unafuata muundo wa kujifunza wa maendeleo ulioundwa kwa waendelezaji wa viwango vyote vya ujuzi:
+Mwongozo unafuata muundo wa kujifunza unaoendelea ulioundwa kwa waendelezaji wa viwango vyote vya ujuzi:
 
 | Moduli | Eneo la Kuzingatia | Maelezo | Makadirio ya Muda |
 |--------|--------------------|---------|-------------------|
-| **[00-Utangulizi](walkthrough/00-Introduction/README.md)** | Msingi | Dhana za MCP, utafiti wa kesi ya Zava Retail, muhtasari wa usanifu | Dakika 30 |
-| **[01-Usanifu](walkthrough/01-Architecture/README.md)** | Mifumo ya Muundo | Usanifu wa kiufundi, muundo wa tabaka, vipengele vya mfumo | Dakika 45 |
-| **[02-Usalama](walkthrough/02-Security/README.md)** | Usalama wa Biashara | Uthibitishaji wa Azure, Usalama wa Kiwango cha Safu, kutenganisha wapangaji wengi | Dakika 60 |
+| **[00-Utangulizi](walkthrough/00-Introduction/README.md)** | Msingi | Dhana za MCP, utafiti wa kesi ya Zava Retail, muhtasari wa muundo | Dakika 30 |
+| **[01-Muundo](walkthrough/01-Architecture/README.md)** | Mifumo ya Muundo | Muundo wa kiufundi, muundo wa tabaka, vipengele vya mfumo | Dakika 45 |
+| **[02-Usalama](walkthrough/02-Security/README.md)** | Usalama wa Biashara | Uthibitishaji wa Azure, Usalama wa Kiwango cha Safu, kutenganisha wateja wengi | Dakika 60 |
 | **[03-Usanidi](walkthrough/03-Setup/README.md)** | Mazingira | Usanidi wa Docker, Azure CLI, usanidi wa mradi, uthibitishaji | Dakika 45 |
 | **[04-Hifadhidata](walkthrough/04-Database/README.md)** | Tabaka la Data | Schema ya PostgreSQL, pgvector, sera za RLS, data ya mfano | Dakika 60 |
 | **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Utekelezaji wa Msingi | Mfumo wa FastMCP, muunganisho wa hifadhidata, usimamizi wa muunganisho | Dakika 90 |
 | **[06-Zana](walkthrough/06-Tools/README.md)** | Maendeleo ya Zana | Uundaji wa zana za MCP, uthibitishaji wa maswali, vipengele vya akili ya biashara | Dakika 75 |
 | **[07-Utafutaji wa Semantiki](walkthrough/07-Semantic-Search/README.md)** | Muunganisho wa AI | Embeddings za Azure OpenAI, utafutaji wa vector, mikakati ya utafutaji mseto | Dakika 60 |
-| **[08-Upimaji](walkthrough/08-Testing/README.md)** | Uhakikisho wa Ubora | Upimaji wa vitengo, upimaji wa muunganisho, upimaji wa utendaji, utatuzi wa matatizo | Dakika 75 |
-| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Uzoefu wa Maendeleo | Usanidi wa VS Code, muunganisho wa AI Chat, mifumo ya utatuzi wa matatizo | Dakika 45 |
+| **[08-Upimaji](walkthrough/08-Testing/README.md)** | Uhakikisho wa Ubora | Upimaji wa vitengo, upimaji wa muunganisho, upimaji wa utendaji, utatuzi wa hitilafu | Dakika 75 |
+| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Uzoefu wa Maendeleo | Usanidi wa VS Code, muunganisho wa AI Chat, mifumo ya utatuzi wa hitilafu | Dakika 45 |
 | **[10-Upelekaji](walkthrough/10-Deployment/README.md)** | Tayari kwa Uzalishaji | Uwekaji wa kontena, Azure Container Apps, mikondo ya CI/CD, upanuzi | Dakika 90 |
-| **[11-Ufuatiliaji](walkthrough/11-Monitoring/README.md)** | Uangalizi | Ufuatiliaji wa Programu, ukataji wa kumbukumbu ulioandaliwa, vipimo vya utendaji | Dakika 60 |
+| **[11-Ufuatiliaji](walkthrough/11-Monitoring/README.md)** | Uangalizi | Ufuatiliaji wa programu, kumbukumbu zilizopangwa, vipimo vya utendaji | Dakika 60 |
 | **[12-Mbinu Bora](walkthrough/12-Best-Practices/README.md)** | Ubora wa Uzalishaji | Kuimarisha usalama, kuboresha utendaji, mifumo ya biashara | Dakika 45 |
 
 **Jumla ya Muda wa Kujifunza**: ~12-15 saa za kujifunza kwa vitendo kwa kina
@@ -140,7 +140,7 @@ Mwongozo unafuata muundo wa kujifunza wa maendeleo ulioundwa kwa waendelezaji wa
 **Kwa Wanaoanza**:
 1. Anza na [Moduli 00: Utangulizi](walkthrough/00-Introduction/README.md) kuelewa misingi ya MCP
 2. Fuata moduli kwa mpangilio kwa uzoefu kamili wa kujifunza
-3. Kila moduli inajenga juu ya dhana za awali na inajumuisha mazoezi ya vitendo
+3. Kila moduli inajenga dhana za awali na inajumuisha mazoezi ya vitendo
 
 **Kwa Waendelezaji Wenye Uzoefu**:
 1. Tathmini [Muhtasari wa Mwongozo Mkuu](walkthrough/README.md) kwa muhtasari wa moduli zote
@@ -183,10 +183,10 @@ cd walkthrough/03-Setup
 - Uelewa wa jumla wa dhana za AI/ML
 - Maarifa ya msingi ya mstari wa amri na Docker
 
-**Sio Lazima (lakini ni muhimu)**:
+**Sio Lazima (lakini ni msaada)**:
 - Uzoefu wa awali wa MCP (tunafundisha kutoka mwanzo)
 - Uzoefu wa wingu la Azure (tunatoa mwongozo wa hatua kwa hatua)
-- Maarifa ya juu ya PostgreSQL (tunafafanua dhana inapohitajika)
+- Maarifa ya hali ya juu ya PostgreSQL (tunafafanua dhana inapohitajika)
 
 ### 💡 Vidokezo vya Kujifunza
 
@@ -198,12 +198,12 @@ cd walkthrough/03-Setup
 
 ### 🔗 Rasilimali Zinazohusiana
 
-- **[MCP kwa Kompyuta](https://aka.ms/mcp-for-beginners)**: Usomaji wa msingi muhimu
-- **[Mwongozo wa Mfano](Sample_Walkthrough.md)**: Muhtasari wa kiufundi wa kiwango cha juu
+- **[MCP kwa Anayeanza](https://aka.ms/mcp-for-beginners)**: Usomaji wa msingi muhimu
+- **[Mfano wa Muhtasari](Sample_Walkthrough.md)**: Muhtasari wa kiufundi wa kiwango cha juu
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Jukwaa la wingu linalotumika katika mifano
 - **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Mfumo wa utekelezaji wa MCP wa Python
 
-**Tayari kuanza kujifunza?** Anza na **[Moduli 00: Utangulizi](walkthrough/00-Introduction/README.md)** au chunguza **[muhtasari kamili wa mwongozo](walkthrough/README.md)**.
+**Uko tayari kuanza kujifunza?** Anza na **[Moduli 00: Utangulizi](walkthrough/00-Introduction/README.md)** au chunguza **[muhtasari kamili wa mwongozo](walkthrough/README.md)**.
 
 ## Mahitaji
 
@@ -292,7 +292,7 @@ Hii inadhani utatumia msaada wa seva ya MCP ndani ya VS Code.
 2. Anzisha seva moja au zaidi za MCP ukitumia usanidi katika `.vscode/mcp.json`. Faili ina usanidi wa seva nne tofauti, kila moja ikiwakilisha jukumu tofauti la meneja wa duka:
 
    - Kila usanidi hutumia kitambulisho cha kipekee cha RLS (Usalama wa Kiwango cha Safu)
-   - Vitambulisho hivi vya watumiaji vinaiga utambulisho wa mameneja wa duka tofauti wanaofikia hifadhidata
+   - Vitambulisho hivi vya mtumiaji vinaiga utambulisho wa mameneja wa duka tofauti wanaopata hifadhidata
    - Mfumo wa RLS unazuia ufikiaji wa data kulingana na duka lililowekwa kwa meneja
    - Hii inaiga hali halisi ambapo mameneja wa duka huingia kwa akaunti tofauti za Entra ID
 
@@ -342,7 +342,7 @@ Hii inadhani utatumia msaada wa seva ya MCP ndani ya VS Code.
 - **Ufikiaji wa Mifumo ya Jedwali Nyingi**: Pata mifumo ya hifadhidata kwa meza nyingi kwa ombi moja
 - **Utekelezaji Salama wa Maswali**: Endesha maswali ya PostgreSQL kwa msaada wa Usalama wa Kiwango cha Safu (RLS)
 - **Data ya Wakati Halisi**: Pata mauzo ya sasa, hesabu, na data ya wateja
-- **Zana za Tarehe/Muda**: Pata timestamps za sasa za UTC kwa uchambuzi unaotegemea muda
+- **Zana za Tarehe/Muda**: Pata alama za muda za UTC za sasa kwa uchambuzi unaotegemea muda
 - **Usambazaji Rahisi**: Inasaidia hali ya seva ya HTTP
 
 ## Meza Zinazoungwa Mkono
@@ -351,7 +351,7 @@ Seva inatoa ufikiaji kwa meza zifuatazo za hifadhidata ya rejareja:
 
 - `retail.customers` - Taarifa za wateja na maelezo yao
 - `retail.stores` - Maeneo ya maduka na maelezo
-- `retail.categories` - Kategoria za bidhaa na hierakia
+- `retail.categories` - Kategoria za bidhaa na miundo yao
 - `retail.product_types` - Uainishaji wa aina za bidhaa
 - `retail.products` - Katalogi ya bidhaa na maelezo
 - `retail.orders` - Maagizo ya wateja na miamala
@@ -378,7 +378,7 @@ Endesha maswali ya PostgreSQL dhidi ya hifadhidata ya mauzo kwa msaada wa Usalam
 
 - `postgresql_query` (str): Swali la PostgreSQL lililoandaliwa vizuri
 
-**Inarudisha:** Matokeo ya maswali yaliyopangwa kama kamba (yamepunguzwa hadi safu 20 kwa usomaji)
+**Inarudisha:** Matokeo ya swali yaliyopangwa kama kamba (yamepunguzwa hadi safu 20 kwa usomaji)
 
 **Mazoezi Bora:**
 
@@ -396,7 +396,7 @@ Pata tarehe na muda wa sasa wa UTC katika muundo wa ISO.
 
 ### `semantic_search_products`
 
-Fanya utafutaji wa semantiki kwa bidhaa kulingana na maswali ya mtumiaji.
+Fanya utafutaji wa semantiki wa bidhaa kulingana na maswali ya mtumiaji.
 
 **Inarudisha:** Orodha ya bidhaa zinazolingana na vigezo vya utafutaji
 
@@ -414,15 +414,15 @@ Seva inatekeleza Usalama wa Kiwango cha Safu ili kuhakikisha watumiaji wanapata 
 
 - **Hali ya HTTP**: Inatumia kichwa cha `x-rls-user-id` kutambua mtumiaji anayefanya ombi
 
-- **Fallback ya Kawaida**: Inatumia UUID ya placeholder wakati hakuna kitambulisho cha mtumiaji kinachotolewa
+- **Chaguo-msingi**: Inatumia UUID ya nafasi wakati hakuna kitambulisho cha mtumiaji kinachotolewa
 
-#### Vitambulisho vya Watumiaji vya RLS vya Duka Mahususi
+#### Vitambulisho vya Mtumiaji vya RLS vya Duka Mahususi
 
-Kila eneo la duka la Zava Retail lina kitambulisho cha kipekee cha RLS kinachoamua data ambayo mtumiaji anaweza kufikia:
+Kila eneo la duka la Zava Retail lina kitambulisho cha kipekee cha mtumiaji cha RLS kinachoamua data ambayo mtumiaji anaweza kufikia:
 
-| Eneo la Duka | Kitambulisho cha RLS | Maelezo |
+| Eneo la Duka | Kitambulisho cha Mtumiaji cha RLS | Maelezo |
 |---------------|-------------|-------------|
-| **Ufikiaji wa Ulimwengu** | `00000000-0000-0000-0000-000000000000` | Fallback ya kawaida - ufikiaji wa maduka yote |
+| **Ufikiaji wa Ulimwengu** | `00000000-0000-0000-0000-000000000000` | Chaguo-msingi - ufikiaji wa maduka yote |
 | **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Data ya duka la Zava Retail Seattle |
 | **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Data ya duka la Zava Retail Bellevue |
 | **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Data ya duka la Zava Retail Tacoma |
@@ -434,7 +434,7 @@ Kila eneo la duka la Zava Retail lina kitambulisho cha kipekee cha RLS kinachoam
 
 #### Utekelezaji wa RLS
 
-Wakati mtumiaji anaunganishwa na kitambulisho cha RLS cha duka mahususi, ataona tu:
+Wakati mtumiaji anaunganishwa na kitambulisho cha mtumiaji cha RLS cha duka mahususi, ataona tu:
 
 - Wateja wanaohusiana na duka hilo
 - Maagizo yaliyowekwa katika eneo hilo la duka
@@ -443,13 +443,13 @@ Wakati mtumiaji anaunganishwa na kitambulisho cha RLS cha duka mahususi, ataona 
 
 Hii inahakikisha kutengwa kwa data kati ya maeneo tofauti ya duka huku ikihifadhi mfumo wa hifadhidata wa umoja.
 
-## Usanifu
+## Muundo wa Mfumo
 
-### Muktadha wa Maombi
+### Muktadha wa Programu
 
-Seva inatumia muktadha wa maombi uliosimamiwa na:
+Seva inatumia muktadha wa programu uliosimamiwa na:
 
-- **Mfuko wa Muunganisho wa Hifadhidata**: Usimamizi mzuri wa muunganisho kwa hali ya HTTP
+- **Kidimbwi cha Muunganisho wa Hifadhidata**: Usimamizi mzuri wa muunganisho kwa hali ya HTTP
 - **Usimamizi wa Mzunguko wa Maisha**: Usafishaji sahihi wa rasilimali wakati wa kuzimwa
 - **Usalama wa Aina**: Muktadha uliotajwa kwa nguvu na darasa la `AppContext`
 
@@ -463,35 +463,35 @@ Seva inatumia muktadha wa maombi uliosimamiwa na:
 
 Seva inaunganishwa na hifadhidata ya PostgreSQL kupitia darasa la `PostgreSQLSchemaProvider`:
 
-- **Mfuko wa Muunganisho**: Inatumia mifuko ya muunganisho wa async kwa upanuzi
+- **Kidimbwi cha Muunganisho**: Inatumia vidimbwi vya muunganisho vya async kwa upanuzi
 - **Metadata ya Mfumo**: Inatoa maelezo ya kina ya mfumo wa meza
 - **Utekelezaji wa Maswali**: Utekelezaji salama wa maswali kwa msaada wa RLS
-- **Usimamizi wa Rasilimali**: Usafishaji wa moja kwa moja wa rasilimali za hifadhidata
+- **Usimamizi wa Rasilimali**: Usafishaji wa rasilimali za hifadhidata moja kwa moja
 
 ## Ushughulikiaji wa Makosa
 
-Seva inatekeleza ushughulikiaji wa makosa thabiti:
+Seva inatekeleza ushughulikiaji wa makosa wa nguvu:
 
 - **Uthibitishaji wa Meza**: Inahakikisha majina halali ya meza pekee yanapata ufikiaji
 - **Uthibitishaji wa Maswali**: Inathibitisha maswali ya PostgreSQL kabla ya utekelezaji
 - **Usimamizi wa Rasilimali**: Usafishaji sahihi hata wakati wa makosa
-- **Ujumbe wa Kirafiki kwa Mtumiaji**: Ujumbe wa wazi wa makosa kwa utatuzi wa matatizo
+- **Ujumbe wa Kirafiki kwa Mtumiaji**: Ujumbe wa makosa wazi kwa utatuzi wa matatizo
 
 ## Masuala ya Usalama
 
 1. **Usalama wa Kiwango cha Safu**: Maswali yote yanaheshimu sera za RLS kulingana na utambulisho wa mtumiaji
-2. **Kutengwa kwa Data ya Duka**: Kitambulisho cha RLS cha kila duka kinahakikisha ufikiaji wa data ya duka hilo pekee
+2. **Kutengwa kwa Data ya Duka**: Kitambulisho cha mtumiaji cha RLS cha kila duka kinahakikisha ufikiaji wa data ya duka hilo pekee
 3. **Uthibitishaji wa Ingizo**: Majina ya meza na maswali yanathibitishwa kabla ya utekelezaji
 4. **Mipaka ya Rasilimali**: Matokeo ya maswali yamepunguzwa ili kuzuia matumizi ya rasilimali kupita kiasi
 5. **Usalama wa Muunganisho**: Inatumia mazoea salama ya muunganisho wa hifadhidata
-6. **Uthibitishaji wa Utambulisho wa Mtumiaji**: Kila mara hakikisha kitambulisho sahihi cha RLS kinatumika kwa duka lililokusudiwa
+6. **Uthibitishaji wa Utambulisho wa Mtumiaji**: Kila mara hakikisha kitambulisho sahihi cha mtumiaji cha RLS kinatumika kwa duka lililokusudiwa
 
 ### Vidokezo Muhimu vya Usalama
 
-- **Kamwe usitumie vitambulisho vya RLS vya uzalishaji katika mazingira ya maendeleo**
-- **Kila mara hakikisha kitambulisho cha RLS kinacholingana na duka lililokusudiwa kabla ya kuendesha maswali**
-- **UUID ya kawaida (`00000000-0000-0000-0000-000000000000`) hutoa ufikiaji mdogo**
-- **Kila meneja wa duka anapaswa kuwa na ufikiaji wa kitambulisho cha RLS cha duka lake pekee**
+- **Usitumie vitambulisho vya mtumiaji vya RLS vya uzalishaji katika mazingira ya maendeleo**
+- **Kila mara hakikisha kitambulisho cha mtumiaji cha RLS kinalingana na duka lililokusudiwa kabla ya kuendesha maswali**
+- **UUID ya chaguo-msingi (`00000000-0000-0000-0000-000000000000`) inatoa ufikiaji mdogo**
+- **Kila meneja wa duka anapaswa kuwa na ufikiaji wa kitambulisho cha mtumiaji cha RLS cha duka lake pekee**
 
 ## Maendeleo
 
@@ -508,7 +508,7 @@ mcp_server/
 
 - **Seva ya FastMCP**: Utekelezaji wa kisasa wa seva ya MCP na msaada wa async
 - **Mtoa Huduma wa PostgreSQL**: Safu ya unyumbufu wa hifadhidata na msaada wa RLS
-- **Usimamizi wa Muktadha**: Ushughulikiaji wa muktadha wa maombi na ombi ulio salama kwa aina
+- **Usimamizi wa Muktadha**: Ushughulikiaji wa muktadha wa programu na ombi ulio salama kwa aina
 - **Usajili wa Zana**: Usajili wa zana kwa tamko na uthibitishaji wa Pydantic
 
 ## Kuchangia
@@ -530,4 +530,4 @@ Unapochangia kwenye seva hii:
 ---
 
 **Kanusho**:  
-Hati hii imetafsiriwa kwa kutumia huduma ya tafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kuhakikisha usahihi, tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati ya asili katika lugha yake ya awali inapaswa kuchukuliwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.
+Hati hii imetafsiriwa kwa kutumia huduma ya tafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kuhakikisha usahihi, tafadhali fahamu kuwa tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati ya asili katika lugha yake ya awali inapaswa kuzingatiwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.
