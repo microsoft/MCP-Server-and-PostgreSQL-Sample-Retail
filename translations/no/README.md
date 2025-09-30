@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T21:44:40+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T09:55:59+00:00",
   "source_file": "README.md",
   "language_code": "no"
 }
@@ -18,7 +18,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Bli med på Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Følg disse trinnene for å komme i gang med ressursene:
+Følg disse stegene for å komme i gang med ressursene:
 
 1. **Fork Repository**: Klikk [her for å fork](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
 2. **Klon Repository**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
@@ -28,18 +28,18 @@ Følg disse trinnene for å komme i gang med ressursene:
 
 #### Støttet via GitHub Action (Automatisk og Alltid Oppdatert)
 
-[Fransk](../fr/README.md) | [Spansk](../es/README.md) | [Tysk](../de/README.md) | [Russisk](../ru/README.md) | [Arabisk](../ar/README.md) | [Persisk (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Kinesisk (Forenklet)](../zh/README.md) | [Kinesisk (Tradisjonell, Macau)](../mo/README.md) | [Kinesisk (Tradisjonell, Hong Kong)](../hk/README.md) | [Kinesisk (Tradisjonell, Taiwan)](../tw/README.md) | [Japansk](../ja/README.md) | [Koreansk](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portugisisk (Portugal)](../pt/README.md) | [Portugisisk (Brasil)](../br/README.md) | [Italiensk](../it/README.md) | [Polsk](../pl/README.md) | [Tyrkisk](../tr/README.md) | [Gresk](../el/README.md) | [Thai](../th/README.md) | [Svensk](../sv/README.md) | [Dansk](../da/README.md) | [Norsk](./README.md) | [Finsk](../fi/README.md) | [Nederlandsk](../nl/README.md) | [Hebraisk](../he/README.md) | [Vietnamesisk](../vi/README.md) | [Indonesisk](../id/README.md) | [Malay](../ms/README.md) | [Tagalog (Filippinsk)](../tl/README.md) | [Swahili](../sw/README.md) | [Ungarsk](../hu/README.md) | [Tsjekkisk](../cs/README.md) | [Slovakisk](../sk/README.md) | [Rumensk](../ro/README.md) | [Bulgarsk](../bg/README.md) | [Serbisk (Kyrillisk)](../sr/README.md) | [Kroatisk](../hr/README.md) | [Slovensk](../sl/README.md) | [Ukrainsk](../uk/README.md) | [Burmesisk (Myanmar)](../my/README.md)
+[Fransk](../fr/README.md) | [Spansk](../es/README.md) | [Tysk](../de/README.md) | [Russisk](../ru/README.md) | [Arabisk](../ar/README.md) | [Persisk (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Kinesisk (Forenklet)](../zh/README.md) | [Kinesisk (Tradisjonell, Macau)](../mo/README.md) | [Kinesisk (Tradisjonell, Hong Kong)](../hk/README.md) | [Kinesisk (Tradisjonell, Taiwan)](../tw/README.md) | [Japansk](../ja/README.md) | [Koreansk](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portugisisk (Portugal)](../pt/README.md) | [Portugisisk (Brasil)](../br/README.md) | [Italiensk](../it/README.md) | [Polsk](../pl/README.md) | [Tyrkisk](../tr/README.md) | [Gresk](../el/README.md) | [Thai](../th/README.md) | [Svensk](../sv/README.md) | [Dansk](../da/README.md) | [Norsk](./README.md) | [Finsk](../fi/README.md) | [Nederlandsk](../nl/README.md) | [Hebraisk](../he/README.md) | [Vietnamesisk](../vi/README.md) | [Indonesisk](../id/README.md) | [Malayisk](../ms/README.md) | [Tagalog (Filippinsk)](../tl/README.md) | [Swahili](../sw/README.md) | [Ungarsk](../hu/README.md) | [Tsjekkisk](../cs/README.md) | [Slovakisk](../sk/README.md) | [Rumensk](../ro/README.md) | [Bulgarsk](../bg/README.md) | [Serbisk (Kyrillisk)](../sr/README.md) | [Kroatisk](../hr/README.md) | [Slovensk](../sl/README.md) | [Ukrainsk](../uk/README.md) | [Burmesisk (Myanmar)](../my/README.md)
 
-**Hvis du ønsker å få støtte for flere oversettelser, er tilgjengelige språk listet [her](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Hvis du ønsker støtte for flere språk, finner du en liste [her](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Introduksjon
 
-Dette eksempelet viser hvordan man bygger og distribuerer en omfattende **Model Context Protocol (MCP) server** som gir AI-assistenter sikker og intelligent tilgang til butikksalgsdata gjennom PostgreSQL. Prosjektet demonstrerer funksjoner på bedriftsnivå, inkludert **Row Level Security (RLS)**, **semantisk søkefunksjonalitet**, og **Azure AI-integrasjon** for virkelige scenarier innen butikkanalyse.
+Dette eksempelet viser hvordan man bygger og distribuerer en omfattende **Model Context Protocol (MCP) server** som gir AI-assistenter sikker og intelligent tilgang til butikksalgsdata via PostgreSQL. Prosjektet demonstrerer funksjoner på bedriftsnivå, inkludert **Row Level Security (RLS)**, **semantisk søkefunksjonalitet**, og **Azure AI-integrasjon** for virkelige scenarier innen butikkanalyse.
 
 **Viktige Bruksområder:**
 - **AI-drevet Salgsanalyse**: Gjør det mulig for AI-assistenter å spørre og analysere butikksalgsdata med naturlig språk
 - **Sikker Multi-Tenant Tilgang**: Demonstrer implementering av Row Level Security der ulike butikksjefer kun kan få tilgang til data fra sin egen butikk
-- **Semantisk Produktsøk**: Vis frem AI-forbedret produktoppdagelse ved hjelp av tekstinnbedding
+- **Semantisk Produktsøk**: Vis frem AI-forbedret produktoppdagelse ved hjelp av tekstembeddings
 - **Bedriftsintegrasjon**: Illustrer hvordan MCP-servere kan integreres med Azure-tjenester og PostgreSQL-databaser
 
 **Perfekt for:**
@@ -49,9 +49,9 @@ Dette eksempelet viser hvordan man bygger og distribuerer en omfattende **Model 
 - Alle som er interessert i å kombinere AI-assistenter med bedriftsdatabaser
 
 ## Bli med i Azure AI Foundry Discord Community
-Del dine erfaringer med MCP og møt eksperter og produktgrupper
+Del dine erfaringer med MCP og møt eksperter og produktgrupper 
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # MCP Server for Salgsanalyse
 
@@ -59,13 +59,13 @@ En Model Context Protocol (MCP) server som gir omfattende tilgang til kundesalgs
 
 ## 📚 Komplett Implementeringsguide
 
-For en detaljert gjennomgang av hvordan denne løsningen er bygget og hvordan man implementerer lignende MCP-servere, se vår omfattende **[Eksempel Walkthrough](Sample_Walkthrough.md)**. Denne guiden gir:
+For en detaljert gjennomgang av hvordan denne løsningen er bygget og hvordan man implementerer lignende MCP-servere, se vår omfattende **[Eksempelgjennomgang](Sample_Walkthrough.md)**. Denne guiden gir:
 
 - **Arkitekturdybde**: Komponentanalyse og designmønstre
 - **Trinnvis Bygging**: Fra prosjektoppsett til distribusjon
 - **Kodegjennomgang**: Detaljert forklaring av MCP-serverimplementering
-- **Avanserte Funksjoner**: Row Level Security, semantisk søk og overvåking
-- **Beste Praksis**: Sikkerhet, ytelse og utviklingsretningslinjer
+- **Avanserte Funksjoner**: Row Level Security, semantisk søk, og overvåking
+- **Beste Praksis**: Sikkerhet, ytelse, og utviklingsretningslinjer
 - **Feilsøking**: Vanlige problemer og løsninger
 
 Perfekt for utviklere som ønsker å forstå implementeringsdetaljer og bygge lignende løsninger.
@@ -77,7 +77,7 @@ Perfekt for utviklere som ønsker å forstå implementeringsdetaljer og bygge li
 ### Viktige Fordeler:
 - **Sanntids Data Tilgang**: AI-assistenter kan spørre live databaser og API-er
 - **Sikker Integrasjon**: Kontrollert tilgang med autentisering og tillatelser  
-- **Verktøy Utvidbarhet**: Legg til egendefinerte funksjoner for AI-assistenter
+- **Verktøyutvidelse**: Legg til egendefinerte funksjoner for AI-assistenter
 - **Standardisert Protokoll**: Fungerer på tvers av ulike AI-plattformer og verktøy
 
 ### Ny til MCP?
@@ -97,7 +97,7 @@ Når du har forstått det grunnleggende, kan du komme tilbake hit for å utforsk
 
 ## 📚 Omfattende Læringsguide: /walkthrough
 
-Dette repositoriet inkluderer en komplett **12-modulers læringsgjennomgang** som bryter ned dette MCP butikkservereksempelet i fordøyelige, trinnvise leksjoner. Gjennomgangen forvandler dette fungerende eksempelet til en omfattende pedagogisk ressurs perfekt for utviklere som ønsker å forstå hvordan man bygger produksjonsklare MCP-servere med databaseintegrasjon.
+Dette repositoriet inkluderer en komplett **12-modulers læringsgjennomgang** som bryter ned denne MCP butikkserveren til fordøyelige, trinnvise leksjoner. Gjennomgangen forvandler dette fungerende eksempelet til en omfattende pedagogisk ressurs perfekt for utviklere som ønsker å forstå hvordan man bygger produksjonsklare MCP-servere med databaseintegrasjon.
 
 ### Hva Du Vil Lære
 
@@ -105,11 +105,11 @@ Gjennomgangen dekker alt fra grunnleggende MCP-konsepter til avansert produksjon
 
 - **MCP Grunnleggende**: Forstå Model Context Protocol og dens virkelige applikasjoner
 - **Databaseintegrasjon**: Implementere sikker PostgreSQL-tilkobling med Row Level Security
-- **AI-forbedrede Funksjoner**: Legge til semantisk søkefunksjonalitet med Azure OpenAI-innbedding
+- **AI-forbedrede Funksjoner**: Legge til semantisk søkefunksjonalitet med Azure OpenAI embeddings
 - **Sikkerhetsimplementering**: Autentisering, autorisasjon og dataisolasjon på bedriftsnivå
 - **Verktøyutvikling**: Bygge sofistikerte MCP-verktøy for dataanalyse og forretningsintelligens
 - **Testing og Feilsøking**: Omfattende teststrategier og feilsøkingsmetoder
-- **VS Code Integrasjon**: Konfigurere AI Chat for naturlige språkspørringer mot databaser
+- **VS Code Integrasjon**: Konfigurere AI Chat for naturlige språkspørringer mot databasen
 - **Produksjonsdistribusjon**: Containerisering, skalering og distribusjonsstrategier i skyen
 - **Overvåking og Observasjon**: Application Insights, logging og ytelsesovervåking
 
@@ -125,13 +125,13 @@ Gjennomgangen følger en progressiv læringsstruktur designet for utviklere på 
 | **[03-Oppsett](walkthrough/03-Setup/README.md)** | Miljø | Docker-oppsett, Azure CLI, prosjektkonfigurasjon, validering | 45 minutter |
 | **[04-Database](walkthrough/04-Database/README.md)** | Databaselag | PostgreSQL-skjema, pgvector, RLS-policyer, eksempeldata | 60 minutter |
 | **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Kjerneimplementering | FastMCP-rammeverk, databaseintegrasjon, tilkoblingshåndtering | 90 minutter |
-| **[06-Verktøy](walkthrough/06-Tools/README.md)** | Verktøyutvikling | MCP-verktøyutvikling, spørringsvalidering, forretningsintelligensfunksjoner | 75 minutter |
-| **[07-Semantisk-Søk](walkthrough/07-Semantic-Search/README.md)** | AI-integrasjon | Azure OpenAI-innbedding, vektorsøk, hybride søkestrategier | 60 minutter |
+| **[06-Verktøy](walkthrough/06-Tools/README.md)** | Verktøyutvikling | MCP-verktøyoppretting, spørringsvalidering, forretningsintelligensfunksjoner | 75 minutter |
+| **[07-Semantisk-Søk](walkthrough/07-Semantic-Search/README.md)** | AI-integrasjon | Azure OpenAI embeddings, vektorsøk, hybride søkestrategier | 60 minutter |
 | **[08-Testing](walkthrough/08-Testing/README.md)** | Kvalitetssikring | Enhetstesting, integrasjonstesting, ytelsestesting, feilsøking | 75 minutter |
 | **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Utviklingsopplevelse | VS Code-konfigurasjon, AI Chat-integrasjon, feilsøkingsarbeidsflyter | 45 minutter |
 | **[10-Distribusjon](walkthrough/10-Deployment/README.md)** | Produksjonsklar | Containerisering, Azure Container Apps, CI/CD-pipelines, skalering | 90 minutter |
 | **[11-Overvåking](walkthrough/11-Monitoring/README.md)** | Observasjon | Application Insights, strukturert logging, ytelsesmetrikker | 60 minutter |
-| **[12-Beste-Praksis](walkthrough/12-Best-Practices/README.md)** | Produksjonsekspertise | Sikkerhetsforbedring, ytelsesoptimalisering, bedriftsmønstre | 45 minutter |
+| **[12-Beste-Praksis](walkthrough/12-Best-Practices/README.md)** | Produksjonsekspertise | Sikkerhetsforsterkning, ytelsesoptimalisering, bedriftsmønstre | 45 minutter |
 
 **Total Læringstid**: ~12-15 timer med omfattende praktisk læring
 
@@ -143,7 +143,7 @@ Gjennomgangen følger en progressiv læringsstruktur designet for utviklere på 
 3. Hver modul bygger på tidligere konsepter og inkluderer praktiske øvelser
 
 **For Erfarne Utviklere**:
-1. Gå gjennom [Hovedoversikten for Gjennomgangen](walkthrough/README.md) for en komplett moduloppsummering
+1. Gå gjennom [Hovedoversikten for Gjennomgangen](walkthrough/README.md) for en komplett moduloversikt
 2. Hopp til spesifikke moduler som interesserer deg (f.eks. Modul 07 for AI-integrasjon)
 3. Bruk individuelle moduler som referansemateriale for egne prosjekter
 
@@ -162,14 +162,14 @@ cd MCP-Server-and-PostgreSQL-Sample-Retail/walkthrough
 # Follow along starting with 00-Introduction/README.md
 ```
 
-**Alternativ 2: Praktisk Implementering** (Hopp rett inn i bygging)
+**Alternativ 2: Praktisk Implementering** (Hopp rett inn i byggingen)
 ```bash
 # Start with setup and build as you learn
 cd walkthrough/03-Setup
 # Follow the setup guide and continue through implementation modules
 ```
 
-**Alternativ 3: Fokus på Produksjon** (Bedriftsdistribusjon)
+**Alternativ 3: Produksjonsfokus** (Bedriftsdistribusjon)
 ```bash
 # Focus on production-ready aspects
 # Review modules: 02-Security, 10-Deployment, 11-Monitoring, 12-Best-Practices
@@ -184,16 +184,16 @@ cd walkthrough/03-Setup
 - Grunnleggende kunnskap om kommandolinje og Docker
 
 **Ikke nødvendig (men nyttig)**:
-- Tidligere MCP-erfaring (vi dekker dette fra bunnen av)
+- Tidligere MCP-erfaring (vi dekker dette fra grunnen av)
 - Erfaring med Azure Cloud (vi gir trinnvis veiledning)
 - Avansert PostgreSQL-kunnskap (vi forklarer konsepter etter behov)
 
 ### 💡 Læringstips
 
-1. **Praktisk tilnærming**: Hvert modul inneholder fungerende kodeeksempler du kan kjøre og modifisere
+1. **Praktisk tilnærming**: Hvert modul inneholder fungerende kodeeksempler du kan kjøre og endre
 2. **Gradvis kompleksitet**: Konsepter bygges opp gradvis fra enkle til avanserte
 3. **Reelle eksempler**: Alle eksempler bruker realistiske forretningsscenarier fra detaljhandel
-4. **Produksjonsklar**: Kodeeksemplene er designet for faktisk produksjonsbruk
+4. **Produksjonsklar kode**: Kodeeksemplene er designet for faktisk produksjonsbruk
 5. **Fellesskapsstøtte**: Bli med i vår [Discord-fellesskap](https://discord.com/invite/ByRwuEEgH4) for hjelp og diskusjoner
 
 ### 🔗 Relaterte ressurser
@@ -334,7 +334,7 @@ Følgende forutsetter at du bruker den innebygde MCP-serverstøtten i VS Code.
 
 1. Vis topp 20 produkter etter salgsinntekter
 1. Vis salg per butikk
-1. Hva var forrige kvartals salg etter kategori?
+1. Hva var salget forrige kvartal etter kategori?
 1. Hvilke produkter selger vi som ligner på "beholdere for maling"?
 
 ## Funksjoner
@@ -384,7 +384,7 @@ Utfør PostgreSQL-spørringer mot salgsdatabasen med Row Level Security.
 
 - Hent alltid tabellskjemaer først
 - Bruk eksakte kolonnenavn fra skjemaene
-- Koble relaterte tabeller for omfattende analyse
+- Koble relaterte tabeller for omfattende analyser
 - Aggreger resultater når det er hensiktsmessig
 - Begrens utdata for lesbarhet
 
@@ -412,13 +412,13 @@ Utfør et semantisk søk etter produkter basert på brukerforespørsler.
 
 Serveren implementerer Row Level Security for å sikre at brukere kun får tilgang til data de er autorisert til å se:
 
-- **HTTP-modus**: Bruker `x-rls-user-id`-headeren for å identifisere den forespørrende brukeren
+- **HTTP-modus**: Bruker `x-rls-user-id`-header for å identifisere den forespørrende brukeren
 
 - **Standard fallback**: Bruker en plassholder-UUID når ingen bruker-ID er oppgitt
 
 #### Butikkspesifikke RLS-bruker-ID-er
 
-Hver Zava Retail-butikk har en unik RLS-bruker-ID som bestemmer hvilke data brukeren kan få tilgang til:
+Hver Zava Retail-butikk har en unik RLS-bruker-ID som avgjør hvilke data brukeren kan få tilgang til:
 
 | Butikksted | RLS-bruker-ID | Beskrivelse |
 |------------|---------------|-------------|
@@ -434,7 +434,7 @@ Hver Zava Retail-butikk har en unik RLS-bruker-ID som bestemmer hvilke data bruk
 
 #### RLS-implementering
 
-Når en bruker kobler til med en spesifikk butiks RLS-bruker-ID, vil de kun se:
+Når en bruker kobler seg til med en spesifikk butiks RLS-bruker-ID, vil de kun se:
 
 - Kunder tilknyttet den butikken
 - Ordre plassert på det butikkstedet
@@ -449,14 +449,14 @@ Dette sikrer dataisolasjon mellom ulike butikksteder samtidig som det oppretthol
 
 Serveren bruker en administrert applikasjonskontekst med:
 
-- **Database Connection Pool**: Effektiv tilkoblingshåndtering for HTTP-modus
+- **Database-tilkoblingspool**: Effektiv tilkoblingshåndtering for HTTP-modus
 - **Livssyklusadministrasjon**: Riktig ressursopprydding ved avslutning
 - **Type-sikkerhet**: Sterkt typet kontekst med `AppContext` dataklasse
 
-### Forespørselkontekst
+### Forespørselskontekst
 
 - **Header-uttrekk**: Sikker header-parsing for brukeridentifikasjon
-- **RLS-integrasjon**: Automatisk bruker-ID-oppløsning fra forespørselkontekst
+- **RLS-integrasjon**: Automatisk bruker-ID-oppløsning fra forespørselskontekst
 - **Feilhåndtering**: Omfattende feilhåndtering med brukervennlige meldinger
 
 ## Databaseintegrasjon
@@ -489,7 +489,7 @@ Serveren implementerer robust feilhåndtering:
 ### Viktige sikkerhetsnotater
 
 - **Bruk aldri produksjons-RLS-bruker-ID-er i utviklingsmiljøer**
-- **Sørg alltid for at RLS-bruker-ID samsvarer med den tiltenkte butikken før du kjører spørringer**
+- **Verifiser alltid at RLS-bruker-ID samsvarer med den tiltenkte butikken før du kjører spørringer**
 - **Standard UUID (`00000000-0000-0000-0000-000000000000`) gir begrenset tilgang**
 - **Hver butikkleder bør kun ha tilgang til sin butiks RLS-bruker-ID**
 
@@ -508,7 +508,7 @@ mcp_server/
 
 - **FastMCP Server**: Moderne MCP-serverimplementering med asynkron støtte
 - **PostgreSQL Provider**: Databaseabstraksjonslag med RLS-støtte
-- **Kontekstadministrasjon**: Type-sikker applikasjons- og forespørselkonteksthåndtering
+- **Konteksthåndtering**: Type-sikker applikasjons- og forespørselkonteksthåndtering
 - **Verktøyregistrering**: Deklarativ verktøyregistrering med Pydantic-validering
 
 ## Bidra
@@ -530,4 +530,4 @@ Når du bidrar til denne serveren:
 ---
 
 **Ansvarsfraskrivelse**:  
-Dette dokumentet er oversatt ved hjelp av AI-oversettelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selv om vi tilstreber nøyaktighet, vær oppmerksom på at automatiserte oversettelser kan inneholde feil eller unøyaktigheter. Det originale dokumentet på sitt opprinnelige språk bør anses som den autoritative kilden. For kritisk informasjon anbefales profesjonell menneskelig oversettelse. Vi er ikke ansvarlige for misforståelser eller feiltolkninger som oppstår ved bruk av denne oversettelsen.
+Dette dokumentet er oversatt ved hjelp av AI-oversettelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selv om vi tilstreber nøyaktighet, vennligst vær oppmerksom på at automatiske oversettelser kan inneholde feil eller unøyaktigheter. Det originale dokumentet på sitt opprinnelige språk bør anses som den autoritative kilden. For kritisk informasjon anbefales profesjonell menneskelig oversettelse. Vi er ikke ansvarlige for eventuelle misforståelser eller feiltolkninger som oppstår ved bruk av denne oversettelsen.

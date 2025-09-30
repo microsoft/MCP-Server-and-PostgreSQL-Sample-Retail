@@ -1,24 +1,24 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T16:53:51+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T09:25:55+00:00",
   "source_file": "README.md",
   "language_code": "ja"
 }
 -->
 # MCPサーバーとPostgreSQLサンプル - 小売売上分析
 
-## データベース統合を学ぶ実践的なMCP例
+## データベース統合を学ぶハンズオン例
 
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/pulls)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![Join Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+[![Azure AI Foundry Discordに参加](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-以下の手順に従って、これらのリソースを活用してください：
+以下の手順に従って、これらのリソースを使い始めましょう：
 
 1. **リポジトリをフォーク**: [こちらをクリックしてフォーク](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
 2. **リポジトリをクローン**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
@@ -26,21 +26,21 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 🌐 多言語対応
 
-#### GitHub Actionによるサポート (自動更新)
+#### GitHub Actionによるサポート (自動更新 & 常に最新)
 
 [フランス語](../fr/README.md) | [スペイン語](../es/README.md) | [ドイツ語](../de/README.md) | [ロシア語](../ru/README.md) | [アラビア語](../ar/README.md) | [ペルシャ語 (ファルシ)](../fa/README.md) | [ウルドゥー語](../ur/README.md) | [中国語 (簡体字)](../zh/README.md) | [中国語 (繁体字, マカオ)](../mo/README.md) | [中国語 (繁体字, 香港)](../hk/README.md) | [中国語 (繁体字, 台湾)](../tw/README.md) | [日本語](./README.md) | [韓国語](../ko/README.md) | [ヒンディー語](../hi/README.md) | [ベンガル語](../bn/README.md) | [マラーティー語](../mr/README.md) | [ネパール語](../ne/README.md) | [パンジャブ語 (グルムキー)](../pa/README.md) | [ポルトガル語 (ポルトガル)](../pt/README.md) | [ポルトガル語 (ブラジル)](../br/README.md) | [イタリア語](../it/README.md) | [ポーランド語](../pl/README.md) | [トルコ語](../tr/README.md) | [ギリシャ語](../el/README.md) | [タイ語](../th/README.md) | [スウェーデン語](../sv/README.md) | [デンマーク語](../da/README.md) | [ノルウェー語](../no/README.md) | [フィンランド語](../fi/README.md) | [オランダ語](../nl/README.md) | [ヘブライ語](../he/README.md) | [ベトナム語](../vi/README.md) | [インドネシア語](../id/README.md) | [マレー語](../ms/README.md) | [タガログ語 (フィリピン)](../tl/README.md) | [スワヒリ語](../sw/README.md) | [ハンガリー語](../hu/README.md) | [チェコ語](../cs/README.md) | [スロバキア語](../sk/README.md) | [ルーマニア語](../ro/README.md) | [ブルガリア語](../bg/README.md) | [セルビア語 (キリル文字)](../sr/README.md) | [クロアチア語](../hr/README.md) | [スロベニア語](../sl/README.md) | [ウクライナ語](../uk/README.md) | [ビルマ語 (ミャンマー)](../my/README.md)
 
-**追加の翻訳を希望する場合は、サポートされている言語のリストを[こちら](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)で確認できます。**
+**追加の翻訳を希望する場合は、サポートされている言語のリストが [こちら](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md) にあります**
 
 ## はじめに
 
-このサンプルでは、PostgreSQLを通じて小売売上データに安全かつインテリジェントにアクセスできるAIアシスタントを提供する包括的な**Model Context Protocol (MCP)サーバー**の構築とデプロイ方法を示します。このプロジェクトは、**行レベルセキュリティ (RLS)**、**セマンティック検索機能**、および**Azure AI統合**などのエンタープライズ向け機能を実際の小売分析シナリオで活用する方法を紹介します。
+このサンプルでは、PostgreSQLを通じて小売売上データに安全かつインテリジェントにアクセスできるAIアシスタントを提供する包括的な**Model Context Protocol (MCP)サーバー**の構築とデプロイ方法を示します。このプロジェクトは、**行レベルセキュリティ (RLS)**、**セマンティック検索機能**、および**Azure AI統合**などのエンタープライズグレードの機能を実際の小売分析シナリオで活用する方法を紹介します。
 
 **主なユースケース:**
-- **AIによる売上分析**: AIアシスタントが自然言語で小売売上データをクエリし分析できるようにする
+- **AI駆動の売上分析**: AIアシスタントが自然言語で小売売上データをクエリし分析できるようにする
 - **安全なマルチテナントアクセス**: 各店舗の管理者が自分の店舗データのみアクセスできる行レベルセキュリティの実装を示す
-- **セマンティック商品検索**: テキスト埋め込みを使用したAI強化型の商品検索を紹介
-- **エンタープライズ統合**: MCPサーバーをAzureサービスやPostgreSQLデータベースと統合する方法を説明
+- **セマンティック商品検索**: テキスト埋め込みを使用したAI強化型の商品発見を実現
+- **エンタープライズ統合**: MCPサーバーをAzureサービスやPostgreSQLデータベースと統合する方法を示す
 
 **対象者:**
 - データベース統合を伴うMCPサーバー構築を学びたい開発者
@@ -51,7 +51,7 @@ CO_OP_TRANSLATOR_METADATA:
 ## Azure AI Foundry Discordコミュニティに参加しよう
 MCPの経験を共有し、専門家や製品グループと交流しましょう
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # 売上分析MCPサーバー
 
@@ -68,11 +68,11 @@ Zava Retail DIYビジネス向けの包括的な顧客売上データベース�
 - **ベストプラクティス**: セキュリティ、パフォーマンス、開発ガイドライン
 - **トラブルシューティング**: よくある問題とその解決策
 
-このガイドは、実装の詳細を理解し、類似のソリューションを構築したい開発者に最適です。
+類似のソリューションを構築したい開発者に最適です。
 
 ## 🤖 MCP (Model Context Protocol)とは？
 
-**Model Context Protocol (MCP)**は、AIアシスタントが外部データソースやツールにリアルタイムで安全にアクセスできるようにするオープンスタンダードです。データベース、API、ファイルシステムなどのリソースに接続しながら、セキュリティと制御を維持する橋渡しのような役割を果たします。
+**Model Context Protocol (MCP)**は、AIアシスタントが外部データソースやツールにリアルタイムで安全にアクセスできるようにするオープン標準です。データベース、API、ファイルシステムなどのリソースに接続しながらセキュリティと制御を維持する橋渡しのようなものです。
 
 ### 主なメリット:
 - **リアルタイムデータアクセス**: AIアシスタントがライブデータベースやAPIをクエリ可能
@@ -97,17 +97,17 @@ Model Context Protocolに初めて触れる方は、Microsoftの包括的な初�
 
 ## 📚 包括的な学習ガイド: /walkthrough
 
-このリポジトリには、MCP小売サーバーサンプルを分解し、ステップバイステップのレッスンに変換した**12モジュールの学習ウォークスルー**が含まれています。このウォークスルーは、実際の例を包括的な教育リソースに変換し、データベース統合を伴う実用的なMCPサーバーを構築したい開発者に最適です。
+このリポジトリには、MCP小売サーバーサンプルを分解し、ステップバイステップのレッスンに変換した**12モジュールの学習ウォークスルー**が含まれています。このウォークスルーは、実動例を包括的な教育リソースに変換し、データベース統合を伴う実用的なMCPサーバーを構築したい開発者に最適です。
 
 ### 学べる内容
 
 ウォークスルーでは、基本的なMCP概念から高度な本番デプロイまでを網羅しています：
 
-- **MCPの基本**: Model Context Protocolの理解とその実際の応用
+- **MCPの基礎**: Model Context Protocolとその実際の応用を理解
 - **データベース統合**: 行レベルセキュリティを備えた安全なPostgreSQL接続の実装
 - **AI強化機能**: Azure OpenAI埋め込みを使用したセマンティック検索機能の追加
 - **セキュリティ実装**: エンタープライズグレードの認証、認可、データ分離
-- **ツール開発**: データ分析やビジネスインテリジェンス向けの高度なMCPツールの構築
+- **ツール開発**: データ分析とビジネスインテリジェンスのための高度なMCPツールの構築
 - **テストとデバッグ**: 包括的なテスト戦略とデバッグ技術
 - **VS Code統合**: 自然言語データベースクエリのためのAIチャット設定
 - **本番デプロイ**: コンテナ化、スケーリング、クラウドデプロイ戦略
@@ -115,30 +115,30 @@ Model Context Protocolに初めて触れる方は、Microsoftの包括的な初�
 
 ### 学習パス概要
 
-ウォークスルーは、初心者から上級者までの開発者向けに設計された進行的な学習構造を採用しています：
+ウォークスルーは、すべてのスキルレベルの開発者向けに設計された進行的な学習構造を採用しています：
 
-| モジュール | フォーカスエリア | 説明 | 推定時間 |
+| モジュール | フォーカスエリア | 説明 | 所要時間 |
 |--------|------------|-------------|---------------|
-| **[00-Introduction](walkthrough/00-Introduction/README.md)** | 基礎 | MCPの概念、Zava Retailのケーススタディ、アーキテクチャ概要 | 30分 |
+| **[00-Introduction](walkthrough/00-Introduction/README.md)** | 基礎 | MCPの概念、Zava Retailケーススタディ、アーキテクチャ概要 | 30分 |
 | **[01-Architecture](walkthrough/01-Architecture/README.md)** | 設計パターン | 技術アーキテクチャ、レイヤードデザイン、システムコンポーネント | 45分 |
 | **[02-Security](walkthrough/02-Security/README.md)** | エンタープライズセキュリティ | Azure認証、行レベルセキュリティ、マルチテナント分離 | 60分 |
 | **[03-Setup](walkthrough/03-Setup/README.md)** | 環境 | Dockerセットアップ、Azure CLI、プロジェクト構成、検証 | 45分 |
 | **[04-Database](walkthrough/04-Database/README.md)** | データ層 | PostgreSQLスキーマ、pgvector、RLSポリシー、サンプルデータ | 60分 |
 | **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | コア実装 | FastMCPフレームワーク、データベース統合、接続管理 | 90分 |
-| **[06-Tools](walkthrough/06-Tools/README.md)** | ツール開発 | MCPツールの作成、クエリ検証、ビジネスインテリジェンス機能 | 75分 |
+| **[06-Tools](walkthrough/06-Tools/README.md)** | ツール開発 | MCPツール作成、クエリ検証、ビジネスインテリジェンス機能 | 75分 |
 | **[07-Semantic-Search](walkthrough/07-Semantic-Search/README.md)** | AI統合 | Azure OpenAI埋め込み、ベクトル検索、ハイブリッド検索戦略 | 60分 |
 | **[08-Testing](walkthrough/08-Testing/README.md)** | 品質保証 | 単体テスト、統合テスト、パフォーマンステスト、デバッグ | 75分 |
 | **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | 開発体験 | VS Code設定、AIチャット統合、デバッグワークフロー | 45分 |
 | **[10-Deployment](walkthrough/10-Deployment/README.md)** | 本番対応 | コンテナ化、Azure Container Apps、CI/CDパイプライン、スケーリング | 90分 |
-| **[11-Monitoring](walkthrough/11-Monitoring/README.md)** | 可観測性 | Application Insights、構造化ログ記録、パフォーマンス指標 | 60分 |
+| **[11-Monitoring](walkthrough/11-Monitoring/README.md)** | 可観測性 | Application Insights、構造化ログ、パフォーマンスメトリクス | 60分 |
 | **[12-Best-Practices](walkthrough/12-Best-Practices/README.md)** | 本番の優秀性 | セキュリティ強化、パフォーマンス最適化、エンタープライズパターン | 45分 |
 
-**総学習時間**: 約12～15時間の包括的な実践学習
+**総学習時間**: ~12-15時間の包括的なハンズオン学習
 
-### 🎯 ウォークスルーの活用方法
+### 🎯 ウォークスルーの使い方
 
 **初心者向け**:
-1. [モジュール00: Introduction](walkthrough/00-Introduction/README.md)から始めてMCPの基本を理解
+1. [モジュール00: Introduction](walkthrough/00-Introduction/README.md)から始めてMCPの基礎を理解
 2. モジュールを順番に進めて完全な学習体験を得る
 3. 各モジュールは前の概念を基に構築され、実践的な演習を含む
 
@@ -162,7 +162,7 @@ cd MCP-Server-and-PostgreSQL-Sample-Retail/walkthrough
 # Follow along starting with 00-Introduction/README.md
 ```
 
-**オプション2: 実践的な実装** (すぐに構築を開始)
+**オプション2: ハンズオン実装** (すぐに構築を開始)
 ```bash
 # Start with setup and build as you learn
 cd walkthrough/03-Setup
@@ -178,7 +178,7 @@ cd walkthrough/03-Setup
 ### 📋 学習の前提条件
 
 **推奨される背景知識**:
-- 基本的なPythonプログラミング経験
+- 基本的なPythonプログラミングの経験
 - REST APIとデータベースの基礎知識
 - AI/MLの基本概念の理解
 - 基本的なコマンドライン操作とDockerの知識
@@ -188,17 +188,17 @@ cd walkthrough/03-Setup
 - Azureクラウドの経験（ステップバイステップのガイドを提供）
 - 高度なPostgreSQLの知識（必要に応じて概念を説明）
 
-### 💡 学習のコツ
+### 💡 学習のヒント
 
-1. **実践的アプローチ**: 各モジュールには実行可能なコード例が含まれており、変更して試すことができます
-2. **段階的な複雑化**: 概念はシンプルなものから高度なものへと徐々に構築されます
-3. **実世界の文脈**: すべての例は現実的な小売業のビジネスシナリオを使用しています
-4. **実運用対応**: コード例は実際の運用で使用できるよう設計されています
-5. **コミュニティサポート**: [Discordコミュニティ](https://discord.com/invite/ByRwuEEgH4)に参加して、助けを求めたり議論したりできます
+1. **実践的アプローチ**: 各モジュールには実行可能なコード例が含まれており、変更して試すことができます。
+2. **段階的な複雑化**: 概念はシンプルなものから高度なものへと徐々に構築されます。
+3. **実世界の文脈**: すべての例は現実的な小売業のビジネスシナリオを使用しています。
+4. **実運用対応**: コード例は実際の運用で使用できるよう設計されています。
+5. **コミュニティサポート**: [Discordコミュニティ](https://discord.com/invite/ByRwuEEgH4)に参加して、助けを求めたり議論したりできます。
 
 ### 🔗 関連リソース
 
-- **[MCP初心者向け](https://aka.ms/mcp-for-beginners)**: 基本的な背景知識
+- **[MCP初心者向け](https://aka.ms/mcp-for-beginners)**: 基本的な背景知識を学ぶための資料
 - **[サンプルウォークスルー](Sample_Walkthrough.md)**: 高レベルの技術概要
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: 例で使用されるクラウドプラットフォーム
 - **[FastMCPフレームワーク](https://github.com/jlowin/fastmcp)**: PythonによるMCP実装フレームワーク
@@ -209,12 +209,12 @@ cd walkthrough/03-Setup
 
 1. Docker Desktopのインストール
 2. Gitのインストール
-3. **Azure CLI**: Azure CLIをインストールして認証
-4. OpenAIの`text-embedding-3-small`モデルへのアクセス、必要に応じて`gpt-4o-mini`モデル
+3. **Azure CLI**: Azure CLIをインストールし、認証を行う
+4. OpenAIの`text-embedding-3-small`モデルへのアクセス、オプションで`gpt-4o-mini`モデルへのアクセス
 
 ## 始め方
 
-ターミナルウィンドウを開き、以下のコマンドを実行してください:
+ターミナルウィンドウを開き、以下のコマンドを実行してください。
 
 1. Azure CLIで認証
 
@@ -238,7 +238,7 @@ cd walkthrough/03-Setup
 
 MCPサーバーに必要なAzureリソースを自動的にデプロイするスクリプトを実行します。
 
-デプロイスクリプトは`text-embedding-3-small`モデルを自動的にデプロイします。デプロイ中に、オプションで`gpt-4o-mini`モデルを含めることもできます。ただし、`gpt-4o-mini`はこのプロジェクトには**必須ではありません**。将来的な拡張のために含まれています。
+デプロイスクリプトは`text-embedding-3-small`モデルを自動的にデプロイします。デプロイ中に`gpt-4o-mini`モデルを含めるオプションもあります。ただし、`gpt-4o-mini`はこのプロジェクトには**必須ではありません**が、将来的な拡張のために含まれています。
 
 **プラットフォームに応じたスクリプトを選択してください:**
 
@@ -291,10 +291,10 @@ docker compose down -v
 
 2. `.vscode/mcp.json`内の設定を使用して、1つ以上のMCPサーバーを起動します。このファイルには、異なる店舗管理者の役割を表す4つのサーバー設定が含まれています:
 
-   - 各設定は固有のRLS（行レベルセキュリティ）ユーザーIDを使用します
-   - これらのユーザーIDは、異なる店舗管理者がデータベースにアクセスする際のアイデンティティをシミュレートします
-   - RLSシステムは、管理者に割り当てられた店舗に基づいてデータアクセスを制限します
-   - これは、店舗管理者が異なるEntra IDアカウントでサインインする実世界のシナリオを模倣しています
+   - 各設定は固有のRLS（行レベルセキュリティ）ユーザーIDを使用します。
+   - これらのユーザーIDは、異なる店舗管理者がデータベースにアクセスする際のアイデンティティをシミュレートします。
+   - RLSシステムは、管理者に割り当てられた店舗に基づいてデータアクセスを制限します。
+   - これは、店舗管理者が異なるEntra IDアカウントでサインインする実世界のシナリオを模倣しています。
 
     ```json
     {
@@ -326,16 +326,16 @@ docker compose down -v
 
 ### VS Code AIチャットを開く
 
-1. VS CodeでAIチャットモードを開きます
-2. **#zava**と入力し、起動したMCPサーバーの1つを選択します
-3. 売上データについて質問してください - 以下のサンプルクエリを参照
+1. VS CodeでAIチャットモードを開きます。
+2. **#zava**と入力し、起動したMCPサーバーの1つを選択します。
+3. 売上データに関する質問をしてください - 以下のサンプルクエリを参照してください。
 
 ### サンプルクエリ
 
-1. 売上収益で上位20の商品を表示
+1. 売上収益が最も高い上位20製品を表示
 1. 店舗ごとの売上を表示
 1. 前四半期のカテゴリ別売上は？
-1. 「ペイント用コンテナ」に似た商品は何を販売していますか？
+1. 「ペイント用容器」に似た製品は何を販売していますか？
 
 ## 機能
 
@@ -351,11 +351,11 @@ docker compose down -v
 
 - `retail.customers` - 顧客情報とプロフィール
 - `retail.stores` - 店舗の所在地と詳細
-- `retail.categories` - 商品カテゴリと階層
-- `retail.product_types` - 商品タイプの分類
-- `retail.products` - 商品カタログと仕様
+- `retail.categories` - 製品カテゴリと階層
+- `retail.product_types` - 製品タイプの分類
+- `retail.products` - 製品カタログと仕様
 - `retail.orders` - 顧客注文と取引
-- `retail.order_items` - 注文内の個別アイテム
+- `retail.order_items` - 注文内の個々のアイテム
 - `retail.inventory` - 現在の在庫レベルと在庫データ
 
 ## 利用可能なツール
@@ -392,23 +392,23 @@ docker compose down -v
 
 現在のUTC日付と時刻をISO形式で取得します。
 
-**戻り値:** ISO形式（YYYY-MM-DDTHH:MM:SS.fffffZ）の現在のUTC日付/時刻
+**戻り値:** 現在のUTC日付/時刻（YYYY-MM-DDTHH:MM:SS.fffffZ）
 
 ### `semantic_search_products`
 
-ユーザーのクエリに基づいて商品をセマンティック検索します。
+ユーザーのクエリに基づいて製品のセマンティック検索を実行します。
 
-**戻り値:** 検索条件に一致する商品のリスト
+**戻り値:** 検索条件に一致する製品のリスト
 
 **パラメータ:**
 
 - `query` (str): 検索クエリ文字列
 
-**戻り値:** 検索条件に一致する商品のリスト
+**戻り値:** 検索条件に一致する製品のリスト
 
 ## セキュリティ機能
 
-### 行レベルセキュリティ (RLS)
+### 行レベルセキュリティ（RLS）
 
 サーバーは行レベルセキュリティを実装しており、ユーザーが許可されたデータのみをアクセスできるようにします:
 
@@ -437,7 +437,7 @@ docker compose down -v
 
 - その店舗に関連する顧客
 - その店舗で行われた注文
-- その店舗の在庫データ
+- その店舗固有の在庫データ
 - 店舗固有の売上とパフォーマンス指標
 
 これにより、異なる店舗間でデータが分離され、統一されたデータベーススキーマが維持されます。
@@ -456,7 +456,7 @@ docker compose down -v
 
 - **ヘッダー抽出**: ユーザー識別のための安全なヘッダー解析
 - **RLS統合**: リクエストコンテキストからの自動ユーザーID解決
-- **エラーハンドリング**: ユーザーに優しいメッセージを含む包括的なエラーハンドリング
+- **エラーハンドリング**: ユーザーフレンドリーなメッセージを含む包括的なエラーハンドリング
 
 ## データベース統合
 
@@ -474,16 +474,16 @@ docker compose down -v
 - **テーブル検証**: 有効なテーブル名のみがアクセスされることを保証
 - **クエリ検証**: 実行前にPostgreSQLクエリを検証
 - **リソース管理**: エラー発生時でも適切にクリーンアップ
-- **ユーザーに優しいメッセージ**: トラブルシューティングのための明確なエラーメッセージ
+- **ユーザーフレンドリーなメッセージ**: トラブルシューティングのための明確なエラーメッセージ
 
 ## セキュリティ考慮事項
 
 1. **行レベルセキュリティ**: すべてのクエリはユーザーのアイデンティティに基づくRLSポリシーを尊重
 2. **店舗データの分離**: 各店舗のRLSユーザーIDはその店舗のデータのみへのアクセスを保証
 3. **入力検証**: テーブル名とクエリは実行前に検証
-4. **リソース制限**: 過剰なリソース使用を防ぐためにクエリ結果を制限
+4. **リソース制限**: クエリ結果は過剰なリソース使用を防ぐために制限
 5. **接続セキュリティ**: 安全なデータベース接続プラクティスを使用
-6. **ユーザーアイデンティティの検証**: 常に正しいRLSユーザーIDが意図した店舗に使用されていることを確認
+6. **ユーザーアイデンティティの検証**: 常に正しいRLSユーザーIDが意図した店舗に使用されることを確認
 
 ### 重要なセキュリティ注意事項
 
@@ -524,9 +524,9 @@ mcp_server/
 
 ---
 
-*このMCPサーバーは、AIを活用した分析とインサイトのためにZava Retailの売上データへの安全で効率的なアクセスを可能にします。*
+*このMCPサーバーは、AIを活用した分析と洞察のためにZava Retailの売上データへの安全で効率的なアクセスを可能にします。*
 
 ---
 
 **免責事項**:  
-この文書は、AI翻訳サービス [Co-op Translator](https://github.com/Azure/co-op-translator) を使用して翻訳されています。正確性を追求しておりますが、自動翻訳には誤りや不正確な部分が含まれる可能性があります。元の言語で記載された文書を正式な情報源とみなしてください。重要な情報については、専門の人間による翻訳を推奨します。この翻訳の使用に起因する誤解や誤解について、当方は責任を負いません。
+この文書は、AI翻訳サービス [Co-op Translator](https://github.com/Azure/co-op-translator) を使用して翻訳されています。正確性を追求しておりますが、自動翻訳には誤りや不正確な部分が含まれる可能性があります。元の言語で記載された文書を正式な情報源としてお考えください。重要な情報については、専門の人間による翻訳を推奨します。この翻訳の使用に起因する誤解や誤解について、当方は一切の責任を負いません。

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-30T06:34:03+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T10:13:56+00:00",
   "source_file": "README.md",
   "language_code": "sk"
 }
@@ -11,9 +11,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Naučte sa MCP s integráciou databázy prostredníctvom praktických príkladov
 
-[![Prispievatelia na GitHub](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
-[![Problémy na GitHub](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
-[![Pull requesty na GitHub](https://img.shields.io/github/issues-pr/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/pulls)
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/pulls)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 [![Pripojte sa k Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
@@ -22,7 +22,7 @@ Postupujte podľa týchto krokov, aby ste mohli začať používať tieto zdroje
 
 1. **Forknite repozitár**: Kliknite [sem na forknutie](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
 2. **Klonujte repozitár**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
-3. **Pripojte sa k Azure AI Foundry Discord**: [Stretnite sa s odborníkmi a ďalšími vývojármi](https://discord.com/invite/ByRwuEEgH4)
+3. **Pripojte sa k Azure AI Foundry Discord**: [Spojte sa s odborníkmi a ďalšími vývojármi](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Podpora viacerých jazykov
 
@@ -34,41 +34,41 @@ Postupujte podľa týchto krokov, aby ste mohli začať používať tieto zdroje
 
 ## Úvod
 
-Táto ukážka demonštruje, ako vytvoriť a nasadiť komplexný **Model Context Protocol (MCP) server**, ktorý poskytuje AI asistentom bezpečný a inteligentný prístup k údajom o maloobchodnom predaji prostredníctvom PostgreSQL. Projekt predstavuje funkcie na podnikovej úrovni vrátane **Row Level Security (RLS)**, **semantického vyhľadávania** a **integrácie Azure AI** pre reálne scenáre analýzy maloobchodného predaja.
+Táto ukážka demonštruje, ako vytvoriť a nasadiť komplexný **Model Context Protocol (MCP) server**, ktorý poskytuje AI asistentom bezpečný a inteligentný prístup k údajom o maloobchodnom predaji prostredníctvom PostgreSQL. Projekt predstavuje funkcie na podnikovej úrovni, vrátane **Row Level Security (RLS)**, **semantického vyhľadávania** a **integrácie Azure AI** pre reálne scenáre analýzy maloobchodného predaja.
 
 **Kľúčové prípady použitia:**
 - **Analýza predaja poháňaná AI**: Umožnite AI asistentom dotazovať sa na údaje o maloobchodnom predaji a analyzovať ich prostredníctvom prirodzeného jazyka
-- **Bezpečný prístup pre viacerých nájomcov**: Ukážka implementácie Row Level Security, kde rôzni manažéri obchodov môžu pristupovať iba k údajom svojho obchodu
+- **Bezpečný prístup pre viacerých nájomcov**: Ukážka implementácie Row Level Security, kde rôzni manažéri obchodov majú prístup iba k údajom svojho obchodu
 - **Semantické vyhľadávanie produktov**: Predstavte AI vylepšené objavovanie produktov pomocou textových embeddingov
-- **Podniková integrácia**: Ukážka, ako integrovať MCP servery so službami Azure a databázami PostgreSQL
+- **Podniková integrácia**: Ukážka integrácie MCP serverov so službami Azure a databázami PostgreSQL
 
 **Ideálne pre:**
 - Vývojárov, ktorí sa učia vytvárať MCP servery s integráciou databázy
-- Dátových inžinierov implementujúcich bezpečné analytické riešenia pre viacerých nájomcov
+- Datových inžinierov implementujúcich bezpečné analytické riešenia pre viacerých nájomcov
 - Vývojárov AI aplikácií pracujúcich s maloobchodnými alebo e-commerce údajmi
 - Každého, kto má záujem kombinovať AI asistentov s podnikovými databázami
 
-## Pripojte sa k komunite Azure AI Foundry Discord
-Podeľte sa o svoje skúsenosti s MCP a stretnite sa s odborníkmi a produktovými skupinami 
+## Pripojte sa k Azure AI Foundry Discord komunite
+Podeľte sa o svoje skúsenosti s MCP a stretnite sa s odborníkmi a produktovými skupinami
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # MCP Server pre analýzu predaja
 
-Model Context Protocol (MCP) server, ktorý poskytuje komplexný prístup k databáze zákazníckeho predaja pre podnik Zava Retail DIY. Tento server umožňuje AI asistentom dotazovať sa na údaje o maloobchodnom predaji a analyzovať ich prostredníctvom bezpečného rozhrania, ktoré je si vedomé schémy.
+Model Context Protocol (MCP) server, ktorý poskytuje komplexný prístup k databáze zákazníckeho predaja pre Zava Retail DIY Business. Tento server umožňuje AI asistentom dotazovať sa na údaje o maloobchodnom predaji a analyzovať ich prostredníctvom bezpečného, schémovo orientovaného rozhrania.
 
 ## 📚 Kompletný implementačný sprievodca
 
-Pre podrobný rozbor toho, ako je toto riešenie vytvorené a ako implementovať podobné MCP servery, si pozrite náš komplexný **[Ukážkový sprievodca](Sample_Walkthrough.md)**. Tento sprievodca poskytuje:
+Pre podrobný rozbor, ako je toto riešenie vytvorené a ako implementovať podobné MCP servery, si pozrite náš komplexný **[Ukážkový sprievodca](Sample_Walkthrough.md)**. Tento sprievodca poskytuje:
 
-- **Hĺbkový pohľad na architektúru**: Analýza komponentov a návrhové vzory
+- **Hĺbkovú analýzu architektúry**: Analýza komponentov a návrhových vzorov
 - **Krok za krokom budovanie**: Od nastavenia projektu po nasadenie
 - **Rozbor kódu**: Podrobné vysvetlenie implementácie MCP servera
 - **Pokročilé funkcie**: Row Level Security, semantické vyhľadávanie a monitorovanie
 - **Najlepšie postupy**: Bezpečnosť, výkon a vývojové pokyny
 - **Riešenie problémov**: Bežné problémy a ich riešenia
 
-Ideálne pre vývojárov, ktorí chcú pochopiť detaily implementácie a vytvoriť podobné riešenia.
+Ideálne pre vývojárov, ktorí chcú pochopiť detaily implementácie a vytvárať podobné riešenia.
 
 ## 🤖 Čo je MCP (Model Context Protocol)?
 
@@ -95,9 +95,9 @@ Tento zdroj poskytuje:
 
 Keď pochopíte základy, vráťte sa sem a preskúmajte túto pokročilú implementáciu analýzy maloobchodného predaja!
 
-## 📚 Komplexný sprievodca učením: /walkthrough
+## 📚 Komplexný vzdelávací sprievodca: /walkthrough
 
-Tento repozitár obsahuje kompletný **12-modulový sprievodca učením**, ktorý rozkladá túto ukážku MCP servera pre maloobchod na stráviteľné, krok za krokom lekcie. Sprievodca transformuje tento funkčný príklad na komplexný vzdelávací zdroj ideálny pre vývojárov, ktorí chcú pochopiť, ako vytvárať produkčne pripravené MCP servery s integráciou databázy.
+Tento repozitár obsahuje kompletný **12-modulový vzdelávací sprievodca**, ktorý rozkladá túto ukážku MCP servera pre maloobchod na stráviteľné, krok za krokom lekcie. Sprievodca transformuje tento funkčný príklad na komplexný vzdelávací zdroj ideálny pre vývojárov, ktorí chcú pochopiť, ako vytvárať produkčne pripravené MCP servery s integráciou databázy.
 
 ### Čo sa naučíte
 
@@ -105,17 +105,17 @@ Sprievodca pokrýva všetko od základných konceptov MCP po pokročilé nasaden
 
 - **Základy MCP**: Pochopenie Model Context Protocol a jeho reálnych aplikácií
 - **Integrácia databázy**: Implementácia bezpečného pripojenia PostgreSQL s Row Level Security
-- **Funkcie vylepšené AI**: Pridanie semantických vyhľadávacích schopností pomocou embeddingov Azure OpenAI
+- **Funkcie vylepšené AI**: Pridanie semantických vyhľadávacích funkcií pomocou embeddingov Azure OpenAI
 - **Implementácia bezpečnosti**: Autentifikácia na podnikovej úrovni, autorizácia a izolácia údajov
 - **Vývoj nástrojov**: Vytváranie sofistikovaných MCP nástrojov pre analýzu údajov a obchodnú inteligenciu
-- **Testovanie a ladenie**: Komplexné stratégie testovania a techniky ladenia
+- **Testovanie a ladenie**: Komplexné testovacie stratégie a techniky ladenia
 - **Integrácia VS Code**: Konfigurácia AI Chat pre dotazy na databázu v prirodzenom jazyku
 - **Nasadenie do produkcie**: Kontajnerizácia, škálovanie a stratégie nasadenia do cloudu
 - **Monitorovanie a pozorovateľnosť**: Application Insights, logovanie a monitorovanie výkonu
 
-### Prehľad učebnej cesty
+### Prehľad vzdelávacej cesty
 
-Sprievodca sleduje progresívnu štruktúru učenia navrhnutú pre vývojárov všetkých úrovní zručností:
+Sprievodca nasleduje progresívnu vzdelávaciu štruktúru navrhnutú pre vývojárov všetkých úrovní zručností:
 
 | Modul | Oblasť zamerania | Popis | Odhadovaný čas |
 |-------|------------------|-------|----------------|
@@ -123,7 +123,7 @@ Sprievodca sleduje progresívnu štruktúru učenia navrhnutú pre vývojárov v
 | **[01-Architektúra](walkthrough/01-Architecture/README.md)** | Návrhové vzory | Technická architektúra, vrstvený dizajn, systémové komponenty | 45 minút |
 | **[02-Bezpečnosť](walkthrough/02-Security/README.md)** | Podniková bezpečnosť | Autentifikácia Azure, Row Level Security, izolácia pre viacerých nájomcov | 60 minút |
 | **[03-Nastavenie](walkthrough/03-Setup/README.md)** | Prostredie | Nastavenie Dockeru, Azure CLI, konfigurácia projektu, validácia | 45 minút |
-| **[04-Databáza](walkthrough/04-Database/README.md)** | Dátová vrstva | PostgreSQL schéma, pgvector, RLS politiky, ukážkové údaje | 60 minút |
+| **[04-Databáza](walkthrough/04-Database/README.md)** | Datová vrstva | PostgreSQL schéma, pgvector, RLS politiky, ukážkové údaje | 60 minút |
 | **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Základná implementácia | FastMCP framework, integrácia databázy, správa pripojení | 90 minút |
 | **[06-Nástroje](walkthrough/06-Tools/README.md)** | Vývoj nástrojov | Vytváranie MCP nástrojov, validácia dotazov, funkcie obchodnej inteligencie | 75 minút |
 | **[07-Semantické vyhľadávanie](walkthrough/07-Semantic-Search/README.md)** | Integrácia AI | Embeddingy Azure OpenAI, vyhľadávanie vektorov, hybridné vyhľadávacie stratégie | 60 minút |
@@ -131,7 +131,7 @@ Sprievodca sleduje progresívnu štruktúru učenia navrhnutú pre vývojárov v
 | **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Vývojové prostredie | Konfigurácia VS Code, integrácia AI Chat, pracovné postupy ladenia | 45 minút |
 | **[10-Nasadenie](walkthrough/10-Deployment/README.md)** | Pripravené na produkciu | Kontajnerizácia, Azure Container Apps, CI/CD pipelines, škálovanie | 90 minút |
 | **[11-Monitorovanie](walkthrough/11-Monitoring/README.md)** | Pozorovateľnosť | Application Insights, štruktúrované logovanie, metriky výkonu | 60 minút |
-| **[12-Najlepšie postupy](walkthrough/12-Best-Practices/README.md)** | Excelentnosť v produkcii | Posilnenie bezpečnosti, optimalizácia výkonu, podnikové vzory | 45 minút |
+| **[12-Najlepšie postupy](walkthrough/12-Best-Practices/README.md)** | Excelencia v produkcii | Posilnenie bezpečnosti, optimalizácia výkonu, podnikové vzory | 45 minút |
 
 **Celkový čas učenia**: ~12-15 hodín komplexného praktického učenia
 
@@ -139,7 +139,7 @@ Sprievodca sleduje progresívnu štruktúru učenia navrhnutú pre vývojárov v
 
 **Pre začiatočníkov**:
 1. Začnite s [Modulom 00: Úvod](walkthrough/00-Introduction/README.md) na pochopenie základov MCP
-2. Postupujte modulmi postupne pre kompletný zážitok z učenia
+2. Postupujte modulmi postupne pre kompletný vzdelávací zážitok
 3. Každý modul stavia na predchádzajúcich konceptoch a obsahuje praktické cvičenia
 
 **Pre skúsených vývojárov**:
@@ -147,14 +147,14 @@ Sprievodca sleduje progresívnu štruktúru učenia navrhnutú pre vývojárov v
 2. Preskočte na konkrétne moduly, ktoré vás zaujímajú (napr. Modul 07 pre integráciu AI)
 3. Používajte jednotlivé moduly ako referenčný materiál pre vaše vlastné projekty
 
-**Pre implementáciu v produkcii**:
+**Pre produkčnú implementáciu**:
 1. Zamerajte sa na moduly 02 (Bezpečnosť), 10 (Nasadenie) a 11 (Monitorovanie)
 2. Prezrite si modul 12 (Najlepšie postupy) pre podnikové pokyny
 3. Používajte príklady kódu ako šablóny pripravené na produkciu
 
 ### 🚀 Možnosti rýchleho štartu
 
-**Možnosť 1: Kompletná učebná cesta** (Odporúčané pre nováčikov)
+**Možnosť 1: Kompletná vzdelávacia cesta** (Odporúčané pre nováčikov)
 ```bash
 # Clone and start with the introduction
 git clone https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.git
@@ -177,7 +177,7 @@ cd walkthrough/03-Setup
 
 ### 📋 Požiadavky na učenie
 
-**Odporúčané znalosti**:
+**Odporúčané predpoklady**:
 - Základné skúsenosti s programovaním v Pythone
 - Znalosť REST API a databáz
 - Všeobecné pochopenie konceptov AI/ML
@@ -192,20 +192,20 @@ cd walkthrough/03-Setup
 
 1. **Praktický prístup**: Každý modul obsahuje funkčné príklady kódu, ktoré môžete spustiť a upraviť
 2. **Postupná náročnosť**: Koncepty sa budujú postupne od jednoduchých po pokročilé
-3. **Reálny kontext**: Všetky príklady využívajú realistické scenáre maloobchodného podnikania
-4. **Pripravené na produkciu**: Príklady kódu sú navrhnuté na skutočné použitie v produkcii
-5. **Podpora komunity**: Pripojte sa k našej [Discord komunite](https://discord.com/invite/ByRwuEEgH4) pre pomoc a diskusie
+3. **Reálny kontext**: Všetky príklady využívajú realistické scenáre z maloobchodu
+4. **Pripravené na produkciu**: Príklady kódu sú navrhnuté pre skutočné použitie v produkcii
+5. **Podpora komunity**: Pridajte sa k našej [Discord komunite](https://discord.com/invite/ByRwuEEgH4) pre pomoc a diskusie
 
 ### 🔗 Súvisiace zdroje
 
 - **[MCP pre začiatočníkov](https://aka.ms/mcp-for-beginners)**: Základné čítanie
-- **[Ukážkový prehľad](Sample_Walkthrough.md)**: Technický prehľad na vysokej úrovni
+- **[Ukážkový prehľad](Sample_Walkthrough.md)**: Vysokoúrovňový technický prehľad
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Cloudová platforma použitá v príkladoch
-- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Python framework pre implementáciu MCP
+- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Rámec pre implementáciu MCP v Pythone
 
-**Pripravení začať?** Začnite s **[Modulom 00: Úvod](walkthrough/00-Introduction/README.md)** alebo preskúmajte **[kompletný prehľad](walkthrough/README.md)**.
+**Pripravení začať?** Začnite s **[Modul 00: Úvod](walkthrough/00-Introduction/README.md)** alebo preskúmajte **[kompletný prehľad](walkthrough/README.md)**.
 
-## Požiadavky
+## Predpoklady
 
 1. Nainštalovaný Docker Desktop
 2. Nainštalovaný Git
@@ -214,7 +214,7 @@ cd walkthrough/03-Setup
 
 ## Začíname
 
-Otvorte okno terminálu a spustite nasledujúce príkazy:
+Otvorte terminálové okno a spustite nasledujúce príkazy:
 
 1. Autentifikujte sa pomocou Azure CLI
 
@@ -222,7 +222,7 @@ Otvorte okno terminálu a spustite nasledujúce príkazy:
     az login
     ```
 
-2. Naklonujte repozitár
+2. Klonujte repozitár
 
     ```bash
     git clone https://github.com/gloveboxes/Zava-MCP-Server-and-PostgreSQL-Sample
@@ -238,7 +238,7 @@ Otvorte okno terminálu a spustite nasledujúce príkazy:
 
 Spustite nasledujúce skripty na automatizáciu nasadenia Azure zdrojov potrebných pre MCP server.
 
-Skripty nasadenia automaticky nasadia model `text-embedding-3-small`. Počas nasadenia budete mať možnosť zahrnúť aj model `gpt-4o-mini`. Upozorňujeme, že model `gpt-4o-mini` **nie je potrebný** pre tento projekt a je zahrnutý len pre potenciálne budúce vylepšenia.
+Nasadzovacie skripty automaticky nasadia model `text-embedding-3-small`. Počas nasadenia budete mať možnosť zahrnúť aj model `gpt-4o-mini`. Upozorňujeme, že model `gpt-4o-mini` **nie je potrebný** pre tento projekt a je zahrnutý len pre potenciálne budúce vylepšenia.
 
 **Vyberte skript pre vašu platformu:**
 
@@ -258,7 +258,7 @@ cd infra && ./deploy.sh
 
 ## Spustenie MCP servera
 
-Najjednoduchší spôsob, ako spustiť kompletný stack (PostgreSQL + MCP server), je pomocou Docker Compose:
+Najjednoduchší spôsob, ako spustiť kompletný stack (PostgreSQL + MCP Server), je pomocou Docker Compose:
 
 ### Spustenie stacku
 
@@ -281,7 +281,7 @@ docker compose down -v
 
 ## Použitie
 
-Nasledujúce predpokladá, že budete používať zabudovanú podporu MCP servera vo VS Code.
+Nasledujúce predpokladá, že budete používať vstavanú podporu MCP servera vo VS Code.
 
 1. Otvorte projekt vo VS Code. Z terminálu spustite:
 
@@ -289,12 +289,12 @@ Nasledujúce predpokladá, že budete používať zabudovanú podporu MCP server
     code .
     ```
 
-2. Spustite jeden alebo viac MCP serverov pomocou konfigurácií v súbore `.vscode/mcp.json`. Súbor obsahuje štyri rôzne konfigurácie serverov, z ktorých každá predstavuje inú rolu manažéra obchodu:
+2. Spustite jeden alebo viac MCP serverov pomocou konfigurácií v súbore `.vscode/mcp.json`. Súbor obsahuje štyri rôzne konfigurácie servera, z ktorých každá predstavuje inú rolu manažéra predajne:
 
-   - Každá konfigurácia používa jedinečné ID používateľa RLS (Row Level Security)
-   - Tieto ID simulujú rôzne identity manažérov obchodu, ktorí pristupujú k databáze
-   - Systém RLS obmedzuje prístup k údajom na základe priradeného obchodu manažéra
-   - Toto napodobňuje reálne scenáre, kde sa manažéri obchodov prihlasujú pomocou rôznych účtov Entra ID
+   - Každá konfigurácia používa jedinečné RLS (Row Level Security) ID používateľa
+   - Tieto ID simulujú rôzne identity manažérov predajní pristupujúcich k databáze
+   - Systém RLS obmedzuje prístup k údajom na základe priradenej predajne manažéra
+   - Toto napodobňuje reálne scenáre, kde sa manažéri predajní prihlasujú pomocou rôznych účtov Entra ID
 
     ```json
     {
@@ -324,37 +324,37 @@ Nasledujúce predpokladá, že budete používať zabudovanú podporu MCP server
     }
     ```
 
-### Otvorenie AI chatu vo VS Code
+### Otvorte AI Chat vo VS Code
 
-1. Otvorte režim AI chatu vo VS Code
+1. Otvorte režim AI Chat vo VS Code
 2. Napíšte **#zava** a vyberte jeden z MCP serverov, ktoré ste spustili
-3. Pýtajte sa otázky o údajoch o predaji - Pozrite si ukážkové dotazy nižšie
+3. Pýtajte sa otázky o predajných údajoch - Pozrite si ukážkové dotazy nižšie
 
 ### Ukážkové dotazy
 
-1. Zobraziť top 20 produktov podľa tržieb z predaja
-1. Zobraziť predaje podľa obchodu
+1. Zobraziť top 20 produktov podľa tržieb
+1. Zobraziť predaje podľa predajní
 1. Aké boli predaje za posledný štvrťrok podľa kategórie?
 1. Aké produkty predávame, ktoré sú podobné "nádobám na farbu"?
 
 ## Funkcie
 
-- **Prístup k schémam viacerých tabuliek**: Získajte schémy pre viac databázových tabuliek v jednej požiadavke
+- **Prístup k viacerým tabuľkám**: Získajte schémy pre viacero databázových tabuliek v jednej požiadavke
 - **Bezpečné vykonávanie dotazov**: Spúšťajte PostgreSQL dotazy s podporou Row Level Security (RLS)
-- **Dáta v reálnom čase**: Prístup k aktuálnym údajom o predaji, inventári a zákazníkoch
-- **Nástroje pre dátum/čas**: Získajte aktuálne UTC časové pečiatky pre analýzu citlivú na čas
-- **Flexibilné nasadenie**: Podporuje režim HTTP servera
+- **Dáta v reálnom čase**: Prístup k aktuálnym údajom o predajoch, zásobách a zákazníkoch
+- **Nástroje pre dátum/čas**: Získajte aktuálne UTC časové pečiatky pre analýzy citlivé na čas
+- **Flexibilné nasadenie**: Podpora režimu HTTP servera
 
 ## Podporované tabuľky
 
 Server poskytuje prístup k nasledujúcim tabuľkám maloobchodnej databázy:
 
-- `retail.customers` - Informácie o zákazníkoch a profily
-- `retail.stores` - Lokality obchodov a detaily
+- `retail.customers` - Informácie a profily zákazníkov
+- `retail.stores` - Lokality a detaily predajní
 - `retail.categories` - Kategórie produktov a hierarchie
 - `retail.product_types` - Klasifikácie typov produktov
 - `retail.products` - Katalóg produktov a špecifikácie
-- `retail.orders` - Objednávky zákazníkov a transakcie
+- `retail.orders` - Objednávky a transakcie zákazníkov
 - `retail.order_items` - Jednotlivé položky v objednávkach
 - `retail.inventory` - Aktuálne úrovne zásob a údaje o sklade
 
@@ -362,7 +362,7 @@ Server poskytuje prístup k nasledujúcim tabuľkám maloobchodnej databázy:
 
 ### `get_multiple_table_schemas`
 
-Získajte schémy databázových tabuliek pre viac tabuliek v jednej požiadavke.
+Získajte schémy databáz pre viacero tabuliek v jednej požiadavke.
 
 **Parametre:**
 
@@ -372,37 +372,35 @@ Získajte schémy databázových tabuliek pre viac tabuliek v jednej požiadavke
 
 ### `execute_sales_query`
 
-Spúšťajte PostgreSQL dotazy proti databáze predaja s podporou Row Level Security.
+Spúšťajte PostgreSQL dotazy na predajnú databázu s podporou Row Level Security.
 
 **Parametre:**
 
 - `postgresql_query` (str): Správne zostavený PostgreSQL dotaz
 
-**Výstup:** Výsledky dotazu formátované ako reťazec (obmedzené na 20 riadkov pre čitateľnosť)
+**Výstup:** Výsledky dotazu vo formáte reťazca (obmedzené na 20 riadkov pre čitateľnosť)
 
 **Najlepšie postupy:**
 
-- Vždy najskôr získajte schémy tabuliek
+- Vždy najprv získajte schémy tabuliek
 - Používajte presné názvy stĺpcov zo schém
 - Spájajte súvisiace tabuľky pre komplexnú analýzu
 - Agregujte výsledky, keď je to vhodné
-- Obmedzte výstup pre čitateľnosť
+- Obmedzte výstup pre lepšiu čitateľnosť
 
 ### `get_current_utc_date`
 
-Získajte aktuálny UTC dátum a čas vo formáte ISO.
+Získajte aktuálny dátum a čas UTC vo formáte ISO.
 
-**Výstup:** Aktuálny UTC dátum/čas vo formáte ISO (YYYY-MM-DDTHH:MM:SS.fffffZ)
+**Výstup:** Aktuálny dátum/čas UTC vo formáte ISO (YYYY-MM-DDTHH:MM:SS.fffffZ)
 
 ### `semantic_search_products`
 
-Vykonajte semantické vyhľadávanie produktov na základe používateľských dotazov.
-
-**Výstup:** Zoznam produktov zodpovedajúcich kritériám vyhľadávania
+Vykonajte sémantické vyhľadávanie produktov na základe používateľských dotazov.
 
 **Parametre:**
 
-- `query` (str): Reťazec dotazu na vyhľadávanie
+- `query` (str): Reťazec vyhľadávacieho dotazu
 
 **Výstup:** Zoznam produktov zodpovedajúcich kritériám vyhľadávania
 
@@ -410,47 +408,47 @@ Vykonajte semantické vyhľadávanie produktov na základe používateľských d
 
 ### Row Level Security (RLS)
 
-Server implementuje Row Level Security, aby zabezpečil, že používatelia majú prístup len k údajom, na ktoré majú oprávnenie:
+Server implementuje Row Level Security, aby zabezpečil, že používatelia majú prístup len k údajom, na ktoré sú oprávnení:
 
-- **Režim HTTP**: Používa hlavičku `x-rls-user-id` na identifikáciu požadujúceho používateľa
+- **Režim HTTP**: Používa hlavičku `x-rls-user-id` na identifikáciu žiadajúceho používateľa
 
 - **Predvolená záloha**: Používa zástupné UUID, keď nie je poskytnuté ID používateľa
 
-#### Špecifické RLS ID používateľov pre obchody
+#### Špecifické RLS ID používateľov pre predajne
 
-Každá lokalita obchodu Zava Retail má jedinečné RLS ID používateľa, ktoré určuje, ku ktorým údajom má používateľ prístup:
+Každá predajňa Zava Retail má jedinečné RLS ID používateľa, ktoré určuje, ku ktorým údajom má používateľ prístup:
 
-| Lokalita obchodu | RLS ID používateľa | Popis |
-|------------------|--------------------|-------|
-| **Globálny prístup** | `00000000-0000-0000-0000-000000000000` | Predvolená záloha - prístup ku všetkým obchodom |
-| **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Údaje obchodu Zava Retail Seattle |
-| **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Údaje obchodu Zava Retail Bellevue |
-| **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Údaje obchodu Zava Retail Tacoma |
-| **Spokane** | `d8e9f0a1-b2c3-4567-8901-234567890abc` | Údaje obchodu Zava Retail Spokane |
-| **Everett** | `3b9ac9fa-cd5e-4b92-a7f2-b8c1d0e9f2a3` | Údaje obchodu Zava Retail Everett |
-| **Redmond** | `e7f8a9b0-c1d2-3e4f-5678-90abcdef1234` | Údaje obchodu Zava Retail Redmond |
-| **Kirkland** | `9c8b7a65-4321-fed0-9876-543210fedcba` | Údaje obchodu Zava Retail Kirkland |
-| **Online** | `2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2` | Údaje online obchodu Zava Retail |
+| Lokalita predajne | RLS ID používateľa | Popis |
+|-------------------|--------------------|-------|
+| **Globálny prístup** | `00000000-0000-0000-0000-000000000000` | Predvolená záloha - prístup ku všetkým predajniam |
+| **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Údaje predajne Zava Retail Seattle |
+| **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Údaje predajne Zava Retail Bellevue |
+| **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Údaje predajne Zava Retail Tacoma |
+| **Spokane** | `d8e9f0a1-b2c3-4567-8901-234567890abc` | Údaje predajne Zava Retail Spokane |
+| **Everett** | `3b9ac9fa-cd5e-4b92-a7f2-b8c1d0e9f2a3` | Údaje predajne Zava Retail Everett |
+| **Redmond** | `e7f8a9b0-c1d2-3e4f-5678-90abcdef1234` | Údaje predajne Zava Retail Redmond |
+| **Kirkland** | `9c8b7a65-4321-fed0-9876-543210fedcba` | Údaje predajne Zava Retail Kirkland |
+| **Online** | `2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2` | Údaje online predajne Zava Retail |
 
 #### Implementácia RLS
 
-Keď sa používateľ pripojí s konkrétnym RLS ID používateľa obchodu, uvidí iba:
+Keď sa používateľ pripojí s konkrétnym RLS ID používateľa pre predajňu, uvidí iba:
 
-- Zákazníkov priradených k danému obchodu
-- Objednávky uskutočnené v lokalite daného obchodu
-- Údaje o inventári pre konkrétny obchod
-- Špecifické metriky predaja a výkonnosti obchodu
+- Zákazníkov priradených k tejto predajni
+- Objednávky uskutočnené v tejto predajni
+- Údaje o zásobách pre konkrétnu predajňu
+- Predajné a výkonnostné metriky špecifické pre predajňu
 
-Toto zabezpečuje izoláciu údajov medzi rôznymi lokalitami obchodov pri zachovaní jednotnej schémy databázy.
+Tým sa zabezpečí izolácia údajov medzi rôznymi predajňami pri zachovaní jednotnej databázovej schémy.
 
 ## Architektúra
 
 ### Kontext aplikácie
 
-Server používa spravovaný kontext aplikácie s:
+Server používa spravovaný aplikačný kontext s:
 
 - **Pool pripojení k databáze**: Efektívne spravovanie pripojení pre režim HTTP
-- **Správa životného cyklu**: Správne čistenie zdrojov pri vypnutí
+- **Správa životného cyklu**: Správne uvoľnenie zdrojov pri vypnutí
 - **Typová bezpečnosť**: Silne typovaný kontext s dataclass `AppContext`
 
 ### Kontext požiadavky
@@ -464,34 +462,34 @@ Server používa spravovaný kontext aplikácie s:
 Server sa integruje s databázou PostgreSQL prostredníctvom triedy `PostgreSQLSchemaProvider`:
 
 - **Pooling pripojení**: Používa asynchrónne pooly pripojení pre škálovateľnosť
-- **Metadáta schém**: Poskytuje podrobné informácie o schéme tabuliek
+- **Metadáta schém**: Poskytuje podrobné informácie o schémach tabuliek
 - **Vykonávanie dotazov**: Bezpečné vykonávanie dotazov s podporou RLS
-- **Správa zdrojov**: Automatické čistenie databázových zdrojov
+- **Správa zdrojov**: Automatické uvoľnenie databázových zdrojov
 
 ## Spracovanie chýb
 
 Server implementuje robustné spracovanie chýb:
 
 - **Validácia tabuliek**: Zabezpečuje prístup len k platným názvom tabuliek
-- **Validácia dotazov**: Validuje PostgreSQL dotazy pred ich vykonaním
-- **Správa zdrojov**: Správne čistenie aj počas chýb
+- **Validácia dotazov**: Overuje PostgreSQL dotazy pred ich vykonaním
+- **Správa zdrojov**: Správne uvoľnenie zdrojov aj počas chýb
 - **Užívateľsky prívetivé správy**: Jasné chybové správy na riešenie problémov
 
 ## Bezpečnostné úvahy
 
 1. **Row Level Security**: Všetky dotazy rešpektujú politiky RLS na základe identity používateľa
-2. **Izolácia údajov obchodu**: RLS ID používateľa každého obchodu zabezpečuje prístup len k údajom daného obchodu
+2. **Izolácia údajov predajní**: Každé RLS ID používateľa pre predajňu zabezpečuje prístup len k údajom tej predajne
 3. **Validácia vstupov**: Názvy tabuliek a dotazy sú validované pred vykonaním
-4. **Obmedzenia zdrojov**: Výsledky dotazov sú obmedzené, aby sa zabránilo nadmernému využívaniu zdrojov
-5. **Bezpečnosť pripojení**: Používa bezpečné praktiky pripojenia k databáze
-6. **Overenie identity používateľa**: Vždy zabezpečte, že správne RLS ID používateľa je použité pre zamýšľanú lokalitu obchodu
+4. **Obmedzenia zdrojov**: Výsledky dotazov sú obmedzené, aby sa predišlo nadmernému využívaniu zdrojov
+5. **Bezpečnosť pripojenia**: Používa bezpečné praktiky pripojenia k databáze
+6. **Overenie identity používateľa**: Vždy zabezpečte, že správne RLS ID používateľa je použité pre zamýšľanú predajňu
 
 ### Dôležité bezpečnostné poznámky
 
-- **Nikdy nepoužívajte produkčné RLS ID používateľov v vývojových prostrediach**
-- **Vždy overte, že RLS ID používateľa zodpovedá zamýšľanému obchodu pred spustením dotazov**
+- **Nikdy nepoužívajte produkčné RLS ID používateľov v testovacích prostrediach**
+- **Vždy overte, že RLS ID používateľa zodpovedá zamýšľanej predajni pred spustením dotazov**
 - **Predvolené UUID (`00000000-0000-0000-0000-000000000000`) poskytuje obmedzený prístup**
-- **Každý manažér obchodu by mal mať prístup len k RLS ID používateľa svojho obchodu**
+- **Každý manažér predajne by mal mať prístup len k RLS ID svojej predajne**
 
 ## Vývoj
 
@@ -508,14 +506,14 @@ mcp_server/
 
 - **FastMCP Server**: Moderná implementácia MCP servera s podporou asynchrónnych operácií
 - **PostgreSQL Provider**: Abstrakčná vrstva databázy s podporou RLS
-- **Správa kontextu**: Typovo bezpečné spracovanie kontextu aplikácie a požiadaviek
+- **Správa kontextu**: Typovo bezpečné spracovanie aplikačného a požiadavkového kontextu
 - **Registrácia nástrojov**: Deklaratívna registrácia nástrojov s validáciou pomocou Pydantic
 
 ## Prispievanie
 
-Pri prispievaní do tohto servera:
+Pri prispievaní na tento server:
 
-1. Zabezpečte, aby všetky databázové dotazy rešpektovali Row Level Security
+1. Zabezpečte, že všetky databázové dotazy rešpektujú Row Level Security
 2. Pridajte správne spracovanie chýb pre nové nástroje
 3. Aktualizujte tento README s akýmikoľvek novými funkciami alebo zmenami
 4. Otestujte režim HTTP servera
@@ -525,9 +523,9 @@ Pri prispievaní do tohto servera:
 
 ---
 
-*Tento MCP server umožňuje bezpečný a efektívny prístup k údajom o predaji Zava Retail pre analýzu a poznatky poháňané AI.*
+*Tento MCP server umožňuje bezpečný a efektívny prístup k predajným údajom Zava Retail pre analýzy a poznatky poháňané AI.*
 
 ---
 
 **Upozornenie**:  
-Tento dokument bol preložený pomocou služby AI prekladu [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, prosím, berte na vedomie, že automatizované preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho rodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre kritické informácie sa odporúča profesionálny ľudský preklad. Nenesieme zodpovednosť za akékoľvek nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.
+Tento dokument bol preložený pomocou služby AI prekladu [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, upozorňujeme, že automatizované preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho rodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre kritické informácie sa odporúča profesionálny ľudský preklad. Nenesieme zodpovednosť za akékoľvek nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.

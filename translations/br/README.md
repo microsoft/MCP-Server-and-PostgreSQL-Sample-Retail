@@ -1,78 +1,78 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T20:31:07+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T09:42:23+00:00",
   "source_file": "README.md",
   "language_code": "br"
 }
 -->
-# MCP Server e Exemplo com PostgreSQL - Análise de Vendas no Varejo
+# Exemplo de Servidor MCP e PostgreSQL - Análise de Vendas no Varejo
 
-## Aprenda MCP com Integração de Banco de Dados através de Exemplos Práticos
+## Aprenda MCP com Integração de Banco de Dados por Meio de Exemplos Práticos
 
 [![Contribuidores do GitHub](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
 [![Problemas no GitHub](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
 [![Pull Requests no GitHub](https://img.shields.io/github/issues-pr/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/pulls)
 [![PRs Bem-vindos](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![Entre no Discord do Azure AI Foundry](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+[![Junte-se ao Discord do Azure AI Foundry](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Siga estes passos para começar a usar esses recursos:
+Siga estas etapas para começar a usar esses recursos:
 
 1. **Faça um Fork do Repositório**: Clique [aqui para fazer o fork](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
-2. **Clone o Repositório**: `git clone https://github.com/SEU-NOME-DE-USUÁRIO/MCP-Server-and-PostgreSQL-Sample-Retail.git`
-3. **Entre no Discord do Azure AI Foundry**: [Conecte-se com especialistas e outros desenvolvedores](https://discord.com/invite/ByRwuEEgH4)
+2. **Clone o Repositório**: `git clone https://github.com/SEU-USUÁRIO/MCP-Server-and-PostgreSQL-Sample-Retail.git`
+3. **Junte-se ao Discord do Azure AI Foundry**: [Conecte-se com especialistas e outros desenvolvedores](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Suporte Multilíngue
 
 #### Suporte via GitHub Action (Automatizado e Sempre Atualizado)
 
-[Francês](../fr/README.md) | [Espanhol](../es/README.md) | [Alemão](../de/README.md) | [Russo](../ru/README.md) | [Árabe](../ar/README.md) | [Persa (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinês (Simplificado)](../zh/README.md) | [Chinês (Tradicional, Macau)](../mo/README.md) | [Chinês (Tradicional, Hong Kong)](../hk/README.md) | [Chinês (Tradicional, Taiwan)](../tw/README.md) | [Japonês](../ja/README.md) | [Coreano](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepalês](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Português (Portugal)](../pt/README.md) | [Português (Brasil)](./README.md) | [Italiano](../it/README.md) | [Polonês](../pl/README.md) | [Turco](../tr/README.md) | [Grego](../el/README.md) | [Tailandês](../th/README.md) | [Sueco](../sv/README.md) | [Dinamarquês](../da/README.md) | [Norueguês](../no/README.md) | [Finlandês](../fi/README.md) | [Holandês](../nl/README.md) | [Hebraico](../he/README.md) | [Vietnamita](../vi/README.md) | [Indonésio](../id/README.md) | [Malaio](../ms/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Suaíli](../sw/README.md) | [Húngaro](../hu/README.md) | [Tcheco](../cs/README.md) | [Eslovaco](../sk/README.md) | [Romeno](../ro/README.md) | [Búlgaro](../bg/README.md) | [Sérvio (Cirílico)](../sr/README.md) | [Croata](../hr/README.md) | [Esloveno](../sl/README.md) | [Ucraniano](../uk/README.md) | [Birmanês (Myanmar)](../my/README.md)
+[Francês](../fr/README.md) | [Espanhol](../es/README.md) | [Alemão](../de/README.md) | [Russo](../ru/README.md) | [Árabe](../ar/README.md) | [Persa (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinês (Simplificado)](../zh/README.md) | [Chinês (Tradicional, Macau)](../mo/README.md) | [Chinês (Tradicional, Hong Kong)](../hk/README.md) | [Chinês (Tradicional, Taiwan)](../tw/README.md) | [Japonês](../ja/README.md) | [Coreano](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepalês](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Português (Portugal)](../pt/README.md) | [Português (Brasil)](./README.md) | [Italiano](../it/README.md) | [Polonês](../pl/README.md) | [Turco](../tr/README.md) | [Grego](../el/README.md) | [Tailandês](../th/README.md) | [Sueco](../sv/README.md) | [Dinamarquês](../da/README.md) | [Norueguês](../no/README.md) | [Finlandês](../fi/README.md) | [Holandês](../nl/README.md) | [Hebraico](../he/README.md) | [Vietnamita](../vi/README.md) | [Indonésio](../id/README.md) | [Malaio](../ms/README.md) | [Tagalo (Filipino)](../tl/README.md) | [Suaíli](../sw/README.md) | [Húngaro](../hu/README.md) | [Tcheco](../cs/README.md) | [Eslovaco](../sk/README.md) | [Romeno](../ro/README.md) | [Búlgaro](../bg/README.md) | [Sérvio (Cirílico)](../sr/README.md) | [Croata](../hr/README.md) | [Esloveno](../sl/README.md) | [Ucraniano](../uk/README.md) | [Birmanês (Myanmar)](../my/README.md)
 
-**Se você deseja suporte para idiomas adicionais, os idiomas disponíveis estão listados [aqui](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Se você deseja suporte para idiomas adicionais, consulte a lista [aqui](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Introdução
 
-Este exemplo demonstra como construir e implantar um **servidor Model Context Protocol (MCP)** abrangente que fornece aos assistentes de IA acesso seguro e inteligente aos dados de vendas no varejo através do PostgreSQL. O projeto apresenta recursos de nível empresarial, incluindo **Segurança em Nível de Linha (RLS)**, **capacidades de busca semântica** e **integração com Azure AI** para cenários reais de análise de varejo.
+Este exemplo demonstra como construir e implantar um **servidor Model Context Protocol (MCP)** abrangente que fornece aos assistentes de IA acesso seguro e inteligente a dados de vendas no varejo por meio do PostgreSQL. O projeto apresenta recursos de nível empresarial, incluindo **Segurança em Nível de Linha (RLS)**, **capacidades de busca semântica** e **integração com Azure AI** para cenários reais de análise de varejo.
 
 **Principais Casos de Uso:**
-- **Análise de Vendas com IA**: Permitir que assistentes de IA consultem e analisem dados de vendas no varejo por meio de linguagem natural
-- **Acesso Seguro Multi-Tenant**: Demonstrar a implementação de Segurança em Nível de Linha onde diferentes gerentes de loja podem acessar apenas os dados de suas lojas
+- **Análise de Vendas com IA**: Permitir que assistentes de IA consultem e analisem dados de vendas no varejo usando linguagem natural
+- **Acesso Seguro Multi-Tenant**: Demonstrar a implementação de Segurança em Nível de Linha, onde diferentes gerentes de loja podem acessar apenas os dados de suas respectivas lojas
 - **Busca Semântica de Produtos**: Apresentar descoberta de produtos aprimorada por IA usando embeddings de texto
 - **Integração Empresarial**: Ilustrar como integrar servidores MCP com serviços Azure e bancos de dados PostgreSQL
 
 **Ideal para:**
 - Desenvolvedores aprendendo a construir servidores MCP com integração de banco de dados
 - Engenheiros de dados implementando soluções seguras de análise multi-tenant
-- Desenvolvedores de aplicativos de IA trabalhando com dados de varejo ou e-commerce
+- Desenvolvedores de aplicações de IA que trabalham com dados de varejo ou e-commerce
 - Qualquer pessoa interessada em combinar assistentes de IA com bancos de dados empresariais
 
 ## Junte-se à Comunidade do Discord do Azure AI Foundry
 Compartilhe suas experiências com MCP e conecte-se com especialistas e grupos de produtos
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # Servidor MCP de Análise de Vendas
 
-Um servidor Model Context Protocol (MCP) que fornece acesso abrangente ao banco de dados de vendas de clientes para o negócio Zava Retail DIY. Este servidor permite que assistentes de IA consultem e analisem dados de vendas no varejo por meio de uma interface segura e consciente do esquema.
+Um servidor Model Context Protocol (MCP) que fornece acesso abrangente ao banco de dados de vendas de clientes para o negócio de bricolagem Zava Retail. Este servidor permite que assistentes de IA consultem e analisem dados de vendas no varejo por meio de uma interface segura e ciente do esquema.
 
 ## 📚 Guia Completo de Implementação
 
-Para uma análise detalhada de como esta solução é construída e como implementar servidores MCP semelhantes, veja nosso **[Guia de Exemplo](Sample_Walkthrough.md)**. Este guia fornece:
+Para uma análise detalhada de como esta solução é construída e como implementar servidores MCP semelhantes, consulte nosso **[Guia de Passo a Passo](Sample_Walkthrough.md)**. Este guia fornece:
 
 - **Análise de Arquitetura**: Componentes e padrões de design
 - **Construção Passo a Passo**: Desde a configuração do projeto até a implantação
-- **Explicação do Código**: Detalhes da implementação do servidor MCP
+- **Detalhamento do Código**: Explicação detalhada da implementação do servidor MCP
 - **Recursos Avançados**: Segurança em Nível de Linha, busca semântica e monitoramento
 - **Melhores Práticas**: Diretrizes de segurança, desempenho e desenvolvimento
-- **Solução de Problemas**: Problemas comuns e soluções
+- **Solução de Problemas**: Problemas comuns e suas soluções
 
-Perfeito para desenvolvedores que desejam entender os detalhes da implementação e construir soluções semelhantes.
+Ideal para desenvolvedores que desejam entender os detalhes da implementação e construir soluções semelhantes.
 
 ## 🤖 O que é MCP (Model Context Protocol)?
 
-**Model Context Protocol (MCP)** é um padrão aberto que permite que assistentes de IA acessem fontes de dados externas e ferramentas em tempo real de forma segura. Pense nisso como uma ponte que permite que modelos de IA se conectem a bancos de dados, APIs, sistemas de arquivos e outros recursos enquanto mantêm segurança e controle.
+**Model Context Protocol (MCP)** é um padrão aberto que permite que assistentes de IA acessem com segurança fontes de dados externas e ferramentas em tempo real. Pense nele como uma ponte que conecta modelos de IA a bancos de dados, APIs, sistemas de arquivos e outros recursos, mantendo segurança e controle.
 
 ### Benefícios Principais:
 - **Acesso a Dados em Tempo Real**: Assistentes de IA podem consultar bancos de dados e APIs ao vivo
@@ -82,70 +82,70 @@ Perfeito para desenvolvedores que desejam entender os detalhes da implementaçã
 
 ### Novo no MCP?
 
-Se você é novo no Model Context Protocol, recomendamos começar com os recursos introdutórios abrangentes da Microsoft:
+Se você é novo no Model Context Protocol, recomendamos começar com os recursos abrangentes para iniciantes da Microsoft:
 
-**📖 [Guia MCP para Iniciantes](https://aka.ms/mcp-for-beginners)**
+**📖 [Guia para Iniciantes em MCP](https://aka.ms/mcp-for-beginners)**
 
 Este recurso fornece:
 - Introdução aos conceitos e arquitetura do MCP
 - Tutoriais passo a passo para construir seu primeiro servidor MCP
-- Melhores práticas para desenvolvimento MCP
+- Melhores práticas para desenvolvimento com MCP
 - Exemplos de integração com plataformas de IA populares
-- Recursos comunitários e suporte
+- Recursos e suporte da comunidade
 
 Depois de entender o básico, volte aqui para explorar esta implementação avançada de análise de varejo!
 
 ## 📚 Guia de Aprendizado Abrangente: /walkthrough
 
-Este repositório inclui um **guia de aprendizado com 12 módulos** que decompõe este exemplo de servidor MCP para varejo em lições passo a passo. O walkthrough transforma este exemplo funcional em um recurso educacional abrangente, perfeito para desenvolvedores que desejam entender como construir servidores MCP prontos para produção com integração de banco de dados.
+Este repositório inclui um **guia de aprendizado completo com 12 módulos** que decompõe este exemplo de servidor MCP para varejo em lições práticas e passo a passo. O guia transforma este exemplo funcional em um recurso educacional abrangente, perfeito para desenvolvedores que desejam entender como construir servidores MCP prontos para produção com integração de banco de dados.
 
-### O que Você Vai Aprender
+### O Que Você Vai Aprender
 
-O walkthrough cobre tudo, desde conceitos básicos de MCP até implantação avançada em produção, incluindo:
+O guia cobre desde conceitos básicos de MCP até implantação avançada em produção, incluindo:
 
 - **Fundamentos do MCP**: Compreensão do Model Context Protocol e suas aplicações no mundo real
-- **Integração com Banco de Dados**: Implementação de conectividade segura com PostgreSQL usando Segurança em Nível de Linha
+- **Integração com Banco de Dados**: Implementação de conectividade segura com PostgreSQL e Segurança em Nível de Linha
 - **Recursos Aprimorados por IA**: Adição de capacidades de busca semântica com embeddings do Azure OpenAI
 - **Implementação de Segurança**: Autenticação, autorização e isolamento de dados de nível empresarial
 - **Desenvolvimento de Ferramentas**: Construção de ferramentas MCP sofisticadas para análise de dados e inteligência de negócios
-- **Testes e Depuração**: Estratégias abrangentes de teste e técnicas de depuração
-- **Integração com VS Code**: Configuração de Chat de IA para consultas de banco de dados em linguagem natural
-- **Implantação em Produção**: Containerização, escalabilidade e estratégias de implantação na nuvem
-- **Monitoramento e Observabilidade**: Application Insights, registro de logs e monitoramento de desempenho
+- **Testes e Depuração**: Estratégias abrangentes de testes e técnicas de depuração
+- **Integração com VS Code**: Configuração do AI Chat para consultas de banco de dados em linguagem natural
+- **Implantação em Produção**: Estratégias de containerização, escalabilidade e implantação na nuvem
+- **Monitoramento e Observabilidade**: Application Insights, logging e monitoramento de desempenho
 
 ### Visão Geral do Caminho de Aprendizado
 
-O walkthrough segue uma estrutura de aprendizado progressiva projetada para desenvolvedores de todos os níveis de habilidade:
+O guia segue uma estrutura de aprendizado progressiva projetada para desenvolvedores de todos os níveis de habilidade:
 
-| Módulo | Área de Foco | Descrição | Estimativa de Tempo |
-|--------|--------------|-----------|---------------------|
+| Módulo | Área de Foco | Descrição | Tempo Estimado |
+|--------|--------------|-----------|----------------|
 | **[00-Introdução](walkthrough/00-Introduction/README.md)** | Fundamentos | Conceitos de MCP, estudo de caso Zava Retail, visão geral da arquitetura | 30 minutos |
 | **[01-Arquitetura](walkthrough/01-Architecture/README.md)** | Padrões de Design | Arquitetura técnica, design em camadas, componentes do sistema | 45 minutos |
-| **[02-Segurança](walkthrough/02-Security/README.md)** | Segurança Empresarial | Autenticação Azure, Segurança em Nível de Linha, isolamento multi-tenant | 60 minutos |
-| **[03-Configuração](walkthrough/03-Setup/README.md)** | Ambiente | Configuração do Docker, Azure CLI, configuração do projeto, validação | 45 minutos |
-| **[04-Banco de Dados](walkthrough/04-Database/README.md)** | Camada de Dados | Esquema PostgreSQL, pgvector, políticas RLS, dados de exemplo | 60 minutos |
+| **[02-Segurança](walkthrough/02-Security/README.md)** | Segurança Empresarial | Autenticação no Azure, Segurança em Nível de Linha, isolamento multi-tenant | 60 minutos |
+| **[03-Configuração](walkthrough/03-Setup/README.md)** | Ambiente | Configuração do Docker, Azure CLI, validação do projeto | 45 minutos |
+| **[04-Banco de Dados](walkthrough/04-Database/README.md)** | Camada de Dados | Esquema do PostgreSQL, pgvector, políticas de RLS, dados de exemplo | 60 minutos |
 | **[05-Servidor MCP](walkthrough/05-MCP-Server/README.md)** | Implementação Principal | Framework FastMCP, integração com banco de dados, gerenciamento de conexões | 90 minutos |
-| **[06-Ferramentas](walkthrough/06-Tools/README.md)** | Desenvolvimento de Ferramentas | Criação de ferramentas MCP, validação de consultas, recursos de inteligência de negócios | 75 minutos |
-| **[07-Busca Semântica](walkthrough/07-Semantic-Search/README.md)** | Integração com IA | Embeddings do Azure OpenAI, busca vetorial, estratégias de busca híbrida | 60 minutos |
-| **[08-Testes](walkthrough/08-Testing/README.md)** | Garantia de Qualidade | Testes unitários, testes de integração, testes de desempenho, depuração | 75 minutos |
-| **[09-VS Code](walkthrough/09-VS-Code/README.md)** | Experiência de Desenvolvimento | Configuração do VS Code, integração com Chat de IA, fluxos de trabalho de depuração | 45 minutos |
+| **[06-Ferramentas](walkthrough/06-Tools/README.md)** | Desenvolvimento de Ferramentas | Criação de ferramentas MCP, validação de consultas, recursos de BI | 75 minutos |
+| **[07-Busca Semântica](walkthrough/07-Semantic-Search/README.md)** | Integração com IA | Embeddings do Azure OpenAI, busca vetorial, estratégias híbridas | 60 minutos |
+| **[08-Testes](walkthrough/08-Testing/README.md)** | Garantia de Qualidade | Testes unitários, de integração, de desempenho e depuração | 75 minutos |
+| **[09-VS Code](walkthrough/09-VS-Code/README.md)** | Experiência de Desenvolvimento | Configuração do VS Code, integração com AI Chat, fluxos de depuração | 45 minutos |
 | **[10-Implantação](walkthrough/10-Deployment/README.md)** | Pronto para Produção | Containerização, Azure Container Apps, pipelines CI/CD, escalabilidade | 90 minutos |
-| **[11-Monitoramento](walkthrough/11-Monitoring/README.md)** | Observabilidade | Application Insights, registro estruturado, métricas de desempenho | 60 minutos |
+| **[11-Monitoramento](walkthrough/11-Monitoring/README.md)** | Observabilidade | Application Insights, logging estruturado, métricas de desempenho | 60 minutos |
 | **[12-Melhores Práticas](walkthrough/12-Best-Practices/README.md)** | Excelência em Produção | Reforço de segurança, otimização de desempenho, padrões empresariais | 45 minutos |
 
 **Tempo Total de Aprendizado**: ~12-15 horas de aprendizado prático abrangente
 
-### 🎯 Como Usar o Walkthrough
+### 🎯 Como Usar o Guia
 
 **Para Iniciantes**:
 1. Comece com o [Módulo 00: Introdução](walkthrough/00-Introduction/README.md) para entender os fundamentos do MCP
-2. Siga os módulos sequencialmente para uma experiência de aprendizado completa
+2. Siga os módulos sequencialmente para uma experiência completa de aprendizado
 3. Cada módulo constrói conceitos anteriores e inclui exercícios práticos
 
 **Para Desenvolvedores Experientes**:
-1. Revise o [Resumo Principal do Walkthrough](walkthrough/README.md) para uma visão geral dos módulos
-2. Pule para módulos específicos que lhe interessam (ex.: Módulo 07 para integração com IA)
-3. Use módulos individuais como material de referência para seus próprios projetos
+1. Revise a [Visão Geral do Guia](walkthrough/README.md) para um resumo completo dos módulos
+2. Pule para módulos específicos que lhe interessem (por exemplo, Módulo 07 para integração com IA)
+3. Use os módulos individuais como material de referência para seus próprios projetos
 
 **Para Implementação em Produção**:
 1. Foque nos Módulos 02 (Segurança), 10 (Implantação) e 11 (Monitoramento)
@@ -162,7 +162,7 @@ cd MCP-Server-and-PostgreSQL-Sample-Retail/walkthrough
 # Follow along starting with 00-Introduction/README.md
 ```
 
-**Opção 2: Implementação Prática** (Comece direto na construção)
+**Opção 2: Implementação Prática** (Comece a construir imediatamente)
 ```bash
 # Start with setup and build as you learn
 cd walkthrough/03-Setup
@@ -180,7 +180,7 @@ cd walkthrough/03-Setup
 **Conhecimentos Recomendados**:
 - Experiência básica em programação Python
 - Familiaridade com APIs REST e bancos de dados
-- Compreensão geral de conceitos de IA/ML
+- Entendimento geral de conceitos de IA/ML
 - Conhecimento básico de linha de comando e Docker
 
 **Não Necessário (mas útil)**:
@@ -212,7 +212,7 @@ cd walkthrough/03-Setup
 3. **Azure CLI**: Instale e autentique com o Azure CLI
 4. Acesso ao modelo OpenAI `text-embedding-3-small` e, opcionalmente, ao modelo `gpt-4o-mini`.
 
-## Primeiros Passos
+## Começando
 
 Abra uma janela de terminal e execute os seguintes comandos:
 
@@ -238,7 +238,7 @@ Abra uma janela de terminal e execute os seguintes comandos:
 
 Execute os seguintes scripts para automatizar a implantação dos recursos do Azure necessários para o servidor MCP.
 
-Os scripts de implantação irão automaticamente implantar o modelo `text-embedding-3-small`. Durante a implantação, você terá a opção de incluir também o modelo `gpt-4o-mini`. Observe que o `gpt-4o-mini` **não é necessário** para este projeto e está incluído apenas para possíveis melhorias futuras.
+Os scripts de implantação irão automaticamente implantar o modelo `text-embedding-3-small`. Durante a implantação, você terá a opção de incluir também o modelo `gpt-4o-mini`. Note que o modelo `gpt-4o-mini` **não é necessário** para este projeto e está incluído apenas para possíveis melhorias futuras.
 
 **Escolha o script para sua plataforma:**
 
@@ -289,7 +289,7 @@ O seguinte pressupõe que você usará o suporte integrado ao servidor MCP no VS
     code .
     ```
 
-2. Inicie um ou mais servidores MCP usando as configurações em `.vscode/mcp.json`. O arquivo contém quatro configurações diferentes de servidor, cada uma representando um papel de gerente de loja diferente:
+2. Inicie um ou mais servidores MCP usando as configurações em `.vscode/mcp.json`. O arquivo contém quatro configurações diferentes de servidor, cada uma representando um papel diferente de gerente de loja:
 
    - Cada configuração usa um ID de usuário RLS (Row Level Security) exclusivo
    - Esses IDs de usuário simulam diferentes identidades de gerentes de loja acessando o banco de dados
@@ -324,7 +324,7 @@ O seguinte pressupõe que você usará o suporte integrado ao servidor MCP no VS
     }
     ```
 
-### Abrir o Chat de IA no VS Code
+### Abrir Chat de IA no VS Code
 
 1. Abra o modo de Chat de IA no VS Code
 2. Digite **#zava** e selecione um dos servidores MCP que você iniciou
@@ -342,7 +342,7 @@ O seguinte pressupõe que você usará o suporte integrado ao servidor MCP no VS
 - **Acesso a Esquemas Multi-Tabela**: Recupere esquemas de várias tabelas do banco de dados em uma única solicitação
 - **Execução Segura de Consultas**: Execute consultas PostgreSQL com suporte a Row Level Security (RLS)
 - **Dados em Tempo Real**: Acesse dados atuais de vendas, inventário e clientes
-- **Utilitários de Data/Hora**: Obtenha carimbos de data/hora UTC atuais para análises sensíveis ao tempo
+- **Utilitários de Data/Hora**: Obtenha timestamps UTC atuais para análises sensíveis ao tempo
 - **Implantação Flexível**: Suporta modo de servidor HTTP
 
 ## Tabelas Suportadas
@@ -418,7 +418,7 @@ O servidor implementa Row Level Security para garantir que os usuários acessem 
 
 #### IDs de Usuário RLS Específicos por Loja
 
-Cada localização de loja da Zava Retail possui um ID de usuário RLS exclusivo que determina quais dados o usuário pode acessar:
+Cada localização de loja da Zava Retail tem um ID de usuário RLS exclusivo que determina quais dados o usuário pode acessar:
 
 | Localização da Loja | ID de Usuário RLS | Descrição |
 |---------------------|-------------------|-----------|
@@ -456,7 +456,7 @@ O servidor utiliza um contexto de aplicação gerenciado com:
 ### Contexto de Solicitação
 
 - **Extração de Cabeçalhos**: Análise segura de cabeçalhos para identificação do usuário
-- **Integração com RLS**: Resolução automática de ID de usuário a partir do contexto da solicitação
+- **Integração RLS**: Resolução automática de ID de usuário a partir do contexto da solicitação
 - **Tratamento de Erros**: Tratamento abrangente de erros com mensagens amigáveis ao usuário
 
 ## Integração com Banco de Dados
@@ -515,7 +515,7 @@ mcp_server/
 
 Ao contribuir para este servidor:
 
-1. Certifique-se de que todas as consultas ao banco de dados respeitem o Row Level Security
+1. Certifique-se de que todas as consultas ao banco de dados respeitem Row Level Security
 2. Adicione tratamento de erros adequado para novas ferramentas
 3. Atualize este README com quaisquer novos recursos ou alterações
 4. Teste o modo de servidor HTTP

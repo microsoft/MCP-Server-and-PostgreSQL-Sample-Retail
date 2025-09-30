@@ -1,13 +1,13 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T21:45:53+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T09:57:25+00:00",
   "source_file": "README.md",
   "language_code": "fi"
 }
 -->
-# MCP Server ja PostgreSQL Esimerkki - Vähittäismyynnin Analyysi
+# MCP-palvelin ja PostgreSQL-esimerkki - Vähittäismyynnin analyysi
 
 ## Opi MCP ja tietokantaintegraatio käytännön esimerkkien avulla
 
@@ -18,75 +18,75 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Liity Azure AI Foundry Discordiin](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Seuraa näitä ohjeita päästäksesi alkuun näiden resurssien käytössä:
+Seuraa näitä vaiheita aloittaaksesi näiden resurssien käytön:
 
-1. **Haarauta Repository**: Klikkaa [tästä haarauttaaksesi](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
-2. **Kloonaa Repository**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
+1. **Haarauta arkisto**: Klikkaa [tästä haarauttaaksesi](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
+2. **Kloonaa arkisto**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
 3. **Liity Azure AI Foundry Discordiin**: [Tapaa asiantuntijoita ja muita kehittäjiä](https://discord.com/invite/ByRwuEEgH4)
 
-### 🌐 Monikielinen Tuki
+### 🌐 Monikielinen tuki
 
-#### Tuettu GitHub Actionin kautta (Automaattinen ja aina ajan tasalla)
+#### Tuettu GitHub Actionin kautta (automaattinen ja aina ajan tasalla)
 
-[French](../fr/README.md) | [Spanish](../es/README.md) | [German](../de/README.md) | [Russian](../ru/README.md) | [Arabic](../ar/README.md) | [Persian (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Portuguese (Brazil)](../br/README.md) | [Italian](../it/README.md) | [Polish](../pl/README.md) | [Turkish](../tr/README.md) | [Greek](../el/README.md) | [Thai](../th/README.md) | [Swedish](../sv/README.md) | [Danish](../da/README.md) | [Norwegian](../no/README.md) | [Finnish](./README.md) | [Dutch](../nl/README.md) | [Hebrew](../he/README.md) | [Vietnamese](../vi/README.md) | [Indonesian](../id/README.md) | [Malay](../ms/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Swahili](../sw/README.md) | [Hungarian](../hu/README.md) | [Czech](../cs/README.md) | [Slovak](../sk/README.md) | [Romanian](../ro/README.md) | [Bulgarian](../bg/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Croatian](../hr/README.md) | [Slovenian](../sl/README.md) | [Ukrainian](../uk/README.md) | [Burmese (Myanmar)](../my/README.md)
+[Ranska](../fr/README.md) | [Espanja](../es/README.md) | [Saksa](../de/README.md) | [Venäjä](../ru/README.md) | [Arabia](../ar/README.md) | [Persia (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Kiina (yksinkertaistettu)](../zh/README.md) | [Kiina (perinteinen, Macao)](../mo/README.md) | [Kiina (perinteinen, Hongkong)](../hk/README.md) | [Kiina (perinteinen, Taiwan)](../tw/README.md) | [Japani](../ja/README.md) | [Korea](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portugali (Portugali)](../pt/README.md) | [Portugali (Brasilia)](../br/README.md) | [Italia](../it/README.md) | [Puola](../pl/README.md) | [Turkki](../tr/README.md) | [Kreikka](../el/README.md) | [Thai](../th/README.md) | [Ruotsi](../sv/README.md) | [Tanska](../da/README.md) | [Norja](../no/README.md) | [Suomi](./README.md) | [Hollanti](../nl/README.md) | [Heprea](../he/README.md) | [Vietnam](../vi/README.md) | [Indonesia](../id/README.md) | [Malaiji](../ms/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Swahili](../sw/README.md) | [Unkari](../hu/README.md) | [Tšekki](../cs/README.md) | [Slovakki](../sk/README.md) | [Romania](../ro/README.md) | [Bulgaria](../bg/README.md) | [Serbia (kyrillinen)](../sr/README.md) | [Kroatia](../hr/README.md) | [Sloveeni](../sl/README.md) | [Ukraina](../uk/README.md) | [Burma (Myanmar)](../my/README.md)
 
-**Jos haluat lisätä uusia kieliä, tuetut kielet löytyvät [täältä](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Jos haluat lisätä uusia käännöksiä, tuetut kielet löytyvät [täältä](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Johdanto
 
-Tämä esimerkki näyttää, kuinka rakentaa ja ottaa käyttöön kattava **Model Context Protocol (MCP) -palvelin**, joka tarjoaa tekoälyavustajille turvallisen ja älykkään pääsyn vähittäismyynnin dataan PostgreSQL:n kautta. Projekti esittelee yritystason ominaisuuksia, kuten **rivitasoinen turvallisuus (Row Level Security, RLS)**, **semanttinen haku** ja **Azure AI -integraatio** todellisiin vähittäismyynnin analytiikkaskenaarioihin.
+Tämä esimerkki näyttää, kuinka rakentaa ja ottaa käyttöön kattava **Model Context Protocol (MCP) -palvelin**, joka tarjoaa tekoälyavustajille turvallisen ja älykkään pääsyn vähittäismyynnin myyntitietoihin PostgreSQL:n kautta. Projekti esittelee yritystason ominaisuuksia, kuten **rivikohtaisen tietoturvan (Row Level Security, RLS)**, **semanttisen haun ominaisuudet** ja **Azure AI -integraation** todellisiin vähittäismyynnin analytiikkaskenaarioihin.
 
 **Keskeiset käyttötapaukset:**
-- **Tekoälypohjainen myynnin analytiikka**: Mahdollistaa tekoälyavustajien kyselyt ja analyysit vähittäismyynnin datasta luonnollisella kielellä
-- **Turvallinen monikäyttäjäpääsy**: Näyttää rivitasoisen turvallisuuden toteutuksen, jossa eri myymäläpäälliköt voivat käyttää vain oman myymälänsä dataa
-- **Semanttinen tuotehaku**: Esittelee tekoälyllä parannettua tuotehakua tekstipohjaisten upotusten avulla
-- **Yritysintegraatio**: Näyttää, kuinka MCP-palvelimet integroidaan Azure-palveluihin ja PostgreSQL-tietokantoihin
+- **Tekoälypohjainen myyntianalytiikka**: Mahdollista tekoälyavustajien kysyä ja analysoida vähittäismyynnin tietoja luonnollisella kielellä
+- **Turvallinen monivuokraajapääsy**: Näytä rivikohtaisen tietoturvan toteutus, jossa eri myymäläpäälliköt voivat käyttää vain oman myymälänsä tietoja
+- **Semanttinen tuotehaku**: Esittele tekoälyllä parannettu tuotehaku tekstin upotusten avulla
+- **Yritysintegraatio**: Näytä, kuinka MCP-palvelimet integroidaan Azure-palveluihin ja PostgreSQL-tietokantoihin
 
 **Täydellinen seuraaville:**
 - Kehittäjät, jotka haluavat oppia rakentamaan MCP-palvelimia tietokantaintegraatiolla
-- Data-insinöörit, jotka toteuttavat turvallisia monikäyttäjäanalytiikkaratkaisuja
-- Tekoälysovelluskehittäjät, jotka työskentelevät vähittäismyynnin tai verkkokaupan datan parissa
+- Data-insinöörit, jotka toteuttavat turvallisia monivuokraaja-analytiikkaratkaisuja
+- Tekoälysovelluskehittäjät, jotka työskentelevät vähittäismyynnin tai verkkokaupan tietojen parissa
 - Kaikki, jotka ovat kiinnostuneita yhdistämään tekoälyavustajat yritystietokantoihin
 
-## Liity Azure AI Foundry Discord-yhteisöön
-Jaa kokemuksesi MCP:stä ja tapaa asiantuntijoita sekä tuote-ryhmiä
+## Liity Azure AI Foundry Discord -yhteisöön
+Jaa kokemuksiasi MCP:stä ja tapaa asiantuntijoita ja tuoteasiantuntijoita
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-# Myynnin Analytiikka MCP-palvelin
+# Myyntianalyysin MCP-palvelin
 
-Model Context Protocol (MCP) -palvelin, joka tarjoaa kattavan asiakasmyyntitietokannan pääsyn Zava Retail DIY -liiketoiminnalle. Tämä palvelin mahdollistaa tekoälyavustajien kyselyt ja analyysit vähittäismyynnin datasta turvallisen, skeemaan perustuvan käyttöliittymän kautta.
+Model Context Protocol (MCP) -palvelin, joka tarjoaa kattavan asiakastietokannan pääsyn Zava Retail DIY -liiketoiminnalle. Tämä palvelin mahdollistaa tekoälyavustajien kysyä ja analysoida vähittäismyynnin tietoja turvallisen, skeemaa ymmärtävän käyttöliittymän kautta.
 
-## 📚 Täydellinen Toteutusopas
+## 📚 Täydellinen toteutusopas
 
-Katso yksityiskohtainen opas tämän ratkaisun rakentamisesta ja vastaavien MCP-palvelimien toteuttamisesta **[Esimerkin Läpi Käynti](Sample_Walkthrough.md)** -dokumentista. Tämä opas sisältää:
+Katso yksityiskohtainen opas tämän ratkaisun rakentamisesta ja vastaavien MCP-palvelimien toteuttamisesta **[Sample Walkthrough](Sample_Walkthrough.md)** -dokumentista. Tämä opas sisältää:
 
-- **Arkkitehtuurin Syväluotaus**: Komponenttianalyysi ja suunnittelumallit
-- **Vaiheittainen Rakentaminen**: Projektin aloituksesta käyttöönottoon
-- **Koodin Erittely**: Yksityiskohtainen selitys MCP-palvelimen toteutuksesta
-- **Edistyneet Ominaisuudet**: Rivitasoinen turvallisuus, semanttinen haku ja seuranta
-- **Parhaat Käytännöt**: Turvallisuus, suorituskyky ja kehitysohjeet
+- **Arkkitehtuurin syväluotaus**: Komponenttianalyysi ja suunnittelumallit
+- **Vaiheittainen rakentaminen**: Projektin perustamisesta käyttöönottoon
+- **Koodin erittely**: Yksityiskohtainen selitys MCP-palvelimen toteutuksesta
+- **Edistyneet ominaisuudet**: Rivikohtainen tietoturva, semanttinen haku ja valvonta
+- **Parhaat käytännöt**: Tietoturva, suorituskyky ja kehitysohjeet
 - **Vianetsintä**: Yleiset ongelmat ja ratkaisut
 
 Täydellinen kehittäjille, jotka haluavat ymmärtää toteutuksen yksityiskohdat ja rakentaa vastaavia ratkaisuja.
 
 ## 🤖 Mikä on MCP (Model Context Protocol)?
 
-**Model Context Protocol (MCP)** on avoin standardi, joka mahdollistaa tekoälyavustajien turvallisen pääsyn ulkoisiin tietolähteisiin ja työkaluihin reaaliajassa. Ajattele sitä sillaksi, joka yhdistää tekoälymallit tietokantoihin, API:hin, tiedostojärjestelmiin ja muihin resursseihin samalla säilyttäen turvallisuuden ja hallinnan.
+**Model Context Protocol (MCP)** on avoin standardi, joka mahdollistaa tekoälyavustajien turvallisen pääsyn ulkoisiin tietolähteisiin ja työkaluihin reaaliajassa. Ajattele sitä siltana, joka yhdistää tekoälymallit tietokantoihin, API-rajapintoihin, tiedostojärjestelmiin ja muihin resursseihin samalla säilyttäen tietoturvan ja hallinnan.
 
-### Keskeiset Hyödyt:
-- **Reaaliaikainen Datapääsy**: Tekoälyavustajat voivat tehdä kyselyitä live-tietokantoihin ja API:hin
-- **Turvallinen Integraatio**: Hallittu pääsy autentikoinnin ja käyttöoikeuksien avulla  
-- **Työkalujen Laajennettavuus**: Lisää mukautettuja ominaisuuksia tekoälyavustajille
-- **Standardoitu Protokolla**: Toimii eri tekoälyalustoilla ja työkaluilla
+### Keskeiset hyödyt:
+- **Reaaliaikainen tiedonhaku**: Tekoälyavustajat voivat kysyä suoraan tietokantoja ja API-rajapintoja
+- **Turvallinen integraatio**: Hallittu pääsy todennuksella ja käyttöoikeuksilla  
+- **Työkalujen laajennettavuus**: Lisää mukautettuja ominaisuuksia tekoälyavustajille
+- **Standardoitu protokolla**: Toimii eri tekoälyalustoilla ja työkaluilla
 
 ### Uusi MCP:ssä?
 
 Jos olet uusi Model Context Protocolin parissa, suosittelemme aloittamaan Microsoftin kattavista aloitusresursseista:
 
-**📖 [MCP Aloittelijoille Opas](https://aka.ms/mcp-for-beginners)**
+**📖 [MCP for Beginners Guide](https://aka.ms/mcp-for-beginners)**
 
-Tämä resurssi tarjoaa:
+Tämä resurssi sisältää:
 - Johdannon MCP-konsepteihin ja arkkitehtuuriin
 - Vaiheittaiset opetusohjelmat ensimmäisen MCP-palvelimen rakentamiseen
 - Parhaat käytännöt MCP-kehitykseen
@@ -95,93 +95,93 @@ Tämä resurssi tarjoaa:
 
 Kun ymmärrät perusteet, palaa tänne tutustumaan tähän edistyneeseen vähittäismyynnin analytiikkatoteutukseen!
 
-## 📚 Kattava Oppimisopas: /walkthrough
+## 📚 Kattava oppimisopas: /walkthrough
 
-Tämä repository sisältää täydellisen **12-moduulin oppimispolun**, joka purkaa tämän MCP-vähittäismyyntipalvelimen esimerkin helposti ymmärrettäviksi, vaiheittaisiksi oppitunneiksi. Oppimispolku muuttaa tämän toimivan esimerkin kattavaksi opetusresurssiksi, joka sopii täydellisesti kehittäjille, jotka haluavat oppia rakentamaan tuotantovalmiita MCP-palvelimia tietokantaintegraatiolla.
+Tämä arkisto sisältää täydellisen **12 moduulin oppimispolun**, joka purkaa tämän MCP-vähittäispalvelimen esimerkin helposti omaksuttaviksi, vaiheittaisiksi oppitunneiksi. Walkthrough muuttaa tämän toimivan esimerkin kattavaksi oppimisresurssiksi, joka sopii täydellisesti kehittäjille, jotka haluavat oppia rakentamaan tuotantovalmiita MCP-palvelimia tietokantaintegraatiolla.
 
-### Mitä Opit
+### Mitä opit
 
-Oppimispolku kattaa kaiken MCP:n peruskäsitteistä edistyneeseen tuotantokäyttöön, mukaan lukien:
+Walkthrough kattaa kaiken MCP:n perusteista edistyneeseen tuotantokäyttöön, mukaan lukien:
 
-- **MCP:n Perusteet**: Model Context Protocolin ymmärtäminen ja sen käytännön sovellukset
-- **Tietokantaintegraatio**: Turvallisen PostgreSQL-yhteyden toteuttaminen rivitasoisella turvallisuudella
-- **Tekoälyllä Parannetut Ominaisuudet**: Semanttisen haun lisääminen Azure OpenAI -upotuksilla
-- **Turvallisuuden Toteutus**: Yritystason autentikointi, valtuutus ja datan eristäminen
-- **Työkalujen Kehitys**: Kehittyneiden MCP-työkalujen rakentaminen data-analytiikkaan ja liiketoimintatiedon hyödyntämiseen
-- **Testaus ja Vianetsintä**: Kattavat testausstrategiat ja vianetsintätekniikat
+- **MCP:n perusteet**: Model Context Protocolin ymmärtäminen ja sen todelliset sovellukset
+- **Tietokantaintegraatio**: Turvallisen PostgreSQL-yhteyden toteuttaminen rivikohtaisella tietoturvalla
+- **Tekoälyllä parannetut ominaisuudet**: Semanttisen haun lisääminen Azure OpenAI -upotuksilla
+- **Tietoturvan toteutus**: Yritystason todennus, valtuutus ja tietojen eristys
+- **Työkalujen kehitys**: Kehittyneiden MCP-työkalujen rakentaminen data-analytiikkaan ja liiketoimintatiedon hallintaan
+- **Testaus ja vianetsintä**: Kattavat testausstrategiat ja vianetsintätekniikat
 - **VS Code -integraatio**: AI Chatin konfigurointi luonnollisen kielen tietokantakyselyihin
-- **Tuotantokäyttö**: Konttien käyttö, skaalaus ja pilvikäyttöönotto
-- **Seuranta ja Havainnointi**: Application Insights, lokitus ja suorituskyvyn seuranta
+- **Tuotantokäyttöönottaminen**: Konttien käyttö, skaalaus ja pilvikäyttöönotto
+- **Valvonta ja havainnointi**: Application Insights, lokitus ja suorituskyvyn seuranta
 
-### Oppimispolun Yleiskatsaus
+### Oppimispolun yleiskatsaus
 
-Oppimispolku seuraa progressiivista oppimisrakennetta, joka on suunniteltu kaikentasoisille kehittäjille:
+Walkthrough noudattaa progressiivista oppimisrakennetta, joka on suunniteltu kaikentasoisille kehittäjille:
 
 | Moduuli | Painopistealue | Kuvaus | Aika-arvio |
 |--------|------------|-------------|---------------|
-| **[00-Johdanto](walkthrough/00-Introduction/README.md)** | Perusta | MCP-konseptit, Zava Retail -case study, arkkitehtuurin yleiskatsaus | 30 minuuttia |
-| **[01-Arkkitehtuuri](walkthrough/01-Architecture/README.md)** | Suunnittelumallit | Tekninen arkkitehtuuri, kerrostettu suunnittelu, järjestelmän komponentit | 45 minuuttia |
-| **[02-Turvallisuus](walkthrough/02-Security/README.md)** | Yritysturvallisuus | Azure-autentikointi, rivitasoinen turvallisuus, monikäyttäjäeristys | 60 minuuttia |
+| **[00-Johdanto](walkthrough/00-Introduction/README.md)** | Perusta | MCP-konseptit, Zava Retail -tapaustutkimus, arkkitehtuurin yleiskatsaus | 30 minuuttia |
+| **[01-Arkkitehtuuri](walkthrough/01-Architecture/README.md)** | Suunnittelumallit | Tekninen arkkitehtuuri, kerroksellinen suunnittelu, järjestelmäkomponentit | 45 minuuttia |
+| **[02-Tietoturva](walkthrough/02-Security/README.md)** | Yritystason tietoturva | Azure-todennus, rivikohtainen tietoturva, monivuokraajaeristys | 60 minuuttia |
 | **[03-Asennus](walkthrough/03-Setup/README.md)** | Ympäristö | Docker-asennus, Azure CLI, projektin konfigurointi, validointi | 45 minuuttia |
-| **[04-Tietokanta](walkthrough/04-Database/README.md)** | Datalayer | PostgreSQL-skeema, pgvector, RLS-politiikat, esimerkkidata | 60 minuuttia |
-| **[05-MCP-palvelin](walkthrough/05-MCP-Server/README.md)** | Ydin Toteutus | FastMCP-kehys, tietokantaintegraatio, yhteydenhallinta | 90 minuuttia |
-| **[06-Työkalut](walkthrough/06-Tools/README.md)** | Työkalujen Kehitys | MCP-työkalujen luominen, kyselyvalidointi, liiketoimintatiedon ominaisuudet | 75 minuuttia |
-| **[07-Semanttinen Haku](walkthrough/07-Semantic-Search/README.md)** | Tekoälyintegraatio | Azure OpenAI -upotukset, vektorihaku, hybridihakustrategiat | 60 minuuttia |
+| **[04-Tietokanta](walkthrough/04-Database/README.md)** | Tietokerros | PostgreSQL-skeema, pgvector, RLS-käytännöt, esimerkkidata | 60 minuuttia |
+| **[05-MCP-palvelin](walkthrough/05-MCP-Server/README.md)** | Ydintoteutus | FastMCP-kehys, tietokantaintegraatio, yhteydenhallinta | 90 minuuttia |
+| **[06-Työkalut](walkthrough/06-Tools/README.md)** | Työkalujen kehitys | MCP-työkalujen luominen, kyselyvalidointi, liiketoimintatiedon ominaisuudet | 75 minuuttia |
+| **[07-Semanttinen haku](walkthrough/07-Semantic-Search/README.md)** | Tekoälyintegraatio | Azure OpenAI -upotukset, vektorihaku, hybridihakustrategiat | 60 minuuttia |
 | **[08-Testaus](walkthrough/08-Testing/README.md)** | Laadunvarmistus | Yksikkötestaus, integraatiotestaus, suorituskykytestaus, vianetsintä | 75 minuuttia |
 | **[09-VS Code](walkthrough/09-VS-Code/README.md)** | Kehityskokemus | VS Code -konfigurointi, AI Chat -integraatio, vianetsintätyönkulut | 45 minuuttia |
 | **[10-Käyttöönotto](walkthrough/10-Deployment/README.md)** | Tuotantovalmius | Konttien käyttö, Azure Container Apps, CI/CD-putket, skaalaus | 90 minuuttia |
-| **[11-Seuranta](walkthrough/11-Monitoring/README.md)** | Havainnointi | Application Insights, rakenteellinen lokitus, suorituskykymittarit | 60 minuuttia |
-| **[12-Parhaat Käytännöt](walkthrough/12-Best-Practices/README.md)** | Tuotantokäytön Huippuosaaminen | Turvallisuuden vahvistaminen, suorituskyvyn optimointi, yritysmallit | 45 minuuttia |
+| **[11-Valvonta](walkthrough/11-Monitoring/README.md)** | Havainnointi | Application Insights, rakenteellinen lokitus, suorituskykymittarit | 60 minuuttia |
+| **[12-Parhaat käytännöt](walkthrough/12-Best-Practices/README.md)** | Tuotantokäytön huippuosaaminen | Tietoturvan vahvistaminen, suorituskyvyn optimointi, yrityskuvioiden käyttö | 45 minuuttia |
 
 **Kokonaisoppimisaika**: ~12-15 tuntia kattavaa käytännön oppimista
 
-### 🎯 Kuinka Käyttää Oppimispolkua
+### 🎯 Kuinka käyttää walkthrough-opasta
 
 **Aloittelijoille**:
-1. Aloita [Moduuli 00: Johdanto](walkthrough/00-Introduction/README.md) MCP:n perusteiden ymmärtämiseksi
+1. Aloita [Moduulista 00: Johdanto](walkthrough/00-Introduction/README.md) ymmärtääksesi MCP:n perusteet
 2. Seuraa moduuleja järjestyksessä saadaksesi täydellisen oppimiskokemuksen
 3. Jokainen moduuli rakentuu edellisten konseptien päälle ja sisältää käytännön harjoituksia
 
-**Kokeneille Kehittäjille**:
-1. Tarkista [Pääkävelyn Yleiskatsaus](walkthrough/README.md) saadaksesi moduulien yhteenvedon
+**Kokeneille kehittäjille**:
+1. Tarkista [Pääopas](walkthrough/README.md) saadaksesi yleiskatsauksen moduuleista
 2. Siirry suoraan kiinnostaviin moduuleihin (esim. Moduuli 07 tekoälyintegraatiota varten)
 3. Käytä yksittäisiä moduuleja viitemateriaalina omiin projekteihisi
 
-**Tuotantototeutusta Varten**:
-1. Keskity moduuleihin 02 (Turvallisuus), 10 (Käyttöönotto) ja 11 (Seuranta)
-2. Tarkista Moduuli 12 (Parhaat Käytännöt) yritysohjeita varten
+**Tuotantototeutukseen**:
+1. Keskity moduuleihin 02 (Tietoturva), 10 (Käyttöönotto) ja 11 (Valvonta)
+2. Tarkista Moduuli 12 (Parhaat käytännöt) yritysohjeita varten
 3. Käytä koodiesimerkkejä tuotantovalmiina malleina
 
-### 🚀 Nopeat Aloitusvaihtoehdot
+### 🚀 Nopeat aloitusvaihtoehdot
 
-**Vaihtoehto 1: Täydellinen Oppimispolku** (Suositeltu aloittelijoille)
+**Vaihtoehto 1: Täydellinen oppimispolku** (suositeltu aloittelijoille)  
 ```bash
 # Clone and start with the introduction
 git clone https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.git
 cd MCP-Server-and-PostgreSQL-Sample-Retail/walkthrough
 # Follow along starting with 00-Introduction/README.md
 ```
-
-**Vaihtoehto 2: Käytännön Toteutus** (Aloita suoraan rakentaminen)
+  
+**Vaihtoehto 2: Käytännön toteutus** (aloita suoraan rakentamisesta)  
 ```bash
 # Start with setup and build as you learn
 cd walkthrough/03-Setup
 # Follow the setup guide and continue through implementation modules
 ```
-
-**Vaihtoehto 3: Tuotantokeskeisyys** (Yrityskäyttöönotto)
+  
+**Vaihtoehto 3: Tuotantokeskeisyys** (yrityskäyttöönotto)  
 ```bash
 # Focus on production-ready aspects
 # Review modules: 02-Security, 10-Deployment, 11-Monitoring, 12-Best-Practices
 ```
-
+  
 ### 📋 Oppimisen edellytykset
 
 **Suositeltu tausta**:
 - Perustason Python-ohjelmointikokemus
 - REST API:en ja tietokantojen tuntemus
 - Yleinen käsitys AI/ML-konsepteista
-- Perustason komentorivin ja Dockerin tuntemus
+- Perustiedot komentorivistä ja Dockerista
 
 **Ei vaadita (mutta hyödyllistä)**:
 - Aiempi MCP-kokemus (käsittelemme tämän alusta alkaen)
@@ -194,14 +194,14 @@ cd walkthrough/03-Setup
 2. **Progressiivinen monimutkaisuus**: Konseptit rakentuvat asteittain yksinkertaisista edistyneisiin
 3. **Reaaliaikainen konteksti**: Kaikki esimerkit perustuvat realistisiin vähittäiskaupan liiketoimintaskenaarioihin
 4. **Tuotantovalmius**: Koodiesimerkit on suunniteltu todelliseen tuotantokäyttöön
-5. **Yhteisön tuki**: Liity [Discord-yhteisöömme](https://discord.com/invite/ByRwuEEgH4) saadaksesi apua ja osallistuaksesi keskusteluihin
+5. **Yhteisön tuki**: Liity [Discord-yhteisöömme](https://discord.com/invite/ByRwuEEgH4) saadaksesi apua ja keskusteluja
 
 ### 🔗 Liittyvät resurssit
 
-- **[MCP aloittelijoille](https://aka.ms/mcp-for-beginners)**: Keskeistä taustalukemista
+- **[MCP aloittelijoille](https://aka.ms/mcp-for-beginners)**: Keskeinen taustalukemisto
 - **[Esimerkkikävely](Sample_Walkthrough.md)**: Korkean tason tekninen yleiskatsaus
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Pilvialusta, jota käytetään esimerkeissä
-- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Python-pohjainen MCP-toteutuskehys
+- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Python MCP -toteutuskehys
 
 **Valmis aloittamaan oppimisen?** Aloita **[Moduuli 00: Johdanto](walkthrough/00-Introduction/README.md)** tai tutustu **[koko kävelyn yleiskatsaukseen](walkthrough/README.md)**.
 
@@ -238,9 +238,9 @@ Avaa komentorivi ja suorita seuraavat komennot:
 
 Suorita seuraavat skriptit automatisoidaksesi MCP-palvelimen tarvitsemien Azure-resurssien käyttöönoton.
 
-Käyttöönoton skriptit asentavat automaattisesti `text-embedding-3-small` -mallin. Käyttöönoton aikana sinulla on mahdollisuus sisällyttää myös `gpt-4o-mini` -malli. Huomaa, että `gpt-4o-mini` ei ole **pakollinen** tälle projektille ja se on mukana vain mahdollisia tulevia laajennuksia varten.
+Käyttöönoton skriptit asentavat automaattisesti `text-embedding-3-small` -mallin. Käyttöönoton aikana sinulla on mahdollisuus sisällyttää myös `gpt-4o-mini` -malli. Huomaa, että `gpt-4o-mini` ei ole **välttämätön** tälle projektille ja se on mukana vain mahdollisia tulevia laajennuksia varten.
 
-**Valitse skripti käyttöjärjestelmäsi mukaan:**
+**Valitse skripti alustasi mukaan:**
 
 #### Windows (PowerShell)
 
@@ -343,7 +343,7 @@ Seuraavat ohjeet olettavat, että käytät sisäänrakennettua VS Code MCP-palve
 - **Turvallinen kyselysuoritus**: Suorita PostgreSQL-kyselyitä Row Level Security (RLS) -tuella
 - **Reaaliaikainen data**: Pääsy ajankohtaiseen myynti-, varasto- ja asiakasdataan
 - **Päivämäärä/aikatyökalut**: Hae nykyiset UTC-aikaleimat ajankohtaista analyysiä varten
-- **Joustava käyttöönotto**: Tukee HTTP-palvelinmoodia
+- **Joustava käyttöönotto**: Tukee HTTP-palvelintilaa
 
 ## Tuetut taulut
 
@@ -353,7 +353,7 @@ Palvelin tarjoaa pääsyn seuraaviin vähittäiskaupan tietokantatauluihin:
 - `retail.stores` - Myymälöiden sijainnit ja tiedot
 - `retail.categories` - Tuotekategoriat ja hierarkiat
 - `retail.product_types` - Tuotetyyppiluokitukset
-- `retail.products` - Tuotekatalogi ja spesifikaatiot
+- `retail.products` - Tuoteluettelo ja spesifikaatiot
 - `retail.orders` - Asiakastilaukset ja tapahtumat
 - `retail.order_items` - Yksittäiset tuotteet tilauksissa
 - `retail.inventory` - Nykyiset varastotasot ja varastotiedot
@@ -383,7 +383,7 @@ Suorita PostgreSQL-kyselyitä myyntitietokantaa vastaan Row Level Security -tuel
 **Parhaat käytännöt:**
 
 - Hae aina ensin taulujen skeemat
-- Käytä skeemojen tarkkoja sarakenimiä
+- Käytä tarkkoja sarakenimiä skeemoista
 - Liitä liittyvät taulut kattavaa analyysiä varten
 - Yhdistä tulokset tarvittaessa
 - Rajoita tulostus luettavuuden vuoksi
@@ -410,15 +410,15 @@ Suorita semanttinen haku tuotteille käyttäjän kyselyiden perusteella.
 
 ### Row Level Security (RLS)
 
-Palvelin toteuttaa Row Level Security -käytännöt varmistaakseen, että käyttäjät pääsevät käsiksi vain niihin tietoihin, joihin heillä on oikeus:
+Palvelin toteuttaa Row Level Security -ominaisuuden varmistaakseen, että käyttäjät pääsevät käsiksi vain niihin tietoihin, joihin heillä on oikeus:
 
-- **HTTP-moodi**: Käyttää `x-rls-user-id` -otsikkoa tunnistaakseen pyynnön lähettävän käyttäjän
+- **HTTP-tila**: Käyttää `x-rls-user-id` -otsikkoa tunnistaakseen pyynnön lähettävän käyttäjän
 
-- **Oletusvarmistus**: Käyttää paikkamerkki-UUID:ta, kun käyttäjätunnusta ei ole annettu
+- **Oletusvarmistus**: Käyttää paikkamerkki UUID:ta, kun käyttäjätunnusta ei ole annettu
 
 #### Myymäläkohtaiset RLS-käyttäjätunnukset
 
-Jokaisella Zava Retail -myymälällä on ainutlaatuinen RLS-käyttäjätunnus, joka määrittää, mihin tietoihin käyttäjä pääsee:
+Jokaisella Zava Retail -myymälän sijainnilla on ainutlaatuinen RLS-käyttäjätunnus, joka määrittää, mihin tietoihin käyttäjä pääsee:
 
 | Myymälän sijainti | RLS-käyttäjätunnus | Kuvaus |
 |-------------------|--------------------|--------|
@@ -434,14 +434,14 @@ Jokaisella Zava Retail -myymälällä on ainutlaatuinen RLS-käyttäjätunnus, j
 
 #### RLS-toteutus
 
-Kun käyttäjä yhdistää tiettyyn myymälään RLS-käyttäjätunnuksella, hän näkee vain:
+Kun käyttäjä yhdistää tiettyyn myymälän RLS-käyttäjätunnukseen, hän näkee vain:
 
 - Asiakkaat, jotka liittyvät kyseiseen myymälään
 - Tilaukset, jotka on tehty kyseisessä myymälässä
 - Varastotiedot kyseisestä myymälästä
 - Myymäläkohtaiset myynti- ja suorituskykymittarit
 
-Tämä varmistaa tietojen eristämisen eri myymälöiden välillä samalla kun säilytetään yhtenäinen tietokantaskeema.
+Tämä varmistaa tietojen eristämisen eri myymäläsijaintien välillä samalla, kun säilytetään yhtenäinen tietokantaskeema.
 
 ## Arkkitehtuuri
 
@@ -449,9 +449,9 @@ Tämä varmistaa tietojen eristämisen eri myymälöiden välillä samalla kun s
 
 Palvelin käyttää hallittua sovelluskontekstia, jossa on:
 
-- **Tietokantayhteyspooli**: Tehokas yhteydenhallinta HTTP-moodissa
+- **Tietokantayhteyspooli**: Tehokas yhteydenhallinta HTTP-tilassa
 - **Elinkaaren hallinta**: Resurssien asianmukainen siivous sammutuksen yhteydessä
-- **Tyyppiturvallisuus**: Vahvasti tyypitetty konteksti `AppContext`-dataluokalla
+- **Tyyppiturvallisuus**: Vahvasti tyypitetty konteksti `AppContext`-dataluokan avulla
 
 ### Pyyntökonteksti
 
@@ -470,12 +470,12 @@ Palvelin integroituu PostgreSQL-tietokantaan `PostgreSQLSchemaProvider`-luokan k
 
 ## Virheenkäsittely
 
-Palvelin toteuttaa vahvan virheenkäsittelyn:
+Palvelin toteuttaa vankan virheenkäsittelyn:
 
 - **Taulujen validointi**: Varmistaa, että vain kelvollisia taulujen nimiä käytetään
-- **Kyselyiden validointi**: Tarkistaa PostgreSQL-kyselyiden oikeellisuuden ennen suorittamista
+- **Kyselyiden validointi**: Validoi PostgreSQL-kyselyt ennen suorittamista
 - **Resurssien hallinta**: Asianmukainen siivous myös virhetilanteissa
-- **Käyttäjäystävälliset viestit**: Selkeät virheilmoitukset vianetsintään
+- **Käyttäjäystävälliset viestit**: Selkeät virheilmoitukset vianmääritystä varten
 
 ## Turvallisuushuomiot
 
@@ -486,16 +486,16 @@ Palvelin toteuttaa vahvan virheenkäsittelyn:
 5. **Yhteyden turvallisuus**: Käyttää turvallisia tietokantayhteyskäytäntöjä
 6. **Käyttäjän identiteetin varmistus**: Varmista aina, että oikea RLS-käyttäjätunnus käytetään tarkoitetulle myymälälle
 
-### Tärkeät turvallisuusmuistiot
+### Tärkeät turvallisuusmuistiinpanot
 
 - **Älä koskaan käytä tuotannon RLS-käyttäjätunnuksia kehitysympäristöissä**
 - **Varmista aina, että RLS-käyttäjätunnus vastaa tarkoitettua myymälää ennen kyselyiden suorittamista**
-- **Oletus-UUID (`00000000-0000-0000-0000-000000000000`) tarjoaa rajoitetun pääsyn**
+- **Oletus UUID (`00000000-0000-0000-0000-000000000000`) tarjoaa rajoitetun pääsyn**
 - **Jokaisella myymäläpäälliköllä tulisi olla pääsy vain oman myymälänsä RLS-käyttäjätunnukseen**
 
 ## Kehitys
 
-### Projektin rakenne
+### Projektirakenne
 
 ```text
 mcp_server/
@@ -518,7 +518,7 @@ Kun osallistut tämän palvelimen kehittämiseen:
 1. Varmista, että kaikki tietokantakyselyt noudattavat Row Level Security -käytäntöjä
 2. Lisää asianmukainen virheenkäsittely uusille työkaluille
 3. Päivitä tämä README uusilla ominaisuuksilla tai muutoksilla
-4. Testaa HTTP-palvelinmoodi
+4. Testaa HTTP-palvelintila
 5. Validoi syöteparametrit ja tarjoa selkeät virheilmoitukset
 
 ## [Lisenssi](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/blob/main/LICENSE)

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-30T07:32:40+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T10:23:10+00:00",
   "source_file": "README.md",
   "language_code": "sl"
 }
@@ -11,8 +11,8 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Naučite se MCP z integracijo podatkovnih baz skozi praktične primere
 
-[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
-[![GitHub issues](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
+[![GitHub prispevki](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
+[![GitHub težave](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/pulls)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -34,16 +34,16 @@ Sledite tem korakom, da začnete uporabljati te vire:
 
 ## Uvod
 
-Ta primer prikazuje, kako zgraditi in namestiti celovit **Model Context Protocol (MCP) strežnik**, ki omogoča AI asistentom varen in inteligenten dostop do podatkov o prodaji na drobno prek PostgreSQL. Projekt vključuje funkcije na ravni podjetja, kot so **Row Level Security (RLS)**, **semantično iskanje**, in **integracija Azure AI** za analizo prodaje v resničnih scenarijih.
+Ta primer prikazuje, kako zgraditi in namestiti celovit **Model Context Protocol (MCP) strežnik**, ki omogoča AI asistentom varen in inteligenten dostop do podatkov o prodaji na drobno prek PostgreSQL. Projekt vključuje funkcije na ravni podjetja, kot so **Row Level Security (RLS)**, **semantične iskalne zmogljivosti** in **integracija Azure AI** za analitične scenarije v resničnem svetu.
 
 **Ključni primeri uporabe:**
-- **Analitika prodaje, podprta z AI**: Omogočite AI asistentom poizvedovanje in analizo podatkov o prodaji na drobno prek naravnega jezika
+- **Analitika prodaje, podprta z AI**: Omogočite AI asistentom, da prek naravnega jezika poizvedujejo in analizirajo podatke o prodaji na drobno
 - **Varen dostop za več najemnikov**: Prikaz implementacije Row Level Security, kjer lahko različni vodje trgovin dostopajo le do podatkov svoje trgovine
 - **Semantično iskanje izdelkov**: Prikaz AI-podprtega odkrivanja izdelkov z uporabo besedilnih vektorskih predstavitev
 - **Integracija na ravni podjetja**: Prikaz, kako integrirati MCP strežnike z Azure storitvami in PostgreSQL podatkovnimi bazami
 
 **Idealno za:**
-- Razvijalce, ki se učijo gradnje MCP strežnikov z integracijo podatkovnih baz
+- Razvijalce, ki se učijo graditi MCP strežnike z integracijo podatkovnih baz
 - Podatkovne inženirje, ki izvajajo varne analitične rešitve za več najemnikov
 - Razvijalce AI aplikacij, ki delajo s podatki o prodaji na drobno ali e-trgovini
 - Vsakogar, ki ga zanima kombinacija AI asistentov z bazami podatkov na ravni podjetja
@@ -51,24 +51,24 @@ Ta primer prikazuje, kako zgraditi in namestiti celovit **Model Context Protocol
 ## Pridružite se skupnosti Discord Azure AI Foundry
 Delite svoje izkušnje z MCP in spoznajte strokovnjake ter produktne skupine
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # MCP strežnik za analizo prodaje
 
-Model Context Protocol (MCP) strežnik, ki omogoča celovit dostop do podatkovne baze o prodaji strank za Zava Retail DIY Business. Ta strežnik omogoča AI asistentom poizvedovanje in analizo podatkov o prodaji na drobno prek varnega, shema-zavednega vmesnika.
+Model Context Protocol (MCP) strežnik, ki omogoča celovit dostop do baze podatkov o prodaji strank za Zava Retail DIY Business. Ta strežnik omogoča AI asistentom, da prek varnega, shema-zavednega vmesnika poizvedujejo in analizirajo podatke o prodaji na drobno.
 
 ## 📚 Celovit vodič za implementacijo
 
-Za podroben pregled, kako je ta rešitev zgrajena in kako implementirati podobne MCP strežnike, si oglejte naš celovit **[Vodič po vzorčnem primeru](Sample_Walkthrough.md)**. Ta vodič vključuje:
+Za podroben pregled, kako je ta rešitev zgrajena in kako implementirati podobne MCP strežnike, si oglejte naš celovit **[Vzorčni vodič](Sample_Walkthrough.md)**. Ta vodič vključuje:
 
-- **Poglobljena analiza arhitekture**: Analiza komponent in vzorcev oblikovanja
+- **Poglobljena arhitektura**: Analiza komponent in vzorci oblikovanja
 - **Korak za korakom gradnja**: Od nastavitve projekta do namestitve
 - **Razčlenitev kode**: Podrobna razlaga implementacije MCP strežnika
 - **Napredne funkcije**: Row Level Security, semantično iskanje in spremljanje
 - **Najboljše prakse**: Varnost, zmogljivost in smernice za razvoj
 - **Odpravljanje težav**: Pogoste težave in rešitve
 
-Idealno za razvijalce, ki želijo razumeti podrobnosti implementacije in zgraditi podobne rešitve.
+Idealno za razvijalce, ki želijo razumeti podrobnosti implementacije in graditi podobne rešitve.
 
 ## 🤖 Kaj je MCP (Model Context Protocol)?
 
@@ -80,9 +80,9 @@ Idealno za razvijalce, ki želijo razumeti podrobnosti implementacije in zgradit
 - **Razširljivost orodij**: Dodajanje prilagojenih zmogljivosti AI asistentom
 - **Standardiziran protokol**: Deluje na različnih AI platformah in orodjih
 
-### Novinec pri MCP?
+### Novinec v MCP?
 
-Če ste novi pri Model Context Protocol, priporočamo začetek z Microsoftovimi celovitimi viri za začetnike:
+Če ste novi v Model Context Protocol, priporočamo, da začnete z Microsoftovimi celovitimi viri za začetnike:
 
 **📖 [Vodnik za začetnike MCP](https://aka.ms/mcp-for-beginners)**
 
@@ -90,8 +90,8 @@ Ta vir vključuje:
 - Uvod v MCP koncepte in arhitekturo
 - Korak za korakom vadnice za gradnjo vašega prvega MCP strežnika
 - Najboljše prakse za razvoj MCP
-- Primeri integracije z priljubljenimi AI platformami
-- Skupnostni viri in podpora
+- Primeri integracije s priljubljenimi AI platformami
+- Skupnostne vire in podporo
 
 Ko razumete osnove, se vrnite sem, da raziščete to napredno implementacijo analitike prodaje na drobno!
 
@@ -124,13 +124,13 @@ Vodič sledi progresivni učni strukturi, zasnovani za razvijalce vseh ravni zna
 | **[02-Varnost](walkthrough/02-Security/README.md)** | Varnost na ravni podjetja | Avtentikacija Azure, Row Level Security, izolacija več najemnikov | 60 minut |
 | **[03-Nastavitev](walkthrough/03-Setup/README.md)** | Okolje | Nastavitev Dockerja, Azure CLI, konfiguracija projekta, validacija | 45 minut |
 | **[04-Podatkovna baza](walkthrough/04-Database/README.md)** | Podatkovni sloj | PostgreSQL shema, pgvector, RLS politike, vzorčni podatki | 60 minut |
-| **[05-MCP-strežnik](walkthrough/05-MCP-Server/README.md)** | Osnovna implementacija | FastMCP okvir, integracija podatkovne baze, upravljanje povezav | 90 minut |
+| **[05-MCP-strežnik](walkthrough/05-MCP-Server/README.md)** | Osnovna implementacija | FastMCP okvir, integracija podatkovnih baz, upravljanje povezav | 90 minut |
 | **[06-Orodja](walkthrough/06-Tools/README.md)** | Razvoj orodij | Ustvarjanje MCP orodij, validacija poizvedb, funkcije poslovne inteligence | 75 minut |
 | **[07-Semantično iskanje](walkthrough/07-Semantic-Search/README.md)** | AI integracija | Azure OpenAI vektorske predstavitve, iskanje po vektorjih, hibridne strategije iskanja | 60 minut |
 | **[08-Testiranje](walkthrough/08-Testing/README.md)** | Zagotavljanje kakovosti | Enotno testiranje, integracijsko testiranje, testiranje zmogljivosti, odpravljanje napak | 75 minut |
 | **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Razvojna izkušnja | Konfiguracija VS Code, integracija AI Chat, delovni tokovi odpravljanja napak | 45 minut |
 | **[10-Namestitev](walkthrough/10-Deployment/README.md)** | Pripravljeno za produkcijo | Kontejnerizacija, Azure Container Apps, CI/CD pipelines, skaliranje | 90 minut |
-| **[11-Spremljanje](walkthrough/11-Monitoring/README.md)** | Opazovanje | Application Insights, strukturirano beleženje, zmogljivostne metrike | 60 minut |
+| **[11-Spremljanje](walkthrough/11-Monitoring/README.md)** | Opazovanje | Application Insights, strukturirano beleženje, metrične zmogljivosti | 60 minut |
 | **[12-Najboljše prakse](walkthrough/12-Best-Practices/README.md)** | Odličnost v produkciji | Krepitev varnosti, optimizacija zmogljivosti, vzorci na ravni podjetja | 45 minut |
 
 **Skupni čas učenja**: ~12-15 ur celovitega praktičnega učenja
@@ -179,31 +179,31 @@ cd walkthrough/03-Setup
 
 **Priporočeno predznanje**:
 - Osnovne izkušnje s programiranjem v Pythonu
-- Poznavanje REST API-jev in baz podatkov
+- Poznavanje REST API-jev in podatkovnih baz
 - Splošno razumevanje konceptov AI/ML
 - Osnovno znanje ukazne vrstice in Dockerja
 
-**Ni potrebno (vendar koristno)**:
-- Predhodne izkušnje z MCP (začnemo od začetka)
-- Izkušnje z oblakom Azure (zagotovimo podrobna navodila)
-- Napredno znanje PostgreSQL (koncepte razložimo po potrebi)
+**Ni obvezno (vendar koristno)**:
+- Predhodne izkušnje z MCP (pokrijemo od začetka)
+- Izkušnje z oblakom Azure (zagotovimo korak za korakom navodila)
+- Napredno znanje PostgreSQL (razložimo koncepte po potrebi)
 
 ### 💡 Nasveti za učenje
 
 1. **Praktičen pristop**: Vsak modul vključuje delujoče primere kode, ki jih lahko zaženete in prilagodite
-2. **Postopna kompleksnost**: Koncepti se gradijo postopoma, od enostavnih do naprednih
+2. **Postopna kompleksnost**: Koncepti se gradijo postopoma, od preprostih do naprednih
 3. **Realni kontekst**: Vsi primeri temeljijo na realističnih scenarijih maloprodajnega poslovanja
 4. **Pripravljeno za produkcijo**: Primeri kode so zasnovani za dejansko uporabo v produkciji
 5. **Podpora skupnosti**: Pridružite se naši [Discord skupnosti](https://discord.com/invite/ByRwuEEgH4) za pomoč in razprave
 
 ### 🔗 Povezani viri
 
-- **[MCP za začetnike](https://aka.ms/mcp-for-beginners)**: Ključno branje za ozadje
-- **[Primer sprehoda](Sample_Walkthrough.md)**: Tehnični pregled na visoki ravni
-- **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Oblak, uporabljen v primerih
-- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Pythonov okvir za implementacijo MCP
+- **[MCP za začetnike](https://aka.ms/mcp-for-beginners)**: Ključna uvodna literatura
+- **[Primer sprehoda](Sample_Walkthrough.md)**: Pregled tehničnih podrobnosti na visoki ravni
+- **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Oblak platforma, uporabljena v primerih
+- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Python MCP implementacijski okvir
 
-**Pripravljeni na začetek?** Začnite z **[Modul 00: Uvod](walkthrough/00-Introduction/README.md)** ali raziščite **[celoten pregled sprehoda](walkthrough/README.md)**.
+**Pripravljeni na začetek učenja?** Začnite z **[Modul 00: Uvod](walkthrough/00-Introduction/README.md)** ali raziščite **[celoten pregled sprehoda](walkthrough/README.md)**.
 
 ## Predpogoji
 
@@ -234,13 +234,13 @@ Odprite terminal in zaženite naslednje ukaze:
     cd Zava-MCP-Server-and-PostgreSQL-Sample
     ```
 
-### Uvedba virov Azure
+### Namestitev Azure virov
 
-Zaženite naslednje skripte za avtomatizacijo uvedbe virov Azure, potrebnih za strežnik MCP.
+Zaženite naslednje skripte za avtomatizacijo namestitve Azure virov, potrebnih za MCP strežnik.
 
-Skripti za uvedbo bodo samodejno uvedli model `text-embedding-3-small`. Med uvedbo boste imeli možnost vključiti tudi model `gpt-4o-mini`. Upoštevajte, da model `gpt-4o-mini` **ni potreben** za ta projekt in je vključen le za morebitne prihodnje izboljšave.
+Namestitveni skripti bodo samodejno namestili model `text-embedding-3-small`. Med namestitvijo boste imeli možnost vključiti tudi model `gpt-4o-mini`. Upoštevajte, da model `gpt-4o-mini` **ni potreben** za ta projekt in je vključen le za morebitne prihodnje izboljšave.
 
-**Izberite skript za svojo platformo:**
+**Izberite skript za vašo platformo:**
 
 #### Windows (PowerShell)
 
@@ -256,11 +256,11 @@ cd infra && ./deploy.ps1
 cd infra && ./deploy.sh
 ```
 
-## Zagon strežnika MCP
+## Zagon MCP strežnika
 
-Najlažji način za zagon celotnega sklopa (PostgreSQL + strežnik MCP) je uporaba Docker Compose:
+Najlažji način za zagon celotnega sklopa (PostgreSQL + MCP strežnik) je uporaba Docker Compose:
 
-### Zaženite sklop
+### Zagon sklopa
 
 ```bash
 # Start PostgreSQL and MCP Server
@@ -281,7 +281,7 @@ docker compose down -v
 
 ## Uporaba
 
-Naslednji koraki predvidevajo, da boste uporabljali vgrajeno podporo za strežnik MCP v VS Code.
+Predpostavlja se, da boste uporabljali vgrajeno podporo za MCP strežnik v VS Code.
 
 1. Odprite projekt v VS Code. V terminalu zaženite:
 
@@ -289,12 +289,12 @@ Naslednji koraki predvidevajo, da boste uporabljali vgrajeno podporo za strežni
     code .
     ```
 
-2. Zaženite enega ali več strežnikov MCP z uporabo konfiguracij v `.vscode/mcp.json`. Datoteka vsebuje štiri različne konfiguracije strežnikov, ki predstavljajo različne vloge upraviteljev trgovin:
+2. Zaženite enega ali več MCP strežnikov z uporabo konfiguracij v `.vscode/mcp.json`. Datoteka vsebuje štiri različne konfiguracije strežnika, vsaka predstavlja vlogo upravitelja trgovine:
 
-   - Vsaka konfiguracija uporablja edinstven RLS (Row Level Security) ID uporabnika
-   - Ti ID-ji uporabnikov simulirajo identitete različnih upraviteljev trgovin, ki dostopajo do baze podatkov
+   - Vsaka konfiguracija uporablja edinstven RLS (Row Level Security) uporabniški ID
+   - Ti uporabniški ID-ji simulirajo identitete različnih upraviteljev trgovin, ki dostopajo do podatkovne baze
    - Sistem RLS omejuje dostop do podatkov glede na dodeljeno trgovino upravitelja
-   - To posnema realne scenarije, kjer se upravitelji trgovin prijavijo z različnimi računi Entra ID
+   - To posnema realne scenarije, kjer se upravitelji trgovin prijavijo z različnimi Entra ID računi
 
     ```json
     {
@@ -324,68 +324,68 @@ Naslednji koraki predvidevajo, da boste uporabljali vgrajeno podporo za strežni
     }
     ```
 
-### Odprite AI Chat v VS Code
+### Odprite VS Code AI Chat
 
 1. Odprite način AI Chat v VS Code
-2. Vnesite **#zava** in izberite enega od strežnikov MCP, ki ste jih zagnali
-3. Postavite vprašanja o prodajnih podatkih - Spodaj so primeri poizvedb
+2. Vnesite **#zava** in izberite enega od MCP strežnikov, ki ste jih zagnali
+3. Postavljajte vprašanja o prodajnih podatkih - Glejte primeri poizvedb spodaj
 
 ### Primeri poizvedb
 
-1. Prikaži 20 najboljših izdelkov po prihodku od prodaje
+1. Prikaži 20 najboljših izdelkov po prihodkih od prodaje
 1. Prikaži prodajo po trgovinah
 1. Kakšna je bila prodaja po kategorijah v zadnjem četrtletju?
 1. Katere izdelke prodajamo, ki so podobni "posodam za barvo"?
 
 ## Funkcionalnosti
 
-- **Dostop do več tabel sheme**: Pridobite sheme za več tabel baze podatkov v eni zahtevi
-- **Varno izvajanje poizvedb**: Izvajajte poizvedbe PostgreSQL z podporo za Row Level Security (RLS)
-- **Podatki v realnem času**: Dostop do trenutnih podatkov o prodaji, zalogah in strankah
-- **Orodja za datum/čas**: Pridobite trenutne UTC časovne žige za analize, občutljive na čas
-- **Prilagodljiva uvedba**: Podpira način HTTP strežnika
+- **Dostop do več tabel sheme**: Pridobite sheme za več tabel podatkovne baze v eni zahtevi
+- **Varno izvajanje poizvedb**: Izvajajte PostgreSQL poizvedbe z podporo Row Level Security (RLS)
+- **Podatki v realnem času**: Dostop do trenutnih prodajnih, zalogovnih in podatkov o strankah
+- **Orodja za datum/čas**: Pridobite trenutne UTC časovne žige za analizo občutljivo na čas
+- **Prilagodljiva namestitev**: Podpira način HTTP strežnika
 
 ## Podprte tabele
 
-Strežnik omogoča dostop do naslednjih tabel maloprodajne baze podatkov:
+Strežnik omogoča dostop do naslednjih tabel maloprodajne podatkovne baze:
 
-- `retail.customers` - Informacije in profili strank
-- `retail.stores` - Lokacije in podrobnosti trgovin
+- `retail.customers` - Informacije o strankah in profili
+- `retail.stores` - Lokacije trgovin in podrobnosti
 - `retail.categories` - Kategorije izdelkov in hierarhije
-- `retail.product_types` - Klasifikacije vrst izdelkov
+- `retail.product_types` - Razvrstitve vrst izdelkov
 - `retail.products` - Katalog izdelkov in specifikacije
-- `retail.orders` - Naročila in transakcije strank
-- `retail.order_items` - Posamezni artikli v naročilih
+- `retail.orders` - Naročila strank in transakcije
+- `retail.order_items` - Posamezni artikli znotraj naročil
 - `retail.inventory` - Trenutne zaloge in podatki o zalogah
 
 ## Razpoložljiva orodja
 
 ### `get_multiple_table_schemas`
 
-Pridobite sheme baz podatkov za več tabel v eni zahtevi.
+Pridobite sheme podatkovne baze za več tabel v eni zahtevi.
 
 **Parametri:**
 
 - `table_names` (list[str]): Seznam veljavnih imen tabel iz zgoraj navedenih podprtih tabel
 
-**Vrne:** Združene nize shem za zahtevane tabele
+**Vrne:** Združene sheme tabel za zahtevane tabele
 
 ### `execute_sales_query`
 
-Izvajajte poizvedbe PostgreSQL v prodajni bazi podatkov z Row Level Security.
+Izvajajte PostgreSQL poizvedbe proti prodajni podatkovni bazi z Row Level Security.
 
 **Parametri:**
 
-- `postgresql_query` (str): Dobro oblikovana poizvedba PostgreSQL
+- `postgresql_query` (str): Dobro oblikovana PostgreSQL poizvedba
 
-**Vrne:** Rezultati poizvedbe, oblikovani kot niz (omejeno na 20 vrstic za boljšo berljivost)
+**Vrne:** Rezultati poizvedbe, formatirani kot niz (omejeno na 20 vrstic za berljivost)
 
 **Najboljše prakse:**
 
 - Vedno najprej pridobite sheme tabel
 - Uporabljajte natančna imena stolpcev iz shem
-- Povežite povezane tabele za celovito analizo
-- Združujte rezultate, kadar je to primerno
+- Povezujte povezane tabele za celovito analizo
+- Združujte rezultate, kadar je primerno
 - Omejite izhod za boljšo berljivost
 
 ### `get_current_utc_date`
@@ -397,6 +397,8 @@ Pridobite trenutni UTC datum in čas v ISO formatu.
 ### `semantic_search_products`
 
 Izvedite semantično iskanje izdelkov na podlagi uporabniških poizvedb.
+
+**Vrne:** Seznam izdelkov, ki ustrezajo kriterijem iskanja
 
 **Parametri:**
 
@@ -410,17 +412,17 @@ Izvedite semantično iskanje izdelkov na podlagi uporabniških poizvedb.
 
 Strežnik implementira Row Level Security, da zagotovi, da uporabniki dostopajo le do podatkov, za katere so pooblaščeni:
 
-- **Način HTTP**: Uporablja glavo `x-rls-user-id` za identifikacijo uporabnika, ki pošilja zahtevo
+- **Način HTTP**: Uporablja glavo `x-rls-user-id` za identifikacijo uporabnika zahteve
 
-- **Privzeta nastavitev**: Uporablja nadomestni UUID, kadar ID uporabnika ni podan
+- **Privzeti nadomestek**: Uporablja nadomestni UUID, kadar uporabniški ID ni podan
 
-#### Specifični RLS ID-ji uporabnikov za trgovine
+#### Specifični RLS uporabniški ID-ji za trgovine
 
-Vsaka lokacija trgovine Zava Retail ima edinstven RLS ID uporabnika, ki določa, do katerih podatkov lahko uporabnik dostopa:
+Vsaka lokacija trgovine Zava Retail ima edinstven RLS uporabniški ID, ki določa, katere podatke lahko uporabnik dostopa:
 
-| Lokacija trgovine | RLS ID uporabnika | Opis |
-|-------------------|-------------------|------|
-| **Globalni dostop** | `00000000-0000-0000-0000-000000000000` | Privzeta nastavitev - dostop do vseh trgovin |
+| Lokacija trgovine | RLS uporabniški ID | Opis |
+|-------------------|--------------------|------|
+| **Globalni dostop** | `00000000-0000-0000-0000-000000000000` | Privzeti nadomestek - dostop do vseh trgovin |
 | **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Podatki trgovine Zava Retail Seattle |
 | **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Podatki trgovine Zava Retail Bellevue |
 | **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Podatki trgovine Zava Retail Tacoma |
@@ -432,14 +434,14 @@ Vsaka lokacija trgovine Zava Retail ima edinstven RLS ID uporabnika, ki določa,
 
 #### Implementacija RLS
 
-Ko se uporabnik poveže z določenim RLS ID-jem trgovine, bo videl le:
+Ko se uporabnik poveže z določenim RLS uporabniškim ID-jem trgovine, bo videl le:
 
 - Stranke, povezane s to trgovino
 - Naročila, oddana na lokaciji te trgovine
 - Podatke o zalogah za to specifično trgovino
-- Prodajne in uspešnostne metrike specifične za trgovino
+- Specifične prodajne in zmogljivostne metrike trgovine
 
-To zagotavlja izolacijo podatkov med različnimi lokacijami trgovin, hkrati pa ohranja enotno shemo baze podatkov.
+To zagotavlja izolacijo podatkov med različnimi lokacijami trgovin, hkrati pa ohranja enotno shemo podatkovne baze.
 
 ## Arhitektura
 
@@ -447,49 +449,49 @@ To zagotavlja izolacijo podatkov med različnimi lokacijami trgovin, hkrati pa o
 
 Strežnik uporablja upravljan kontekst aplikacije z:
 
-- **Bazen povezav z bazo podatkov**: Učinkovito upravljanje povezav za način HTTP
+- **Bazen povezav s podatkovno bazo**: Učinkovito upravljanje povezav za način HTTP
 - **Upravljanje življenjskega cikla**: Pravilno čiščenje virov ob zaustavitvi
 - **Tipna varnost**: Močno tipiziran kontekst z dataclass `AppContext`
 
 ### Kontekst zahteve
 
-- **Izvleček glave**: Varno razčlenjevanje glave za identifikacijo uporabnika
-- **Integracija RLS**: Samodejna razrešitev ID-ja uporabnika iz konteksta zahteve
-- **Obravnava napak**: Celovito obravnavanje napak s prijaznimi sporočili za uporabnika
+- **Ekstrakcija glave**: Varno razčlenjevanje glave za identifikacijo uporabnika
+- **Integracija RLS**: Samodejna razrešitev uporabniškega ID-ja iz konteksta zahteve
+- **Upravljanje napak**: Celovito upravljanje napak z uporabniku prijaznimi sporočili
 
-## Integracija z bazo podatkov
+## Integracija podatkovne baze
 
-Strežnik se povezuje z bazo podatkov PostgreSQL prek razreda `PostgreSQLSchemaProvider`:
+Strežnik se povezuje s podatkovno bazo PostgreSQL prek razreda `PostgreSQLSchemaProvider`:
 
 - **Bazen povezav**: Uporablja asinhrone bazene povezav za skalabilnost
 - **Metapodatki sheme**: Ponuja podrobne informacije o shemi tabel
-- **Izvajanje poizvedb**: Varno izvajanje poizvedb z RLS podporo
-- **Upravljanje virov**: Samodejno čiščenje virov baze podatkov
+- **Izvajanje poizvedb**: Varno izvajanje poizvedb z podporo RLS
+- **Upravljanje virov**: Samodejno čiščenje virov podatkovne baze
 
-## Obravnava napak
+## Upravljanje napak
 
-Strežnik implementira robustno obravnavanje napak:
+Strežnik implementira robustno upravljanje napak:
 
-- **Validacija tabel**: Zagotavlja, da so dostopna le veljavna imena tabel
-- **Validacija poizvedb**: Validira poizvedbe PostgreSQL pred izvajanjem
+- **Validacija tabel**: Zagotavlja dostop le do veljavnih imen tabel
+- **Validacija poizvedb**: Validira PostgreSQL poizvedbe pred izvedbo
 - **Upravljanje virov**: Pravilno čiščenje tudi med napakami
-- **Prijazna sporočila za uporabnika**: Jasna sporočila o napakah za odpravljanje težav
+- **Uporabniku prijazna sporočila**: Jasna sporočila o napakah za odpravljanje težav
 
 ## Varnostni vidiki
 
 1. **Row Level Security**: Vse poizvedbe spoštujejo RLS politike glede na identiteto uporabnika
-2. **Izolacija podatkov trgovin**: RLS ID uporabnika za vsako trgovino zagotavlja dostop le do podatkov te trgovine
-3. **Validacija vnosa**: Imena tabel in poizvedbe so validirane pred izvajanjem
+2. **Izolacija podatkov trgovin**: RLS uporabniški ID vsake trgovine zagotavlja dostop le do podatkov te trgovine
+3. **Validacija vhodnih podatkov**: Imena tabel in poizvedbe so validirane pred izvedbo
 4. **Omejitve virov**: Rezultati poizvedb so omejeni, da preprečijo prekomerno uporabo virov
-5. **Varnost povezave**: Uporablja varne prakse povezovanja z bazo podatkov
-6. **Preverjanje identitete uporabnika**: Vedno zagotovite, da se uporablja pravilen RLS ID uporabnika za predvideno trgovino
+5. **Varnost povezave**: Uporablja varne prakse povezovanja s podatkovno bazo
+6. **Verifikacija identitete uporabnika**: Vedno zagotovite, da se uporablja pravilen RLS uporabniški ID za predvideno lokacijo trgovine
 
 ### Pomembne varnostne opombe
 
-- **Nikoli ne uporabljajte produkcijskih RLS ID-jev v razvojnih okoljih**
-- **Vedno preverite, ali RLS ID uporabnika ustreza predvideni trgovini pred izvajanjem poizvedb**
+- **Nikoli ne uporabljajte produkcijskih RLS uporabniških ID-jev v razvojnih okoljih**
+- **Vedno preverite, da RLS uporabniški ID ustreza predvideni trgovini pred izvajanjem poizvedb**
 - **Privzeti UUID (`00000000-0000-0000-0000-000000000000`) omogoča omejen dostop**
-- **Vsak upravitelj trgovine naj ima dostop le do RLS ID-ja svoje trgovine**
+- **Vsak upravitelj trgovine naj ima dostop le do svojega RLS uporabniškega ID-ja**
 
 ## Razvoj
 
@@ -504,18 +506,18 @@ mcp_server/
 
 ### Ključne komponente
 
-- **FastMCP strežnik**: Sodobna implementacija strežnika MCP z asinhrono podporo
-- **Ponudnik PostgreSQL**: Abstrakcijski sloj baze podatkov z RLS podporo
-- **Upravljanje konteksta**: Tipno varen kontekst aplikacije in zahteve
+- **FastMCP strežnik**: Sodobna implementacija MCP strežnika z asinhrono podporo
+- **PostgreSQL ponudnik**: Abstrakcijski sloj podatkovne baze z podporo RLS
+- **Upravljanje konteksta**: Tipno varno upravljanje aplikacijskega in zahtevanega konteksta
 - **Registracija orodij**: Deklarativna registracija orodij z validacijo Pydantic
 
 ## Prispevanje
 
 Pri prispevanju k temu strežniku:
 
-1. Zagotovite, da vse poizvedbe baze podatkov spoštujejo Row Level Security
-2. Dodajte ustrezno obravnavanje napak za nova orodja
-3. Posodobite ta README z novimi funkcionalnostmi ali spremembami
+1. Zagotovite, da vse poizvedbe podatkovne baze spoštujejo Row Level Security
+2. Dodajte ustrezno upravljanje napak za nova orodja
+3. Posodobite ta README z novimi funkcijami ali spremembami
 4. Testirajte način HTTP strežnika
 5. Validirajte vhodne parametre in zagotovite jasna sporočila o napakah
 
@@ -523,9 +525,9 @@ Pri prispevanju k temu strežniku:
 
 ---
 
-*Ta strežnik MCP omogoča varen in učinkovit dostop do prodajnih podatkov Zava Retail za analizo in vpoglede, podprte z umetno inteligenco.*
+*Ta MCP strežnik omogoča varen in učinkovit dostop do prodajnih podatkov Zava Retail za analizo in vpoglede, ki jih poganja AI.*
 
 ---
 
 **Omejitev odgovornosti**:  
-Ta dokument je bil preveden z uporabo storitve za prevajanje z umetno inteligenco [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatski prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem maternem jeziku je treba obravnavati kot avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne prevzemamo odgovornosti za morebitne nesporazume ali napačne razlage, ki bi nastale zaradi uporabe tega prevoda.
+Ta dokument je bil preveden z uporabo storitve AI za prevajanje [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatizirani prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem maternem jeziku naj se šteje za avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne prevzemamo odgovornosti za morebitna nesporazumevanja ali napačne razlage, ki izhajajo iz uporabe tega prevoda.

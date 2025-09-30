@@ -1,90 +1,90 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T22:12:43+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T10:02:00+00:00",
   "source_file": "README.md",
   "language_code": "vi"
 }
 -->
 # MCP Server và Ví dụ PostgreSQL - Phân Tích Doanh Số Bán Lẻ
 
-## Học MCP với Tích Hợp Cơ Sở Dữ Liệu qua Các Ví Dụ Thực Hành
+## Tìm hiểu MCP với Tích hợp Cơ sở Dữ liệu qua Các Ví dụ Thực hành
 
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/pulls)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![Tham gia Discord Azure AI Foundry](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+[![Tham gia Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Làm theo các bước sau để bắt đầu sử dụng tài nguyên này:
+Làm theo các bước sau để bắt đầu sử dụng các tài nguyên này:
 
 1. **Fork Repository**: Nhấn [vào đây để fork](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
 2. **Clone Repository**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
-3. **Tham gia Discord Azure AI Foundry**: [Gặp gỡ chuyên gia và các nhà phát triển khác](https://discord.com/invite/ByRwuEEgH4)
+3. **Tham gia Azure AI Foundry Discord**: [Kết nối với các chuyên gia và nhà phát triển khác](https://discord.com/invite/ByRwuEEgH4)
 
-### 🌐 Hỗ Trợ Đa Ngôn Ngữ
+### 🌐 Hỗ trợ Đa Ngôn Ngữ
 
-#### Được hỗ trợ qua GitHub Action (Tự động & Luôn cập nhật)
+#### Được hỗ trợ qua GitHub Action (Tự động & Luôn Cập nhật)
 
 [French](../fr/README.md) | [Spanish](../es/README.md) | [German](../de/README.md) | [Russian](../ru/README.md) | [Arabic](../ar/README.md) | [Persian (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Portuguese (Brazil)](../br/README.md) | [Italian](../it/README.md) | [Polish](../pl/README.md) | [Turkish](../tr/README.md) | [Greek](../el/README.md) | [Thai](../th/README.md) | [Swedish](../sv/README.md) | [Danish](../da/README.md) | [Norwegian](../no/README.md) | [Finnish](../fi/README.md) | [Dutch](../nl/README.md) | [Hebrew](../he/README.md) | [Vietnamese](./README.md) | [Indonesian](../id/README.md) | [Malay](../ms/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Swahili](../sw/README.md) | [Hungarian](../hu/README.md) | [Czech](../cs/README.md) | [Slovak](../sk/README.md) | [Romanian](../ro/README.md) | [Bulgarian](../bg/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Croatian](../hr/README.md) | [Slovenian](../sl/README.md) | [Ukrainian](../uk/README.md) | [Burmese (Myanmar)](../my/README.md)
 
-**Nếu bạn muốn hỗ trợ thêm các ngôn ngữ khác, danh sách ngôn ngữ được hỗ trợ có tại [đây](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Nếu bạn muốn hỗ trợ thêm các ngôn ngữ khác, danh sách các ngôn ngữ được hỗ trợ có sẵn [tại đây](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
-## Giới Thiệu
+## Giới thiệu
 
-Ví dụ này minh họa cách xây dựng và triển khai một **máy chủ Model Context Protocol (MCP)** toàn diện, cung cấp cho các trợ lý AI quyền truy cập an toàn và thông minh vào dữ liệu doanh số bán lẻ thông qua PostgreSQL. Dự án này trình bày các tính năng cấp doanh nghiệp bao gồm **Row Level Security (RLS)**, **khả năng tìm kiếm ngữ nghĩa**, và **tích hợp Azure AI** cho các tình huống phân tích bán lẻ thực tế.
+Ví dụ này minh họa cách xây dựng và triển khai một **máy chủ Model Context Protocol (MCP)** toàn diện, cung cấp cho các trợ lý AI quyền truy cập an toàn và thông minh vào dữ liệu doanh số bán lẻ thông qua PostgreSQL. Dự án này trình bày các tính năng cấp doanh nghiệp bao gồm **Bảo mật Cấp Hàng (Row Level Security - RLS)**, **khả năng tìm kiếm ngữ nghĩa**, và **tích hợp Azure AI** cho các kịch bản phân tích bán lẻ thực tế.
 
 **Các trường hợp sử dụng chính:**
-- **Phân tích doanh số bán hàng dựa trên AI**: Cho phép trợ lý AI truy vấn và phân tích dữ liệu bán lẻ thông qua ngôn ngữ tự nhiên
-- **Truy cập an toàn đa người dùng**: Minh họa việc triển khai Row Level Security, nơi các quản lý cửa hàng chỉ có thể truy cập dữ liệu của cửa hàng mình
-- **Tìm kiếm sản phẩm ngữ nghĩa**: Trình bày khả năng khám phá sản phẩm được cải tiến bằng AI sử dụng các embedding văn bản
+- **Phân tích doanh số dựa trên AI**: Cho phép trợ lý AI truy vấn và phân tích dữ liệu doanh số bán lẻ bằng ngôn ngữ tự nhiên
+- **Truy cập an toàn đa người dùng**: Minh họa việc triển khai Bảo mật Cấp Hàng, nơi các quản lý cửa hàng chỉ có thể truy cập dữ liệu của cửa hàng mình
+- **Tìm kiếm sản phẩm ngữ nghĩa**: Trình bày khả năng khám phá sản phẩm được cải tiến bằng AI sử dụng nhúng văn bản
 - **Tích hợp doanh nghiệp**: Minh họa cách tích hợp máy chủ MCP với các dịch vụ Azure và cơ sở dữ liệu PostgreSQL
 
 **Hoàn hảo cho:**
 - Các nhà phát triển học cách xây dựng máy chủ MCP với tích hợp cơ sở dữ liệu
-- Kỹ sư dữ liệu triển khai các giải pháp phân tích an toàn đa người dùng
-- Nhà phát triển ứng dụng AI làm việc với dữ liệu bán lẻ hoặc thương mại điện tử
+- Các kỹ sư dữ liệu triển khai các giải pháp phân tích an toàn đa người dùng
+- Các nhà phát triển ứng dụng AI làm việc với dữ liệu bán lẻ hoặc thương mại điện tử
 - Bất kỳ ai quan tâm đến việc kết hợp trợ lý AI với cơ sở dữ liệu doanh nghiệp
 
-## Tham gia Cộng Đồng Discord Azure AI Foundry
+## Tham gia Cộng đồng Azure AI Foundry Discord
 Chia sẻ kinh nghiệm về MCP và gặp gỡ các chuyên gia cùng nhóm sản phẩm
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-# Máy Chủ MCP Phân Tích Doanh Số
+# Máy chủ MCP Phân Tích Doanh Số
 
-Một máy chủ Model Context Protocol (MCP) cung cấp quyền truy cập toàn diện vào cơ sở dữ liệu doanh số khách hàng cho doanh nghiệp Zava Retail DIY. Máy chủ này cho phép các trợ lý AI truy vấn và phân tích dữ liệu bán lẻ thông qua giao diện an toàn và nhận thức về schema.
+Một máy chủ Model Context Protocol (MCP) cung cấp quyền truy cập toàn diện vào cơ sở dữ liệu doanh số khách hàng cho doanh nghiệp Zava Retail DIY. Máy chủ này cho phép trợ lý AI truy vấn và phân tích dữ liệu doanh số bán lẻ thông qua giao diện an toàn và nhận biết lược đồ.
 
-## 📚 Hướng Dẫn Triển Khai Hoàn Chỉnh
+## 📚 Hướng dẫn Triển khai Hoàn chỉnh
 
-Để có cái nhìn chi tiết về cách xây dựng giải pháp này và cách triển khai các máy chủ MCP tương tự, hãy xem hướng dẫn **[Sample Walkthrough](Sample_Walkthrough.md)**. Hướng dẫn này cung cấp:
+Để có cái nhìn chi tiết về cách xây dựng giải pháp này và triển khai các máy chủ MCP tương tự, hãy xem hướng dẫn **[Sample Walkthrough](Sample_Walkthrough.md)**. Hướng dẫn này cung cấp:
 
-- **Phân Tích Kiến Trúc**: Phân tích thành phần và mẫu thiết kế
-- **Xây Dựng Từng Bước**: Từ thiết lập dự án đến triển khai
-- **Phân Tích Mã**: Giải thích chi tiết về triển khai máy chủ MCP
-- **Các Tính Năng Nâng Cao**: Row Level Security, tìm kiếm ngữ nghĩa, và giám sát
-- **Thực Hành Tốt Nhất**: Hướng dẫn về bảo mật, hiệu suất, và phát triển
-- **Khắc Phục Sự Cố**: Các vấn đề thường gặp và giải pháp
+- **Phân tích Kiến trúc**: Phân tích thành phần và mẫu thiết kế
+- **Xây dựng Từng bước**: Từ thiết lập dự án đến triển khai
+- **Phân tích Mã**: Giải thích chi tiết việc triển khai máy chủ MCP
+- **Các tính năng nâng cao**: Bảo mật Cấp Hàng, tìm kiếm ngữ nghĩa, và giám sát
+- **Thực hành tốt nhất**: Hướng dẫn về bảo mật, hiệu suất, và phát triển
+- **Khắc phục sự cố**: Các vấn đề thường gặp và giải pháp
 
 Hoàn hảo cho các nhà phát triển muốn hiểu chi tiết triển khai và xây dựng các giải pháp tương tự.
 
 ## 🤖 MCP (Model Context Protocol) là gì?
 
-**Model Context Protocol (MCP)** là một tiêu chuẩn mở cho phép các trợ lý AI truy cập an toàn vào các nguồn dữ liệu và công cụ bên ngoài trong thời gian thực. Hãy nghĩ về nó như một cầu nối cho phép các mô hình AI kết nối với cơ sở dữ liệu, API, hệ thống tệp, và các tài nguyên khác trong khi vẫn duy trì bảo mật và kiểm soát.
+**Model Context Protocol (MCP)** là một tiêu chuẩn mở cho phép trợ lý AI truy cập an toàn vào các nguồn dữ liệu và công cụ bên ngoài theo thời gian thực. Hãy nghĩ về nó như một cầu nối cho phép các mô hình AI kết nối với cơ sở dữ liệu, API, hệ thống tệp, và các tài nguyên khác trong khi vẫn duy trì bảo mật và kiểm soát.
 
-### Lợi Ích Chính:
-- **Truy Cập Dữ Liệu Thời Gian Thực**: Các trợ lý AI có thể truy vấn cơ sở dữ liệu và API trực tiếp
-- **Tích Hợp An Toàn**: Truy cập được kiểm soát với xác thực và quyền hạn  
-- **Mở Rộng Công Cụ**: Thêm các khả năng tùy chỉnh cho trợ lý AI
-- **Tiêu Chuẩn Hóa**: Hoạt động trên các nền tảng và công cụ AI khác nhau
+### Lợi ích chính:
+- **Truy cập dữ liệu thời gian thực**: Trợ lý AI có thể truy vấn cơ sở dữ liệu và API trực tiếp
+- **Tích hợp an toàn**: Kiểm soát truy cập với xác thực và quyền hạn
+- **Mở rộng công cụ**: Thêm các khả năng tùy chỉnh cho trợ lý AI
+- **Tiêu chuẩn hóa giao thức**: Hoạt động trên các nền tảng và công cụ AI khác nhau
 
-### Mới với MCP?
+### Mới làm quen với MCP?
 
-Nếu bạn mới làm quen với Model Context Protocol, chúng tôi khuyến nghị bắt đầu với tài nguyên dành cho người mới của Microsoft:
+Nếu bạn mới làm quen với Model Context Protocol, chúng tôi khuyến nghị bắt đầu với tài nguyên dành cho người mới bắt đầu của Microsoft:
 
-**📖 [Hướng Dẫn MCP cho Người Mới](https://aka.ms/mcp-for-beginners)**
+**📖 [Hướng dẫn MCP cho Người mới bắt đầu](https://aka.ms/mcp-for-beginners)**
 
 Tài nguyên này cung cấp:
 - Giới thiệu về các khái niệm và kiến trúc MCP
@@ -93,68 +93,68 @@ Tài nguyên này cung cấp:
 - Ví dụ tích hợp với các nền tảng AI phổ biến
 - Tài nguyên cộng đồng và hỗ trợ
 
-Sau khi hiểu các khái niệm cơ bản, quay lại đây để khám phá triển khai phân tích bán lẻ nâng cao này!
+Khi bạn đã hiểu các khái niệm cơ bản, quay lại đây để khám phá triển khai phân tích bán lẻ nâng cao này!
 
-## 📚 Hướng Dẫn Học Toàn Diện: /walkthrough
+## 📚 Hướng dẫn Học tập Toàn diện: /walkthrough
 
-Repository này bao gồm một **hướng dẫn học 12 module** hoàn chỉnh, phân tích mẫu máy chủ MCP bán lẻ này thành các bài học từng bước dễ hiểu. Hướng dẫn này biến ví dụ hoạt động này thành một tài nguyên giáo dục toàn diện, hoàn hảo cho các nhà phát triển muốn hiểu cách xây dựng máy chủ MCP sẵn sàng sản xuất với tích hợp cơ sở dữ liệu.
+Kho lưu trữ này bao gồm một **hướng dẫn học tập 12 module hoàn chỉnh** phân tích mẫu máy chủ MCP bán lẻ này thành các bài học từng bước dễ hiểu. Hướng dẫn này biến ví dụ hoạt động này thành một tài nguyên giáo dục toàn diện, hoàn hảo cho các nhà phát triển muốn hiểu cách xây dựng các máy chủ MCP sẵn sàng cho sản xuất với tích hợp cơ sở dữ liệu.
 
-### Những Gì Bạn Sẽ Học
+### Những gì bạn sẽ học
 
-Hướng dẫn này bao gồm mọi thứ từ các khái niệm MCP cơ bản đến triển khai sản xuất nâng cao, bao gồm:
+Hướng dẫn bao gồm mọi thứ từ các khái niệm MCP cơ bản đến triển khai sản xuất nâng cao, bao gồm:
 
-- **Nguyên Tắc MCP**: Hiểu Model Context Protocol và các ứng dụng thực tế của nó
-- **Tích Hợp Cơ Sở Dữ Liệu**: Triển khai kết nối PostgreSQL an toàn với Row Level Security
-- **Tính Năng Nâng Cao AI**: Thêm khả năng tìm kiếm ngữ nghĩa với embedding Azure OpenAI
-- **Triển Khai Bảo Mật**: Xác thực, ủy quyền, và cô lập dữ liệu cấp doanh nghiệp
-- **Phát Triển Công Cụ**: Xây dựng các công cụ MCP tinh vi cho phân tích dữ liệu và thông tin kinh doanh
-- **Kiểm Tra & Gỡ Lỗi**: Chiến lược kiểm tra toàn diện và kỹ thuật gỡ lỗi
-- **Tích Hợp VS Code**: Cấu hình AI Chat để truy vấn cơ sở dữ liệu bằng ngôn ngữ tự nhiên
-- **Triển Khai Sản Xuất**: Container hóa, mở rộng, và chiến lược triển khai trên đám mây
-- **Giám Sát & Quan Sát**: Application Insights, ghi nhật ký, và giám sát hiệu suất
+- **Kiến thức cơ bản về MCP**: Hiểu Model Context Protocol và các ứng dụng thực tế của nó
+- **Tích hợp cơ sở dữ liệu**: Triển khai kết nối PostgreSQL an toàn với Bảo mật Cấp Hàng
+- **Tính năng nâng cao AI**: Thêm khả năng tìm kiếm ngữ nghĩa với nhúng Azure OpenAI
+- **Triển khai bảo mật**: Xác thực, ủy quyền và cô lập dữ liệu cấp doanh nghiệp
+- **Phát triển công cụ**: Xây dựng các công cụ MCP tinh vi cho phân tích dữ liệu và trí tuệ kinh doanh
+- **Kiểm tra & Gỡ lỗi**: Chiến lược kiểm tra toàn diện và kỹ thuật gỡ lỗi
+- **Tích hợp VS Code**: Cấu hình AI Chat để truy vấn cơ sở dữ liệu bằng ngôn ngữ tự nhiên
+- **Triển khai sản xuất**: Chiến lược container hóa, mở rộng và triển khai trên đám mây
+- **Giám sát & Quan sát**: Application Insights, ghi nhật ký và giám sát hiệu suất
 
-### Tổng Quan Lộ Trình Học
+### Tổng quan về Lộ trình Học tập
 
-Hướng dẫn này theo cấu trúc học tiến bộ được thiết kế cho các nhà phát triển ở mọi cấp độ kỹ năng:
+Hướng dẫn này tuân theo cấu trúc học tập tiến bộ được thiết kế cho các nhà phát triển ở mọi cấp độ kỹ năng:
 
-| Module | Khu Vực Tập Trung | Mô Tả | Ước Tính Thời Gian |
+| Module | Khu vực trọng tâm | Mô tả | Thời gian ước tính |
 |--------|-------------------|-------|--------------------|
-| **[00-Introduction](walkthrough/00-Introduction/README.md)** | Nền Tảng | Khái niệm MCP, nghiên cứu trường hợp Zava Retail, tổng quan kiến trúc | 30 phút |
-| **[01-Architecture](walkthrough/01-Architecture/README.md)** | Mẫu Thiết Kế | Kiến trúc kỹ thuật, thiết kế phân lớp, các thành phần hệ thống | 45 phút |
-| **[02-Security](walkthrough/02-Security/README.md)** | Bảo Mật Doanh Nghiệp | Xác thực Azure, Row Level Security, cô lập đa người dùng | 60 phút |
-| **[03-Setup](walkthrough/03-Setup/README.md)** | Môi Trường | Thiết lập Docker, Azure CLI, cấu hình dự án, xác thực | 45 phút |
-| **[04-Database](walkthrough/04-Database/README.md)** | Lớp Dữ Liệu | Schema PostgreSQL, pgvector, chính sách RLS, dữ liệu mẫu | 60 phút |
-| **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Triển Khai Cốt Lõi | Framework FastMCP, tích hợp cơ sở dữ liệu, quản lý kết nối | 90 phút |
-| **[06-Tools](walkthrough/06-Tools/README.md)** | Phát Triển Công Cụ | Tạo công cụ MCP, xác thực truy vấn, tính năng thông tin kinh doanh | 75 phút |
-| **[07-Semantic-Search](walkthrough/07-Semantic-Search/README.md)** | Tích Hợp AI | Embedding Azure OpenAI, tìm kiếm vector, chiến lược tìm kiếm kết hợp | 60 phút |
-| **[08-Testing](walkthrough/08-Testing/README.md)** | Đảm Bảo Chất Lượng | Kiểm tra đơn vị, kiểm tra tích hợp, kiểm tra hiệu suất, gỡ lỗi | 75 phút |
-| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Trải Nghiệm Phát Triển | Cấu hình VS Code, tích hợp AI Chat, quy trình gỡ lỗi | 45 phút |
-| **[10-Deployment](walkthrough/10-Deployment/README.md)** | Sẵn Sàng Sản Xuất | Container hóa, Azure Container Apps, CI/CD pipelines, mở rộng | 90 phút |
-| **[11-Monitoring](walkthrough/11-Monitoring/README.md)** | Quan Sát | Application Insights, ghi nhật ký có cấu trúc, chỉ số hiệu suất | 60 phút |
-| **[12-Best-Practices](walkthrough/12-Best-Practices/README.md)** | Xuất Sắc Trong Sản Xuất | Tăng cường bảo mật, tối ưu hóa hiệu suất, mẫu doanh nghiệp | 45 phút |
+| **[00-Introduction](walkthrough/00-Introduction/README.md)** | Nền tảng | Các khái niệm MCP, nghiên cứu trường hợp Zava Retail, tổng quan kiến trúc | 30 phút |
+| **[01-Architecture](walkthrough/01-Architecture/README.md)** | Mẫu thiết kế | Kiến trúc kỹ thuật, thiết kế phân lớp, các thành phần hệ thống | 45 phút |
+| **[02-Security](walkthrough/02-Security/README.md)** | Bảo mật doanh nghiệp | Xác thực Azure, Bảo mật Cấp Hàng, cô lập đa người dùng | 60 phút |
+| **[03-Setup](walkthrough/03-Setup/README.md)** | Môi trường | Thiết lập Docker, Azure CLI, cấu hình dự án, xác thực | 45 phút |
+| **[04-Database](walkthrough/04-Database/README.md)** | Lớp dữ liệu | Lược đồ PostgreSQL, pgvector, chính sách RLS, dữ liệu mẫu | 60 phút |
+| **[05-MCP-Server](walkthrough/05-MCP-Server/README.md)** | Triển khai cốt lõi | Khung FastMCP, tích hợp cơ sở dữ liệu, quản lý kết nối | 90 phút |
+| **[06-Tools](walkthrough/06-Tools/README.md)** | Phát triển công cụ | Tạo công cụ MCP, xác thực truy vấn, tính năng trí tuệ kinh doanh | 75 phút |
+| **[07-Semantic-Search](walkthrough/07-Semantic-Search/README.md)** | Tích hợp AI | Nhúng Azure OpenAI, tìm kiếm vector, chiến lược tìm kiếm kết hợp | 60 phút |
+| **[08-Testing](walkthrough/08-Testing/README.md)** | Đảm bảo chất lượng | Kiểm tra đơn vị, kiểm tra tích hợp, kiểm tra hiệu suất, gỡ lỗi | 75 phút |
+| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Trải nghiệm phát triển | Cấu hình VS Code, tích hợp AI Chat, quy trình gỡ lỗi | 45 phút |
+| **[10-Deployment](walkthrough/10-Deployment/README.md)** | Sẵn sàng sản xuất | Container hóa, Azure Container Apps, pipeline CI/CD, mở rộng | 90 phút |
+| **[11-Monitoring](walkthrough/11-Monitoring/README.md)** | Quan sát | Application Insights, ghi nhật ký có cấu trúc, chỉ số hiệu suất | 60 phút |
+| **[12-Best-Practices](walkthrough/12-Best-Practices/README.md)** | Xuất sắc trong sản xuất | Tăng cường bảo mật, tối ưu hóa hiệu suất, mẫu doanh nghiệp | 45 phút |
 
-**Tổng Thời Gian Học**: ~12-15 giờ học thực hành toàn diện
+**Tổng thời gian học**: ~12-15 giờ học thực hành toàn diện
 
-### 🎯 Cách Sử Dụng Hướng Dẫn
+### 🎯 Cách sử dụng Hướng dẫn
 
-**Dành Cho Người Mới**:
-1. Bắt đầu với [Module 00: Introduction](walkthrough/00-Introduction/README.md) để hiểu các nguyên tắc MCP
-2. Làm theo các module theo thứ tự để có trải nghiệm học tập hoàn chỉnh
+**Dành cho người mới bắt đầu**:
+1. Bắt đầu với [Module 00: Introduction](walkthrough/00-Introduction/README.md) để hiểu các khái niệm cơ bản về MCP
+2. Theo dõi các module theo thứ tự để có trải nghiệm học tập hoàn chỉnh
 3. Mỗi module xây dựng dựa trên các khái niệm trước đó và bao gồm các bài tập thực hành
 
-**Dành Cho Nhà Phát Triển Có Kinh Nghiệm**:
-1. Xem [Tổng Quan Hướng Dẫn Chính](walkthrough/README.md) để có tóm tắt module đầy đủ
+**Dành cho các nhà phát triển có kinh nghiệm**:
+1. Xem lại [Tổng quan Hướng dẫn Chính](walkthrough/README.md) để có tóm tắt module đầy đủ
 2. Chuyển đến các module cụ thể mà bạn quan tâm (ví dụ: Module 07 về tích hợp AI)
-3. Sử dụng các module riêng lẻ làm tài liệu tham khảo cho dự án của bạn
+3. Sử dụng các module riêng lẻ làm tài liệu tham khảo cho các dự án của bạn
 
-**Dành Cho Triển Khai Sản Xuất**:
-1. Tập trung vào Module 02 (Bảo Mật), 10 (Triển Khai), và 11 (Quan Sát)
-2. Xem lại Module 12 (Thực Hành Tốt Nhất) để có hướng dẫn doanh nghiệp
-3. Sử dụng các ví dụ mã làm mẫu sẵn sàng sản xuất
+**Dành cho Triển khai Sản xuất**:
+1. Tập trung vào Module 02 (Bảo mật), 10 (Triển khai), và 11 (Giám sát)
+2. Xem lại Module 12 (Thực hành tốt nhất) để có hướng dẫn cấp doanh nghiệp
+3. Sử dụng các ví dụ mã làm mẫu sẵn sàng cho sản xuất
 
-### 🚀 Tùy Chọn Bắt Đầu Nhanh
+### 🚀 Tùy chọn Bắt đầu Nhanh
 
-**Tùy Chọn 1: Lộ Trình Học Hoàn Chỉnh** (Khuyến nghị cho người mới)
+**Tùy chọn 1: Lộ trình Học tập Hoàn chỉnh** (Khuyến nghị cho người mới)
 ```bash
 # Clone and start with the introduction
 git clone https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.git
@@ -162,14 +162,14 @@ cd MCP-Server-and-PostgreSQL-Sample-Retail/walkthrough
 # Follow along starting with 00-Introduction/README.md
 ```
 
-**Tùy Chọn 2: Triển Khai Thực Hành** (Bắt đầu ngay vào xây dựng)
+**Tùy chọn 2: Triển khai Thực hành** (Bắt tay ngay vào xây dựng)
 ```bash
 # Start with setup and build as you learn
 cd walkthrough/03-Setup
 # Follow the setup guide and continue through implementation modules
 ```
 
-**Tùy Chọn 3: Tập Trung Sản Xuất** (Triển khai doanh nghiệp)
+**Tùy chọn 3: Tập trung vào Sản xuất** (Triển khai cấp doanh nghiệp)
 ```bash
 # Focus on production-ready aspects
 # Review modules: 02-Security, 10-Deployment, 11-Monitoring, 12-Best-Practices
@@ -191,7 +191,7 @@ cd walkthrough/03-Setup
 ### 💡 Mẹo học tập
 
 1. **Học qua thực hành**: Mỗi module đều có ví dụ mã nguồn bạn có thể chạy và chỉnh sửa
-2. **Tăng dần độ phức tạp**: Các khái niệm được xây dựng từ đơn giản đến nâng cao
+2. **Phức tạp dần**: Các khái niệm được xây dựng từ đơn giản đến nâng cao
 3. **Ngữ cảnh thực tế**: Tất cả các ví dụ đều sử dụng các tình huống kinh doanh bán lẻ thực tế
 4. **Sẵn sàng cho sản xuất**: Các ví dụ mã nguồn được thiết kế để sử dụng trong môi trường sản xuất thực tế
 5. **Hỗ trợ cộng đồng**: Tham gia cộng đồng [Discord của chúng tôi](https://discord.com/invite/ByRwuEEgH4) để nhận hỗ trợ và thảo luận
@@ -293,7 +293,7 @@ Các bước sau giả định rằng bạn sẽ sử dụng hỗ trợ máy ch�
 
    - Mỗi cấu hình sử dụng một ID người dùng RLS (Row Level Security) duy nhất
    - Các ID người dùng này mô phỏng các danh tính quản lý cửa hàng khác nhau truy cập cơ sở dữ liệu
-   - Hệ thống RLS hạn chế quyền truy cập dữ liệu dựa trên cửa hàng được chỉ định cho người quản lý
+   - Hệ thống RLS hạn chế quyền truy cập dữ liệu dựa trên cửa hàng được chỉ định cho quản lý
    - Điều này mô phỏng các tình huống thực tế nơi các quản lý cửa hàng đăng nhập bằng các tài khoản Entra ID khác nhau
 
     ```json
@@ -328,7 +328,7 @@ Các bước sau giả định rằng bạn sẽ sử dụng hỗ trợ máy ch�
 
 1. Mở chế độ AI Chat trong VS Code
 2. Gõ **#zava** và chọn một trong các máy chủ MCP bạn đã khởi động
-3. Đặt câu hỏi về dữ liệu bán hàng - Xem các truy vấn mẫu bên dưới
+3. Đặt câu hỏi về dữ liệu bán hàng - Xem các truy vấn mẫu dưới đây
 
 ### Truy vấn mẫu
 
@@ -382,7 +382,7 @@ Thực thi truy vấn PostgreSQL trên cơ sở dữ liệu bán hàng với h�
 
 **Thực hành tốt nhất:**
 
-- Luôn lấy schema bảng trước
+- Luôn truy xuất schema bảng trước
 - Sử dụng tên cột chính xác từ schema
 - Kết hợp các bảng liên quan để phân tích toàn diện
 - Tổng hợp kết quả khi thích hợp
@@ -398,13 +398,13 @@ Lấy ngày và giờ UTC hiện tại theo định dạng ISO.
 
 Thực hiện tìm kiếm ngữ nghĩa cho sản phẩm dựa trên truy vấn của người dùng.
 
-**Trả về:** Danh sách sản phẩm phù hợp với tiêu chí tìm kiếm
+**Trả về:** Danh sách các sản phẩm phù hợp với tiêu chí tìm kiếm
 
 **Tham số:**
 
 - `query` (str): Chuỗi truy vấn tìm kiếm
 
-**Trả về:** Danh sách sản phẩm phù hợp với tiêu chí tìm kiếm
+**Trả về:** Danh sách các sản phẩm phù hợp với tiêu chí tìm kiếm
 
 ## Tính năng bảo mật
 
@@ -421,8 +421,8 @@ Máy chủ triển khai Row Level Security để đảm bảo người dùng ch�
 Mỗi địa điểm cửa hàng Zava Retail có một ID người dùng RLS duy nhất xác định dữ liệu mà người dùng có thể truy cập:
 
 | Địa điểm cửa hàng | ID người dùng RLS | Mô tả |
-|------------------|-------------------|-------|
-| **Truy cập toàn cầu** | `00000000-0000-0000-0000-000000000000` | Mặc định - truy cập tất cả các cửa hàng |
+|-------------------|-------------------|-------|
+| **Truy cập toàn cầu** | `00000000-0000-0000-0000-000000000000` | Mặc định - truy cập tất cả cửa hàng |
 | **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Dữ liệu cửa hàng Zava Retail Seattle |
 | **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Dữ liệu cửa hàng Zava Retail Bellevue |
 | **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Dữ liệu cửa hàng Zava Retail Tacoma |
@@ -439,9 +439,9 @@ Khi người dùng kết nối với ID người dùng RLS của một cửa hà
 - Khách hàng liên quan đến cửa hàng đó
 - Đơn hàng được đặt tại địa điểm cửa hàng đó
 - Dữ liệu tồn kho cho cửa hàng cụ thể đó
-- Các chỉ số bán hàng và hiệu suất riêng của cửa hàng
+- Các chỉ số bán hàng và hiệu suất cụ thể của cửa hàng
 
-Điều này đảm bảo sự cô lập dữ liệu giữa các địa điểm cửa hàng khác nhau trong khi vẫn duy trì một schema cơ sở dữ liệu thống nhất.
+Điều này đảm bảo cách ly dữ liệu giữa các địa điểm cửa hàng khác nhau trong khi vẫn duy trì schema cơ sở dữ liệu thống nhất.
 
 ## Kiến trúc
 
@@ -480,9 +480,9 @@ Máy chủ triển khai xử lý lỗi mạnh mẽ:
 ## Cân nhắc bảo mật
 
 1. **Row Level Security**: Tất cả các truy vấn tuân thủ chính sách RLS dựa trên danh tính người dùng
-2. **Cô lập dữ liệu cửa hàng**: ID người dùng RLS của mỗi cửa hàng đảm bảo chỉ truy cập dữ liệu của cửa hàng đó
+2. **Cách ly dữ liệu cửa hàng**: ID người dùng RLS của mỗi cửa hàng đảm bảo chỉ truy cập dữ liệu của cửa hàng đó
 3. **Xác thực đầu vào**: Tên bảng và truy vấn được xác thực trước khi thực thi
-4. **Giới hạn tài nguyên**: Kết quả truy vấn được giới hạn để ngăn chặn sử dụng tài nguyên quá mức
+4. **Giới hạn tài nguyên**: Kết quả truy vấn được giới hạn để ngăn sử dụng tài nguyên quá mức
 5. **Bảo mật kết nối**: Sử dụng các thực hành kết nối cơ sở dữ liệu an toàn
 6. **Xác minh danh tính người dùng**: Luôn đảm bảo ID người dùng RLS chính xác được sử dụng cho địa điểm cửa hàng dự định
 
@@ -507,7 +507,7 @@ mcp_server/
 ### Thành phần chính
 
 - **Máy chủ FastMCP**: Triển khai máy chủ MCP hiện đại với hỗ trợ async
-- **PostgreSQL Provider**: Lớp trừu tượng cơ sở dữ liệu với hỗ trợ RLS
+- **Nhà cung cấp PostgreSQL**: Lớp trừu tượng cơ sở dữ liệu với hỗ trợ RLS
 - **Quản lý ngữ cảnh**: Xử lý ngữ cảnh ứng dụng và yêu cầu an toàn kiểu dữ liệu
 - **Đăng ký công cụ**: Đăng ký công cụ khai báo với xác thực Pydantic
 
@@ -517,7 +517,7 @@ Khi đóng góp cho máy chủ này:
 
 1. Đảm bảo tất cả các truy vấn cơ sở dữ liệu tuân thủ Row Level Security
 2. Thêm xử lý lỗi đúng cách cho các công cụ mới
-3. Cập nhật README này với bất kỳ tính năng hoặc thay đổi mới nào
+3. Cập nhật README này với bất kỳ tính năng hoặc thay đổi mới
 4. Kiểm tra chế độ máy chủ HTTP
 5. Xác thực tham số đầu vào và cung cấp thông báo lỗi rõ ràng
 
@@ -525,7 +525,7 @@ Khi đóng góp cho máy chủ này:
 
 ---
 
-*Máy chủ MCP này cho phép truy cập an toàn, hiệu quả vào dữ liệu bán hàng của Zava Retail để phân tích và cung cấp thông tin chi tiết dựa trên AI.*
+*Máy chủ MCP này cho phép truy cập dữ liệu bán hàng Zava Retail một cách an toàn, hiệu quả để phân tích và cung cấp thông tin chi tiết dựa trên AI.*
 
 ---
 

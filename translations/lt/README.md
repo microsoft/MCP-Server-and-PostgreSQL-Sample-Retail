@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-30T08:41:34+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T10:29:22+00:00",
   "source_file": "README.md",
   "language_code": "lt"
 }
 -->
-# MCP Server ir PostgreSQL Pavyzdys - Mažmeninės Prekybos Pardavimų Analizė
+# MCP serveris ir PostgreSQL pavyzdys – Mažmeninės prekybos pardavimų analizė
 
-## Mokykitės MCP su Duomenų Bazės Integracija per Praktinius Pavyzdžius
+## Mokykitės MCP su duomenų bazių integracija per praktinius pavyzdžius
 
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
@@ -18,55 +18,55 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Prisijunkite prie Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Sekite šiuos žingsnius, kad pradėtumėte naudotis šiais ištekliais:
+Pradėkite naudotis šiais ištekliais atlikdami šiuos veiksmus:
 
-1. **Fork Repository**: Spustelėkite [čia, kad fork'intumėte](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
-2. **Klonuokite Repository**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
+1. **Fork'uokite saugyklą**: Spustelėkite [čia, kad fork'uotumėte](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
+2. **Klonuokite saugyklą**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
 3. **Prisijunkite prie Azure AI Foundry Discord**: [Susipažinkite su ekspertais ir kitais kūrėjais](https://discord.com/invite/ByRwuEEgH4)
 
-### 🌐 Daugiakalbė Palaikymas
+### 🌐 Daugiakalbė parama
 
-#### Palaikoma per GitHub Action (Automatizuota ir Visada Atnaujinta)
+#### Palaikoma per GitHub Action (automatizuota ir visada atnaujinama)
 
-[Prancūzų](../fr/README.md) | [Ispanų](../es/README.md) | [Vokiečių](../de/README.md) | [Rusų](../ru/README.md) | [Arabų](../ar/README.md) | [Persų (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Kinų (Supaprastinta)](../zh/README.md) | [Kinų (Tradicinė, Makao)](../mo/README.md) | [Kinų (Tradicinė, Honkongas)](../hk/README.md) | [Kinų (Tradicinė, Taivanas)](../tw/README.md) | [Japonų](../ja/README.md) | [Korėjiečių](../ko/README.md) | [Hindi](../hi/README.md) | [Bengalų](../bn/README.md) | [Marathi](../mr/README.md) | [Nepalų](../ne/README.md) | [Pundžabi (Gurmukhi)](../pa/README.md) | [Portugalų (Portugalija)](../pt/README.md) | [Portugalų (Brazilija)](../br/README.md) | [Italų](../it/README.md) | [Lenkų](../pl/README.md) | [Turkų](../tr/README.md) | [Graikų](../el/README.md) | [Tajų](../th/README.md) | [Švedų](../sv/README.md) | [Danų](../da/README.md) | [Norvegų](../no/README.md) | [Suomių](../fi/README.md) | [Olandų](../nl/README.md) | [Hebrajų](../he/README.md) | [Vietnamiečių](../vi/README.md) | [Indoneziečių](../id/README.md) | [Malajų](../ms/README.md) | [Tagalog (Filipinų)](../tl/README.md) | [Svahilių](../sw/README.md) | [Vengrų](../hu/README.md) | [Čekų](../cs/README.md) | [Slovakų](../sk/README.md) | [Rumunų](../ro/README.md) | [Bulgarų](../bg/README.md) | [Serbų (Kirilica)](../sr/README.md) | [Kroatų](../hr/README.md) | [Slovėnų](../sl/README.md) | [Ukrainiečių](../uk/README.md) | [Birmos (Mianmaras)](../my/README.md)
+[Prancūzų](../fr/README.md) | [Ispanų](../es/README.md) | [Vokiečių](../de/README.md) | [Rusų](../ru/README.md) | [Arabų](../ar/README.md) | [Persų (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Kinų (supaprastinta)](../zh/README.md) | [Kinų (tradicinė, Makao)](../mo/README.md) | [Kinų (tradicinė, Honkongas)](../hk/README.md) | [Kinų (tradicinė, Taivanas)](../tw/README.md) | [Japonų](../ja/README.md) | [Korėjiečių](../ko/README.md) | [Hindi](../hi/README.md) | [Bengalų](../bn/README.md) | [Maratų](../mr/README.md) | [Nepalų](../ne/README.md) | [Pandžabų (Gurmukhi)](../pa/README.md) | [Portugalų (Portugalija)](../pt/README.md) | [Portugalų (Brazilija)](../br/README.md) | [Italų](../it/README.md) | [Lenkų](../pl/README.md) | [Turkų](../tr/README.md) | [Graikų](../el/README.md) | [Tajų](../th/README.md) | [Švedų](../sv/README.md) | [Danų](../da/README.md) | [Norvegų](../no/README.md) | [Suomių](../fi/README.md) | [Olandų](../nl/README.md) | [Hebrajų](../he/README.md) | [Vietnamiečių](../vi/README.md) | [Indoneziečių](../id/README.md) | [Malajų](../ms/README.md) | [Tagalogų (Filipinų)](../tl/README.md) | [Svahilių](../sw/README.md) | [Vengrų](../hu/README.md) | [Čekų](../cs/README.md) | [Slovakų](../sk/README.md) | [Rumunų](../ro/README.md) | [Bulgarų](../bg/README.md) | [Serbų (kirilica)](../sr/README.md) | [Kroatų](../hr/README.md) | [Slovėnų](../sl/README.md) | [Ukrainiečių](../uk/README.md) | [Birmos (Mianmaras)](../my/README.md)
 
-**Jei norite, kad būtų palaikomos papildomos kalbos, sąrašą rasite [čia](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Jei norite pridėti papildomų vertimų, palaikomų kalbų sąrašą rasite [čia](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Įvadas
 
-Šis pavyzdys demonstruoja, kaip sukurti ir diegti išsamų **Model Context Protocol (MCP) serverį**, kuris suteikia AI asistentams saugų ir intelektualų prieigą prie mažmeninės prekybos pardavimų duomenų per PostgreSQL. Projektas pristato įmonės lygio funkcijas, tokias kaip **Row Level Security (RLS)**, **semantinio paieškos galimybes** ir **Azure AI integraciją**, skirtą realaus pasaulio mažmeninės prekybos analitikos scenarijams.
+Šis pavyzdys demonstruoja, kaip sukurti ir diegti išsamų **Model Context Protocol (MCP) serverį**, kuris suteikia AI asistentams saugią ir išmanią prieigą prie mažmeninės prekybos pardavimų duomenų per PostgreSQL. Projektas pristato įmonės lygio funkcijas, tokias kaip **eilutės lygio saugumas (RLS)**, **semantinė paieška** ir **Azure AI integracija**, skirtas realioms mažmeninės prekybos analizės situacijoms.
 
-**Pagrindiniai Naudojimo Atvejai:**
-- **AI-Powered Pardavimų Analitika**: Leiskite AI asistentams užklausinėti ir analizuoti mažmeninės prekybos pardavimų duomenis naudojant natūralią kalbą
-- **Saugus Daugiafunkcinis Priėjimas**: Demonstracija, kaip įgyvendinti Row Level Security, kur skirtingų parduotuvių vadovai gali pasiekti tik savo parduotuvės duomenis
-- **Semantinė Produktų Paieška**: AI patobulinta produktų atranka naudojant tekstinius įterpimus
-- **Įmonės Integracija**: Iliustracija, kaip integruoti MCP serverius su Azure paslaugomis ir PostgreSQL duomenų bazėmis
+**Pagrindiniai naudojimo atvejai:**
+- **AI pagrįsta pardavimų analizė**: Leiskite AI asistentams užklausinėti ir analizuoti mažmeninės prekybos pardavimų duomenis natūralia kalba
+- **Saugus daugiabučių prieigos valdymas**: Pademonstruokite eilutės lygio saugumo įgyvendinimą, kai skirtingų parduotuvių vadovai gali pasiekti tik savo parduotuvės duomenis
+- **Semantinė produktų paieška**: Pateikite AI patobulintą produktų atradimą naudojant teksto įterpimus
+- **Įmonių integracija**: Iliustruokite, kaip integruoti MCP serverius su Azure paslaugomis ir PostgreSQL duomenų bazėmis
 
 **Puikiai tinka:**
-- Kūrėjams, norintiems išmokti kurti MCP serverius su duomenų bazės integracija
-- Duomenų inžinieriams, įgyvendinantiems saugius daugiafunkcinius analitikos sprendimus
+- Kūrėjams, norintiems išmokti kurti MCP serverius su duomenų bazių integracija
+- Duomenų inžinieriams, įgyvendinantiems saugius daugiabučių analizės sprendimus
 - AI programų kūrėjams, dirbantiems su mažmeninės prekybos ar e-komercijos duomenimis
-- Visiems, besidomintiems AI asistentų ir įmonės duomenų bazių derinimu
+- Visiems, besidomintiems AI asistentų ir įmonių duomenų bazių derinimu
 
-## Prisijunkite prie Azure AI Foundry Discord Bendruomenės
+## Prisijunkite prie Azure AI Foundry Discord bendruomenės
 Pasidalinkite savo MCP patirtimi ir susipažinkite su ekspertais bei produktų grupėmis
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-# Pardavimų Analizės MCP Serveris
+# Pardavimų analizės MCP serveris
 
-Model Context Protocol (MCP) serveris, kuris suteikia išsamų klientų pardavimų duomenų bazės priėjimą Zava Retail DIY verslui. Šis serveris leidžia AI asistentams užklausinėti ir analizuoti mažmeninės prekybos pardavimų duomenis per saugią, schemos suprantančią sąsają.
+Model Context Protocol (MCP) serveris, suteikiantis išsamią klientų pardavimų duomenų bazės prieigą Zava Retail DIY verslui. Šis serveris leidžia AI asistentams užklausinėti ir analizuoti mažmeninės prekybos pardavimų duomenis per saugią, schemą suprantančią sąsają.
 
-## 📚 Pilnas Įgyvendinimo Vadovas
+## 📚 Išsamus įgyvendinimo vadovas
 
-Norėdami gauti išsamų šio sprendimo kūrimo ir panašių MCP serverių įgyvendinimo aprašymą, peržiūrėkite mūsų išsamų **[Pavyzdžio Aprašymą](Sample_Walkthrough.md)**. Šis vadovas apima:
+Norėdami sužinoti, kaip ši sprendimas yra sukurtas ir kaip įgyvendinti panašius MCP serverius, peržiūrėkite mūsų išsamų **[Pavyzdžio vadovą](Sample_Walkthrough.md)**. Šis vadovas apima:
 
-- **Architektūros Analizė**: Komponentų analizė ir dizaino šablonai
-- **Žingsnis po Žingsnio Kūrimas**: Nuo projekto nustatymo iki diegimo
-- **Kodo Aprašymas**: Išsamus MCP serverio įgyvendinimo paaiškinimas
-- **Pažangios Funkcijos**: Row Level Security, semantinė paieška ir stebėjimas
-- **Geriausios Praktikos**: Saugumo, našumo ir kūrimo gairės
-- **Problemos Sprendimas**: Dažniausiai pasitaikančios problemos ir jų sprendimai
+- **Architektūros analizė**: Komponentų analizė ir dizaino šablonai
+- **Žingsnis po žingsnio kūrimas**: Nuo projekto nustatymo iki diegimo
+- **Kodo analizė**: Išsamus MCP serverio įgyvendinimo paaiškinimas
+- **Pažangios funkcijos**: Eilutės lygio saugumas, semantinė paieška ir stebėjimas
+- **Geriausios praktikos**: Saugumo, našumo ir kūrimo gairės
+- **Trikčių šalinimas**: Dažniausios problemos ir jų sprendimai
 
 Puikiai tinka kūrėjams, norintiems suprasti įgyvendinimo detales ir kurti panašius sprendimus.
 
@@ -74,127 +74,125 @@ Puikiai tinka kūrėjams, norintiems suprasti įgyvendinimo detales ir kurti pan
 
 **Model Context Protocol (MCP)** yra atviras standartas, leidžiantis AI asistentams saugiai pasiekti išorinius duomenų šaltinius ir įrankius realiuoju laiku. Tai tarsi tiltas, leidžiantis AI modeliams prisijungti prie duomenų bazių, API, failų sistemų ir kitų išteklių, išlaikant saugumą ir kontrolę.
 
-### Pagrindiniai Privalumai:
-- **Duomenų Prieiga Realiuoju Laiku**: AI asistentai gali užklausinėti gyvas duomenų bazes ir API
-- **Saugus Integravimas**: Kontroliuojama prieiga su autentifikacija ir leidimais  
-- **Įrankių Išplėtimas**: Pridėkite AI asistentams pritaikytas funkcijas
-- **Standartizuotas Protokolas**: Veikia su skirtingomis AI platformomis ir įrankiais
+### Pagrindiniai privalumai:
+- **Prieiga prie duomenų realiuoju laiku**: AI asistentai gali užklausinėti gyvas duomenų bazes ir API
+- **Saugus integravimas**: Kontroliuojama prieiga su autentifikacija ir leidimais  
+- **Įrankių išplėtimas**: Pridėkite AI asistentams pasirinktines galimybes
+- **Standartizuotas protokolas**: Veikia su skirtingomis AI platformomis ir įrankiais
 
 ### Nauji MCP?
 
-Jei esate naujokas Model Context Protocol srityje, rekomenduojame pradėti nuo Microsoft išsamių pradedančiųjų išteklių:
+Jei esate naujokas Model Context Protocol, rekomenduojame pradėti nuo Microsoft išsamių pradedančiųjų išteklių:
 
-**📖 [MCP Pradedančiųjų Vadovas](https://aka.ms/mcp-for-beginners)**
+**📖 [MCP pradedančiųjų vadovas](https://aka.ms/mcp-for-beginners)**
 
-Šis išteklius suteikia:
-- Įvadas į MCP koncepcijas ir architektūrą
-- Žingsnis po žingsnio pamokos, kaip sukurti pirmąjį MCP serverį
-- Geriausios MCP kūrimo praktikos
-- Integracijos pavyzdžiai su populiariomis AI platformomis
-- Bendruomenės ištekliai ir palaikymas
+Šis išteklius apima:
+- MCP koncepcijų ir architektūros įvadą
+- Žingsnis po žingsnio vadovus, kaip sukurti pirmąjį MCP serverį
+- Geriausias MCP kūrimo praktikas
+- Integracijos pavyzdžius su populiariomis AI platformomis
+- Bendruomenės išteklius ir palaikymą
 
-Kai suprasite pagrindus, grįžkite čia, kad išnagrinėtumėte šį pažangų mažmeninės prekybos analitikos įgyvendinimą!
+Kai suprasite pagrindus, grįžkite čia, kad išnagrinėtumėte šį pažangų mažmeninės prekybos analizės įgyvendinimą!
 
-## 📚 Išsamus Mokymosi Vadovas: /walkthrough
+## 📚 Išsamus mokymosi vadovas: /walkthrough
 
-Šiame repository yra pilnas **12 modulių mokymosi vadovas**, kuris suskaido šį MCP mažmeninės prekybos serverio pavyzdį į lengvai suprantamas, žingsnis po žingsnio pamokas. Vadovas paverčia šį veikiančią pavyzdį į išsamų edukacinį išteklių, puikiai tinkantį kūrėjams, norintiems suprasti, kaip kurti gamybai paruoštus MCP serverius su duomenų bazės integracija.
+Ši saugykla apima pilną **12 modulių mokymosi vadovą**, kuris išskaido šį MCP mažmeninės prekybos serverio pavyzdį į lengvai suprantamas, žingsnis po žingsnio pamokas. Vadovas paverčia šį veikiančią pavyzdį išsamiu edukaciniu ištekliu, puikiai tinkančiu kūrėjams, norintiems suprasti, kaip kurti gamybai paruoštus MCP serverius su duomenų bazių integracija.
 
-### Ką Išmoksite
+### Ką išmoksite
 
-Vadovas apima viską nuo pagrindinių MCP koncepcijų iki pažangaus gamybos diegimo, įskaitant:
+Vadovas apima viską nuo pagrindinių MCP koncepcijų iki pažangaus diegimo gamyboje, įskaitant:
 
-- **MCP Pagrindai**: Model Context Protocol supratimas ir jo realaus pasaulio taikymas
-- **Duomenų Bazės Integracija**: Saugios PostgreSQL jungties įgyvendinimas su Row Level Security
-- **AI Patobulintos Funkcijos**: Semantinės paieškos galimybių pridėjimas su Azure OpenAI įterpimais
-- **Saugumo Įgyvendinimas**: Įmonės lygio autentifikacija, autorizacija ir duomenų izoliacija
-- **Įrankių Kūrimas**: Sudėtingų MCP įrankių kūrimas duomenų analizei ir verslo intelektui
-- **Testavimas ir Derinimas**: Išsamios testavimo strategijos ir derinimo technikos
-- **VS Code Integracija**: AI Chat konfigūravimas natūralių kalbų duomenų bazės užklausoms
-- **Gamybos Diegimas**: Konteinerizacija, mastelio keitimas ir debesų diegimo strategijos
-- **Stebėjimas ir Stebėsena**: Application Insights, logų registravimas ir našumo stebėjimas
+- **MCP pagrindai**: Model Context Protocol supratimas ir jo realūs pritaikymai
+- **Duomenų bazių integracija**: Saugios PostgreSQL jungties įgyvendinimas su eilutės lygio saugumu
+- **AI patobulintos funkcijos**: Semantinės paieškos galimybių pridėjimas naudojant Azure OpenAI įterpimus
+- **Saugumo įgyvendinimas**: Įmonės lygio autentifikacija, autorizacija ir duomenų izoliacija
+- **Įrankių kūrimas**: Sudėtingų MCP įrankių kūrimas duomenų analizei ir verslo intelektui
+- **Testavimas ir derinimas**: Išsamios testavimo strategijos ir derinimo technikos
+- **VS Code integracija**: AI Chat konfigūravimas natūralių kalbų duomenų bazių užklausoms
+- **Diegimas gamyboje**: Konteinerizacija, mastelio keitimas ir debesų diegimo strategijos
+- **Stebėjimas ir stebėsena**: Application Insights, žurnalų tvarkymas ir našumo stebėjimas
 
-### Mokymosi Kelio Apžvalga
+### Mokymosi kelio apžvalga
 
-Vadovas seka progresyvią mokymosi struktūrą, skirtą kūrėjams su įvairiais įgūdžių lygiais:
+Vadovas seka progresyvią mokymosi struktūrą, skirtą įvairių įgūdžių lygių kūrėjams:
 
-| Modulis | Fokusas | Aprašymas | Laiko Sąmata |
+| Modulis | Dėmesio sritis | Aprašymas | Laiko sąmata |
 |--------|------------|-------------|---------------|
 | **[00-Įvadas](walkthrough/00-Introduction/README.md)** | Pagrindai | MCP koncepcijos, Zava Retail atvejo analizė, architektūros apžvalga | 30 minučių |
-| **[01-Architektūra](walkthrough/01-Architecture/README.md)** | Dizaino Šablonai | Techninė architektūra, sluoksniuotas dizainas, sistemos komponentai | 45 minutės |
-| **[02-Saugumas](walkthrough/02-Security/README.md)** | Įmonės Saugumas | Azure autentifikacija, Row Level Security, daugiafunkcinė izoliacija | 60 minučių |
+| **[01-Architektūra](walkthrough/01-Architecture/README.md)** | Dizaino šablonai | Techninė architektūra, sluoksniuotas dizainas, sistemos komponentai | 45 minutės |
+| **[02-Saugumas](walkthrough/02-Security/README.md)** | Įmonės saugumas | Azure autentifikacija, eilutės lygio saugumas, daugiabučių izoliacija | 60 minučių |
 | **[03-Nustatymas](walkthrough/03-Setup/README.md)** | Aplinka | Docker nustatymas, Azure CLI, projekto konfigūracija, validacija | 45 minutės |
-| **[04-Duomenų Bazė](walkthrough/04-Database/README.md)** | Duomenų Sluoksnis | PostgreSQL schema, pgvector, RLS politikos, pavyzdiniai duomenys | 60 minučių |
-| **[05-MCP-Serveris](walkthrough/05-MCP-Server/README.md)** | Pagrindinis Įgyvendinimas | FastMCP framework, duomenų bazės integracija, jungties valdymas | 90 minučių |
-| **[06-Įrankiai](walkthrough/06-Tools/README.md)** | Įrankių Kūrimas | MCP įrankių kūrimas, užklausų validacija, verslo intelekto funkcijos | 75 minutės |
-| **[07-Semantinė Paieška](walkthrough/07-Semantic-Search/README.md)** | AI Integracija | Azure OpenAI įterpimai, vektorinė paieška, hibridinės paieškos strategijos | 60 minučių |
-| **[08-Testavimas](walkthrough/08-Testing/README.md)** | Kokybės Užtikrinimas | Vienetų testavimas, integracijos testavimas, našumo testavimas, derinimas | 75 minutės |
-| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Kūrimo Patirtis | VS Code konfigūracija, AI Chat integracija, derinimo darbo eiga | 45 minutės |
-| **[10-Diegimas](walkthrough/10-Deployment/README.md)** | Gamybos Paruošimas | Konteinerizacija, Azure Container Apps, CI/CD procesai, mastelio keitimas | 90 minučių |
-| **[11-Stebėjimas](walkthrough/11-Monitoring/README.md)** | Stebėsena | Application Insights, struktūrizuotas logų registravimas, našumo metrikos | 60 minučių |
-| **[12-Geriausios Praktikos](walkthrough/12-Best-Practices/README.md)** | Gamybos Tobulumas | Saugumo stiprinimas, našumo optimizavimas, įmonės šablonai | 45 minutės |
+| **[04-Duomenų bazė](walkthrough/04-Database/README.md)** | Duomenų sluoksnis | PostgreSQL schema, pgvector, RLS politikos, pavyzdiniai duomenys | 60 minučių |
+| **[05-MCP-Serveris](walkthrough/05-MCP-Server/README.md)** | Pagrindinis įgyvendinimas | FastMCP karkasas, duomenų bazių integracija, jungčių valdymas | 90 minučių |
+| **[06-Įrankiai](walkthrough/06-Tools/README.md)** | Įrankių kūrimas | MCP įrankių kūrimas, užklausų validacija, verslo intelekto funkcijos | 75 minutės |
+| **[07-Semantinė paieška](walkthrough/07-Semantic-Search/README.md)** | AI integracija | Azure OpenAI įterpimai, vektorinė paieška, hibridinės paieškos strategijos | 60 minučių |
+| **[08-Testavimas](walkthrough/08-Testing/README.md)** | Kokybės užtikrinimas | Vienetų testavimas, integracijos testavimas, našumo testavimas, derinimas | 75 minutės |
+| **[09-VS-Code](walkthrough/09-VS-Code/README.md)** | Kūrimo patirtis | VS Code konfigūracija, AI Chat integracija, derinimo darbo eiga | 45 minutės |
+| **[10-Diegimas](walkthrough/10-Deployment/README.md)** | Paruošimas gamybai | Konteinerizacija, Azure Container Apps, CI/CD procesai, mastelio keitimas | 90 minučių |
+| **[11-Stebėjimas](walkthrough/11-Monitoring/README.md)** | Stebėsena | Application Insights, struktūrizuotas žurnalų tvarkymas, našumo metrika | 60 minučių |
+| **[12-Geriausios praktikos](walkthrough/12-Best-Practices/README.md)** | Gamybos tobulumas | Saugumo stiprinimas, našumo optimizavimas, įmonės šablonai | 45 minutės |
 
-**Bendras Mokymosi Laikas**: ~12-15 valandų išsamaus praktinio mokymosi
+**Bendras mokymosi laikas**: ~12-15 valandų išsamaus praktinio mokymosi
 
-### 🎯 Kaip Naudoti Vadovą
+### 🎯 Kaip naudotis vadovu
 
 **Pradedantiesiems**:
-1. Pradėkite nuo [Modulio 00: Įvadas](walkthrough/00-Introduction/README.md), kad suprastumėte MCP pagrindus
-2. Sekite modulius nuosekliai, kad gautumėte pilną mokymosi patirtį
-3. Kiekvienas modulis remiasi ankstesnėmis koncepcijomis ir apima praktinius pratimus
+1. Pradėkite nuo [00 modulio: Įvadas](walkthrough/00-Introduction/README.md), kad suprastumėte MCP pagrindus
+2. Sekite modulius iš eilės, kad gautumėte pilną mokymosi patirtį
+3. Kiekvienas modulis remiasi ankstesnėmis koncepcijomis ir apima praktines užduotis
 
-**Patyrusiems Kūrėjams**:
-1. Peržiūrėkite [Pagrindinę Vadovo Apžvalgą](walkthrough/README.md), kad gautumėte visų modulių santrauką
-2. Pereikite prie konkrečių modulių, kurie jus domina (pvz., Modulis 07 AI integracijai)
-3. Naudokite atskirus modulius kaip nuorodą savo projektams
+**Patyrusiems kūrėjams**:
+1. Peržiūrėkite [Pagrindinę vadovo apžvalgą](walkthrough/README.md), kad gautumėte visų modulių santrauką
+2. Pereikite prie jus dominančių modulių (pvz., 07 modulis AI integracijai)
+3. Naudokite atskirus modulius kaip nuorodų medžiagą savo projektams
 
-**Gamybos Įgyvendinimui**:
-1. Susitelkite į Modulius 02 (Saugumas), 10 (Diegimas) ir 11 (Stebėjimas)
-2. Peržiūrėkite Modulį 12 (Geriausios Praktikos) dėl įmonės gairių
-3. Naudokite kodo pavyzdžius kaip gamybai paruoštus šablonus
+**Gamybos įgyvendinimui**:
+1. Susitelkite į 02 (Saugumas), 10 (Diegimas) ir 11 (Stebėjimas) modulius
+2. Peržiūrėkite 12 modulį (Geriausios praktikos) dėl įmonės gairių
+3. Na
+### 📋 Mokymosi reikalavimai
 
-### 🚀 Greito Pradžios
-### 📋 Mokymosi Prielaidos
-
-**Rekomenduojamas pagrindas**:
+**Rekomenduojama patirtis**:
 - Pagrindinės Python programavimo žinios
 - Susipažinimas su REST API ir duomenų bazėmis
 - Bendras AI/ML koncepcijų supratimas
-- Pagrindinės komandinės eilutės ir Docker žinios
+- Pagrindinės komandų eilutės ir Docker žinios
 
 **Nereikalaujama (bet naudinga)**:
-- Ankstesnė MCP patirtis (pradėsime nuo nulio)
-- Azure debesų platformos patirtis (pateikiame žingsnis po žingsnio instrukcijas)
+- Ankstesnė MCP patirtis (viską pradedame nuo nulio)
+- Azure debesų kompiuterijos patirtis (teikiame žingsnis po žingsnio instrukcijas)
 - Pažangios PostgreSQL žinios (paaiškiname koncepcijas pagal poreikį)
 
 ### 💡 Mokymosi patarimai
 
 1. **Praktinis požiūris**: Kiekviename modulyje pateikiami veikiantys kodo pavyzdžiai, kuriuos galite paleisti ir modifikuoti
-2. **Progresyvus sudėtingumas**: Koncepcijos palaipsniui pereina nuo paprastų iki sudėtingų
-3. **Realių situacijų kontekstas**: Visi pavyzdžiai naudoja realistiškus mažmeninės prekybos verslo scenarijus
-4. **Paruošta gamybai**: Kodo pavyzdžiai sukurti taip, kad būtų tinkami naudoti gamyboje
+2. **Progresyvus sudėtingumas**: Koncepcijos pateikiamos palaipsniui – nuo paprastų iki sudėtingų
+3. **Realių situacijų kontekstas**: Visi pavyzdžiai paremti realiomis mažmeninės prekybos verslo situacijomis
+4. **Paruošta gamybai**: Kodo pavyzdžiai pritaikyti realiam naudojimui gamyboje
 5. **Bendruomenės palaikymas**: Prisijunkite prie mūsų [Discord bendruomenės](https://discord.com/invite/ByRwuEEgH4) pagalbai ir diskusijoms
 
 ### 🔗 Susiję ištekliai
 
-- **[MCP pradedantiesiems](https://aka.ms/mcp-for-beginners)**: Esminė medžiaga
-- **[Pavyzdinis apžvalga](Sample_Walkthrough.md)**: Aukšto lygio techninė apžvalga
+- **[MCP pradedantiesiems](https://aka.ms/mcp-for-beginners)**: Esminė pradinė medžiaga
+- **[Pavyzdinė apžvalga](Sample_Walkthrough.md)**: Aukšto lygio techninė apžvalga
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Debesų platforma, naudojama pavyzdžiuose
 - **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Python MCP įgyvendinimo sistema
 
-**Pasiruošę pradėti mokytis?** Pradėkite nuo **[Modulio 00: Įvadas](walkthrough/00-Introduction/README.md)** arba peržiūrėkite **[pilną apžvalgos vadovą](walkthrough/README.md)**.
+**Pasiruošę pradėti mokytis?** Pradėkite nuo **[00 modulio: Įvadas](walkthrough/00-Introduction/README.md)** arba peržiūrėkite **[pilną apžvalgos vadovą](walkthrough/README.md)**.
 
-## Prielaidos
+## Reikalavimai
 
-1. Įdiegta Docker Desktop
+1. Įdiegtas Docker Desktop
 2. Įdiegtas Git
 3. **Azure CLI**: Įdiekite ir autentifikuokite naudodami Azure CLI
-4. Prieiga prie OpenAI `text-embedding-3-small` modelio ir, jei pageidaujama, `gpt-4o-mini` modelio.
+4. Prieiga prie OpenAI `text-embedding-3-small` modelio ir, jei reikia, `gpt-4o-mini` modelio.
 
 ## Pradžia
 
 Atidarykite terminalo langą ir vykdykite šias komandas:
 
-1. Autentifikuokite naudodami Azure CLI
+1. Autentifikuokitės naudodami Azure CLI
 
     ```bash
     az login
@@ -212,9 +210,9 @@ Atidarykite terminalo langą ir vykdykite šias komandas:
     cd Zava-MCP-Server-and-PostgreSQL-Sample
     ```
 
-### Azure resursų diegimas
+### Azure išteklių diegimas
 
-Vykdykite šiuos scenarijus, kad automatizuotumėte MCP serveriui reikalingų Azure resursų diegimą.
+Vykdykite šiuos scenarijus, kad automatizuotumėte MCP serveriui reikalingų Azure išteklių diegimą.
 
 Diegimo scenarijai automatiškai įdiegs `text-embedding-3-small` modelį. Diegimo metu turėsite galimybę įtraukti ir `gpt-4o-mini` modelį. Atkreipkite dėmesį, kad `gpt-4o-mini` **nėra būtinas** šiam projektui ir įtraukiamas tik galimiems ateities patobulinimams.
 
@@ -236,7 +234,7 @@ cd infra && ./deploy.sh
 
 ## MCP serverio paleidimas
 
-Lengviausias būdas paleisti visą sistemą (PostgreSQL + MCP serverį) yra naudojant Docker Compose:
+Lengviausias būdas paleisti visą sistemą (PostgreSQL + MCP serveris) yra naudojant Docker Compose:
 
 ### Sistemos paleidimas
 
@@ -261,16 +259,16 @@ docker compose down -v
 
 Toliau pateikiama instrukcija, kaip naudoti integruotą VS Code MCP serverio palaikymą.
 
-1. Atidarykite projektą VS Code. Iš terminalo vykdykite:
+1. Atidarykite projektą VS Code. Terminale vykdykite:
 
     ```bash
     code .
     ```
 
-2. Paleiskite vieną ar daugiau MCP serverių, naudodami `.vscode/mcp.json` konfigūracijas. Failas turi keturias skirtingas serverio konfigūracijas, kiekviena atitinka skirtingą parduotuvės vadovo rolę:
+2. Paleiskite vieną ar daugiau MCP serverių naudodami `.vscode/mcp.json` konfigūracijas. Šiame faile yra keturios skirtingos serverio konfigūracijos, atitinkančios skirtingų parduotuvių vadovų vaidmenis:
 
-   - Kiekviena konfigūracija naudoja unikalų RLS (Row Level Security) vartotojo ID
-   - Šie vartotojo ID imituoja skirtingų parduotuvių vadovų tapatybes, kurios pasiekia duomenų bazę
+   - Kiekviena konfigūracija naudoja unikalų RLS (Row Level Security) naudotojo ID
+   - Šie naudotojo ID imituoja skirtingų parduotuvių vadovų prisijungimus prie duomenų bazės
    - RLS sistema riboja duomenų prieigą pagal vadovo priskirtą parduotuvę
    - Tai atspindi realias situacijas, kai parduotuvių vadovai prisijungia naudodami skirtingas Entra ID paskyras
 
@@ -302,39 +300,39 @@ Toliau pateikiama instrukcija, kaip naudoti integruotą VS Code MCP serverio pal
     }
     ```
 
-### Atidarykite VS Code AI pokalbį
+### Atidarykite VS Code AI pokalbių režimą
 
-1. Atidarykite AI pokalbio režimą VS Code
+1. Atidarykite AI pokalbių režimą VS Code
 2. Įveskite **#zava** ir pasirinkite vieną iš paleistų MCP serverių
-3. Užduokite klausimus apie pardavimų duomenis - žr. pavyzdinius užklausimus žemiau
+3. Užduokite klausimus apie pardavimų duomenis – žr. pavyzdinius užklausimus žemiau
 
 ### Pavyzdiniai užklausimai
 
 1. Parodykite 20 geriausių produktų pagal pardavimų pajamas
-1. Parodykite pardavimus pagal parduotuvę
+1. Parodykite pardavimus pagal parduotuves
 1. Kokie buvo praėjusio ketvirčio pardavimai pagal kategorijas?
-1. Kokius produktus parduodame, kurie yra panašūs į "dažų konteinerius"?
+1. Kokius produktus parduodame, kurie yra panašūs į „dažų konteinerius“?
 
 ## Funkcijos
 
-- **Prieiga prie kelių lentelių schemų**: Gaukite kelių duomenų bazės lentelių schemas vienu užklausimu
+- **Prieiga prie kelių lentelių schemų**: Vienu užklausimu gaukite kelių duomenų bazių lentelių schemas
 - **Saugus užklausų vykdymas**: Vykdykite PostgreSQL užklausas su Row Level Security (RLS) palaikymu
-- **Realių duomenų prieiga**: Pasiekite dabartinius pardavimų, inventoriaus ir klientų duomenis
-- **Data/laikas įrankiai**: Gaukite dabartinius UTC laiko žymenis laiko jautriai analizei
+- **Realaus laiko duomenys**: Prieiga prie dabartinių pardavimų, atsargų ir klientų duomenų
+- **Datos/laiko įrankiai**: Gaukite dabartinius UTC laiko žymenis laiko jautriai analizei
 - **Lankstus diegimas**: Palaiko HTTP serverio režimą
 
 ## Palaikomos lentelės
 
-Serveris suteikia prieigą prie šių mažmeninės prekybos duomenų bazės lentelių:
+Serveris suteikia prieigą prie šių mažmeninės prekybos duomenų bazių lentelių:
 
 - `retail.customers` - Klientų informacija ir profiliai
 - `retail.stores` - Parduotuvės vietos ir detalės
 - `retail.categories` - Produktų kategorijos ir hierarchijos
 - `retail.product_types` - Produktų tipų klasifikacijos
 - `retail.products` - Produktų katalogas ir specifikacijos
-- `retail.orders` - Klientų užsakymai ir transakcijos
-- `retail.order_items` - Individualūs užsakymo elementai
-- `retail.inventory` - Dabartiniai inventoriaus lygiai ir atsargų duomenys
+- `retail.orders` - Klientų užsakymai ir operacijos
+- `retail.order_items` - Atskirų užsakymų elementai
+- `retail.inventory` - Dabartiniai atsargų lygiai ir duomenys
 
 ## Galimi įrankiai
 
@@ -346,17 +344,17 @@ Gaukite kelių lentelių schemas vienu užklausimu.
 
 - `table_names` (list[str]): Galimų lentelių pavadinimų sąrašas iš aukščiau pateiktų lentelių
 
-**Grąžina:** Sujungtas schemų tekstas prašomoms lentelėms
+**Grąžina:** Sujungtas schemas kaip eilutę
 
 ### `execute_sales_query`
 
-Vykdykite PostgreSQL užklausas pardavimų duomenų bazėje su Row Level Security.
+Vykdykite PostgreSQL užklausas prieš pardavimų duomenų bazę su Row Level Security.
 
 **Parametrai:**
 
 - `postgresql_query` (str): Tinkamai suformuota PostgreSQL užklausa
 
-**Grąžina:** Užklausos rezultatai, suformatuoti kaip tekstas (ribojama iki 20 eilučių dėl aiškumo)
+**Grąžina:** Užklausos rezultatai kaip eilutė (apribota iki 20 eilučių dėl aiškumo)
 
 **Geriausia praktika:**
 
@@ -364,7 +362,7 @@ Vykdykite PostgreSQL užklausas pardavimų duomenų bazėje su Row Level Securit
 - Naudokite tikslius stulpelių pavadinimus iš schemų
 - Sujunkite susijusias lenteles išsamiai analizei
 - Agreguokite rezultatus, kai tai tinkama
-- Ribokite išvestį dėl aiškumo
+- Apribokite išvestį dėl aiškumo
 
 ### `get_current_utc_date`
 
@@ -374,13 +372,13 @@ Gaukite dabartinę UTC datą ir laiką ISO formatu.
 
 ### `semantic_search_products`
 
-Atlikite semantinę produktų paiešką pagal vartotojo užklausas.
+Atlikite semantinę produktų paiešką pagal naudotojo užklausas.
 
 **Grąžina:** Produktų sąrašas, atitinkantis paieškos kriterijus
 
 **Parametrai:**
 
-- `query` (str): Paieškos užklausos tekstas
+- `query` (str): Paieškos užklausos eilutė
 
 **Grąžina:** Produktų sąrašas, atitinkantis paieškos kriterijus
 
@@ -388,35 +386,35 @@ Atlikite semantinę produktų paiešką pagal vartotojo užklausas.
 
 ### Row Level Security (RLS)
 
-Serveris įgyvendina Row Level Security, kad užtikrintų, jog vartotojai pasiektų tik tuos duomenis, kuriuos jie yra įgalioti matyti:
+Serveris įgyvendina Row Level Security, kad užtikrintų, jog naudotojai matytų tik tuos duomenis, kuriuos jie yra įgalioti peržiūrėti:
 
-- **HTTP režimas**: Naudoja `x-rls-user-id` antraštę vartotojo identifikavimui
+- **HTTP režimas**: Naudoja `x-rls-user-id` antraštę naudotojo identifikavimui
 
-- **Numatytasis režimas**: Naudoja UUID vietos rezervą, kai vartotojo ID nepateikiamas
+- **Numatytasis režimas**: Naudoja vietos rezervavimo UUID, kai naudotojo ID nepateiktas
 
-#### Parduotuvės specifiniai RLS vartotojo ID
+#### Parduotuvės specifiniai RLS naudotojo ID
 
-Kiekviena Zava Retail parduotuvės vieta turi unikalų RLS vartotojo ID, kuris nustato, kokius duomenis vartotojas gali pasiekti:
+Kiekviena Zava Retail parduotuvės vieta turi unikalų RLS naudotojo ID, kuris nustato, kokius duomenis naudotojas gali pasiekti:
 
-| Parduotuvės vieta | RLS vartotojo ID | Aprašymas |
+| Parduotuvės vieta | RLS naudotojo ID | Aprašymas |
 |-------------------|------------------|-----------|
-| **Globali prieiga** | `00000000-0000-0000-0000-000000000000` | Numatytasis režimas - prieiga prie visų parduotuvių |
-| **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Zava Retail Seattle parduotuvės duomenys |
-| **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Zava Retail Bellevue parduotuvės duomenys |
-| **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Zava Retail Tacoma parduotuvės duomenys |
-| **Spokane** | `d8e9f0a1-b2c3-4567-8901-234567890abc` | Zava Retail Spokane parduotuvės duomenys |
-| **Everett** | `3b9ac9fa-cd5e-4b92-a7f2-b8c1d0e9f2a3` | Zava Retail Everett parduotuvės duomenys |
-| **Redmond** | `e7f8a9b0-c1d2-3e4f-5678-90abcdef1234` | Zava Retail Redmond parduotuvės duomenys |
-| **Kirkland** | `9c8b7a65-4321-fed0-9876-543210fedcba` | Zava Retail Kirkland parduotuvės duomenys |
-| **Online** | `2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2` | Zava Retail Online parduotuvės duomenys |
+| **Globali prieiga** | `00000000-0000-0000-0000-000000000000` | Numatytasis režimas – prieiga prie visų parduotuvių |
+| **Sietlas** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Zava Retail Sietlo parduotuvės duomenys |
+| **Belvju** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Zava Retail Belvju parduotuvės duomenys |
+| **Takoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Zava Retail Takomos parduotuvės duomenys |
+| **Spokanas** | `d8e9f0a1-b2c3-4567-8901-234567890abc` | Zava Retail Spokano parduotuvės duomenys |
+| **Everetas** | `3b9ac9fa-cd5e-4b92-a7f2-b8c1d0e9f2a3` | Zava Retail Evereto parduotuvės duomenys |
+| **Redmondas** | `e7f8a9b0-c1d2-3e4f-5678-90abcdef1234` | Zava Retail Redmondo parduotuvės duomenys |
+| **Kirklandas** | `9c8b7a65-4321-fed0-9876-543210fedcba` | Zava Retail Kirklando parduotuvės duomenys |
+| **Internetinė parduotuvė** | `2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2` | Zava Retail internetinės parduotuvės duomenys |
 
 #### RLS įgyvendinimas
 
-Kai vartotojas prisijungia su konkrečios parduotuvės RLS vartotojo ID, jis matys tik:
+Kai naudotojas prisijungia su konkrečios parduotuvės RLS naudotojo ID, jis matys tik:
 
 - Klientus, susijusius su ta parduotuve
-- Užsakymus, pateiktus toje parduotuvės vietoje
-- Inventoriaus duomenis, susijusius su ta parduotuve
+- Užsakymus, pateiktus toje parduotuvėje
+- Atsargų duomenis, susijusius su ta parduotuve
 - Parduotuvės specifinius pardavimų ir veiklos rodiklius
 
 Tai užtikrina duomenų izoliaciją tarp skirtingų parduotuvių vietų, išlaikant vieningą duomenų bazės schemą.
@@ -427,51 +425,51 @@ Tai užtikrina duomenų izoliaciją tarp skirtingų parduotuvių vietų, išlaik
 
 Serveris naudoja valdomą programos kontekstą su:
 
-- **Duomenų bazės jungčių baseinas**: Efektyvus jungčių valdymas HTTP režimui
-- **Gyvavimo ciklo valdymas**: Tinkamas resursų išvalymas uždarymo metu
-- **Tipų saugumas**: Stipriai tipizuotas kontekstas su `AppContext` dataklase
+- **Duomenų bazės jungčių baseinu**: Efektyvus jungčių valdymas HTTP režimui
+- **Gyvavimo ciklo valdymas**: Tinkamas išteklių išvalymas uždarymo metu
+- **Tipų saugumas**: Stipriai tipizuotas kontekstas su `AppContext` duomenų klase
 
-### Užklausos kontekstas
+### Užklausų kontekstas
 
-- **Antraščių ištraukimas**: Saugus antraščių analizavimas vartotojo identifikavimui
-- **RLS integracija**: Automatinis vartotojo ID nustatymas iš užklausos konteksto
-- **Klaidų valdymas**: Išsamus klaidų valdymas su vartotojui draugiškomis žinutėmis
+- **Antraščių ištraukimas**: Saugus antraščių analizavimas naudotojo identifikavimui
+- **RLS integracija**: Automatinis naudotojo ID nustatymas iš užklausos konteksto
+- **Klaidų valdymas**: Išsamus klaidų valdymas su naudotojui draugiškomis žinutėmis
 
 ## Duomenų bazės integracija
 
 Serveris integruojasi su PostgreSQL duomenų baze per `PostgreSQLSchemaProvider` klasę:
 
-- **Jungčių baseinas**: Naudoja asinchroninius jungčių baseinus mastelio didinimui
-- **Schemos metaduomenys**: Pateikia išsamias lentelių schemos detales
+- **Jungčių baseinai**: Naudoja asinchroninius jungčių baseinus mastelio didinimui
+- **Schemos metaduomenys**: Teikia išsamias lentelių schemos detales
 - **Užklausų vykdymas**: Saugus užklausų vykdymas su RLS palaikymu
-- **Resursų valdymas**: Automatinis duomenų bazės resursų išvalymas
+- **Išteklių valdymas**: Automatinis duomenų bazės išteklių išvalymas
 
 ## Klaidų valdymas
 
 Serveris įgyvendina patikimą klaidų valdymą:
 
-- **Lentelių validacija**: Užtikrina, kad būtų pasiekiami tik galiojantys lentelių pavadinimai
+- **Lentelių validacija**: Užtikrina, kad būtų pasiekiamos tik galiojančios lentelės
 - **Užklausų validacija**: Validuoja PostgreSQL užklausas prieš vykdymą
-- **Resursų valdymas**: Tinkamas išvalymas net ir klaidų metu
-- **Vartotojui draugiškos žinutės**: Aiškios klaidų žinutės problemų sprendimui
+- **Išteklių valdymas**: Tinkamas išvalymas net ir klaidų atveju
+- **Naudotojui draugiškos žinutės**: Aiškios klaidų žinutės problemų sprendimui
 
-## Saugumo aspektai
+## Saugumo svarstymai
 
-1. **Row Level Security**: Visos užklausos laikosi RLS politikų pagal vartotojo tapatybę
-2. **Parduotuvės duomenų izoliacija**: Kiekvienos parduotuvės RLS vartotojo ID užtikrina prieigą tik prie tos parduotuvės duomenų
-3. **Įvesties validacija**: Lentelių pavadinimai ir užklausos validuojami prieš vykdymą
-4. **Resursų ribojimai**: Užklausų rezultatai ribojami, kad būtų išvengta per didelio resursų naudojimo
+1. **Row Level Security**: Visos užklausos laikosi RLS politikų pagal naudotojo tapatybę
+2. **Parduotuvės duomenų izoliacija**: Kiekvienos parduotuvės RLS naudotojo ID užtikrina prieigą tik prie tos parduotuvės duomenų
+3. **Įvesties validacija**: Lentelių pavadinimai ir užklausos validuojamos prieš vykdymą
+4. **Išteklių ribojimas**: Užklausų rezultatai ribojami, kad būtų išvengta perteklinio išteklių naudojimo
 5. **Jungčių saugumas**: Naudojamos saugios duomenų bazės jungčių praktikos
-6. **Vartotojo tapatybės patikrinimas**: Visada užtikrinkite, kad būtų naudojamas tinkamas RLS vartotojo ID norimai parduotuvei
+6. **Naudotojo tapatybės patikrinimas**: Visada užtikrinkite, kad būtų naudojamas tinkamas RLS naudotojo ID numatytai parduotuvei
 
 ### Svarbios saugumo pastabos
 
-- **Niekada nenaudokite gamybos RLS vartotojo ID vystymo aplinkose**
-- **Visada patikrinkite, ar RLS vartotojo ID atitinka norimą parduotuvę prieš vykdant užklausas**
+- **Niekada nenaudokite gamybinių RLS naudotojo ID kūrimo aplinkose**
+- **Visada patikrinkite, ar RLS naudotojo ID atitinka numatytą parduotuvę prieš vykdant užklausas**
 - **Numatytasis UUID (`00000000-0000-0000-0000-000000000000`) suteikia ribotą prieigą**
-- **Kiekvienas parduotuvės vadovas turėtų turėti prieigą tik prie savo parduotuvės RLS vartotojo ID**
+- **Kiekvienas parduotuvės vadovas turėtų turėti prieigą tik prie savo parduotuvės RLS naudotojo ID**
 
-## Vystymas
+## Kūrimas
 
 ### Projekto struktūra
 
@@ -484,9 +482,9 @@ mcp_server/
 
 ### Pagrindiniai komponentai
 
-- **FastMCP Server**: Modernus MCP serverio įgyvendinimas su asinchroniniu palaikymu
-- **PostgreSQL Provider**: Duomenų bazės abstrakcijos sluoksnis su RLS palaikymu
-- **Konteksto valdymas**: Tipų saugus programos ir užklausos konteksto valdymas
+- **FastMCP serveris**: Modernus MCP serverio įgyvendinimas su asinchroniniu palaikymu
+- **PostgreSQL tiekėjas**: Duomenų bazės abstrakcijos sluoksnis su RLS palaikymu
+- **Konteksto valdymas**: Tipų saugus programos ir užklausų konteksto valdymas
 - **Įrankių registracija**: Deklaratyvi įrankių registracija su Pydantic validacija
 
 ## Prisidėjimas
@@ -503,9 +501,9 @@ Prisidedant prie šio serverio:
 
 ---
 
-*Šis MCP serveris leidžia saugiai ir efektyviai pasiekti Zava Retail pardavimų duomenis AI pagrįstai analizei ir įžvalgoms.*
+*Šis MCP serveris leidžia saugiai ir efektyviai pasiekti Zava Retail pardavimų duomenis AI pagrį
 
 ---
 
-**Atsakomybės atsisakymas**:  
-Šis dokumentas buvo išverstas naudojant dirbtinio intelekto vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar klaidingus interpretavimus, atsiradusius dėl šio vertimo naudojimo.
+**Atsakomybės apribojimas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus interpretavimus, atsiradusius dėl šio vertimo naudojimo.

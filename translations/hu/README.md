@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-30T05:48:45+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T10:10:46+00:00",
   "source_file": "README.md",
   "language_code": "hu"
 }
 -->
 # MCP Server és PostgreSQL Példa - Kiskereskedelmi Értékesítési Elemzés
 
-## Tanulj MCP-t adatbázis integrációval gyakorlati példákon keresztül
+## Ismerd meg az MCP-t adatbázis integrációval gyakorlati példákon keresztül
 
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.svg)](https://GitHub.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/issues)
@@ -34,32 +34,32 @@ Kövesd az alábbi lépéseket, hogy elkezdhesd használni ezeket az erőforrás
 
 ## Bevezetés
 
-Ez a példa bemutatja, hogyan lehet egy átfogó **Model Context Protocol (MCP) szervert** építeni és telepíteni, amely AI asszisztensek számára biztonságos, intelligens hozzáférést biztosít a kiskereskedelmi értékesítési adatokhoz PostgreSQL-en keresztül. A projekt vállalati szintű funkciókat mutat be, mint például **soros szintű biztonság (Row Level Security - RLS)**, **szemantikus keresési képességek**, és **Azure AI integráció** valós kiskereskedelmi elemzési forgatókönyvekhez.
+Ez a példa bemutatja, hogyan lehet létrehozni és telepíteni egy átfogó **Model Context Protocol (MCP) szervert**, amely AI asszisztensek számára biztonságos, intelligens hozzáférést biztosít a kiskereskedelmi értékesítési adatokhoz PostgreSQL-en keresztül. A projekt vállalati szintű funkciókat mutat be, mint például **soros szintű biztonság (Row Level Security - RLS)**, **szemantikus keresési képességek**, és **Azure AI integráció** valós kiskereskedelmi elemzési forgatókönyvekhez.
 
 **Főbb felhasználási esetek:**
-- **AI-alapú értékesítési elemzés**: Lehetővé teszi az AI asszisztensek számára, hogy természetes nyelven lekérdezzék és elemezzék a kiskereskedelmi értékesítési adatokat
+- **AI-alapú értékesítési elemzés**: Lehetővé teszi az AI asszisztensek számára, hogy természetes nyelven keresztül kérdezzenek és elemezzenek kiskereskedelmi értékesítési adatokat
 - **Biztonságos több-bérlős hozzáférés**: Bemutatja a soros szintű biztonság megvalósítását, ahol különböző üzletvezetők csak a saját üzletük adataihoz férhetnek hozzá
-- **Szemantikus termékkeresés**: AI-alapú termékfelfedezés szöveges beágyazásokkal
+- **Szemantikus termékkeresés**: AI-alapú termékfelfedezés szöveges beágyazások segítségével
 - **Vállalati integráció**: Bemutatja, hogyan lehet MCP szervereket integrálni Azure szolgáltatásokkal és PostgreSQL adatbázisokkal
 
 **Ideális:**
 - Fejlesztők számára, akik MCP szervereket szeretnének építeni adatbázis integrációval
 - Adatmérnökök számára, akik biztonságos több-bérlős elemzési megoldásokat valósítanak meg
 - AI alkalmazásfejlesztők számára, akik kiskereskedelmi vagy e-kereskedelmi adatokkal dolgoznak
-- Bárki számára, aki AI asszisztenseket szeretne vállalati adatbázisokkal kombinálni
+- Bárki számára, aki AI asszisztenseket szeretne kombinálni vállalati adatbázisokkal
 
 ## Csatlakozz az Azure AI Foundry Discord közösséghez
 Oszd meg MCP tapasztalataidat, és találkozz szakértőkkel és termékcsoportokkal
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # Értékesítési Elemzés MCP Szerver
 
-Egy Model Context Protocol (MCP) szerver, amely átfogó ügyfélértékesítési adatbázis-hozzáférést biztosít a Zava Retail DIY üzlet számára. Ez a szerver lehetővé teszi az AI asszisztensek számára, hogy biztonságos, séma-tudatos interfészen keresztül lekérdezzék és elemezzék a kiskereskedelmi értékesítési adatokat.
+Egy Model Context Protocol (MCP) szerver, amely átfogó ügyfélértékesítési adatbázis hozzáférést biztosít a Zava Retail DIY üzlet számára. Ez a szerver lehetővé teszi az AI asszisztensek számára, hogy biztonságos, séma-tudatos interfészen keresztül kérdezzenek és elemezzenek kiskereskedelmi értékesítési adatokat.
 
 ## 📚 Teljes Megvalósítási Útmutató
 
-A megoldás részletes felépítéséhez és hasonló MCP szerverek megvalósításához tekintsd meg átfogó **[Példa Bemutató](Sample_Walkthrough.md)** útmutatónkat. Ez az útmutató tartalmazza:
+A megoldás részletes bemutatásáért és hasonló MCP szerverek megvalósításához tekintsd meg átfogó **[Példa Bemutató](Sample_Walkthrough.md)** útmutatónkat. Ez az útmutató tartalmazza:
 
 - **Architektúra Mélyelemzés**: Komponensek elemzése és tervezési minták
 - **Lépésről-lépésre Építés**: A projekt beállításától a telepítésig
@@ -72,13 +72,13 @@ Ideális fejlesztők számára, akik meg akarják érteni a megvalósítás rés
 
 ## 🤖 Mi az MCP (Model Context Protocol)?
 
-**Model Context Protocol (MCP)** egy nyílt szabvány, amely lehetővé teszi az AI asszisztensek számára, hogy biztonságosan hozzáférjenek külső adatforrásokhoz és eszközökhöz valós időben. Gondolj rá úgy, mint egy hídra, amely lehetővé teszi az AI modellek számára, hogy adatbázisokhoz, API-khoz, fájlrendszerekhez és más erőforrásokhoz csatlakozzanak, miközben megőrzik a biztonságot és az irányítást.
+**Model Context Protocol (MCP)** egy nyílt szabvány, amely lehetővé teszi az AI asszisztensek számára, hogy biztonságosan hozzáférjenek külső adatforrásokhoz és eszközökhöz valós időben. Gondolj rá úgy, mint egy hídra, amely lehetővé teszi az AI modellek számára, hogy kapcsolódjanak adatbázisokhoz, API-khoz, fájlrendszerekhez és más erőforrásokhoz, miközben megőrzik a biztonságot és az irányítást.
 
 ### Főbb Előnyök:
-- **Valós idejű Adathozzáférés**: Az AI asszisztensek élő adatbázisokat és API-kat kérdezhetnek le
+- **Valós idejű Adathozzáférés**: Az AI asszisztensek élő adatbázisokat és API-kat kérdezhetnek
 - **Biztonságos Integráció**: Ellenőrzött hozzáférés hitelesítéssel és jogosultságokkal  
 - **Eszköz Bővíthetőség**: Egyedi képességek hozzáadása az AI asszisztensekhez
-- **Szabványosított Protokoll**: Különböző AI platformokon és eszközökön működik
+- **Szabványosított Protokoll**: Különböző AI platformok és eszközök között működik
 
 ### Új az MCP-ben?
 
@@ -97,15 +97,15 @@ Miután megértetted az alapokat, térj vissza ide, hogy felfedezd ezt a haladó
 
 ## 📚 Átfogó Tanulási Útmutató: /walkthrough
 
-Ez a repó egy teljes **12 modulból álló tanulási bemutatót** tartalmaz, amely lépésről-lépésre bontja le ezt az MCP kiskereskedelmi szerver mintát. A bemutató egy átfogó oktatási erőforrássá alakítja ezt a működő példát, amely tökéletes fejlesztők számára, akik meg akarják érteni, hogyan építsenek gyártásra kész MCP szervereket adatbázis integrációval.
+Ez a repó egy teljes **12 modulból álló tanulási bemutatót** tartalmaz, amely lebontja ezt az MCP kiskereskedelmi szerver mintát emészthető, lépésről-lépésre leckékre. A bemutató ezt a működő példát átfogó oktatási erőforrássá alakítja, amely tökéletes fejlesztők számára, akik meg akarják érteni, hogyan építsenek gyártásra kész MCP szervereket adatbázis integrációval.
 
 ### Amit Megtanulsz
 
 A bemutató mindent lefed az alapvető MCP fogalmaktól a haladó gyártási telepítésig, beleértve:
 
 - **MCP Alapok**: A Model Context Protocol megértése és valós alkalmazásai
-- **Adatbázis Integráció**: Biztonságos PostgreSQL csatlakozás megvalósítása soros szintű biztonsággal
-- **AI-Alapú Funkciók**: Szemantikus keresési képességek hozzáadása Azure OpenAI beágyazásokkal
+- **Adatbázis Integráció**: Biztonságos PostgreSQL kapcsolódás megvalósítása soros szintű biztonsággal
+- **AI-alapú Funkciók**: Szemantikus keresési képességek hozzáadása Azure OpenAI beágyazásokkal
 - **Biztonsági Megvalósítás**: Vállalati szintű hitelesítés, jogosultságok és adatizoláció
 - **Eszközfejlesztés**: Kifinomult MCP eszközök építése adat-elemzéshez és üzleti intelligenciához
 - **Tesztelés és Hibakeresés**: Átfogó tesztelési stratégiák és hibakeresési technikák
@@ -115,7 +115,7 @@ A bemutató mindent lefed az alapvető MCP fogalmaktól a haladó gyártási tel
 
 ### Tanulási Útvonal Áttekintés
 
-A bemutató egy progresszív tanulási struktúrát követ, amely minden szintű fejlesztő számára alkalmas:
+A bemutató egy progresszív tanulási struktúrát követ, amely minden szintű fejlesztő számára készült:
 
 | Modul | Fókuszterület | Leírás | Időbecslés |
 |-------|---------------|--------|------------|
@@ -147,11 +147,10 @@ A bemutató egy progresszív tanulási struktúrát követ, amely minden szintű
 2. Ugorj az érdeklődési körödnek megfelelő modulokra (pl. Modul 07 az AI integrációhoz)
 3. Használd az egyes modulokat referenciaként saját projektjeidhez
 
-**Gyártási Megvalósításhoz**:
-1. Koncentrálj
+**Gyártási Megvalósításh
 ### 📋 Tanulási előfeltételek
 
-**Ajánlott háttérismeretek**:
+**Ajánlott háttértudás**:
 - Alapvető Python programozási tapasztalat
 - REST API-k és adatbázisok ismerete
 - Általános AI/ML koncepciók megértése
@@ -159,7 +158,7 @@ A bemutató egy progresszív tanulási struktúrát követ, amely minden szintű
 
 **Nem kötelező (de hasznos)**:
 - Korábbi MCP tapasztalat (az alapoktól kezdve bemutatjuk)
-- Azure felhő tapasztalat (lépésről lépésre végigvezetünk)
+- Azure felhő tapasztalat (lépésről lépésre útmutatót biztosítunk)
 - Haladó PostgreSQL ismeretek (szükség esetén elmagyarázzuk a fogalmakat)
 
 ### 💡 Tanulási tippek
@@ -175,7 +174,7 @@ A bemutató egy progresszív tanulási struktúrát követ, amely minden szintű
 - **[MCP kezdőknek](https://aka.ms/mcp-for-beginners)**: Alapvető háttérolvasmány
 - **[Minta bemutató](Sample_Walkthrough.md)**: Magas szintű technikai áttekintés
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Felhőplatform, amelyet a példákban használunk
-- **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Python MCP implementációs keretrendszer
+- **[FastMCP keretrendszer](https://github.com/jlowin/fastmcp)**: Python MCP implementációs keretrendszer
 
 **Készen állsz a tanulásra?** Kezdd el a **[00. modul: Bevezetés](walkthrough/00-Introduction/README.md)** című modullal, vagy fedezd fel a **[teljes bemutató áttekintést](walkthrough/README.md)**.
 
@@ -186,7 +185,7 @@ A bemutató egy progresszív tanulási struktúrát követ, amely minden szintű
 3. **Azure CLI**: Telepítsd és hitelesítsd az Azure CLI-t
 4. Hozzáférés az OpenAI `text-embedding-3-small` modellhez, opcionálisan a `gpt-4o-mini` modellhez.
 
-## Első lépések
+## Kezdés
 
 Nyiss meg egy terminálablakot, és futtasd az alábbi parancsokat:
 
@@ -306,14 +305,14 @@ Az alábbiak feltételezik, hogy a beépített VS Code MCP szerver támogatást 
 
 ### Mintakérdések
 
-1. Mutasd a 20 legjobb terméket értékesítési bevétel alapján
+1. Mutasd a 20 legnagyobb árbevételt hozó terméket
 1. Mutasd az értékesítéseket üzletenként
 1. Milyen volt az előző negyedév értékesítése kategóriánként?
-1. Milyen termékeket árulunk, amelyek hasonlóak a "festéktartályokhoz"?
+1. Milyen termékeket árulunk, amelyek hasonlóak a "festékes konténerekhez"?
 
 ## Funkciók
 
-- **Több táblás séma hozzáférés**: Több adatbázis-tábla sémájának lekérése egyetlen kérésben
+- **Több táblás séma hozzáférés**: Több adatbázis tábla sémájának lekérése egyetlen kérésben
 - **Biztonságos lekérdezés végrehajtás**: PostgreSQL lekérdezések végrehajtása Row Level Security (RLS) támogatással
 - **Valós idejű adatok**: Aktuális értékesítési, készlet- és ügyféladatok elérése
 - **Dátum/idő segédprogramok**: Aktuális UTC időbélyegek lekérése időérzékeny elemzésekhez
@@ -321,7 +320,7 @@ Az alábbiak feltételezik, hogy a beépített VS Code MCP szerver támogatást 
 
 ## Támogatott táblák
 
-A szerver hozzáférést biztosít az alábbi kiskereskedelmi adatbázis-táblákhoz:
+A szerver hozzáférést biztosít az alábbi kiskereskedelmi adatbázis táblákhoz:
 
 - `retail.customers` - Ügyfélinformációk és profilok
 - `retail.stores` - Üzlethelyszínek és részletek
@@ -329,20 +328,20 @@ A szerver hozzáférést biztosít az alábbi kiskereskedelmi adatbázis-táblá
 - `retail.product_types` - Terméktípus osztályozások
 - `retail.products` - Termékkatalógus és specifikációk
 - `retail.orders` - Ügyfélrendelések és tranzakciók
-- `retail.order_items` - Rendeléseken belüli egyedi tételek
+- `retail.order_items` - Egyedi tételek a rendelésekben
 - `retail.inventory` - Aktuális készletszintek és készletadatok
 
 ## Elérhető eszközök
 
 ### `get_multiple_table_schemas`
 
-Adatbázis-táblák sémáinak lekérése egyetlen kérésben.
+Adatbázis táblák sémáinak lekérése egyetlen kérésben.
 
 **Paraméterek:**
 
-- `table_names` (list[str]): Az alábbi támogatott táblákból származó érvényes táblanevek listája
+- `table_names` (list[str]): Az érvényes táblanevek listája a fent felsorolt támogatott táblák közül
 
-**Visszatérési érték:** A kért táblákhoz tartozó sémasztringek összefűzve
+**Visszatérési érték:** Az igényelt táblák sémáinak összefűzött szövege
 
 ### `execute_sales_query`
 
@@ -352,14 +351,14 @@ PostgreSQL lekérdezések végrehajtása az értékesítési adatbázisban Row L
 
 - `postgresql_query` (str): Egy jól formázott PostgreSQL lekérdezés
 
-**Visszatérési érték:** Lekérdezési eredmények sztringként formázva (olvashatóság érdekében 20 sorra korlátozva)
+**Visszatérési érték:** A lekérdezés eredményei szöveges formában (olvasási szempontból korlátozva 20 sorra)
 
 **Legjobb gyakorlatok:**
 
 - Mindig először kérd le a táblák sémáit
 - Használj pontos oszlopneveket a sémákból
 - Kapcsolj össze kapcsolódó táblákat átfogó elemzéshez
-- Aggregáld az eredményeket, amikor szükséges
+- Aggregáld az eredményeket, ha szükséges
 - Korlátozd a kimenetet az olvashatóság érdekében
 
 ### `get_current_utc_date`
@@ -370,13 +369,13 @@ Az aktuális UTC dátum és idő lekérése ISO formátumban.
 
 ### `semantic_search_products`
 
-Termékek szemantikai keresése felhasználói lekérdezések alapján.
+Szemantikus keresés végrehajtása termékek között felhasználói lekérdezések alapján.
 
 **Visszatérési érték:** A keresési kritériumoknak megfelelő termékek listája
 
 **Paraméterek:**
 
-- `query` (str): A keresési lekérdezés sztringje
+- `query` (str): A keresési lekérdezés szövege
 
 **Visszatérési érték:** A keresési kritériumoknak megfelelő termékek listája
 
@@ -384,15 +383,15 @@ Termékek szemantikai keresése felhasználói lekérdezések alapján.
 
 ### Row Level Security (RLS)
 
-A szerver Row Level Security-t alkalmaz, hogy biztosítsa, hogy a felhasználók csak az általuk engedélyezett adatokat érjék el:
+A szerver Row Level Security-t alkalmaz, hogy biztosítsa, hogy a felhasználók csak azokat az adatokat érjék el, amelyekhez jogosultságuk van:
 
 - **HTTP mód**: Az `x-rls-user-id` fejlécet használja a kérő felhasználó azonosítására
 
-- **Alapértelmezett visszaesés**: Helyőrző UUID-t használ, ha nincs megadva felhasználói azonosító
+- **Alapértelmezett visszaesés**: Helyettesítő UUID-t használ, ha nincs megadva felhasználói azonosító
 
 #### Üzlet-specifikus RLS felhasználói azonosítók
 
-Minden Zava Retail üzlethelyszínnek egyedi RLS felhasználói azonosítója van, amely meghatározza, hogy a felhasználó mely adatokhoz férhet hozzá:
+Minden Zava Retail üzlethelyszín egyedi RLS felhasználói azonosítóval rendelkezik, amely meghatározza, hogy a felhasználó mely adatokhoz férhet hozzá:
 
 | Üzlethelyszín | RLS felhasználói azonosító | Leírás |
 |---------------|-----------------------------|--------|
@@ -415,7 +414,7 @@ Amikor egy felhasználó egy adott üzlet RLS felhasználói azonosítójával c
 - Az adott üzlet készletadatai
 - Üzlet-specifikus értékesítési és teljesítménymutatók
 
-Ez biztosítja az adatok elkülönítését a különböző üzlethelyszínek között, miközben egységes adatbázis-sémát tart fenn.
+Ez biztosítja az adatok elkülönítését a különböző üzlethelyszínek között, miközben egységes adatbázis sémát tart fenn.
 
 ## Architektúra
 
@@ -458,7 +457,7 @@ A szerver robusztus hibakezelést valósít meg:
 3. **Bemenet validálása**: A táblanevek és lekérdezések validálása végrehajtás előtt
 4. **Erőforrás korlátok**: A lekérdezési eredmények korlátozása a túlzott erőforrás-használat megelőzése érdekében
 5. **Kapcsolat biztonsága**: Biztonságos adatbázis kapcsolat gyakorlatokat használ
-6. **Felhasználói identitás ellenőrzése**: Mindig győződj meg róla, hogy a megfelelő RLS felhasználói azonosítót használod a kívánt üzlethez
+6. **Felhasználói identitás ellenőrzése**: Mindig biztosítsd, hogy a megfelelő RLS felhasználói azonosítót használják a kívánt üzlethez
 
 ### Fontos biztonsági megjegyzések
 
@@ -481,7 +480,7 @@ mcp_server/
 ### Kulcskomponensek
 
 - **FastMCP szerver**: Modern MCP szerver implementáció aszinkron támogatással
-- **PostgreSQL Provider**: Adatbázis absztrakciós réteg RLS támogatással
+- **PostgreSQL szolgáltató**: Adatbázis absztrakciós réteg RLS támogatással
 - **Kontextus kezelés**: Típusbiztos alkalmazási és kérési kontextus kezelés
 - **Eszköz regisztráció**: Deklaratív eszköz regisztráció Pydantic validálással
 
@@ -490,10 +489,10 @@ mcp_server/
 Amikor hozzájárulsz ehhez a szerverhez:
 
 1. Biztosítsd, hogy minden adatbázis lekérdezés tiszteletben tartja a Row Level Security-t
-2. Adj megfelelő hibakezelést az új eszközökhöz
-3. Frissítsd ezt a README-t minden új funkcióval vagy változással
+2. Adj hozzá megfelelő hibakezelést az új eszközökhöz
+3. Frissítsd ezt a README-t minden új funkcióval vagy változtatással
 4. Teszteld a HTTP szerver módot
-5. Validáld a bemeneti paramétereket, és biztosíts
+5. Validáld a bem
 
 ---
 

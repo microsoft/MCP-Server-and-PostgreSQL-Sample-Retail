@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "fa4d35e300f7fa5c533131b9eab27e1b",
-  "translation_date": "2025-09-29T17:32:51+00:00",
+  "original_hash": "94449afc70ef625a5360a67829a017b3",
+  "translation_date": "2025-09-30T09:41:00+00:00",
   "source_file": "README.md",
   "language_code": "pt"
 }
@@ -18,9 +18,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Junte-se ao Discord do Azure AI Foundry](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Siga estes passos para começar a usar estes recursos:
+Siga estes passos para começar a utilizar estes recursos:
 
-1. **Faça um Fork do Repositório**: Clique [aqui para fazer fork](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
+1. **Faça Fork do Repositório**: Clique [aqui para fazer fork](https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail/fork)
 2. **Clone o Repositório**: `git clone https://github.com/YOUR-USERNAME/MCP-Server-and-PostgreSQL-Sample-Retail.git`
 3. **Junte-se ao Discord do Azure AI Foundry**: [Conheça especialistas e outros programadores](https://discord.com/invite/ByRwuEEgH4)
 
@@ -28,9 +28,9 @@ Siga estes passos para começar a usar estes recursos:
 
 #### Suportado via GitHub Action (Automatizado e Sempre Atualizado)
 
-[Francês](../fr/README.md) | [Espanhol](../es/README.md) | [Alemão](../de/README.md) | [Russo](../ru/README.md) | [Árabe](../ar/README.md) | [Persa (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinês (Simplificado)](../zh/README.md) | [Chinês (Tradicional, Macau)](../mo/README.md) | [Chinês (Tradicional, Hong Kong)](../hk/README.md) | [Chinês (Tradicional, Taiwan)](../tw/README.md) | [Japonês](../ja/README.md) | [Coreano](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Português (Portugal)](./README.md) | [Português (Brasil)](../br/README.md) | [Italiano](../it/README.md) | [Polaco](../pl/README.md) | [Turco](../tr/README.md) | [Grego](../el/README.md) | [Tailandês](../th/README.md) | [Sueco](../sv/README.md) | [Dinamarquês](../da/README.md) | [Norueguês](../no/README.md) | [Finlandês](../fi/README.md) | [Holandês](../nl/README.md) | [Hebraico](../he/README.md) | [Vietnamita](../vi/README.md) | [Indonésio](../id/README.md) | [Malaio](../ms/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Swahili](../sw/README.md) | [Húngaro](../hu/README.md) | [Checo](../cs/README.md) | [Eslovaco](../sk/README.md) | [Romeno](../ro/README.md) | [Búlgaro](../bg/README.md) | [Sérvio (Cirílico)](../sr/README.md) | [Croata](../hr/README.md) | [Esloveno](../sl/README.md) | [Ucraniano](../uk/README.md) | [Birmanês (Myanmar)](../my/README.md)
+[Francês](../fr/README.md) | [Espanhol](../es/README.md) | [Alemão](../de/README.md) | [Russo](../ru/README.md) | [Árabe](../ar/README.md) | [Persa (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Chinês (Simplificado)](../zh/README.md) | [Chinês (Tradicional, Macau)](../mo/README.md) | [Chinês (Tradicional, Hong Kong)](../hk/README.md) | [Chinês (Tradicional, Taiwan)](../tw/README.md) | [Japonês](../ja/README.md) | [Coreano](../ko/README.md) | [Hindi](../hi/README.md) | [Bengali](../bn/README.md) | [Marathi](../mr/README.md) | [Nepalês](../ne/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Português (Portugal)](./README.md) | [Português (Brasil)](../br/README.md) | [Italiano](../it/README.md) | [Polaco](../pl/README.md) | [Turco](../tr/README.md) | [Grego](../el/README.md) | [Tailandês](../th/README.md) | [Sueco](../sv/README.md) | [Dinamarquês](../da/README.md) | [Norueguês](../no/README.md) | [Finlandês](../fi/README.md) | [Holandês](../nl/README.md) | [Hebraico](../he/README.md) | [Vietnamita](../vi/README.md) | [Indonésio](../id/README.md) | [Malaio](../ms/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Swahili](../sw/README.md) | [Húngaro](../hu/README.md) | [Checo](../cs/README.md) | [Eslovaco](../sk/README.md) | [Romeno](../ro/README.md) | [Búlgaro](../bg/README.md) | [Sérvio (Cirílico)](../sr/README.md) | [Croata](../hr/README.md) | [Esloveno](../sl/README.md) | [Ucraniano](../uk/README.md) | [Birmanês (Myanmar)](../my/README.md)
 
-**Se desejar suporte para idiomas adicionais, os idiomas disponíveis estão listados [aqui](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Se desejar que sejam suportadas traduções adicionais, as línguas disponíveis estão listadas [aqui](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Introdução
 
@@ -38,12 +38,12 @@ Este exemplo demonstra como construir e implementar um **servidor Model Context 
 
 **Principais Casos de Uso:**
 - **Análise de Vendas Potenciada por IA**: Permitir que assistentes de IA consultem e analisem dados de vendas no retalho através de linguagem natural
-- **Acesso Seguro Multi-tenant**: Demonstrar a implementação de Segurança ao Nível de Linhas onde diferentes gestores de loja só podem aceder aos dados da sua loja
-- **Pesquisa Semântica de Produtos**: Apresentar descoberta de produtos potenciada por IA usando embeddings de texto
+- **Acesso Seguro Multi-Tenant**: Demonstrar a implementação de Segurança ao Nível de Linhas onde diferentes gestores de loja só podem aceder aos dados da sua loja
+- **Pesquisa Semântica de Produtos**: Apresentar descoberta de produtos melhorada por IA utilizando embeddings de texto
 - **Integração Empresarial**: Ilustrar como integrar servidores MCP com serviços Azure e bases de dados PostgreSQL
 
 **Perfeito para:**
-- Programadores que querem aprender a construir servidores MCP com integração de base de dados
+- Programadores que desejam aprender a construir servidores MCP com integração de base de dados
 - Engenheiros de dados que implementam soluções de análise multi-tenant seguras
 - Desenvolvedores de aplicações de IA que trabalham com dados de retalho ou e-commerce
 - Qualquer pessoa interessada em combinar assistentes de IA com bases de dados empresariais
@@ -51,13 +51,13 @@ Este exemplo demonstra como construir e implementar um **servidor Model Context 
 ## Junte-se à Comunidade Discord do Azure AI Foundry
 Partilhe as suas experiências com MCP e conheça especialistas e grupos de produtos
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # Servidor MCP de Análise de Vendas
 
 Um servidor Model Context Protocol (MCP) que fornece acesso abrangente à base de dados de vendas de clientes para o negócio Zava Retail DIY. Este servidor permite que assistentes de IA consultem e analisem dados de vendas no retalho através de uma interface segura e consciente do esquema.
 
-## 📚 Guia de Implementação Completo
+## 📚 Guia Completo de Implementação
 
 Para uma análise detalhada de como esta solução é construída e como implementar servidores MCP semelhantes, veja o nosso **[Guia de Exemplo](Sample_Walkthrough.md)**. Este guia fornece:
 
@@ -68,7 +68,7 @@ Para uma análise detalhada de como esta solução é construída e como impleme
 - **Melhores Práticas**: Diretrizes de segurança, desempenho e desenvolvimento
 - **Resolução de Problemas**: Questões comuns e soluções
 
-Perfeito para programadores que querem entender os detalhes da implementação e construir soluções semelhantes.
+Perfeito para programadores que desejam compreender os detalhes da implementação e construir soluções semelhantes.
 
 ## 🤖 O que é MCP (Model Context Protocol)?
 
@@ -82,7 +82,7 @@ Perfeito para programadores que querem entender os detalhes da implementação e
 
 ### Novo no MCP?
 
-Se está a começar com o Model Context Protocol, recomendamos os recursos introdutórios abrangentes da Microsoft:
+Se está a começar com o Model Context Protocol, recomendamos começar com os recursos introdutórios da Microsoft:
 
 **📖 [Guia MCP para Iniciantes](https://aka.ms/mcp-for-beginners)**
 
@@ -93,24 +93,24 @@ Este recurso fornece:
 - Exemplos de integração com plataformas de IA populares
 - Recursos comunitários e suporte
 
-Depois de entender os fundamentos, volte aqui para explorar esta implementação avançada de análise de vendas no retalho!
+Depois de compreender os fundamentos, volte aqui para explorar esta implementação avançada de análise de vendas no retalho!
 
 ## 📚 Guia de Aprendizagem Abrangente: /walkthrough
 
-Este repositório inclui um **guia de aprendizagem com 12 módulos** que decompõe este exemplo de servidor MCP para retalho em lições passo-a-passo. O walkthrough transforma este exemplo funcional num recurso educacional abrangente, perfeito para programadores que querem entender como construir servidores MCP prontos para produção com integração de base de dados.
+Este repositório inclui um **guia de aprendizagem com 12 módulos** que decompõe este exemplo de servidor MCP para retalho em lições passo-a-passo. O walkthrough transforma este exemplo funcional num recurso educacional abrangente, perfeito para programadores que desejam aprender a construir servidores MCP prontos para produção com integração de base de dados.
 
 ### O que Vai Aprender
 
 O walkthrough cobre tudo, desde conceitos básicos de MCP até implementação avançada em produção, incluindo:
 
 - **Fundamentos do MCP**: Compreender o Model Context Protocol e as suas aplicações no mundo real
-- **Integração de Base de Dados**: Implementar conectividade segura com PostgreSQL usando Segurança ao Nível de Linhas
+- **Integração de Base de Dados**: Implementar conectividade segura com PostgreSQL e Segurança ao Nível de Linhas
 - **Funcionalidades Potenciadas por IA**: Adicionar capacidades de pesquisa semântica com embeddings do Azure OpenAI
 - **Implementação de Segurança**: Autenticação, autorização e isolamento de dados de nível empresarial
 - **Desenvolvimento de Ferramentas**: Construir ferramentas MCP sofisticadas para análise de dados e inteligência empresarial
 - **Testes e Depuração**: Estratégias de teste abrangentes e técnicas de depuração
 - **Integração com VS Code**: Configurar Chat de IA para consultas de base de dados em linguagem natural
-- **Implementação em Produção**: Containerização, escalabilidade e estratégias de implementação na cloud
+- **Implementação em Produção**: Estratégias de containerização, escalabilidade e implementação na cloud
 - **Monitorização e Observabilidade**: Application Insights, registo estruturado e monitorização de desempenho
 
 ### Visão Geral do Caminho de Aprendizagem
@@ -135,75 +135,75 @@ O walkthrough segue uma estrutura de aprendizagem progressiva, projetada para pr
 
 **Tempo Total de Aprendizagem**: ~12-15 horas de aprendizagem prática abrangente
 
-### 🎯 Como Usar o Walkthrough
+### 🎯 Como Utilizar o Walkthrough
 
 **Para Iniciantes**:
-1. Comece com o [Módulo 00: Introdução](walkthrough/00-Introduction/README.md) para entender os fundamentos do MCP
+1. Comece com o [Módulo 00: Introdução](walkthrough/00-Introduction/README.md) para compreender os fundamentos do MCP
 2. Siga os módulos sequencialmente para uma experiência de aprendizagem completa
 3. Cada módulo constrói conceitos anteriores e inclui exercícios práticos
 
 **Para Programadores Experientes**:
 1. Revise a [Visão Geral do Walkthrough](walkthrough/README.md) para um resumo completo dos módulos
 2. Salte para módulos específicos que lhe interessem (ex.: Módulo 07 para integração com IA)
-3. Use os módulos individuais como material de referência para os seus próprios projetos
+3. Utilize módulos individuais como material de referência para os seus próprios projetos
 
 **Para Implementação em Produção**:
-1. Foque nos Módulos 02 (Segurança), 10 (Implementação) e 11 (Monitorização)
+1. Foque-se nos Módulos 02 (Segurança), 10 (Implementação) e 11 (Monitorização)
 2. Revise o Módulo 12 (Melhores Práticas) para diretrizes empresariais
-3. Use os exemplos de código como templates prontos para produção
+3. Utilize os exemplos de código como templates prontos para produção
 
 ### 🚀 Opções de Início Rápido
 
-**Opção 1: Caminho de Aprendizagem Completo** (Recomendado para iniciantes)
+**Opção 1: Caminho de Aprendizagem Completo** (Recomendado para iniciantes)  
 ```bash
 # Clone and start with the introduction
 git clone https://github.com/microsoft/MCP-Server-and-PostgreSQL-Sample-Retail.git
 cd MCP-Server-and-PostgreSQL-Sample-Retail/walkthrough
 # Follow along starting with 00-Introduction/README.md
 ```
-
-**Opção 2: Implementação Prática** (Comece diretamente a construir)
+  
+**Opção 2: Implementação Prática** (Comece diretamente a construir)  
 ```bash
 # Start with setup and build as you learn
 cd walkthrough/03-Setup
 # Follow the setup guide and continue through implementation modules
 ```
-
-**Opção 3: Foco em Produção** (Implementação empresarial)
+  
+**Opção 3: Foco em Produção** (Implementação empresarial)  
 ```bash
 # Focus on production-ready aspects
 # Review modules: 02-Security, 10-Deployment, 11-Monitoring, 12-Best-Practices
 ```
+  
+### 📋 Pré-requisitos para Aprendizagem
 
-### 📋 Pré-requisitos de Aprendizagem
-
-**Antecedentes Recomendados**:
+**Conhecimentos Recomendados**:
 - Experiência básica em programação Python
-- Familiaridade com APIs REST e bases de dados
+- Familiaridade com REST APIs e bases de dados
 - Compreensão geral de conceitos de IA/ML
 - Conhecimentos básicos de linha de comandos e Docker
 
 **Não Necessário (mas útil)**:
-- Experiência prévia com MCP (cobrimos tudo desde o início)
-- Experiência com Azure Cloud (fornecemos orientação passo a passo)
+- Experiência prévia com MCP (cobrimos isso desde o início)
+- Experiência com Azure Cloud (fornecemos orientações passo a passo)
 - Conhecimentos avançados de PostgreSQL (explicamos os conceitos conforme necessário)
 
 ### 💡 Dicas de Aprendizagem
 
 1. **Abordagem Prática**: Cada módulo inclui exemplos de código que pode executar e modificar
-2. **Complexidade Progressiva**: Os conceitos evoluem gradualmente de simples para avançados
-3. **Contexto Realista**: Todos os exemplos utilizam cenários realistas de negócios de retalho
-4. **Pronto para Produção**: Os exemplos de código são projetados para uso em produção real
-5. **Suporte da Comunidade**: Junte-se à nossa [comunidade no Discord](https://discord.com/invite/ByRwuEEgH4) para ajuda e discussões
+2. **Complexidade Progressiva**: Os conceitos são apresentados gradualmente, do simples ao avançado
+3. **Contexto do Mundo Real**: Todos os exemplos utilizam cenários realistas de negócios no setor de retalho
+4. **Pronto para Produção**: Os exemplos de código são projetados para uso real em produção
+5. **Apoio da Comunidade**: Junte-se à nossa [comunidade no Discord](https://discord.com/invite/ByRwuEEgH4) para obter ajuda e participar de discussões
 
 ### 🔗 Recursos Relacionados
 
-- **[MCP para Iniciantes](https://aka.ms/mcp-for-beginners)**: Leitura essencial para contexto inicial
-- **[Exemplo de Passo a Passo](Sample_Walkthrough.md)**: Visão geral técnica de alto nível
+- **[MCP para Iniciantes](https://aka.ms/mcp-for-beginners)**: Leitura essencial para começar
+- **[Exemplo de Demonstração](Sample_Walkthrough.md)**: Visão geral técnica de alto nível
 - **[Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry)**: Plataforma cloud utilizada nos exemplos
 - **[FastMCP Framework](https://github.com/jlowin/fastmcp)**: Framework de implementação MCP em Python
 
-**Pronto para começar a aprender?** Inicie com **[Módulo 00: Introdução](walkthrough/00-Introduction/README.md)** ou explore a **[visão geral completa do passo a passo](walkthrough/README.md)**.
+**Pronto para começar a aprender?** Inicie com **[Módulo 00: Introdução](walkthrough/00-Introduction/README.md)** ou explore a **[visão geral completa da demonstração](walkthrough/README.md)**.
 
 ## Pré-requisitos
 
@@ -212,7 +212,7 @@ cd walkthrough/03-Setup
 3. **Azure CLI**: Instale e autentique-se com o Azure CLI
 4. Acesso ao modelo OpenAI `text-embedding-3-small` e, opcionalmente, ao modelo `gpt-4o-mini`.
 
-## Começando
+## Primeiros Passos
 
 Abra uma janela de terminal e execute os seguintes comandos:
 
@@ -234,11 +234,11 @@ Abra uma janela de terminal e execute os seguintes comandos:
     cd Zava-MCP-Server-and-PostgreSQL-Sample
     ```
 
-### Implantar Recursos do Azure
+### Implementar Recursos no Azure
 
-Execute os seguintes scripts para automatizar a implantação dos recursos do Azure necessários para o servidor MCP.
+Execute os seguintes scripts para automatizar a implementação dos recursos do Azure necessários para o servidor MCP.
 
-Os scripts de implantação irão automaticamente implantar o modelo `text-embedding-3-small`. Durante a implantação, terá a opção de incluir também o modelo `gpt-4o-mini`. Note que o `gpt-4o-mini` **não é necessário** para este projeto e está incluído apenas para possíveis melhorias futuras.
+Os scripts de implementação irão automaticamente implementar o modelo `text-embedding-3-small`. Durante a implementação, terá a opção de incluir também o modelo `gpt-4o-mini`. Note que o `gpt-4o-mini` **não é necessário** para este projeto e está incluído apenas para potenciais melhorias futuras.
 
 **Escolha o script para a sua plataforma:**
 
@@ -258,7 +258,7 @@ cd infra && ./deploy.sh
 
 ## Executar o Servidor MCP
 
-A maneira mais fácil de executar a stack completa (PostgreSQL + Servidor MCP) é utilizando o Docker Compose:
+A forma mais simples de executar toda a stack (PostgreSQL + Servidor MCP) é utilizando o Docker Compose:
 
 ### Iniciar a Stack
 
@@ -289,10 +289,10 @@ O seguinte assume que utilizará o suporte integrado do servidor MCP no VS Code.
     code .
     ```
 
-2. Inicie um ou mais servidores MCP utilizando as configurações em `.vscode/mcp.json`. O ficheiro contém quatro configurações diferentes de servidor, cada uma representando um papel de gestor de loja diferente:
+2. Inicie um ou mais servidores MCP utilizando as configurações em `.vscode/mcp.json`. O ficheiro contém quatro configurações diferentes de servidor, cada uma representando um papel de gestor de loja distinto:
 
    - Cada configuração utiliza um ID de utilizador RLS (Row Level Security) único
-   - Estes IDs de utilizador simulam diferentes identidades de gestores de loja que acedem à base de dados
+   - Estes IDs de utilizador simulam diferentes identidades de gestores de loja a aceder à base de dados
    - O sistema RLS restringe o acesso aos dados com base na loja atribuída ao gestor
    - Isto imita cenários reais onde gestores de loja iniciam sessão com diferentes contas Entra ID
 
@@ -339,11 +339,11 @@ O seguinte assume que utilizará o suporte integrado do servidor MCP no VS Code.
 
 ## Funcionalidades
 
-- **Acesso a Esquemas Multi-tabela**: Recupere esquemas de múltiplas tabelas da base de dados numa única solicitação
+- **Acesso a Esquemas Multi-tabela**: Obtenha esquemas de múltiplas tabelas da base de dados numa única solicitação
 - **Execução Segura de Consultas**: Execute consultas PostgreSQL com suporte a Row Level Security (RLS)
 - **Dados em Tempo Real**: Aceda a dados atuais de vendas, inventário e clientes
 - **Utilitários de Data/Hora**: Obtenha timestamps UTC atuais para análises sensíveis ao tempo
-- **Implantação Flexível**: Suporta modo de servidor HTTP
+- **Implementação Flexível**: Suporta modo de servidor HTTP
 
 ## Tabelas Suportadas
 
@@ -354,21 +354,21 @@ O servidor fornece acesso às seguintes tabelas da base de dados de retalho:
 - `retail.categories` - Categorias de produtos e hierarquias
 - `retail.product_types` - Classificações de tipos de produtos
 - `retail.products` - Catálogo e especificações de produtos
-- `retail.orders` - Pedidos e transações de clientes
-- `retail.order_items` - Itens individuais dentro dos pedidos
+- `retail.orders` - Encomendas e transações de clientes
+- `retail.order_items` - Itens individuais dentro das encomendas
 - `retail.inventory` - Níveis de inventário e dados de stock atuais
 
 ## Ferramentas Disponíveis
 
 ### `get_multiple_table_schemas`
 
-Recupere esquemas de base de dados para múltiplas tabelas numa única solicitação.
+Obtenha esquemas de base de dados para múltiplas tabelas numa única solicitação.
 
 **Parâmetros:**
 
-- `table_names` (list[str]): Lista de nomes de tabelas válidas das tabelas suportadas acima
+- `table_names` (list[str]): Lista de nomes de tabelas válidos das tabelas suportadas acima
 
-**Retorno:** Strings de esquema concatenadas para as tabelas solicitadas
+**Retorna:** Strings de esquemas concatenados para as tabelas solicitadas
 
 ### `execute_sales_query`
 
@@ -378,33 +378,33 @@ Execute consultas PostgreSQL na base de dados de vendas com suporte a Row Level 
 
 - `postgresql_query` (str): Uma consulta PostgreSQL bem formada
 
-**Retorno:** Resultados da consulta formatados como uma string (limitados a 20 linhas para legibilidade)
+**Retorna:** Resultados da consulta formatados como uma string (limitados a 20 linhas para legibilidade)
 
 **Melhores Práticas:**
 
-- Sempre recupere os esquemas das tabelas primeiro
+- Sempre obtenha os esquemas das tabelas primeiro
 - Utilize nomes de colunas exatos dos esquemas
 - Junte tabelas relacionadas para análises abrangentes
 - Agregue resultados quando apropriado
-- Limite a saída para legibilidade
+- Limite a saída para melhorar a legibilidade
 
 ### `get_current_utc_date`
 
 Obtenha a data e hora UTC atual no formato ISO.
 
-**Retorno:** Data/hora UTC atual no formato ISO (YYYY-MM-DDTHH:MM:SS.fffffZ)
+**Retorna:** Data/hora UTC atual no formato ISO (YYYY-MM-DDTHH:MM:SS.fffffZ)
 
 ### `semantic_search_products`
 
 Realize uma pesquisa semântica de produtos com base em consultas do utilizador.
 
-**Retorno:** Uma lista de produtos que correspondem aos critérios de pesquisa
+**Retorna:** Uma lista de produtos que correspondem aos critérios de pesquisa
 
 **Parâmetros:**
 
 - `query` (str): A string de consulta de pesquisa
 
-**Retorno:** Uma lista de produtos que correspondem aos critérios de pesquisa
+**Retorna:** Uma lista de produtos que correspondem aos critérios de pesquisa
 
 ## Funcionalidades de Segurança
 
@@ -412,7 +412,7 @@ Realize uma pesquisa semântica de produtos com base em consultas do utilizador.
 
 O servidor implementa Row Level Security para garantir que os utilizadores acedem apenas aos dados que estão autorizados a visualizar:
 
-- **Modo HTTP**: Utiliza o cabeçalho `x-rls-user-id` para identificar o utilizador solicitante
+- **Modo HTTP**: Utiliza o cabeçalho `x-rls-user-id` para identificar o utilizador que faz a solicitação
 
 - **Fallback Padrão**: Utiliza um UUID de substituição quando nenhum ID de utilizador é fornecido
 
@@ -421,7 +421,7 @@ O servidor implementa Row Level Security para garantir que os utilizadores acede
 Cada localização da loja Zava Retail tem um ID de utilizador RLS único que determina quais dados o utilizador pode aceder:
 
 | Localização da Loja | ID de Utilizador RLS | Descrição |
-|---------------------|----------------------|-----------|
+|---------------------|-----------------------|-----------|
 | **Acesso Global** | `00000000-0000-0000-0000-000000000000` | Substituição padrão - acesso a todas as lojas |
 | **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Dados da loja Zava Retail Seattle |
 | **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Dados da loja Zava Retail Bellevue |
@@ -437,11 +437,11 @@ Cada localização da loja Zava Retail tem um ID de utilizador RLS único que de
 Quando um utilizador se conecta com o ID de Utilizador RLS de uma loja específica, ele verá apenas:
 
 - Clientes associados a essa loja
-- Pedidos realizados nessa localização da loja
-- Dados de inventário para essa loja específica
+- Encomendas realizadas nessa localização
+- Dados de inventário dessa loja específica
 - Métricas de vendas e desempenho específicas da loja
 
-Isso garante o isolamento de dados entre diferentes localizações de lojas enquanto mantém um esquema de base de dados unificado.
+Isto garante o isolamento de dados entre diferentes localizações de lojas, mantendo um esquema de base de dados unificado.
 
 ## Arquitetura
 
@@ -449,9 +449,9 @@ Isso garante o isolamento de dados entre diferentes localizações de lojas enqu
 
 O servidor utiliza um contexto de aplicação gerido com:
 
-- **Pool de Conexão à Base de Dados**: Gestão eficiente de conexões para o modo HTTP
+- **Pool de Conexões à Base de Dados**: Gestão eficiente de conexões para o modo HTTP
 - **Gestão de Ciclo de Vida**: Limpeza adequada de recursos no encerramento
-- **Segurança de Tipos**: Contexto fortemente tipado com a dataclass `AppContext`
+- **Segurança de Tipos**: Contexto fortemente tipado com a classe `AppContext`
 
 ### Contexto de Solicitação
 
@@ -463,8 +463,8 @@ O servidor utiliza um contexto de aplicação gerido com:
 
 O servidor integra-se com uma base de dados PostgreSQL através da classe `PostgreSQLSchemaProvider`:
 
-- **Pooling de Conexões**: Utiliza pools de conexão assíncronos para escalabilidade
-- **Metadados de Esquema**: Fornece informações detalhadas sobre esquemas de tabelas
+- **Pooling de Conexões**: Utiliza pools de conexões assíncronas para escalabilidade
+- **Metadados de Esquema**: Fornece informações detalhadas sobre os esquemas das tabelas
 - **Execução de Consultas**: Execução segura de consultas com suporte a RLS
 - **Gestão de Recursos**: Limpeza automática de recursos da base de dados
 
@@ -479,17 +479,17 @@ O servidor implementa uma gestão robusta de erros:
 
 ## Considerações de Segurança
 
-1. **Row Level Security**: Todas as consultas respeitam políticas RLS com base na identidade do utilizador
-2. **Isolamento de Dados de Loja**: O ID de Utilizador RLS de cada loja garante acesso apenas aos dados dessa loja
+1. **Row Level Security**: Todas as consultas respeitam as políticas de RLS com base na identidade do utilizador
+2. **Isolamento de Dados da Loja**: O ID de Utilizador RLS de cada loja garante acesso apenas aos dados dessa loja
 3. **Validação de Entrada**: Nomes de tabelas e consultas são validados antes da execução
 4. **Limites de Recursos**: Resultados de consultas são limitados para evitar uso excessivo de recursos
 5. **Segurança de Conexão**: Utiliza práticas seguras de conexão à base de dados
-6. **Verificação de Identidade do Utilizador**: Sempre garanta que o ID de Utilizador RLS correto é utilizado para a loja pretendida
+6. **Verificação de Identidade do Utilizador**: Certifique-se sempre de que o ID de Utilizador RLS correto é utilizado para a loja pretendida
 
 ### Notas Importantes de Segurança
 
 - **Nunca utilize IDs de Utilizador RLS de produção em ambientes de desenvolvimento**
-- **Sempre verifique se o ID de Utilizador RLS corresponde à loja pretendida antes de executar consultas**
+- **Verifique sempre se o ID de Utilizador RLS corresponde à loja pretendida antes de executar consultas**
 - **O UUID padrão (`00000000-0000-0000-0000-000000000000`) fornece acesso limitado**
 - **Cada gestor de loja deve ter acesso apenas ao ID de Utilizador RLS da sua loja**
 
@@ -506,16 +506,16 @@ mcp_server/
 
 ### Componentes Principais
 
-- **Servidor FastMCP**: Implementação moderna de servidor MCP com suporte assíncrono
-- **Provedor PostgreSQL**: Camada de abstração da base de dados com suporte a RLS
+- **Servidor FastMCP**: Implementação moderna do servidor MCP com suporte assíncrono
+- **Fornecedor PostgreSQL**: Camada de abstração da base de dados com suporte a RLS
 - **Gestão de Contexto**: Gestão de contexto de aplicação e solicitação com segurança de tipos
 - **Registo de Ferramentas**: Registo declarativo de ferramentas com validação Pydantic
 
-## Contribuindo
+## Contribuir
 
 Ao contribuir para este servidor:
 
-1. Certifique-se de que todas as consultas à base de dados respeitam Row Level Security
+1. Certifique-se de que todas as consultas à base de dados respeitam o Row Level Security
 2. Adicione gestão de erros adequada para novas ferramentas
 3. Atualize este README com quaisquer novas funcionalidades ou alterações
 4. Teste o modo de servidor HTTP
@@ -525,9 +525,9 @@ Ao contribuir para este servidor:
 
 ---
 
-*Este servidor MCP permite acesso seguro e eficiente aos dados de vendas da Zava Retail para análises e insights impulsionados por IA.*
+*Este servidor MCP permite acesso seguro e eficiente aos dados de vendas da Zava Retail para análises e insights potenciados por IA.*
 
 ---
 
 **Aviso**:  
-Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, é importante notar que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos pela precisão, é importante notar que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes da utilização desta tradução.
