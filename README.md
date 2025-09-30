@@ -43,7 +43,7 @@ This sample demonstrates how to build and deploy a comprehensive **Model Context
 ## Join the Azure AI Foundry Discord Community
 Share your experiences of MCP and meet the experts and product groups 
 
-[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 # Sales Analysis MCP Server
 
