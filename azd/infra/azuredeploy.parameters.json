@@ -2,14 +2,11 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "resourcePrefix": {
-      "value": "mcpretail"
-    },
     "location": {
       "value": "westus2"
     },
     "uniqueSuffix": {
-      "value": "demo"
+      "value": "demo001"
     },
     "aiProjectFriendlyName": {
       "value": "MCP Retail Analytics Project"
@@ -18,7 +15,7 @@
       "value": "MCP Server for Retail Sales Analysis with PostgreSQL integration"
     },
     "gptModelCapacity": {
-      "value": 120
+      "value": 150
     },
     "embeddingModelCapacity": {
       "value": 50
@@ -27,7 +24,8 @@
       "value": {
         "Environment": "Development",
         "Project": "MCP-Retail-Analytics",
-        "DeployedBy": "Azure Developer CLI"
+        "DeployedBy": "Azure Developer CLI",
+        "Template": "AI-Foundry-Enhanced"
       }
     }
   }

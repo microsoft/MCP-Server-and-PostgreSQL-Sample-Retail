@@ -5,20 +5,20 @@
     "description": "Complete ARM template for MCP Retail Analytics infrastructure including Azure AI Foundry, OpenAI models, and Application Insights"
   },
   "parameters": {
-    "resourcePrefix": {
-      "type": "string",
-      "defaultValue": "mcpretail",
-      "metadata": {
-        "description": "Prefix for the resource group and resources"
-      }
-    },
     "location": {
       "type": "string",
-      "defaultValue": "westus2",
-      "allowedValues": ["eastus", "eastus2", "westus", "westus2", "centralus", "northcentralus", "southcentralus", "westcentralus"],
       "metadata": {
-        "description": "Location of the resource group to create or use for the deployment"
-      }
+        "description": "Location into which all resources will be deployed."
+      },
+      "defaultValue": "westus2",
+      "allowedValues": ["eastus", "eastus2", "westus", "westus2", "centralus", "northcentralus", "southcentralus", "westcentralus", "swedencentral"]
+    },
+    "uniqueSuffix": {
+      "type": "string",
+      "metadata": {
+        "description": "A short unique suffix to append to all resource names (no spaces, e.g. '001' or 'contoso')."
+      },
+      "defaultValue": "[substring(uniqueString(subscription().subscriptionId), 0, 4)]"
     },
     "aiProjectFriendlyName": {
       "type": "string",
@@ -34,20 +34,11 @@
         "description": "Description of your Azure AI resource displayed in Azure AI Foundry"
       }
     },
-    "uniqueSuffix": {
-      "type": "string",
-      "minLength": 4,
-      "maxLength": 4,
-      "defaultValue": "[substring(uniqueString(subscription().subscriptionId), 0, 4)]",
-      "metadata": {
-        "description": "Unique suffix for the resources. Must be 4 characters long."
-      }
-    },
     "gptModelCapacity": {
       "type": "int",
-      "defaultValue": 120,
+      "defaultValue": 150,
       "metadata": {
-        "description": "Capacity for the GPT-4o-mini model deployment"
+        "description": "Capacity for the GPT model deployment"
       }
     },
     "embeddingModelCapacity": {
@@ -70,11 +61,13 @@
     }
   },
   "variables": {
-    "resourceGroupName": "[toLower(concat('rg-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]",
-    "aiProjectName": "[toLower(concat('prj-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]",
-    "foundryResourceName": "[toLower(concat('fdy-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]",
-    "applicationInsightsName": "[toLower(concat('appi-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]",
-    "logAnalyticsWorkspaceName": "[toLower(concat('law-', parameters('resourcePrefix'), '-', parameters('uniqueSuffix')))]"
+    "resourceGroupName": "rg-mcpretail-demo001",
+    "accountName": "[concat('aifoundry-', parameters('uniqueSuffix'))]",
+    "projectName": "[concat('project-', parameters('uniqueSuffix'))]",
+    "gptDeploymentName": "[concat('gpt-4o-mini-', parameters('uniqueSuffix'))]",
+    "textEmbeddingDeploymentName": "[concat('text-embedding-3-small-', parameters('uniqueSuffix'))]",
+    "applicationInsightsName": "[concat('appi-mcpretail-', parameters('uniqueSuffix'))]",
+    "logAnalyticsWorkspaceName": "[concat('law-mcpretail-', parameters('uniqueSuffix'))]"
   },
   "resources": [
     {
@@ -82,22 +75,46 @@
       "apiVersion": "2018-05-01",
       "name": "[variables('resourceGroupName')]",
       "location": "[parameters('location')]",
-      "tags": "[parameters('tags')]",
+      "tags": {},
       "properties": {}
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2018-05-01",
+      "apiVersion": "2021-04-01",
       "name": "infrastructure-deployment",
-      "resourceGroup": "[variables('resourceGroupName')]",
+      "resourceGroup": "rg-mcpretail-demo001",
       "dependsOn": [
-        "[variables('resourceGroupName')]"
+        "rg-mcpretail-demo001"
       ],
       "properties": {
         "mode": "Incremental",
+        "parameters": {
+          "location": {
+            "value": "[parameters('location')]"
+          },
+          "tags": {
+            "value": "[parameters('tags')]"
+          }
+        },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "1.0.0.0",
+          "parameters": {
+            "location": {
+              "type": "string"
+            },
+            "tags": {
+              "type": "object"
+            }
+          },
+          "variables": {
+            "accountName": "[concat('aifoundry-', uniqueString(resourceGroup().id))]",
+            "projectName": "[concat('project-', uniqueString(resourceGroup().id))]",
+            "gptDeploymentName": "[concat('gpt-4o-mini-', uniqueString(resourceGroup().id))]",
+            "textEmbeddingDeploymentName": "[concat('text-embedding-3-small-', uniqueString(resourceGroup().id))]",
+            "applicationInsightsName": "[concat('appi-mcpretail-', uniqueString(resourceGroup().id))]",
+            "logAnalyticsWorkspaceName": "[concat('law-mcpretail-', uniqueString(resourceGroup().id))]"
+          },
           "resources": [
             {
               "type": "Microsoft.OperationalInsights/workspaces",
@@ -137,8 +154,8 @@
             },
             {
               "type": "Microsoft.CognitiveServices/accounts",
-              "apiVersion": "2023-05-01",
-              "name": "[variables('foundryResourceName')]",
+              "apiVersion": "2025-06-01",
+              "name": "[variables('accountName')]",
               "location": "[parameters('location')]",
               "sku": {
                 "name": "S0"
@@ -148,70 +165,107 @@
                 "type": "SystemAssigned"
               },
               "properties": {
-                "customSubDomainName": "[variables('foundryResourceName')]",
+                "customSubDomainName": "[variables('accountName')]",
                 "networkAcls": {
                   "defaultAction": "Allow",
                   "virtualNetworkRules": [],
                   "ipRules": []
                 },
+                "allowProjectManagement": true,
                 "publicNetworkAccess": "Enabled",
                 "disableLocalAuth": false
               },
               "tags": "[parameters('tags')]"
             },
             {
-              "type": "Microsoft.CognitiveServices/accounts/deployments",
-              "apiVersion": "2023-05-01",
-              "name": "[concat(variables('foundryResourceName'), '/gpt-4o-mini')]",
+              "type": "Microsoft.CognitiveServices/accounts/projects",
+              "apiVersion": "2025-06-01",
+              "name": "[concat(variables('accountName'), '/', variables('projectName'))]",
+              "location": "[parameters('location')]",
               "dependsOn": [
-                "[resourceId('Microsoft.CognitiveServices/accounts', variables('foundryResourceName'))]"
+                "[resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))]"
+              ],
+              "kind": "AIServices",
+              "identity": {
+                "type": "SystemAssigned"
+              },
+              "properties": {},
+              "tags": "[parameters('tags')]"
+            },
+            {
+              "type": "Microsoft.CognitiveServices/accounts/deployments",
+              "apiVersion": "2025-06-01",
+              "name": "[concat(variables('accountName'), '/', variables('gptDeploymentName'))]",
+              "dependsOn": [
+                "[resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))]"
               ],
               "sku": {
-                "capacity": "[parameters('gptModelCapacity')]",
-                "name": "Standard"
+                "name": "GlobalStandard",
+                "capacity": "[parameters('gptModelCapacity')]"
               },
               "properties": {
                 "model": {
-                  "name": "gpt-4o-mini",
                   "format": "OpenAI",
+                  "name": "gpt-4o-mini",
                   "version": "2024-07-18"
                 },
-                "versionUpgradeOption": "OnceNewDefaultVersionAvailable"
+                "versionUpgradeOption": "OnceNewDefaultVersionAvailable",
+                "currentCapacity": "[parameters('gptModelCapacity')]",
+                "raiPolicyName": "Microsoft.DefaultV2"
               }
             },
             {
               "type": "Microsoft.CognitiveServices/accounts/deployments",
-              "apiVersion": "2023-05-01",
-              "name": "[concat(variables('foundryResourceName'), '/text-embedding-3-small')]",
+              "apiVersion": "2025-06-01",
+              "name": "[concat(variables('accountName'), '/', variables('textEmbeddingDeploymentName'))]",
               "dependsOn": [
-                "[resourceId('Microsoft.CognitiveServices/accounts/deployments', variables('foundryResourceName'), 'gpt-4o-mini')]"
+                "[resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))]",
+                "[resourceId('Microsoft.CognitiveServices/accounts/deployments', variables('accountName'), variables('gptDeploymentName'))]"
               ],
               "sku": {
-                "capacity": "[parameters('embeddingModelCapacity')]",
-                "name": "Standard"
+                "name": "GlobalStandard",
+                "capacity": "[parameters('embeddingModelCapacity')]"
               },
               "properties": {
                 "model": {
-                  "name": "text-embedding-3-small",
                   "format": "OpenAI",
+                  "name": "text-embedding-3-small",
                   "version": "1"
                 },
-                "versionUpgradeOption": "OnceNewDefaultVersionAvailable"
+                "versionUpgradeOption": "OnceNewDefaultVersionAvailable",
+                "currentCapacity": "[parameters('embeddingModelCapacity')]",
+                "raiPolicyName": "Microsoft.DefaultV2"
               }
             }
           ],
           "outputs": {
+            "accountResourceId": {
+              "type": "string",
+              "value": "[resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))]"
+            },
+            "projectResourceId": {
+              "type": "string",
+              "value": "[resourceId('Microsoft.CognitiveServices/accounts/projects', variables('accountName'), variables('projectName'))]"
+            },
             "foundryAccountName": {
               "type": "string",
-              "value": "[variables('foundryResourceName')]"
+              "value": "[variables('accountName')]"
             },
             "foundryAccountKey": {
               "type": "string",
-              "value": "[listKeys(resourceId('Microsoft.CognitiveServices/accounts', variables('foundryResourceName')), '2023-05-01').key1]"
+              "value": "[listKeys(resourceId('Microsoft.CognitiveServices/accounts', variables('accountName')), '2025-06-01').key1]"
             },
             "foundryEndpoint": {
               "type": "string",
-              "value": "[reference(resourceId('Microsoft.CognitiveServices/accounts', variables('foundryResourceName'))).endpoint]"
+              "value": "[reference(resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))).endpoint]"
+            },
+            "gptDeploymentName": {
+              "type": "string",
+              "value": "[variables('gptDeploymentName')]"
+            },
+            "embeddingDeploymentName": {
+              "type": "string",
+              "value": "[variables('textEmbeddingDeploymentName')]"
             },
             "applicationInsightsConnectionString": {
               "type": "string",
@@ -237,11 +291,19 @@
     },
     "aiFoundryName": {
       "type": "string",
-      "value": "[variables('foundryResourceName')]"
+      "value": "[variables('accountName')]"
     },
     "aiProjectName": {
       "type": "string",
-      "value": "[variables('aiProjectName')]"
+      "value": "[variables('projectName')]"
+    },
+    "accountResourceId": {
+      "type": "string",
+      "value": "[reference('infrastructure-deployment').outputs.accountResourceId.value]"
+    },
+    "projectResourceId": {
+      "type": "string",
+      "value": "[reference('infrastructure-deployment').outputs.projectResourceId.value]"
     },
     "foundryEndpoint": {
       "type": "string",
@@ -256,11 +318,11 @@
       "value": [
         {
           "name": "gpt-4o-mini",
-          "deploymentName": "gpt-4o-mini"
+          "deploymentName": "[reference('infrastructure-deployment').outputs.gptDeploymentName.value]"
         },
         {
           "name": "text-embedding-3-small",
-          "deploymentName": "text-embedding-3-small"
+          "deploymentName": "[reference('infrastructure-deployment').outputs.embeddingDeploymentName.value]"
         }
       ]
     },
