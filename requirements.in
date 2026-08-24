@@ -7,7 +7,7 @@
 
 
 # Core MCP framework
-mcp>=1.10.0,<2.0.0
+mcp>=1.28.1,<2.0.0
 
 # Database adapters
 asyncpg>=0.30.0,<0.31.0
