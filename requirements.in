@@ -16,6 +16,7 @@ asyncpg>=0.30.0,<0.31.0
 azure-identity>=1.23.0,<2.0.0
 azure-monitor-opentelemetry>=1.6.10,<2.0.0
 openai>=1.98.0,<2.0.0
+pyjwt[crypto]>=2.13.0,<3.0.0
 
 # Data processing and utilities
 pydantic>=2.0.0,<3.0.0

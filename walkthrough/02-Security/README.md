@@ -264,6 +264,15 @@ $$;
 
 ## 🔑 Authentication and Authorization
 
+> A simpler version of the JWT verification sketched below - signature check
+> via a configurable JWKS/issuer, expiry check, and RLS claim extraction,
+> without the Key Vault-backed store-mapping lookup - is actually wired into
+> the running server at [`mcp_server/auth.py`](../../mcp_server/auth.py) and
+> [`mcp_server/sales_analysis.py`](../../mcp_server/sales_analysis.py). This
+> section remains a broader illustration of a full production authorization
+> layer (role hierarchy, Key Vault-backed store mapping, audit logging) that
+> you can grow into.
+
 ### Azure Entra ID Integration
 
 ```python

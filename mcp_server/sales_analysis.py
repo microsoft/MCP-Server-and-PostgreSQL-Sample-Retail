@@ -13,6 +13,7 @@ from mcp.server.fastmcp import Context, FastMCP
 from opentelemetry.instrumentation.starlette import StarletteInstrumentor
 from pydantic import Field
 
+from .auth import AuthenticationError, auth_configured, get_verified_rls_user_id
 from .config import Config
 from .sales_analysis_postgres import PostgreSQLSchemaProvider
 from .sales_analysis_text_embeddings import SemanticSearchTextEmbedding
@@ -58,13 +59,18 @@ def get_header(ctx: Context, header_name: str) -> Optional[str]:
 
 
 def get_rls_user_id(ctx: Context) -> str:
-    """Get the Row Level Security User ID from the request context."""
+    """Get the Row Level Security User ID from a verified request identity.
 
-    rls_user_id = get_header(ctx, "x-rls-user-id")
-    if rls_user_id is None:
-        # Default to a placeholder if not provided
-        rls_user_id = "00000000-0000-0000-0000-000000000000"
-    return rls_user_id
+    The RLS identity is no longer taken from the client-supplied
+    `x-rls-user-id` header. It is derived from a verified JWT bearer token
+    (see auth.py), so a caller can no longer claim another store's - or the
+    all-store - identity by sending an arbitrary header. Raises
+    AuthenticationError if no valid identity is supplied; callers must fail
+    closed on that error rather than falling back to a default.
+    """
+
+    authorization = get_header(ctx, "authorization")
+    return get_verified_rls_user_id(authorization)
 
 
 @mcp.tool()
@@ -99,7 +105,11 @@ async def semantic_search_products(
           {"err":"...","q":"SELECT ...","c":[],"r":[],"n":0}
     """
 
-    rls_user_id = get_rls_user_id(ctx)
+    try:
+        rls_user_id = get_rls_user_id(ctx)
+    except AuthenticationError as e:
+        logger.warning("Rejecting unauthenticated semantic_search_products request: %s", e)
+        return f"Error: Authentication required - {e}"
 
     logger.info("Semantic search query: %s", query_description)
     logger.info("Manager ID: %s", rls_user_id)
@@ -152,7 +162,11 @@ async def get_multiple_table_schemas(
         Concatenated schema strings for the requested tables.
     """
 
-    rls_user_id = get_rls_user_id(ctx)
+    try:
+        rls_user_id = get_rls_user_id(ctx)
+    except AuthenticationError as e:
+        logger.warning("Rejecting unauthenticated get_multiple_table_schemas request: %s", e)
+        return f"Error: Authentication required - {e}"
 
     if not table_names:
         logger.error("Error: table_names parameter is required and cannot be empty")
@@ -207,7 +221,11 @@ async def execute_sales_query(
         Query results as a string.
     """
 
-    rls_user_id = get_rls_user_id(ctx)
+    try:
+        rls_user_id = get_rls_user_id(ctx)
+    except AuthenticationError as e:
+        logger.warning("Rejecting unauthenticated execute_sales_query request: %s", e)
+        return f"Error: Authentication required - {e}"
 
     logger.info("Manager ID: %s", rls_user_id)
     logger.info("Executing PostgreSQL query: %s", postgresql_query)
@@ -243,6 +261,13 @@ async def get_current_utc_date() -> str:
 
 async def run_http_server() -> None:
     """Run the MCP server in HTTP mode."""
+
+    if not auth_configured():
+        logger.warning(
+            "No identity provider is configured (AZURE_TENANT_ID or "
+            "AUTH_DEV_HMAC_SECRET). All tool calls will be rejected until one "
+            "is set - see README.md#security-features."
+        )
 
     # Only configure azure monitor if a valid connection string is provided.
     appinsights_connection_string = config.applicationinsights_connection_string
