@@ -18,6 +18,7 @@ Requirements:
 import asyncio
 import json
 import logging
+import re
 from typing import Any, Dict, List, Optional
 
 import asyncpg
@@ -38,6 +39,52 @@ POSTGRES_CONNECTION_PARAMS = config.get_postgres_connection_params()
 
 SCHEMA_NAME = "retail"
 MANAGER_ID = ""
+
+# Matches a leading run of whitespace and SQL comments so the real first
+# keyword of a query can be checked even when it's preceded by a comment.
+_LEADING_COMMENT_RE = re.compile(r"\A\s*(--[^\n]*(\n|\Z)|/\*.*?\*/)\s*", re.DOTALL)
+
+
+def _first_keyword(sql_query: str) -> str:
+    """Return the lowercased first SQL keyword, skipping leading whitespace/comments."""
+    text = sql_query
+    while True:
+        match = _LEADING_COMMENT_RE.match(text)
+        if not match:
+            break
+        text = text[match.end():]
+    text = text.lstrip()
+    match = re.match(r"[A-Za-z_][A-Za-z_0-9]*", text)
+    return match.group(0).lower() if match else ""
+
+
+def _is_read_only_query(sql_query: str) -> bool:
+    """Best-effort check that `sql_query` is a single read-only statement.
+
+    This rejects anything that isn't a SELECT or WITH (CTE) statement, and
+    rejects stacked statements (more than one top-level statement separated
+    by ';'). It is intentionally conservative - a semicolon inside a string
+    literal will also be rejected - because false positives here just mean a
+    query has to be rephrased, while false negatives would reopen the write
+    path this check exists to close.
+
+    This is a defense-in-depth layer, not the only one: execute_query also
+    runs the statement inside a READ ONLY transaction, so PostgreSQL itself
+    rejects any write even if this check is bypassed - for example via a
+    data-modifying CTE such as `WITH t AS (INSERT INTO ... RETURNING *)
+    SELECT * FROM t`, which passes this string-level check but is still a
+    write.
+    """
+    if not sql_query or not sql_query.strip():
+        return False
+
+    body = sql_query.strip()
+    if body.endswith(";"):
+        body = body[:-1]
+    if ";" in body:
+        return False
+
+    return _first_keyword(body) in ("select", "with")
 
 # Constants - table names without schema prefix (will be added in queries)
 CUSTOMERS_TABLE = "customers"
@@ -760,7 +807,7 @@ class PostgreSQLSchemaProvider:
         return schema_data
 
     async def execute_query(self, sql_query: str, rls_user_id: str) -> str:
-        """Execute a SQL query and return results in compact JSON.
+        """Execute a read-only SQL query and return results in compact JSON.
 
         Compact success shape:
           {"c":["col1","col2"],"r":[[v11,v12],[v21,v22]],"n":2}
@@ -768,7 +815,29 @@ class PostgreSQLSchemaProvider:
           {"c":[],"r":[],"n":0,"msg":"No rows"}
         Error shape:
           {"err":"...","q":"SELECT ...","c":[],"r":[],"n":0}
+
+        Enforces read-only access in two layers: `sql_query` must parse as a
+        single SELECT/WITH statement (see _is_read_only_query), and the
+        statement itself runs inside a READ ONLY transaction so PostgreSQL
+        rejects any write even if the first check is bypassed.
         """
+        if not _is_read_only_query(sql_query):
+            return json.dumps(
+                {
+                    "err": (
+                        "Only a single, read-only SELECT/WITH statement is "
+                        "permitted. Writes, DDL, and stacked statements are "
+                        "not allowed."
+                    ),
+                    "q": sql_query,
+                    "c": [],
+                    "r": [],
+                    "n": 0,
+                },
+                separators=(",", ":"),
+                default=str,
+            )
+
         conn: Optional[asyncpg.Connection] = None
         try:
             conn = await self.get_connection()
@@ -776,7 +845,8 @@ class PostgreSQLSchemaProvider:
                 "SELECT set_config('app.current_rls_user_id', $1, false)", rls_user_id
             )
 
-            rows = await conn.fetch(sql_query)
+            async with conn.transaction(readonly=True):
+                rows = await conn.fetch(sql_query)
             if not rows:
                 return json.dumps(
                     {"c": [], "r": [], "n": 0, "msg": "No rows"},
