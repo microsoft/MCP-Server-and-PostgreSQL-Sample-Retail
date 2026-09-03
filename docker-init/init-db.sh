@@ -57,8 +57,14 @@ if [ -f "$BACKUP_FILE" ]; then
   psql -U postgres -d zava -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO store_manager;" || true
   psql -U postgres -d zava -c "GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO store_manager;" || true
   psql -U postgres -d zava -c "GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public TO store_manager;" || true
-  psql -U postgres -d zava -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA retail TO store_manager;" || true
-  psql -U postgres -d zava -c "GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA retail TO store_manager;" || true
+  # store_manager is the RLS-scoped, read-only role the MCP server connects
+  # as by default (see .env.template). It must only ever get SELECT on the
+  # retail schema - granting ALL PRIVILEGES here would let any caller who
+  # can reach execute_sales_query write through this role regardless of
+  # what RLS policies allow, which previously overrode the SELECT-only
+  # grants already present in the backup file itself.
+  psql -U postgres -d zava -c "GRANT USAGE ON SCHEMA retail TO store_manager;" || true
+  psql -U postgres -d zava -c "GRANT SELECT ON ALL TABLES IN SCHEMA retail TO store_manager;" || true
   
   echo "Database restoration completed."
 else

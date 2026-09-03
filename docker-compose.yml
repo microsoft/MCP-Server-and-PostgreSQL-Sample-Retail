@@ -9,6 +9,13 @@ services:
       - .env
     environment:
       - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256 --auth-local=scram-sha-256
+      # .env's POSTGRES_USER is the non-superuser role the MCP server
+      # connects as (see .env.template) and must stay separate from the
+      # superuser this image bootstraps itself with on first init, which
+      # docker-init/init-db.sh always addresses as "postgres". Pin it here
+      # so the two don't collide regardless of what POSTGRES_USER is set to
+      # for the mcp_server service below.
+      - POSTGRES_USER=postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./data:/backup_data:ro
