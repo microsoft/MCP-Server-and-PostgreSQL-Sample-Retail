@@ -222,8 +222,12 @@ async def execute_sales_query(
     postgresql_query: Annotated[str, Field(description="A well-formed PostgreSQL query.")],
 ) -> str:
     """Execute PostgreSQL queries with Row Level Security."""
-    rls_user_id = get_rls_user_id(ctx)
-    
+    try:
+        rls_user_id = get_rls_user_id(ctx)
+    except AuthenticationError as e:
+        logger.warning("Rejecting unauthenticated execute_sales_query request: %s", e)
+        return f"Error: Authentication required - {e}"
+
     try:
         return await db_provider.execute_query(
             postgresql_query, rls_user_id=rls_user_id
@@ -235,20 +239,20 @@ async def execute_sales_query(
 
 **Key Features:**
 - **Type Annotations**: Pydantic field descriptions for AI understanding
-- **Context Extraction**: User identity from HTTP headers
+- **Verified Identity**: User identity from a verified JWT bearer token, not a raw HTTP header
+- **Fail Closed**: Missing or invalid identity rejects the request rather than falling back to a default
 - **Error Handling**: Graceful failure with informative messages
 - **Logging**: Comprehensive operation logging
 
 #### Request Context Management
 ```python
 def get_rls_user_id(ctx: Context) -> str:
-    """Extract Row Level Security User ID from request context."""
-    rls_user_id = get_header(ctx, "x-rls-user-id")
-    if rls_user_id is None:
-        # Default to placeholder if not provided
-        rls_user_id = "00000000-0000-0000-0000-000000000000"
-    return rls_user_id
+    """Get the Row Level Security User ID from a verified request identity."""
+    authorization = get_header(ctx, "authorization")
+    return get_verified_rls_user_id(authorization)
 ```
+
+`get_verified_rls_user_id` (in `mcp_server/auth.py`) verifies the bearer token's signature, expiry, audience, and issuer, then reads the RLS user id from a claim in the verified token. There is no default identity - a missing or invalid token raises `AuthenticationError`, which callers must treat as a rejection, not fall back from. See [Security and Multi-Tenancy](walkthrough/02-Security/README.md).
 
 ### Database Layer (`sales_analysis_postgres.py`)
 
@@ -493,20 +497,27 @@ fi
 ### VS Code Integration
 
 #### 1. **MCP Configuration (`.vscode/mcp.json`)**
+
+The server verifies each caller's identity from a JWT bearer token - see [Configure a Local Test Identity](README.md#configure-a-local-test-identity) for how to generate one locally with `scripts/generate_dev_token.py`. VS Code's `${input:...}` prompts for the token when you connect:
+
 ```json
 {
     "servers": {
         "zava-sales-analysis-headoffice": {
             "url": "http://127.0.0.1:8000/mcp",
             "type": "http",
-            "headers": {"x-rls-user-id": "00000000-0000-0000-0000-000000000000"}
+            "headers": {"Authorization": "Bearer ${input:headofficeToken}"}
         },
         "zava-sales-analysis-seattle": {
             "url": "http://127.0.0.1:8000/mcp",
-            "type": "http", 
-            "headers": {"x-rls-user-id": "f47ac10b-58cc-4372-a567-0e02b2c3d479"}
+            "type": "http",
+            "headers": {"Authorization": "Bearer ${input:seattleToken}"}
         }
-    }
+    },
+    "inputs": [
+        {"type": "promptString", "id": "headofficeToken", "description": "Bearer token for headoffice (RLS User ID 00000000-0000-0000-0000-000000000000)", "password": true},
+        {"type": "promptString", "id": "seattleToken", "description": "Bearer token for Seattle (RLS User ID f47ac10b-58cc-4372-a567-0e02b2c3d479)", "password": true}
+    ]
 }
 ```
 

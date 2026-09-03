@@ -214,6 +214,7 @@ pydantic-settings==2.10.1
     # via mcp
 pyjwt[crypto]==2.13.0
     # via
+    #   -r requirements.in
     #   mcp
     #   msal
 python-dotenv==1.1.1

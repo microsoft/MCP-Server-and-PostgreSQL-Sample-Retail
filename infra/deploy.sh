@@ -147,8 +147,11 @@ cat > "$ENV_FILE_PATH" << EOF
 POSTGRES_DB_HOST=pg17
 POSTGRES_DB_PORT=5432
 POSTGRES_DB="zava"
-POSTGRES_USER="postgres"
-POSTGRES_PASSWORD="change-me"
+# Must be a non-superuser, non-BYPASSRLS role - see docker-init/init-db.sh,
+# which provisions store_manager as a SELECT-only role for exactly this
+# reason. Connecting as "postgres" would silently bypass every RLS policy.
+POSTGRES_USER="store_manager"
+POSTGRES_PASSWORD="StoreManager123"
 POSTGRES_APPLICATION_NAME="mcp-server"
 PROJECT_ENDPOINT=$PROJECTS_ENDPOINT
 AZURE_OPENAI_ENDPOINT=$AZURE_OPENAI_ENDPOINT
