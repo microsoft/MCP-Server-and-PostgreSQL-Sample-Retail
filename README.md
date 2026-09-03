@@ -271,6 +271,24 @@ docker compose logs -f pg17
 docker compose down -v
 ```
 
+### Configure a Local Test Identity
+
+The server verifies every caller's identity from a JWT bearer token - it no longer accepts a plain `x-rls-user-id` header (see [Row Level Security (RLS)](#row-level-security-rls) below). To run the stack locally without a real Azure Entra ID tenant:
+
+1. Add a random local signing secret to `.env` (never use this mode in a real deployment):
+
+    ```bash
+    echo "AUTH_DEV_HMAC_SECRET=$(openssl rand -hex 32)" >> .env
+    docker compose restart mcp_server
+    ```
+
+2. Mint a token for the store you want to query, using the same secret and one of the [Store-Specific RLS User IDs](#store-specific-rls-user-ids):
+
+    ```bash
+    export AUTH_DEV_HMAC_SECRET=<the value you just added to .env>
+    python scripts/generate_dev_token.py --rls-user-id f47ac10b-58cc-4372-a567-0e02b2c3d479
+    ```
+
 ## Usage
 
 The following assumes you'll be using the built-in VS Code MCP server support.
@@ -281,12 +299,12 @@ The following assumes you'll be using the built-in VS Code MCP server support.
     code .
     ```
 
-2. Start one or more MCP servers using the configurations in `.vscode/mcp.json`. The file contains four different server configurations, each representing a different store manager role:
+2. Start one or more MCP servers using the configurations in `.vscode/mcp.json`. The file contains four different server configurations, each representing a different store manager role. VS Code prompts for a bearer token the first time you connect each one - paste in a token generated as described above for that store's RLS User ID:
 
-   - Each configuration uses a unique RLS (Row Level Security) user ID
-   - These user IDs simulate different store manager identities accessing the database
-   - The RLS system restricts data access based on the manager's assigned store
-   - This mimics real-world scenarios where store managers sign in with different Entra ID accounts
+   - Each configuration corresponds to a different store manager role
+   - Generate each token with `scripts/generate_dev_token.py --rls-user-id <RLS User ID>` (see [Configure a Local Test Identity](#configure-a-local-test-identity))
+   - The RLS system restricts data access based on the verified token's identity
+   - This mimics real-world scenarios where store managers sign in with different Entra ID accounts and are issued tokens scoped to their store
 
     ```json
     {
@@ -294,25 +312,30 @@ The following assumes you'll be using the built-in VS Code MCP server support.
             "zava-sales-analysis-headoffice": {
                 "url": "http://127.0.0.1:8000/mcp",
                 "type": "http",
-                "headers": {"x-rls-user-id": "00000000-0000-0000-0000-000000000000"}
+                "headers": {"Authorization": "Bearer ${input:headofficeToken}"}
             },
             "zava-sales-analysis-seattle": {
                 "url": "http://127.0.0.1:8000/mcp",
                 "type": "http",
-                "headers": {"x-rls-user-id": "f47ac10b-58cc-4372-a567-0e02b2c3d479"}
+                "headers": {"Authorization": "Bearer ${input:seattleToken}"}
             },
             "zava-sales-analysis-redmond": {
                 "url": "http://127.0.0.1:8000/mcp",
                 "type": "http",
-                "headers": {"x-rls-user-id": "e7f8a9b0-c1d2-3e4f-5678-90abcdef1234"}
+                "headers": {"Authorization": "Bearer ${input:redmondToken}"}
             },
             "zava-sales-analysis-online": {
                 "url": "http://127.0.0.1:8000/mcp",
                 "type": "http",
-                "headers": {"x-rls-user-id": "2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2"}
+                "headers": {"Authorization": "Bearer ${input:onlineToken}"}
             }
         },
-        "inputs": []
+        "inputs": [
+            {"type": "promptString", "id": "headofficeToken", "description": "Bearer token for headoffice (RLS User ID 00000000-0000-0000-0000-000000000000)", "password": true},
+            {"type": "promptString", "id": "seattleToken", "description": "Bearer token for Seattle (RLS User ID f47ac10b-58cc-4372-a567-0e02b2c3d479)", "password": true},
+            {"type": "promptString", "id": "redmondToken", "description": "Bearer token for Redmond (RLS User ID e7f8a9b0-c1d2-3e4f-5678-90abcdef1234)", "password": true},
+            {"type": "promptString", "id": "onlineToken", "description": "Bearer token for Online (RLS User ID 2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2)", "password": true}
+        ]
     }
     ```
 
@@ -404,17 +427,17 @@ Perform a semantic search for products based on user queries.
 
 The server implements Row Level Security to ensure users only access data they're authorized to view:
 
-- **HTTP Mode**: Uses `x-rls-user-id` header to identify the requesting user
+- **Caller identity comes from a verified JWT**: HTTP requests authenticate with an `Authorization: Bearer <token>` header. The server verifies the token's signature, expiry, audience, and issuer (against Azure Entra ID in production, or a local shared secret for sample/dev use - see [`mcp_server/auth.py`](mcp_server/auth.py) and [Configure a Local Test Identity](#configure-a-local-test-identity)) and reads the RLS user id from a claim in the verified token. The `x-rls-user-id` header is no longer read or trusted - a client can no longer choose its own identity by sending an arbitrary header.
 
-- **Default Fallback**: Uses placeholder UUID when no user ID is provided
+- **No default identity**: if no valid, verified token is supplied, the request is rejected. There is no fallback to any store's data, including the all-store value below.
 
 #### Store-Specific RLS User IDs
 
-Each Zava Retail store location has a unique RLS user ID that determines which data the user can access:
+Each Zava Retail store location has a unique RLS user ID that determines which data a verified caller can access. These values only take effect when they arrive inside a verified token's claim - they are meaningless as plain text on their own:
 
 | Store Location | RLS User ID | Description |
 |---------------|-------------|-------------|
-| **Global Access** | `00000000-0000-0000-0000-000000000000` | Default fallback - all store access |
+| **Global Access** | `00000000-0000-0000-0000-000000000000` | Unconditional access to every store's data. The RLS policies treat this exact value as an "all stores" bypass, not a per-store scope - treat it like an admin credential and only issue it to callers who should see every store, never as a default. |
 | **Seattle** | `f47ac10b-58cc-4372-a567-0e02b2c3d479` | Zava Retail Seattle store data |
 | **Bellevue** | `6ba7b810-9dad-11d1-80b4-00c04fd430c8` | Zava Retail Bellevue store data |
 | **Tacoma** | `a1b2c3d4-e5f6-7890-abcd-ef1234567890` | Zava Retail Tacoma store data |
@@ -426,14 +449,14 @@ Each Zava Retail store location has a unique RLS user ID that determines which d
 
 #### RLS Implementation
 
-When a user connects with a specific store's RLS User ID, they will only see:
+When a caller presents a verified token whose claim carries a specific store's RLS User ID, they will only see:
 
 - Customers associated with that store
 - Orders placed at that store location
 - Inventory data for that specific store
 - Store-specific sales and performance metrics
 
-This ensures data isolation between different store locations while maintaining a unified database schema.
+This ensures data isolation between different store locations while maintaining a unified database schema. Data isolation additionally depends on the database role the server connects as having neither the `Superuser` nor `BYPASSRLS` attribute - see `.env.template` and `docker-init/init-db.sh`; either attribute silently bypasses every RLS policy regardless of the caller's identity.
 
 ## Architecture
 
@@ -447,8 +470,8 @@ The server uses a managed application context with:
 
 ### Request Context
 
-- **Header Extraction**: Secure header parsing for user identification
-- **RLS Integration**: Automatic user ID resolution from request context
+- **Verified Identity**: RLS user id resolved from a verified JWT bearer token, not a client-supplied header (see [Row Level Security (RLS)](#row-level-security-rls))
+- **RLS Integration**: Automatic user ID resolution from the verified token
 - **Error Handling**: Comprehensive error handling with user-friendly messages
 
 ## Database Integration
@@ -482,7 +505,7 @@ The server implements robust error handling:
 
 - **Never use production RLS User IDs in development environments**
 - **Always verify the RLS User ID matches the intended store before running queries**
-- **The default UUID (`00000000-0000-0000-0000-000000000000`) provides limited access**
+- **The default UUID (`00000000-0000-0000-0000-000000000000`) grants unconditional access to every store, not limited access - issue it only to callers who genuinely need all-store visibility**
 - **Each store manager should only have access to their store's RLS User ID**
 
 ## Development

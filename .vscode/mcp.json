@@ -3,23 +3,28 @@
 		"zava-sales-analysis-headoffice": {
 			"url": "http://127.0.0.1:8000/mcp",
 			"type": "http",
-			"headers": {"x-rls-user-id": "00000000-0000-0000-0000-000000000000"}
+			"headers": {"Authorization": "Bearer ${input:headofficeToken}"}
 		},
 		"zava-sales-analysis-seattle": {
 			"url": "http://127.0.0.1:8000/mcp",
 			"type": "http",
-			"headers": {"x-rls-user-id": "f47ac10b-58cc-4372-a567-0e02b2c3d479"}
+			"headers": {"Authorization": "Bearer ${input:seattleToken}"}
 		},
 		"zava-sales-analysis-redmond": {
 			"url": "http://127.0.0.1:8000/mcp",
 			"type": "http",
-			"headers": {"x-rls-user-id": "e7f8a9b0-c1d2-3e4f-5678-90abcdef1234"}
+			"headers": {"Authorization": "Bearer ${input:redmondToken}"}
 		},
 		"zava-sales-analysis-online": {
 			"url": "http://127.0.0.1:8000/mcp",
 			"type": "http",
-			"headers": {"x-rls-user-id": "2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2"}
+			"headers": {"Authorization": "Bearer ${input:onlineToken}"}
 		}
 	},
-	"inputs": []
+	"inputs": [
+		{"type": "promptString", "id": "headofficeToken", "description": "Bearer token for headoffice (RLS User ID 00000000-0000-0000-0000-000000000000) - generate with scripts/generate_dev_token.py", "password": true},
+		{"type": "promptString", "id": "seattleToken", "description": "Bearer token for Seattle (RLS User ID f47ac10b-58cc-4372-a567-0e02b2c3d479) - generate with scripts/generate_dev_token.py", "password": true},
+		{"type": "promptString", "id": "redmondToken", "description": "Bearer token for Redmond (RLS User ID e7f8a9b0-c1d2-3e4f-5678-90abcdef1234) - generate with scripts/generate_dev_token.py", "password": true},
+		{"type": "promptString", "id": "onlineToken", "description": "Bearer token for Online (RLS User ID 2f4e6d8c-1a3b-5c7e-9f0a-b2d4f6e8c0a2) - generate with scripts/generate_dev_token.py", "password": true}
+	]
 }
