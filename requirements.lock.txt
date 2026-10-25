@@ -38,7 +38,7 @@ azure-monitor-opentelemetry==1.8.0
     # via -r requirements.in
 azure-monitor-opentelemetry-exporter==1.0.0b41
     # via azure-monitor-opentelemetry
-certifi==2025.8.3
+certifi==2026.10.19
     # via
     #   httpcore
     #   httpx
